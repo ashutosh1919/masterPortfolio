@@ -1,0 +1,19 @@
+.educations-header {
+  font-size: 40px;
+  line-height: 1.1;
+  font-family: "Google Sans Regular";
+  text-align: center;
+}
+
+
+@media (max-width:1380px){
+    .educations-header{
+        font-size: 35px;
+    }
+}
+
+@media (max-width:768px){
+    .educations-header{
+        font-size: 30px;
+    }
+}

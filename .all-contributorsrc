@@ -1,0 +1,28 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "ashutosh1919",
+      "name": "Ashutosh Hathidara",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/23307811?v=4",
+      "profile": "http://ashutosh1919.github.io",
+      "contributions": [
+        "code",
+        "doc",
+        "design",
+        "maintenance",
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 1,
+  "projectName": "masterPortfolio",
+  "projectOwner": "ashutosh1919",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
