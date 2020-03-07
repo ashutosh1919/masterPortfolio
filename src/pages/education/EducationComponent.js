@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Educations from "../../containers/education/Educations";
+import Certifications from '../../containers/certifications/Certifications';
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
 
@@ -25,6 +26,7 @@ class Education extends Component {
             </div>
           </Fade>
           <Educations/>
+          <Certifications />
         </div>
         <Footer />
       </div>

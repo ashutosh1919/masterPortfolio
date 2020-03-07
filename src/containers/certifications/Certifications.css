@@ -1,19 +1,28 @@
-.educations-header {
+.certs-header {
   font-size: 40px;
   line-height: 1.1;
   font-family: "Google Sans Regular";
   text-align: center;
 }
 
+.certs-body-div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 @media (max-width:1380px){
-    .educations-header{
+    .certs-header{
         font-size: 35px;
     }
 }
 
 @media (max-width:768px){
-    .educations-header{
+    .certs-body-div{
+        flex-direction: column;
+    }
+
+    .certs-header{
         font-size: 30px;
     }
 }

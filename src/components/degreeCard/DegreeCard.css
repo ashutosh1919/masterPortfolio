@@ -34,7 +34,7 @@
     max-width: inherit;
     display: flex;
     /* width: 100%; */
-    background-color:#a066fb;
+    background-color:#6c63ff99;
     border-radius: 7px 7px 0px 0px;
     padding: 10px;
 }
@@ -83,13 +83,17 @@
 }
 
 .visit-btn{
-    background-color: #a066fb;
+    background-color: #6c63ff99;
     display: inline-block;
     margin: 0px 10px 10px 0px;
     padding: 10px;
     border-radius: 7px;
     border: 0px;
     float: right;
+}
+
+.visit-btn:hover {
+    background-color:#6c63ffcc;
 }
 
 .btn {
