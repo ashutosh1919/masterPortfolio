@@ -1,9 +1,6 @@
 import React from "react";
 import "./SoftwareSkill.css";
-import { skillsSection } from "../../portfolio";
-import { Icon, InlineIcon } from "@iconify/react";
-import tensorflowIcon from "@iconify/icons-logos/tensorflow";
-import { Overlay, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 class SoftwareSkill extends React.Component {
   render() {

@@ -1,10 +1,12 @@
 import React, { Component} from 'react';
 import "./CertificationCard.css";
+import {Fade} from 'react-reveal';
 
 class CertificationCard extends Component {
     render(){
         const certificate = this.props.certificate;
         return (
+			<Fade bottom duration={2000} distance="20px">
 					<div className="cert-card">
 						<div className="content">
 							<a href={certificate.certificate_link} target="_blank">
@@ -26,6 +28,7 @@ class CertificationCard extends Component {
 							<h3 className="cert-body-subtitle">{certificate.subtitle}</h3>
 						</div>
 					</div>
+			</Fade>
 				);
     }
 }
