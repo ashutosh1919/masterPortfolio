@@ -11,9 +11,10 @@ import Footer from "../components/footer/Footer";
 import Talks from "./talks/Talks";
 import Podcast from "./podcast/Podcast";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import Home from "../pages/home/HomeComponent.js";
-import Splash from "../pages/splash/Splash.js";
-import Education from "../pages/education/EducationComponent.js";
+import Home from "../pages/home/HomeComponent";
+import Splash from "../pages/splash/Splash";
+import Education from "../pages/education/EducationComponent";
+import Opensource from '../pages/opensource/Opensource';
 
 export default class Main extends Component {
   render() {
@@ -23,6 +24,7 @@ export default class Main extends Component {
           <Switch>
             <Route path="/home" component={Home} />
             <Route path="/education" component={Education} />
+            <Route path="/opensource" component={Opensource} />
             <Route path="/splash" component={Splash} />
             <Redirect from="/" to="/splash" />
           </Switch>

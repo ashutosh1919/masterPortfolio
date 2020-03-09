@@ -3,7 +3,6 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Educations from "../../containers/education/Educations";
 import Certifications from '../../containers/certifications/Certifications';
-import SoftwareSkill from '../../components/softwareSkills/SoftwareSkill';
 import CompetitiveSites from '../../components/competitiveSites/CompetitiveSites';
 import {competitiveSites}  from "../../portfolio";
 import "./EducationComponent.css";
