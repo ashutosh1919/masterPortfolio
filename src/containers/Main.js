@@ -22,10 +22,10 @@ export default class Main extends Component {
       <div>
         <BrowserRouter>
           <Switch>
-            <Route path="/home" component={Home} />
-            <Route path="/education" component={Education} />
-            <Route path="/opensource" component={Opensource} />
-            <Route path="/splash" component={Splash} />
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/education" component={Education} />
+            <Route exact path="/opensource" component={Opensource} />
+            <Route exact path="/splash" component={Splash} />
             <Redirect from="/" to="/splash" />
           </Switch>
         </BrowserRouter>

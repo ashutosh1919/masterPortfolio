@@ -3,6 +3,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Organizations from "../../containers/organizations/Organizations";
 import PullRequests from "../../containers/pullRequests/PullRequests";
+import Issues from '../../containers/issues/Issues';
 import "./Opensource.css";
 
 
@@ -13,6 +14,7 @@ class Opensource extends Component {
                 <Header />
                 <Organizations />
                 <PullRequests />
+                <Issues />
                 <Footer />
             </div>
         );
