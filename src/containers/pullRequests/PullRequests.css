@@ -7,6 +7,11 @@
   margin-right: 10px;
 }
 
+.pull-request-body-div {
+    text-align: center;
+    width: 100%;
+}
+
 @media (max-width:1380px){
     .pull-requests-header{
         font-size: 35px;

@@ -1,7 +1,8 @@
 .pull-request-card{
     width: 75%;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
+    display: inline-block;
+    /* margin-left: 12.5%;
+    margin-right: 12.5%; */
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 10px;
@@ -124,6 +125,7 @@
 .parent-repo {
     white-space: nowrap;
     text-overflow: ellipsis;
+    text-align: left;
     margin-top: 0px;
     margin-bottom:0px;
     font-family: "Google Sans Regular";
@@ -183,8 +185,8 @@
 @media (max-width:768px){
     .pull-request-card{
         width: 85%;
-        margin-left: 5%;
-        margin-right: 5%;
+        /* margin-left: 5%;
+        margin-right: 5%; */
     }
 
     .pr-top {
