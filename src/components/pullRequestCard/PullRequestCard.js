@@ -95,7 +95,7 @@ class PullRequestCard extends Component {
 					<div className="pr-down">
 						<div className="changes-repo">
 							<p className="parent-repo">
-								Repository:{" "}
+								Repository:{" "} 
 								<a
 									style={{ color: iconPR.style.color }}
 									href={pullRequest["baseRepository"]["url"]}
@@ -114,6 +114,7 @@ class PullRequestCard extends Component {
 								{mergedBy}
 							</div>
 						</div>
+						<div className="owner-img-div">
 						<a
 							href={pullRequest["baseRepository"]["owner"]["url"]}
 							target="_blank"
@@ -123,6 +124,7 @@ class PullRequestCard extends Component {
 								src={pullRequest["baseRepository"]["owner"]["avatarUrl"]}
 							/>
 						</a>
+						</div>
 					</div>
 				</div>
 			</Fade>

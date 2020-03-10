@@ -125,12 +125,18 @@
 .parent-repo {
     white-space: nowrap;
     text-overflow: ellipsis;
+    overflow: hidden;
     text-align: left;
     margin-top: 0px;
     margin-bottom:0px;
     font-family: "Google Sans Regular";
     font-size: 12px;
     margin-top: 5px;
+}
+
+.parent-repo > a {
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .changes-files{
@@ -155,6 +161,11 @@
     font-size: 14px;
     font-family: "Google Sans Regular";
 }
+
+/* .owner-img-div{
+    width: 10%;
+    display: inline-block;
+} */
 
 .owner-img{
     display:inline-block;
@@ -191,6 +202,10 @@
 
     .pr-top {
         flex-direction: column;
+    }
+
+    .changes-repo{
+        width: 87%;
     }
 
     .files-changed-header{
