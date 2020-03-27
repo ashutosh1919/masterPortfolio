@@ -10,39 +10,41 @@ import Contact from "./contact/Contact";
 import Footer from "../components/footer/Footer";
 import Talks from "./talks/Talks";
 import Podcast from "./podcast/Podcast";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect, HashRouter } from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
-import Opensource from '../pages/opensource/Opensource';
+import Opensource from "../pages/opensource/Opensource";
 
 export default class Main extends Component {
-  render() {
-    return (
-      <div>
-        <BrowserRouter>
-          <Switch>
-            <Route exact path="/home" component={Home} />
-            <Route exact path="/education" component={Education} />
-            <Route exact path="/opensource" component={Opensource} />
-            <Route exact path="/splash" component={Splash} />
-            <Redirect from="/" to="/splash" />
-          </Switch>
-        </BrowserRouter>
-      </div>
-      // <div>
-      //   <Header />
-      //   <Greeting />
-      //   <Skills />
-      //   {/* <Projects />
-      //   <StartupProject />
-      //   <Achievement />
-      //   <Blogs />
-      //   <Talks />
-      //   <Podcast />
-      //   <Contact /> */}
-      //   <Footer />
-      // </div>
-    );
-  }
+	render() {
+		return (
+			<div>
+				<HashRouter basename='/'>
+					<Switch>
+            <Route exact path="/"  component={Splash} />
+						<Route path="/home" component={Home} />
+						<Route path="/education" component={Education} />
+						<Route path="/opensource" component={Opensource} />
+						<Route path="/splash" component={Splash} />
+						{/* <Redirect from="/" to="/splash" /> */}
+					</Switch>
+					{/* <Switch></Switch> */}
+				</HashRouter>
+			</div>
+			// <div>
+			//   <Header />
+			//   <Greeting />
+			//   <Skills />
+			//   {/* <Projects />
+			//   <StartupProject />
+			//   <Achievement />
+			//   <Blogs />
+			//   <Talks />
+			//   <Podcast />
+			//   <Contact /> */}
+			//   <Footer />
+			// </div>
+		);
+	}
 }
