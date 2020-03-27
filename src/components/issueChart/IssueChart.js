@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Doughnut } from "react-chartjs-2";
+import {Fade} from 'react-reveal';
 import "./IssueChart.css";
 import IssueData from "../../shared/opensource/issues.json";
 
@@ -21,14 +22,16 @@ class IssueChart extends Component {
 
 		return (
 			<div class="issue-chart">
-				<h2 className="issue-chart-header">Issue Distribution</h2>
+				<Fade bottom duration={2000} distance="20px">
+					<h2 className="issue-chart-header">Issue Distribution</h2>
+				</Fade>
 				<Doughnut
 					data={data}
 					options={{
-                        margin: "0",
-                        padding: "0",
+						margin: "0",
+						padding: "0",
 						responsive: true,
-						maintainAspectRatio: true,
+						maintainAspectRatio: true
 						// legend: {
 						// 	display: false
 						// }
