@@ -33,9 +33,6 @@ class PullRequestChart extends Component {
 						margin: "0",
 						responsive: true,
 						maintainAspectRatio: true
-						// legend: {
-						// 	display: false
-						// }
 					}}
 				/>
 			</div>

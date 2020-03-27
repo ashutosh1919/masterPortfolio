@@ -32,9 +32,6 @@ class IssueChart extends Component {
 						padding: "0",
 						responsive: true,
 						maintainAspectRatio: true
-						// legend: {
-						// 	display: false
-						// }
 					}}
 				/>
 			</div>
