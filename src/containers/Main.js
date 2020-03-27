@@ -14,6 +14,7 @@ import { BrowserRouter, Route, Switch, Redirect, HashRouter } from "react-router
 import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
+import Experience from "../pages/experience/Experience";
 import Opensource from "../pages/opensource/Opensource";
 
 export default class Main extends Component {
@@ -24,6 +25,7 @@ export default class Main extends Component {
 					<Switch>
             <Route exact path="/"  component={Splash} />
 						<Route path="/home" component={Home} />
+            <Route path="/experience" component={Experience} />
 						<Route path="/education" component={Education} />
 						<Route path="/opensource" component={Opensource} />
 						<Route path="/splash" component={Splash} />
