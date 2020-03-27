@@ -6,10 +6,6 @@ const theme = {
   easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
 };
 
-const transitionStyle = {
-  fadeup_down: {}
-};
-
 const greeting = {
   /* Your Summary And Greeting Section */
   //title: "Hi all 👋 I'm Saad",
@@ -595,7 +591,6 @@ const contactInfo = {
 
 export {
   theme,
-  transitionStyle,
   greeting,
   socialMediaLinks,
   skills,
