@@ -32,7 +32,10 @@ class PullRequestChart extends Component {
 						padding: "0",
 						margin: "0",
 						responsive: true,
-						maintainAspectRatio: true
+						maintainAspectRatio: true,
+						animation: {
+							duration: 4000
+						}
 					}}
 				/>
 			</div>
