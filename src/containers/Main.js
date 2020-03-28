@@ -21,18 +21,20 @@ export default class Main extends Component {
 	render() {
 		return (
 			<div>
-				<HashRouter basename='/'>
+				<BrowserRouter basename="/">
 					<Switch>
-            <Route exact path="/"  component={Splash} />
+					{/* <div> */}
+						<Route exact path="/" component={Splash} />
 						<Route path="/home" component={Home} />
-            <Route path="/experience" component={Experience} />
+						<Route path="/experience" component={Experience} />
 						<Route path="/education" component={Education} />
 						<Route path="/opensource" component={Opensource} />
 						<Route path="/splash" component={Splash} />
 						{/* <Redirect from="/" to="/splash" /> */}
+					{/* </div> */}
 					</Switch>
 					{/* <Switch></Switch> */}
-				</HashRouter>
+				</BrowserRouter>
 			</div>
 			// <div>
 			//   <Header />

@@ -15,10 +15,14 @@ class Experience extends Component {
 					<Fade bottom duration={1000} distance="40px">
 						<div className="experience-heading-div">
 							<div className="experience-heading-img-div">
-								<img src={require(`../../assests/images/${ExperienceData.header_image_path}`)} />
+								<img
+									src={require(`../../assests/images/${ExperienceData.header_image_path}`)}
+								/>
 							</div>
 							<div className="experience-heading-text-div">
-								<h1 className="experience-heading-text">{ExperienceData.title}</h1>
+								<h1 className="experience-heading-text">
+									{ExperienceData.title}
+								</h1>
 								<h3 className="experience-heading-sub-text">
 									{ExperienceData.subtitle}
 								</h3>
@@ -29,7 +33,7 @@ class Experience extends Component {
 						</div>
 					</Fade>
 				</div>
-                <ExperienceAccordion sections={ExperienceData.sections}/>
+				<ExperienceAccordion sections={ExperienceData.sections} />
 				<Footer />
 			</div>
 		);
