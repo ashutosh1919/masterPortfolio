@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
+import ExperienceAccordion from '../../containers/experienceAccordion/ExperienceAccordion.js';
+import {experience as ExperienceData} from '../../shared/experience.js';
 import "./Experience.css";
 import { Fade } from "react-reveal";
 
@@ -13,24 +15,21 @@ class Experience extends Component {
 					<Fade bottom duration={1000} distance="40px">
 						<div className="experience-heading-div">
 							<div className="experience-heading-img-div">
-								<img src={require("../../assests/images/experience.svg")} />
+								<img src={require(`../../assests/images/${ExperienceData.header_image_path}`)} />
 							</div>
 							<div className="experience-heading-text-div">
-								<h1 className="experience-heading-text">Experience</h1>
+								<h1 className="experience-heading-text">{ExperienceData.title}</h1>
 								<h3 className="experience-heading-sub-text">
-									Work, Internship and Volunteership
+									{ExperienceData.subtitle}
 								</h3>
 								<p className="experience-header-detail-text subTitle">
-									I have worked with many evolving startups as ML and DL
-									Developer, Designer and Software Architect. I have also worked
-									with some well established companies mostly as AI Developer. I
-									love organising events and that is why I am also involved with
-									many opensource communities as a representative.
+									{ExperienceData.description}
 								</p>
 							</div>
 						</div>
 					</Fade>
 				</div>
+                <ExperienceAccordion />
 				<Footer />
 			</div>
 		);
