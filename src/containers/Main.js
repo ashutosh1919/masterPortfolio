@@ -14,27 +14,24 @@ import { BrowserRouter, Route, Switch, Redirect, HashRouter } from "react-router
 import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
-import Experience from "../pages/experience/Experience";
+import Experience from "../pages/experience/Experience.js";
 import Opensource from "../pages/opensource/Opensource";
 
 export default class Main extends Component {
 	render() {
 		return (
 			<div>
-				<BrowserRouter basename="/">
-					<Switch>
-					{/* <div> */}
-						<Route exact path="/" component={Splash} />
+				{/* <HashRouter basename="/"> */}
+				{/* <Experience /> */}
+					{/* <Switch> */}
+						<Route path="/" exact component={Splash} />
 						<Route path="/home" component={Home} />
-						<Route path="/experience" component={Experience} />
+						<Route path="/experience" exact component={Experience} />
 						<Route path="/education" component={Education} />
 						<Route path="/opensource" component={Opensource} />
 						<Route path="/splash" component={Splash} />
-						{/* <Redirect from="/" to="/splash" /> */}
-					{/* </div> */}
-					</Switch>
-					{/* <Switch></Switch> */}
-				</BrowserRouter>
+					{/* </Switch> */}
+				{/* </HashRouter> */}
 			</div>
 			// <div>
 			//   <Header />
