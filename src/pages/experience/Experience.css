@@ -35,13 +35,23 @@
   font-family: "Google Sans Medium";
   line-height: 1.1;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .experience-heading-sub-text {
   font-size: 30px;
   font-family: "Google Sans Regular";
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.experience-header-detail-text {
+    font-size: 20px;
+  line-height: 30px;
+  margin-top:0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Google Sans Medium";
 }
 
 @media (max-width: 1380px) {
@@ -67,4 +77,12 @@
   .experience-heading-div {
     flex-direction: column;
   }
+
+  .experience-header-detail-text {
+    font-size: 16px;
+    margin-right: 0px;
+    line-height: normal;
+    text-align: center;
+  }
+
 }

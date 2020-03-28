@@ -20,6 +20,13 @@ class Experience extends Component {
 								<h3 className="experience-heading-sub-text">
 									Work, Internship and Volunteership
 								</h3>
+								<p className="experience-header-detail-text subTitle">
+									I have worked with many evolving startups as ML and DL
+									Developer, Designer and Software Architect. I have also worked
+									with some well established companies mostly as AI Developer. I
+									love organising events and that is why I am also involved with
+									many opensource communities as a representative.
+								</p>
 							</div>
 						</div>
 					</Fade>
