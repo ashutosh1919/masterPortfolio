@@ -29,7 +29,7 @@ class Experience extends Component {
 						</div>
 					</Fade>
 				</div>
-                <ExperienceAccordion />
+                <ExperienceAccordion sections={ExperienceData.sections}/>
 				<Footer />
 			</div>
 		);
