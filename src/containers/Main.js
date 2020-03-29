@@ -21,17 +21,17 @@ export default class Main extends Component {
 	render() {
 		return (
 			<div>
-				{/* <HashRouter basename="/"> */}
+				<HashRouter basename="/">
 				{/* <Experience /> */}
-					{/* <Switch> */}
+					<Switch>
 						<Route path="/" exact component={Splash} />
 						<Route path="/home" component={Home} />
 						<Route path="/experience" exact component={Experience} />
 						<Route path="/education" component={Education} />
 						<Route path="/opensource" component={Opensource} />
 						<Route path="/splash" component={Splash} />
-					{/* </Switch> */}
-				{/* </HashRouter> */}
+					</Switch>
+				</HashRouter>
 			</div>
 			// <div>
 			//   <Header />

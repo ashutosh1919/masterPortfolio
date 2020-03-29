@@ -590,18 +590,18 @@ const contactInfo = {
 };
 
 export {
-  theme,
-  greeting,
-  socialMediaLinks,
-  skills,
-  competitiveSites,
-  degrees,
-  certifications,
-  openSource,
-  bigProjects,
-  achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
-  contactInfo
+	theme,
+	greeting,
+	socialMediaLinks,
+	skills,
+	competitiveSites,
+	degrees,
+	certifications,
+	openSource,
+	bigProjects,
+	achievementSection,
+	blogSection,
+	talkSection,
+	podcastSection,
+	contactInfo
 };
