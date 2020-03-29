@@ -7,25 +7,27 @@ const theme = {
 };
 
 const greeting = {
-  /* Your Summary And Greeting Section */
-  //title: "Hi all 👋 I'm Saad",
-  title: "Ashutosh Hathidara",
-  nickname: "layman_brother",
-  // subTitle:
-  //   "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks",
-  subTitle:
-    "A passionate individual who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing"
+	/* Your Summary And Greeting Section */
+	//title: "Hi all 👋 I'm Saad",
+	title: "Ashutosh Hathidara",
+	nickname: "layman_brother",
+	// subTitle:
+	//   "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks",
+	subTitle:
+		"A passionate individual who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+	resumeLink:
+		"https://drive.google.com/open?id=1XYpYhLeqCdyx_q6l0bQoC7RgwQjAjXPf"
 };
 
 const socialMediaLinks = {
-  /* Your Social Media Link */
-  github: "https://github.com/ashutosh1919",
-  linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-  gmail: "ashutoshhathidara98@gmail.com",
-  gitlab: "https://gitlab.com/ashutoshhathidara98",
-  facebook: "https://www.facebook.com/laymanbrother.19/"
+	/* Your Social Media Link */
+	github: "https://github.com/ashutosh1919",
+	linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
+	gmail: "ashutoshhathidara98@gmail.com",
+	gitlab: "https://gitlab.com/ashutoshhathidara98",
+	facebook: "https://www.facebook.com/laymanbrother.19/",
+	twitter: "https://twitter.com/ashutosh_1919",
+	instagram: "https://www.instagram.com/layman_brother/"
 };
 
 const skills = {
@@ -532,25 +534,27 @@ const blogSection = {
 
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff. i love to write and teach others what i have learned",
+    "With love for individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
+  link: "https://ashutoshhathidara.wordpress.com",
+  avatar_image_path: "blogs_image.svg"
 
-  blogs: [
-    {
-      url:
-        "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      image: "https://miro.medium.com/max/400/1*pYHONrA_3QM4dgtBSKrYWQ.jpeg",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min."
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      image: "https://miro.medium.com/max/1280/1*o08b2PW-1PVs94riZuhNMA.png",
-      title: "Why REACT Is The Best?",
-      description:
-        "React is a JavaScript library for building the user interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ]
+  // blogs: [
+  //   {
+  //     url:
+  //       "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
+  //     image: "https://miro.medium.com/max/400/1*pYHONrA_3QM4dgtBSKrYWQ.jpeg",
+  //     title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+  //     description:
+  //       "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min."
+  //   },
+  //   {
+  //     url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
+  //     image: "https://miro.medium.com/max/1280/1*o08b2PW-1PVs94riZuhNMA.png",
+  //     title: "Why REACT Is The Best?",
+  //     description:
+  //       "React is a JavaScript library for building the user interface. It is maintained by Facebook and a community of individual developers and companies."
+  //   }
+  // ]
 };
 
 // Talks Sections

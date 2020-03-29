@@ -65,22 +65,12 @@ function Header() {
 						</li>
 						<li>
 							<NavLink
-								to="/blogs"
-								tag={Link}
-								activeStyle={{ fontWeight: "bold" }}
-							>
-								Blogs
-							</NavLink>
-						</li>
-						<li>
-							<NavLink
 								to="/contact"
 								tag={Link}
 								activeStyle={{ fontWeight: "bold" }}
 							>
 								Contact Me
 							</NavLink>
-							{/* <a href="/contact">Contact Me</a> */}
 						</li>
 					</ul>
 				</header>
