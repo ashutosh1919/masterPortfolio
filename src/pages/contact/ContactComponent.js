@@ -3,9 +3,20 @@ import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import SocialMedia from '../../components/socialMedia/SocialMedia';
 import Button from '../../components/button/Button';
-import {greeting, blogSection} from '../../portfolio';
+import {greeting} from '../../portfolio';
 import {Fade} from 'react-reveal';
 import './ContactComponent.css';
+
+
+const blogSection = {
+	/* Blogs Section */
+
+	title: "Blogs",
+	subtitle:
+		"With love for individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
+	link: "https://ashutoshhathidara.wordpress.com",
+	avatar_image_path: "blogs_image.svg"
+};
 
 const ContactData = {
 	title: "Contact Me",
@@ -44,7 +55,7 @@ class Contact extends Component {
 									</div>
 								</div>
 							</Fade>
-							<Fade>
+							<Fade bottom duration={1000} distance="40px">
 								<div className="blog-heading-div">
 									<div className="blog-heading-text-div">
 										<h1 className="blog-heading-text">
