@@ -53,12 +53,81 @@ const experience = {
 					description:
 						"I have worked on project of predicting freight rates based on previous data. There were two objectives: (1) To build a forecasting engine to predict daily freight rates. (2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations. I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
 					color: "#ee3c26"
+				},
+				{
+					title: "Data Science Intern",
+					company: "Intel Indexer LLC",
+					company_url:
+						"https://opencorporates.com/companies/us_dc/EXTUID_4170286",
+					logo_path: "intel_logo.jpg",
+					duration: "Nov 2018 - Dec 2018",
+					location: "Work From Home",
+					description:
+						"This is financial Solution Company. I have made Supervised Learning model for the company which can perform time series analysis on Stock price data for 32 companies. I have built LSTM Neural Networks Model and trained the data of 32 companies for last 2 years. This model is also used for forecasting.",
+					color: "#0071C5"
 				}
 			]
 		},
 		{
 			title: "Volunteerships",
-			experiences: []
+			experiences: [
+				{
+					title: "Google Explore ML Facilitator",
+					company: "Google",
+					company_url: "https://about.google/",
+					logo_path: "google_logo.png",
+					duration: "June 2019 - PRESENT",
+					location: "Hyderabad, Telangana",
+					description:
+						"Explore Machine Learning (ML) is a Google-sponsored program for university students to get started with Machine Learning. The curriculum offers 3 tracks of ML Content (Beginner, Intermediate, Advanced) and relies on university student facilitators to train other students on campus and to build opensource projects under this program.",
+					color: "#4285F4"
+				},
+				{
+					title: "Microsoft Student Partner",
+					company: "Microsoft",
+					company_url: "https://www.microsoft.com/",
+					logo_path: "microsoft_logo.png",
+					duration: "Aug 2019 - PRESENT",
+					location: "Hyderabad, Telangana",
+					description:
+						"Microsoft Student Partner is a program for university students to lead the awareness and use of Cloud especially Azure tools in the development of their projects and startups. Under this program, I have organised hands on workshops and seminars to teach Cloud Computing concepts to students.",
+					color: "#D83B01"
+				},
+				{
+					title: "Mozilla Campus Captain",
+					company: "Mozilla",
+					company_url: "https://www.mozilla.org/",
+					logo_path: "mozilla_logo.png",
+					duration: "Oct 2019 - PRESENT",
+					location: "Kurnool, Andhra Pradesh",
+					description:
+						"My responsibility for this program was to create opensource environment in college and in the city. We have organised multiple hackathons on the problems collected by ordinary people from Kurnool city. We have build opensource community of our own college. The community is available at dsc_iiitdmk on github.",
+					color: "#000000"
+				},
+				{
+					title: "Developer Students Club Member",
+					company: "DSC IIITDM Kurnool",
+					company_url:
+						"https://www.linkedin.com/company/developer-students-club-iiitdm-kurnool",
+					logo_path: "dsc_logo.png",
+					duration: "Jan 2018 - PRESENT",
+					location: "Kurnool, Andhra Pradesh",
+					description:
+						"We have well established developer club in college which is directly associated with Google Developers. We have developed many inter-desciplinary projects under the membership of this club. We have organised workshops and activities on Android Application Development, Flutter and React JS.",
+					color: "#0C9D58"
+				},
+				{
+					title: "Developer Program Member",
+					company: "Github",
+					company_url: "https://github.com/",
+					logo_path: "github_logo.png",
+					duration: "July 2019 - PRESENT",
+					location: "Work From Home",
+					description:
+						"I am actively contrinbuting to many opensource projects. I have contributed to projects of organisations like Tensorflow, Uber, Facebook, Google, Scikit-learn, Kiwix, Sympy, Python, NVLabs, Fossasia, Netrack, Keras etc. These contributions include bug fixes, feature requests and formulating peoper documentation for project.",
+					color: "#181717"
+				}
+			]
 		}
 	]
 };
