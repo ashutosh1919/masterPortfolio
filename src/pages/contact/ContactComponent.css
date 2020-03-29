@@ -15,12 +15,21 @@
     display: flex;
 }
 
+.address-heading-div {
+    display: flex;
+    margin-top: 80px;
+}
+
 .blog-heading-div > * {
     flex: 1;
 }
 
 .contact-heading-div > * {
   flex: 1;
+}
+
+.address-heading-div > * {
+    flex:1;
 }
 
 .contact-heading-img-div {
@@ -38,6 +47,10 @@
 }
 
 .blog-heading-text-div {
+    text-align: center;
+}
+
+.address-heading-text-div{
     text-align: center;
 }
 
@@ -67,6 +80,13 @@
   line-height: 1.1;
   text-align: center;
   margin-top: 40px;
+}
+
+.address-heading-text {
+    font-size: 30px;
+  font-family: "Google Sans Regular";
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .contact-header-detail-text {
@@ -99,6 +119,13 @@
     justify-content:center;
 }
 
+.address-btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
 
 @media (max-width: 1380px) {
   .contact-heading-text {
@@ -123,12 +150,25 @@
       margin-top: 0px;
   }
 
+  .address-heading-text {
+      font-size: 20px;
+  }
+
   .blog-heading-div {
       flex-direction: column-reverse;
       margin-top: 60px;
   }
 
+  .address-heading-div {
+      flex-direction: column;
+      margin-top: 60px;
+  }
+
   .blog-heading-text-div {
+      margin-top: 40px;
+  }
+
+  .address-heading-text-div {
       margin-top: 40px;
   }
 

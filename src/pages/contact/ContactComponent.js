@@ -13,10 +13,23 @@ const blogSection = {
 
 	title: "Blogs",
 	subtitle:
-		"With love for individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
+		"For individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
 	link: "https://ashutoshhathidara.wordpress.com",
 	avatar_image_path: "blogs_image.svg"
 };
+
+const addressSection = {
+	title: "Address",
+	subtitle:
+		"Ambavadi vas, Kanodar, T.A.-Palanpur, Dist.-Banaskantha, Gujarat - 385520",
+	avatar_image_path: "address_image.svg",
+	location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76"
+};
+
+const phoneSection = {
+    title: "Phone Number",
+    subtitle: "+91 8320758513"
+}
 
 const ContactData = {
 	title: "Contact Me",
@@ -47,7 +60,7 @@ class Contact extends Component {
 										<SocialMedia />
 										<div className="resume-btn-div">
 											<Button
-												text="See my resume"
+												text="See My Resume"
 												newTab={true}
 												href={greeting.resumeLink}
 											/>
@@ -76,6 +89,36 @@ class Contact extends Component {
 										<img
 											src={require(`../../assests/images/${blogSection["avatar_image_path"]}`)}
 										/>
+									</div>
+								</div>
+							</Fade>
+							<Fade bottom duration={1000} distance="40px">
+								<div className="address-heading-div">
+									<div className="contact-heading-img-div">
+										<img
+											src={require(`../../assests/images/${addressSection["avatar_image_path"]}`)}
+										/>
+									</div>
+									<div className="address-heading-text-div">
+										<h1 className="address-heading-text">
+											{addressSection["title"]}
+										</h1>
+										<p className="contact-header-detail-text subTitle">
+											{addressSection["subtitle"]}
+										</p>
+										<h1 className="address-heading-text">
+											{phoneSection["title"]}
+										</h1>
+										<p className="contact-header-detail-text subTitle">
+											{phoneSection["subtitle"]}
+										</p>
+										<div className="address-btn-div">
+											<Button
+												text="Visit on Google Maps"
+												newTab={true}
+												href={addressSection.location_map_link}
+											/>
+										</div>
 									</div>
 								</div>
 							</Fade>
