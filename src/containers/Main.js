@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
-import Projects from "./projects/Projects";
+// import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
@@ -17,6 +17,7 @@ import Education from "../pages/education/EducationComponent";
 import Experience from "../pages/experience/Experience";
 import Opensource from "../pages/opensource/Opensource";
 import Contact from '../pages/contact/ContactComponent';
+import Projects from '../pages/projects/Projects';
 
 export default class Main extends Component {
 	render() {
@@ -32,6 +33,7 @@ export default class Main extends Component {
 						<Route path="/opensource" component={Opensource} />
 						<Route path="/contact" component={Contact} />
 						<Route path="/splash" component={Splash} />
+						<Route path="/projects" component={Projects} />
 					</Switch>
 				</HashRouter>
 			</div>

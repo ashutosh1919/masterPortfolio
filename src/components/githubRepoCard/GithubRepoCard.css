@@ -52,6 +52,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   color: rgb(36, 41, 46);
+  font-family: "Google Sans Regular";
   margin-bottom: 0.75rem;
   font-size: 25px;
   font-weight: 700;
@@ -66,7 +67,45 @@
 
 .repo-description {
   overflow: hidden;
+  text-align: left;
   display: -webkit-box;
+  font-family: "Google Sans Regular";
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+
+.repo-details {
+  display:flex;
+  flex-direction: row;
+}
+
+.repo-creation-date {
+  margin: 0;
+  font-family: "Google Sans Regular";
+  font-weight: 400;
+  margin-left: 0px;
+  margin-right: auto;
+}
+
+.repo-languages {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+@media (max-width: 768px) {
+  .repo-name {
+    font-size: 16px;
+  }
+
+  .repo-description {
+    font-size: 14px;
+  }
+
+  .repo-details {
+    flex-direction: column;
+  }
+
+  .repo-creation-date {
+    font-size: 14px;
+  }
 }
