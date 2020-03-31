@@ -113,7 +113,7 @@ const experience = {
 					duration: "Jan 2018 - PRESENT",
 					location: "Kurnool, Andhra Pradesh",
 					description:
-						"We have well established developer club in college which is directly associated with Google Developers. We have developed many inter-desciplinary projects under the membership of this club. We have organised workshops and activities on Android Application Development, Flutter and React JS.",
+						"We have well established developer club in college which is directly associated with Google Developers. We have developed many interdisciplinary projects under the membership of this club. We have organised workshops and activities on Android Application Development, Flutter and React JS.",
 					color: "#0C9D58"
 				},
 				{
@@ -124,7 +124,7 @@ const experience = {
 					duration: "July 2019 - PRESENT",
 					location: "Work From Home",
 					description:
-						"I am actively contrinbuting to many opensource projects. I have contributed to projects of organisations like Tensorflow, Uber, Facebook, Google, Scikit-learn, Kiwix, Sympy, Python, NVLabs, Fossasia, Netrack, Keras etc. These contributions include bug fixes, feature requests and formulating peoper documentation for project.",
+						"I am actively contributing to many opensource projects. I have contributed to projects of organisations like Tensorflow, Uber, Facebook, Google, Scikit-learn, Kiwix, Sympy, Python, NVLabs, Fossasia, Netrack, Keras etc. These contributions include bug fixes, feature requests and formulating peoper documentation for project.",
 					color: "#181717"
 				}
 			]
