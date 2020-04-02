@@ -83,4 +83,4 @@ If you can help us with these. Please don't hesitate to open an [pull request](h
 
 ## References  
 
-Some Design and Implementation Ideas are tajen from [Saad Pasta's Portfolio Project](https://github.com/saadpasta/developerFolio).
+Some Design and Implementation Ideas are taken from [Saad Pasta's Portfolio Project](https://github.com/saadpasta/developerFolio).
