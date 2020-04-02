@@ -5,7 +5,7 @@
 
 <p align="center"> 
   <kbd>
-<img src="images/masterPortfolio.gif"></img>
+<img src="images/front.PNG"></img>
   </kbd>
 </p>
 
