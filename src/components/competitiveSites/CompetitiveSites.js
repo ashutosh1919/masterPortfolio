@@ -20,7 +20,7 @@ class CompetitiveSites extends React.Component {
                                 }
                             >
                                 <li className="competitive-sites-inline" name={logo.siteName}>
-                                    <a href={logo.profileLink} target="_blank">
+                                    <a href={logo.profileLink} target="_blank" rel="noopener noreferrer">
                                         <span
                                             className="iconify"
                                             data-icon={logo.iconifyClassname}
