@@ -43,10 +43,11 @@ class PullRequestCard extends Component {
 									</Tooltip>
 								}
 							>
-								<a href={pullRequest["mergedBy"]["url"]} target="_blank">
+								<a href={pullRequest["mergedBy"]["url"]} target="_blank" rel="noopener noreferrer">
 									<img
 										className="merge-by-img"
 										src={pullRequest["mergedBy"]["avatarUrl"]}
+										alt=""
 									/>
 								</a>
 							</OverlayTrigger>
@@ -75,7 +76,7 @@ class PullRequestCard extends Component {
 							></span>
 							<div className="pr-title-header">
 								<p className="pr-title">
-									<a href={pullRequest["url"]} target="_blank">
+									<a href={pullRequest["url"]} target="_blank" rel="noopener noreferrer">
 										{pullRequest["title"]}
 									</a>
 								</p>
@@ -118,10 +119,12 @@ class PullRequestCard extends Component {
 						<a
 							href={pullRequest["baseRepository"]["owner"]["url"]}
 							target="_blank"
+							rel="noopener noreferrer"
 						>
 							<img
 								className="owner-img"
 								src={pullRequest["baseRepository"]["owner"]["avatarUrl"]}
+								alt=""
 							/>
 						</a>
 						</div>

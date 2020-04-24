@@ -42,10 +42,11 @@ class IssueCard extends Component {
 						</Tooltip>
 					}
 				>
-					<a href={issue["assignees"]["nodes"][0]["url"]} target="_blank">
+					<a href={issue["assignees"]["nodes"][0]["url"]} target="_blank" rel="noopener noreferrer">
 						<img
 							className="assigned-to-img"
 							src={issue["assignees"]["nodes"][0]["avatarUrl"]}
+							alt=""
 						/>
 					</a>
 				</OverlayTrigger>
@@ -73,7 +74,7 @@ class IssueCard extends Component {
 							></span>
 							<div className="issue-title-header">
 								<p className="issue-title">
-									<a href={issue["url"]} target="_blank">
+									<a href={issue["url"]} target="_blank" rel="noopener noreferrer">
 										{issue["title"]}
 									</a>
 								</p>
@@ -116,10 +117,12 @@ class IssueCard extends Component {
 							<a
 								href={issue["repository"]["owner"]["url"]}
 								target="_blank"
+								rel="noopener noreferrer"
 							>
 								<img
 									className="owner-img"
 									src={issue["repository"]["owner"]["avatarUrl"]}
+									alt=""
 								/>
 							</a>
 						</div>

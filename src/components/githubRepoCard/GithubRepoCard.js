@@ -18,12 +18,11 @@ export default function GithubRepoCard({ repo }) {
 				<div className="repo-name-div">
 					<svg
 						aria-hidden="true"
-						className="octicon"
+						className="octicon repo-svg"
 						height="16"
 						role="img"
 						viewBox="0 0 12 16"
 						width="12"
-						className="repo-svg"
 					>
 						<path
 							fill-rule="evenodd"

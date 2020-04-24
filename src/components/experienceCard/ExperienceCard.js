@@ -13,6 +13,7 @@ class ExperienceCard extends Component {
 							<img
 								className="experience-card-logo"
 								src={require(`../../assests/images/${experience["logo_path"]}`)}
+								alt=""
 							/>
 						</div>
 						<div className="experience-card-body-div">
@@ -20,7 +21,7 @@ class ExperienceCard extends Component {
 								<div className="experience-card-heading-left">
 									<h3 className="experience-card-title">{experience["title"]}</h3>
 									<p className="experience-card-company">
-                                        <a href={experience["company_url"]} target="_blank">
+                                        <a href={experience["company_url"]} target="_blank" rel="noopener noreferrer">
 										    {experience["company"]}
                                         </a>
 									</p>
