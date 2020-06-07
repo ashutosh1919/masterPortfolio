@@ -1,0 +1,4 @@
+Go to terminal
+1->npm install puppeteer
+
+2->npm install chromium-webdriver
