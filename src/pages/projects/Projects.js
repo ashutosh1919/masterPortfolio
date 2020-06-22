@@ -40,9 +40,11 @@ class Projects extends Component {
 							</Fade>
 						</div>
 						<div className="repo-cards-div-main">
-							{ProjectsData.data.map(repo => {
-								return <GithubRepoCard repo={repo} />;
-							})}
+							<Fade bottom duration={1000} distance="40px">
+								{ProjectsData.data.map(repo => {
+									return <GithubRepoCard repo={repo} />;
+								})}
+							</Fade>
 						</div>
 						<Button
 							text={"More Projects"}
