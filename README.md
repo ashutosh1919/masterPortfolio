@@ -2,6 +2,7 @@
 
 [![HitCount](http://hits.dwyl.com/ashutosh1919/masterPortfolio.svg)](http://hits.dwyl.com/ashutosh1919/masterPortfolio)
 
+[masterPortfolio] is being sponsored by the following tool; please help to support us by taking a look and signing up to a free trial
 
 ## A clean, beautiful and responsive portfolio template for Developers!
 
