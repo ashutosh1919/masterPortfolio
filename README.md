@@ -1,6 +1,6 @@
 <p align="center"> 
   <kbd>
-     <img src="images/MasterPortfolioLogo.png" align="center" height="120"></img>
+     <img src="images/MasterPortfolioLogo.png" align="center" height="200"></img>
   </kbd>
 </p>
 
