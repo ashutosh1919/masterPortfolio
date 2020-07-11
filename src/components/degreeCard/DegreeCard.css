@@ -8,13 +8,13 @@
 .card-title {
     font-family : "Google Sans Medium";
     font-size: 23px;
-    color: #000000;
+    /* color: #000000; */
 }
 
 .card-subtitle {
     font-family: "Google Sans Medium";
     font-size: 18px;
-    color: #000000;
+    /* color: #000000; */
     margin-top: 7px;
     margin-bottom: 5px;
 }
@@ -34,7 +34,7 @@
     max-width: inherit;
     display: flex;
     /* width: 100%; */
-    background-color:#6c63ff99;
+    /* background-color:#6c63ff99; */
     border-radius: 7px 7px 0px 0px;
     padding: 10px;
 }
@@ -50,7 +50,7 @@
 .duration {
     font-family: "Google Sans Regular";
     font-size: 16px;
-    color: #212121;
+    /* color: #212121; */
     padding-right:10px;
     float: right;
 }
@@ -83,7 +83,7 @@
 }
 
 .visit-btn{
-    background-color: #6c63ff99;
+    /* background-color: #6c63ff99; */
     display: inline-block;
     margin: 0px 10px 10px 0px;
     padding: 10px;
@@ -93,14 +93,14 @@
 }
 
 .visit-btn:hover {
-    background-color:#6c63ffcc;
+    /* background-color:#6c63ffcc; */
 }
 
 .btn {
     margin: 0px;
     padding: 0px;
     font-family: "Google Sans Regular";
-    color: #000000;
+    /* color: #000000; */
 }
 
 @media (max-width:1380px){

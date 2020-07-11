@@ -25,7 +25,7 @@
   text-align: center;
 }
 
-.projects-heading-img-div > img {
+.projects-heading-img-div > * {
   max-width: 100%;
   height: auto;
 }

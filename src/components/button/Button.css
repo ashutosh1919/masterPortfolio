@@ -16,10 +16,11 @@
   margin-top: 20px;
   font-size: 18px;
   cursor: pointer;
+  letter-spacing: 2px;
 }
 .main-button:hover {
-  background-color: #ffffff;
-  color: black;
+  /* background-color: #ffffff; */
+  /* color: black; */
   transition: ease-in 0.3s;
 }
 .project-button{

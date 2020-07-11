@@ -12,7 +12,7 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .grey-color {
   color: #868e96;
@@ -21,13 +21,13 @@
 .header li a {
   display: block;
   padding: 20px 20px;
-  color: black;
+  /* color: black; */
   text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  /* background-color: #A6E1FA; */
 }
 
 .header .logo {
@@ -42,7 +42,7 @@
   font-family: "Agustina Regular";
   font-weight: bold;
   padding: 0 10px;
-  color: #55198b;
+  /* color: #55198b; */
 }
 
 /* menu */

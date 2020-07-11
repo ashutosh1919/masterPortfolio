@@ -1,22 +1,21 @@
 /* Change this file to get your personal Porfolio */
 
-const theme = {
-  primaryTheme: "#6C63FF",
-  secondaryTheme: "#55198b",
-  easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
+// Website related settings
+const settings = {
+  isSplash: true,  // Change this to false if you don't want Splash screen.
 };
 
+
+//Home Page
 const greeting = {
-	/* Your Summary And Greeting Section */
-	//title: "Hi all 👋 I'm Saad",
 	title: "Ashutosh Hathidara",
+	logo_name: "AshutoshHathidara",
 	nickname: "layman_brother",
-	// subTitle:
-	//   "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks",
 	subTitle:
 		"A passionate individual who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
 	resumeLink:
-		"https://drive.google.com/open?id=1XYpYhLeqCdyx_q6l0bQoC7RgwQjAjXPf"
+		"https://drive.google.com/open?id=1XYpYhLeqCdyx_q6l0bQoC7RgwQjAjXPf",
+	portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
 };
 
 const socialMediaLinks = {
@@ -34,7 +33,7 @@ const skills = {
   data: [
     {
       title: "Data Science & AI",
-      imagePath: "data_science.svg",
+      fileName: "DataScienceImg",
       skills: [
         "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
         "⚡ Experience of working with Computer Vision and NLP projects",
@@ -75,7 +74,7 @@ const skills = {
     },
     {
       title: "Full Stack Development",
-      imagePath: "fullstack.svg",
+      fileName: "FullStackImg",
       skills: [
         "⚡ Building resposive website front end using React-Redux",
         "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
@@ -157,7 +156,7 @@ const skills = {
     },
     {
       title: "Cloud Infra-Architecture",
-      imagePath: "cloud_infrastructure.svg",
+      fileName: "CloudInfraImg",
       skills: [
         "⚡ Experience working on multiple cloud platforms",
         "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
@@ -225,7 +224,7 @@ const skills = {
     },
     {
       title: "UI/UX Design",
-      imagePath: "ui_ux_design.svg",
+      fileName: "DesignImg",
       skills: [
         "⚡ Designing highly attractive user interface for mobile and web applications",
         "⚡ Customizing logo designs and building logos from scratch",
@@ -265,6 +264,8 @@ const skills = {
   ]
 };
 
+
+// Education Page
 const competitiveSites = {
   competitiveSites: [
     {
@@ -441,155 +442,191 @@ const certifications = {
 	]
 };
 
-const openSource = {
-  /* Your Open Source Section to View Your Github Pinned Projects */
-  /* To know how to get github key look at readme.md */
 
-  githubConvertedToken: "Your Github Converted Token",
-  githubUserName: "Your Github Username"
+// Experience Page
+const experience = {
+	title: "Experience",
+	subtitle: "Work, Internship and Volunteership",
+	description:
+		"I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
+	header_image_path: "experience.svg",
+	sections: [
+		{
+			title: "Work",
+			experiences: [
+				{
+					title: "Associate AI Engineer",
+					company: "Legato Health Technology",
+					company_url: "https://legatohealthtech.com/",
+					logo_path: "legato_logo.png",
+					duration: "June 2020 - PRESENT",
+					location: "Hyderabad, Telangana",
+					description:
+						"I am working on automating healthcare products. The projects involve automation for process improvements and for significantly enhancing the profits. I am currently working on Cancer Survival and Reoccurence Prediction. Our goal is to make AI system which scales and removes doctor dependency as much as possible.",
+					color: "#0879bf",
+				},
+				{
+					title: "Android and ML Developer",
+					company: "Muffito Incorporation",
+					company_url: "https://www.linkedin.com/company/muffito-inc/about/",
+					logo_path: "muffito_logo.png",
+					duration: "May 2018 - Oct 2018",
+					location: "Pune, Maharashtra",
+					description:
+						"I have created complete Android Application for locating Pub, Bar and beverage shops around you. I have also worked on implementation of algorithms for Face Detection, Text extraction from Image. I was involved in a team for creating complete software architecure of mobile and web application as well as admin panel for company.",
+					color: "#9b1578",
+				},
+				{
+					title: "Android Developer",
+					company: "FreeCopy Pvt. Ltd.",
+					company_url: "https://www.linkedin.com/company/freecopy/about/",
+					logo_path: "freecopy_logo.png",
+					duration: "Nov 2017 - Dec 2017",
+					location: "Ahmedabad, Gujarat",
+					description:
+						"FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
+					color: "#fc1f20",
+				},
+			],
+		},
+		{
+			title: "Internships",
+			experiences: [
+				{
+					title: "Data Science Research Intern",
+					company: "Delhivery Pvt. Ltd.",
+					company_url: "https://www.delhivery.com/",
+					logo_path: "delhivery_logo.png",
+					duration: "May 2019 - Sept 2019",
+					location: "Gurgaon, Haryana",
+					description:
+						"I have worked on project of predicting freight rates based on previous data. There were two objectives: (1) To build a forecasting engine to predict daily freight rates. (2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations. I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
+					color: "#ee3c26",
+				},
+				{
+					title: "Data Science Intern",
+					company: "Intel Indexer LLC",
+					company_url:
+						"https://opencorporates.com/companies/us_dc/EXTUID_4170286",
+					logo_path: "intel_logo.jpg",
+					duration: "Nov 2018 - Dec 2018",
+					location: "Work From Home",
+					description:
+						"This is financial Solution Company. I have made Supervised Learning model for the company which can perform time series analysis on Stock price data for 32 companies. I have built LSTM Neural Networks Model and trained the data of 32 companies for last 2 years. This model is also used for forecasting.",
+					color: "#0071C5",
+				},
+			],
+		},
+		{
+			title: "Volunteerships",
+			experiences: [
+				{
+					title: "Google Explore ML Facilitator",
+					company: "Google",
+					company_url: "https://about.google/",
+					logo_path: "google_logo.png",
+					duration: "June 2019 - April 2020",
+					location: "Hyderabad, Telangana",
+					description:
+						"Explore Machine Learning (ML) is a Google-sponsored program for university students to get started with Machine Learning. The curriculum offers 3 tracks of ML Content (Beginner, Intermediate, Advanced) and relies on university student facilitators to train other students on campus and to build opensource projects under this program.",
+					color: "#4285F4",
+				},
+				{
+					title: "Microsoft Student Partner",
+					company: "Microsoft",
+					company_url: "https://www.microsoft.com/",
+					logo_path: "microsoft_logo.png",
+					duration: "Aug 2019 - May 2020",
+					location: "Hyderabad, Telangana",
+					description:
+						"Microsoft Student Partner is a program for university students to lead the awareness and use of Cloud especially Azure tools in the development of their projects and startups. Under this program, I have organised hands on workshops and seminars to teach Cloud Computing concepts to students.",
+					color: "#D83B01",
+				},
+				{
+					title: "Mozilla Campus Captain",
+					company: "Mozilla",
+					company_url: "https://www.mozilla.org/",
+					logo_path: "mozilla_logo.png",
+					duration: "Oct 2019 - May 2020",
+					location: "Kurnool, Andhra Pradesh",
+					description:
+						"My responsibility for this program was to create opensource environment in college and in the city. We have organised multiple hackathons on the problems collected by ordinary people from Kurnool city. We have build opensource community of our own college. The community is available at dsc_iiitdmk on github.",
+					color: "#000000",
+				},
+				{
+					title: "Developer Students Club Member",
+					company: "DSC IIITDM Kurnool",
+					company_url:
+						"https://www.linkedin.com/company/developer-students-club-iiitdm-kurnool",
+					logo_path: "dsc_logo.png",
+					duration: "Jan 2018 - May 2020",
+					location: "Kurnool, Andhra Pradesh",
+					description:
+						"We have well established developer club in college which is directly associated with Google Developers. We have developed many interdisciplinary projects under the membership of this club. We have organised workshops and activities on Android Application Development, Flutter and React JS.",
+					color: "#0C9D58",
+				},
+				{
+					title: "Developer Program Member",
+					company: "Github",
+					company_url: "https://github.com/",
+					logo_path: "github_logo.png",
+					duration: "July 2019 - PRESENT",
+					location: "Work From Home",
+					description:
+						"I am actively contributing to many opensource projects. I have contributed to projects of organisations like Tensorflow, Uber, Facebook, Google, Scikit-learn, Kiwix, Sympy, Python, NVLabs, Fossasia, Netrack, Keras etc. These contributions include bug fixes, feature requests and formulating peoper documentation for project.",
+					color: "#181717",
+				},
+			],
+		},
+	],
 };
 
-const bigProjects = {
-  /* Some Big Projects You have worked with your company */
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELP TO CREATE THEIR TECH",
-  projects: [
-    {
-      image: "https://drive.google.com/uc?id=1exWn9T6j8TsfDDHJnS3VR66eP6RiGAfY",
-      link: "http://saayahealth.com/"
-    },
-    {
-      image: "http://nextu.se/wp-content/themes/nextu/images/og_img.jpg",
-      link: "http://nextu.se/"
-    }
-  ]
+// Projects Page
+const projectsHeader = {
+	title: "Projects",
+	description:
+		"My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+	avatar_image_path: "projects_image.svg",
 };
 
-const achievementSection = {
-  /* Your Achievement Section Include Your Certification Talks and More */
 
-  title: "Achievements And Certifications 🏆 ",
-  subtitle:
-    "Achievements, Certifications Award Letters and Some Cool Stuff that i have done !",
-
-  achivementsCards: [
-    {
-      title: "Google Code-In Finalist",
-      description:
-        "First Pakistani to be selected as Google Google-in Finalist from 4000 students from 77 diffrent countries",
-      image:
-        "https://1.bp.blogspot.com/-Ig-v1tDXZt4/XDODmZvWp1I/AAAAAAAAB0A/KtbFdBPFVQw2O15FekkIR0Yg8MUp--rngCLcBGAs/s1600/GCI%2B-%2BVertical%2B-%2BGray%2BText%2B-%2BWhite%2BBG.png",
-      footerLink: [
-        {
-          name: "Certification",
-          url:
-            "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url:
-            "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url:
-            "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      description:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Google_Assistant_logo.svg/1200px-Google_Assistant_logo.svg.png",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url:
-            "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      description:
-        "Completed Certifcation from SMIT for PWA Web App Development",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu93Bd6LDbxPEOXr-hfLqLYzmHny8c0MJoI3exQP-lwpFLRT7g&s",
-      footerLink: [
-        { name: "Certification", url: "" },
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
-  ]
-};
-
-const blogSection = {
-  /* Blogs Section */
-
-  title: "Blogs",
-  subtitle:
-    "With love for individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
-  link: "https://ashutoshhathidara.wordpress.com",
-  avatar_image_path: "blogs_image.svg"
-
-  
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅",
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/",
-      image:
-        "https://scontent.fkhi6-1.fna.fbcdn.net/v/t1.0-9/76714032_1730516240415559_1293494289556307968_o.jpg?_nc_cat=103&_nc_ohc=s5f81rdZd6wAQmqUa52YQBA21MjVOy7e-HN9jI7MspRDC-v5ahEouyInQ&_nc_ht=scontent.fkhi6-1.fna&oh=c29141a9a0de7ff2011a8191f5475a78&oe=5E83127C"
-    }
-  ]
-};
-
-// Podcast Section
-const podcastSection = {
-  title: "Podcast 🎙️",
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ]
-};
-
-const contactInfo = {
-  title: "Contact Me ☎️",
-  subtitle: "Discuss a project or just want to say hi my inbox is open for all",
-  number: "+92-3243454077",
-  email_address: "saadpasta70@gmail.com"
+// Contact Page
+const contactPageData = {
+	contactSection: {
+		title: "Contact Me",
+		profile_image_path: "animated_ashutosh.png",
+		description:
+			"I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+	},
+	blogSection: {
+		title: "Blogs",
+		subtitle:
+			"For individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
+		link: "https://ashutoshhathidara.wordpress.com",
+		avatar_image_path: "blogs_image.svg",
+	},
+	addressSection: {
+		title: "Address",
+		subtitle:
+			"Ambavadi vas, Kanodar, T.A.-Palanpur, Dist.-Banaskantha, Gujarat - 385520",
+		avatar_image_path: "address_image.svg",
+		location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76",
+	},
+	phoneSection: {
+		title: "Phone Number",
+		subtitle: "+91 8320758513",
+	},
 };
 
 export {
-	theme,
+	settings,
 	greeting,
 	socialMediaLinks,
 	skills,
 	competitiveSites,
 	degrees,
 	certifications,
-	openSource,
-	bigProjects,
-	achievementSection,
-	blogSection,
-	talkSection,
-	podcastSection,
-	contactInfo
+	experience,
+	projectsHeader,
+	contactPageData,
 };

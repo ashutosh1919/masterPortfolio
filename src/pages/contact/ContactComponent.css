@@ -54,12 +54,12 @@
     text-align: center;
 }
 
-.contact-heading-img-div > img {
+.contact-heading-img-div > * {
   max-width: 100%;
   height: auto;
 }
 
-.blog-heading-img-div > img{
+.blog-heading-img-div > *{
     max-width: 100%;
     height: auto;
 }

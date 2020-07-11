@@ -5,6 +5,7 @@ import { Accordion, Panel } from "baseui/accordion";
 
 class ExperienceAccordion extends Component {
 	render() {
+		const theme = this.props.theme;
 		return (
 			<div className="experience-accord">
 				<Accordion onChange={({ expanded }) => console.log(expanded)}>
@@ -13,7 +14,7 @@ class ExperienceAccordion extends Component {
 							<Panel className="accord-panel" title={section["title"]} key={section["title"]}>
 								{section["experiences"].map((experience) => {
 									return (
-										<ExperienceCard experience={experience} />
+										<ExperienceCard experience={experience} theme={theme} />
 									);
 								})}
 							</Panel>

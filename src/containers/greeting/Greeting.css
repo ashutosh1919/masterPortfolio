@@ -50,7 +50,7 @@
   font-family: "Google Sans Medium";
 }
 
-.greeting-image-div > img {
+.greeting-image-div > * {
   max-width: 100%;
   height: auto;
 }
@@ -85,5 +85,11 @@
   }
   .greeting-main {
     display: block;
+  }
+  
+  .portfolio-repo-btn-div{
+    width:100%;
+    display: flex;
+    justify-content:center;
   }
 }

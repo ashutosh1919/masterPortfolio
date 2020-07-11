@@ -21,7 +21,7 @@ body {
 }
 
 .screen {
-  background-color: #55198b;
+  /* background-color: #55198b; */
   overflow: hidden;
   border-radius: 100%;
   animation: grow 5.5s forwards;

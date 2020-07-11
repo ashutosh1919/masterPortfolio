@@ -24,7 +24,7 @@
   text-align: center;
 }
 
-.heading-img-div > img {
+.heading-img-div > * {
   max-width: 100%;
   height: auto;
 }

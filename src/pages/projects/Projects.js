@@ -4,35 +4,33 @@ import Footer from '../../components/footer/Footer';
 import GithubRepoCard from '../../components/githubRepoCard/GithubRepoCard';
 import Button from "../../components/button/Button";
 import {Fade} from 'react-reveal';
+import {projectsHeader} from '../../portfolio.js';
 import ProjectsData from '../../shared/opensource/projects.json';
 import './Projects.css';
-
-const projectsHeader = {
-    title: "Projects",
-    description: "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
-    avatar_image_path: "projects_image.svg"
-}
+import ProjectsImg from './ProjectsImg';
 
 
 class Projects extends Component {
     render(){
+		const theme = this.props.theme;
         return (
 					<div className="projects-main">
-						<Header />
+						<Header theme={theme} />
 						<div className="basic-projects">
-							<Fade bottom duration={1000} distance="40px">
+							<Fade bottom duration={2000} distance="40px">
 								<div className="projects-heading-div">
 									<div className="projects-heading-img-div">
-										<img
+										{/* <img
 											src={require(`../../assests/images/${projectsHeader["avatar_image_path"]}`)}
 											alt=""
-										/>
+										/> */}
+										<ProjectsImg theme={theme} />
 									</div>
 									<div className="projects-heading-text-div">
-										<h1 className="projects-heading-text">
+										<h1 className="projects-heading-text" style={{ color: theme.text }}>
 											{projectsHeader.title}
 										</h1>
-										<p className="projects-header-detail-text subTitle">
+										<p className="projects-header-detail-text subTitle" style={{ color: theme.secondaryText }}>
 											{projectsHeader["description"]}
 										</p>
 									</div>
@@ -40,8 +38,8 @@ class Projects extends Component {
 							</Fade>
 						</div>
 						<div className="repo-cards-div-main">
-							{ProjectsData.data.map(repo => {
-								return <GithubRepoCard repo={repo} />;
+							{ProjectsData.data.map((repo) => {
+								return <GithubRepoCard repo={repo} theme={theme} />;
 							})}
 						</div>
 						<Button
@@ -49,8 +47,9 @@ class Projects extends Component {
 							className="project-button"
 							href="https://github.com/ashutosh1919"
 							newTab={true}
+							theme={theme}
 						/>
-						<Footer />
+						<Footer theme={this.props.theme} onToggle={this.props.onToggle} />
 					</div>
 				);
     }

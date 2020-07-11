@@ -24,7 +24,7 @@
   text-align: center;
 }
 
-.experience-heading-img-div > img {
+.experience-heading-img-div > * {
   max-width: 100%;
   height: auto;
 }
