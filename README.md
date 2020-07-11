@@ -1,27 +1,25 @@
+<p align="center"> 
+  <kbd>
+		<img src="images/MasterPortfolioLogo.png"></img>
+  </kbd>
+</p>
+
 # Software Developer Master Portfolio ⚡️  
+> A clean, beautiful and responsive portfolio template for Software Developers!
 
-[![HitCount](http://hits.dwyl.com/ashutosh1919/masterPortfolio.svg)](http://hits.dwyl.com/ashutosh1919/masterPortfolio)
+[![HitCount](http://hits.dwyl.com/ashutosh1919/masterPortfolio.svg)](http://hits.dwyl.com/ashutosh1919/masterPortfolio) [![NodeJS](https://img.shields.io/badge/node-12.14.1-important)](https://img.shields.io/badge/node-12.14.1-important) [![NPM](https://img.shields.io/badge/npm-6.13.7-blueviolet)](https://img.shields.io/badge/npm-6.13.7-blueviolet) [![Made With React](https://img.shields.io/badge/made%20with-react-61DAFB)](https://img.shields.io/badge/npm-6.13.7-blueviolet) [![Price](https://img.shields.io/badge/price-free-ff69b4)](https://img.shields.io/badge/price-free-ff69b4) [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/ashutosh1919/masterPortfolio/commits/master) [![Website shields.io](https://img.shields.io/badge/website-up-yellow)](http://ashutosh1919.github.io/) [![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/ashutosh-hathidara-88710b138/)
 
-
-## A clean, beautiful and responsive portfolio template for Developers!
 
 
 <p align="center"> 
   <kbd>
   	<a href="https://ashutosh1919.github.io" target="_blank">
-		<img src="images/front.PNG"></img>
+		<img src="images/masterPortfolioThemes.png"></img>
 	</a>
   </kbd>
 </p>
 
-
-If you want to **contribute** and make this much better for other developer have a look at [Issues](https://github.com/ashutosh1919/masterPortfolio/issues).
-
-
-If you created something awesome and want to contribute then feel free to open Please don't hesitate to open an [pull request](https://github.com/ashutosh1919/masterPortfolio/pulls).
-
-
-## Sections 
+# Sections 
 ✔️ Summary and About me\
 ✔️ Skills \
 ✔️ Open Source Projects Connected with Github\
@@ -33,7 +31,26 @@ If you created something awesome and want to contribute then feel free to open P
 
 To view a live example, **[click here](https://ashutosh1919.github.io/)**
 
-## Technologies used 🛠️
+# Customize it to make your own portfolio
+In this project, there are basically 3 things that you need to change to customize this to anyone else's portfolio: **Personal Information**, **Github Information** and **Splash Logo**.
+### Personal Information
+You will find `src/portfolio.js` file which contains the complete information about the user. The file looks something like below:
+```python
+// Home Page
+const greeting = {
+    ...
+}
+
+// Social Media
+const socialMediaLinks = {
+    ...
+}
+
+...
+```
+You can change the personal information, experience, education, social media, 
+
+# Technologies used 🛠️
 
 - [React](https://reactjs.org/)
 - [graphql](https://graphql.org/) 
