@@ -126,7 +126,7 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
 # License 📄
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
 
-# For the Future 💡
+# Contributing 💡
 If you can help us with these. Please don't hesitate to open an [pull request](https://github.com/ashutosh1919/masterPortfolio/pulls) or [issue](https://github.com/ashutosh1919/masterPortfolio/issues).
 - Move to Gatsby
 - Add Podcast Section and Video Section
