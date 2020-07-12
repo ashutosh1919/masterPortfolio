@@ -1,6 +1,6 @@
 <p align="center"> 
   <kbd>
-     <img src="images/MasterPortfolioLogo.png" align="center" height="200"></img>
+		<img src="images/MasterPortfolioLogo.png" align="center" height="150"></img>
   </kbd>
 </p>
 
@@ -19,6 +19,8 @@
   </kbd>
 </p>
 
+:star: Star us on GitHub — it helps!
+
 # Sections 
 ✔️ Summary and About me\
 ✔️ Skills \
@@ -30,6 +32,22 @@
 ✔️ Contact me
 
 To view a live example, **[click here](https://ashutosh1919.github.io/)**
+
+# Clone And Use
+- The website is completely built on `react-js` framework of `javascript` and that's why we need `nodejs` and `npm` installed.
+- While installing `nodejs` and `npm`, try to install versions which are equal or greater than the versions mentioned in badges above.
+- You can fork the repository just by clicking the button on the top-right corner of this page.
+- After the successful installation of `nodejs` and `npm`, clone the repository into your local system using below command:
+    - ```python
+       git clone https://github.com/ashutosh1919/masterPortfolio.git
+       ```
+    - This will clone the whole repository in your system.
+- To download required dependencies to your system, navigate to the directory where the cloned repository resides and execute following command:
+    - ```python
+      npm install
+      ```
+- Now, the project is ready to use. 
+- You can check it using `npm start`, it will open the website locally on your browser.
 
 # Customize it to make your own portfolio
 In this project, there are basically 3 things that you need to change to customize this to anyone else's portfolio: **Personal Information**, **Github Information** and **Splash Logo**.
@@ -48,8 +66,41 @@ const socialMediaLinks = {
 
 ...
 ```
-You can change the personal information, experience, education, social media, 
+You can change the personal information, experience, education, social media, certifications, blog information, contact information etc. in `src/portfolio.js` to directly reflect them in portfolio website. 
 
+### Github Information
+You will find `git_data_fetcher.js` file in the main directory of the repository. This file is used to fetch the data (Pull requests, Issues, Organizations, Pinned projects etc.) from your github.
+If you open the file, you will see below component at the top of the file. You need to change only that component.
+```python
+const openSource = {
+	githubConvertedToken: "Your Github Token Here.",
+	githubUserName: "Your Github Username Here.",
+};
+```
+You can get github token as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Give all permissions while generating token. Also add your github username.
+Now, you need to run following command.
+```python
+node git_data_fetcher.js
+```
+This will fetch all the data from your github and it will automatically replace my data with yours.
+Whenever you want to update the github related information on the website you need to run this command.
+
+# Splash Logo
+Note here that if you click [my portfolio](https://ashutosh1919.github.io), you can see animating the logo at the beginning. I have designed that logo in [`Figma`](https://www.figma.com/) and then animated it using css. 
+Therefore, this part of portfolio is not customizable. But don't worry we have a solution to this problem. You have below two alternatives: 
+- If you want to design your own logo, then you can design it using `Figma` or `Adobe XD` or `Adobe Illustrator` or `Inkscape`. If you want to animate it, you can refer to `./src/components/Loader` directory which contains `js` and `css` files which animates the logo.
+- If you don't want Splash screen or you don't know how to design logo, then this option is for you.
+  - You can open `src/portfolio.js` file and at the top of this file you will see `settings` component as below:
+  - ```python
+    // Website related settings
+    const settings = {
+      isSplash: true,
+    };
+    ```
+  - Change `isSplash` from `true` to `false`. 
+  - Now, if you see your website using `npm start`, it will directly open `home` rather than animating logo `splash` screen.
+  - If you design your logo in future, then edit the files in `./src/components/Loader` and then revert `isSplash` to `true` in `src/portfolio.js`.
+  
 # Technologies used 🛠️
 
 - [React](https://reactjs.org/)
