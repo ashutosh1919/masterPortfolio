@@ -5,8 +5,21 @@
   "imageSize": 100,
   "commit": false,
   "contributors": [
+    {
+      "login": "ashutosh1919",
+      "name": "Ashutosh Hathidara",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/20843596?s=460&u=7f184b911f73ae1dc5765ab686fff2b2e984830f&v=4",
+      "profile": "http://ashutosh1919.github.io",
+      "contributions": [
+        "code",
+        "doc",
+        "design",
+        "maintenance",
+        "ideas"
+      ]
+    }
   ],
-  "contributorsPerLine": 1,
+  "contributorsPerLine": 4,
   "projectName": "masterPortfolio",
   "projectOwner": "ashutosh1919",
   "repoType": "github",
