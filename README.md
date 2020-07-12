@@ -1,6 +1,6 @@
 <p align="center"> 
   <kbd>
-		<img src="images/MasterPortfolioLogo.png" align="center" height="150"></img>
+    <img src="images/MasterPortfolioLogo.png" align="center" height="150"></img>
   </kbd>
 </p>
 
@@ -13,9 +13,9 @@
 
 <p align="center"> 
   <kbd>
-  	<a href="https://ashutosh1919.github.io" target="_blank">
-		<img src="images/masterPortfolioThemes.png"></img>
-	</a>
+    <a href="https://ashutosh1919.github.io" target="_blank">
+    <img src="images/masterPortfolioThemes.png"></img>
+  </a>
   </kbd>
 </p>
 
@@ -73,8 +73,8 @@ You will find `git_data_fetcher.js` file in the main directory of the repository
 If you open the file, you will see below component at the top of the file. You need to change only that component.
 ```python
 const openSource = {
-	githubConvertedToken: "Your Github Token Here.",
-	githubUserName: "Your Github Username Here.",
+  githubConvertedToken: "Your Github Token Here.",
+  githubUserName: "Your Github Username Here.",
 };
 ```
 You can get github token as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Give all permissions while generating token. Also add your github username.
@@ -100,6 +100,14 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
   - Change `isSplash` from `true` to `false`. 
   - Now, if you see your website using `npm start`, it will directly open `home` rather than animating logo `splash` screen.
   - If you design your logo in future, then edit the files in `./src/components/Loader` and then revert `isSplash` to `true` in `src/portfolio.js`.
+  
+# Choose Theme 🌈
+- You can take a look at `src/theme.js` file where all available themes are mentioned with respective color codes.
+- At the bottom of this file you will see the below code: 
+  - ```export const chosenTheme = blueTheme;```
+  - You need to change the name from `blueTheme` to whatever theme you want to set your website to.
+  - You can define new theme similarly as other themes and you can assign name of that new defined theme to `chosenTheme`.
+- That's it. You just need to change the theme name and the code will take care of everything else.
   
 # Deployment 📦 
 - Once you have done with your setup and you have successfully completed all steps above, You need to put your website online!
@@ -139,9 +147,9 @@ If you can help us with these. Please don't hesitate to open an [pull request](h
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-	<tr>
-		    <td align="center"><a href="http://ashutosh1919.github.io"><img src="https://avatars3.githubusercontent.com/u/20843596?s=460&u=7f184b911f73ae1dc5765ab686fff2b2e984830f&v=4" width="100px;" alt=""/><br /><sub><b>Ashutosh Hathidara</b></sub></a><br /><a href="https://github.com/ashutosh1919/masterPortfolio/commits?author=ashutosh1919" title="Code">💻</a> <a href="https://github.com/ashutosh1919/masterPortfolio/commits?author=ashutosh1919" title="Documentation">📖</a> <a href="#design-ashutosh1919" title="Design">🎨</a> <a href="#maintenance-ashutosh1919" title="Maintenance">🚧</a> <a href="#ideas-ashutosh1919" title="Ideas, Planning, & Feedback">🤔</a></td>
-	</tr>
+  <tr>
+        <td align="center"><a href="http://ashutosh1919.github.io"><img src="https://avatars3.githubusercontent.com/u/20843596?s=460&u=7f184b911f73ae1dc5765ab686fff2b2e984830f&v=4" width="100px;" alt=""/><br /><sub><b>Ashutosh Hathidara</b></sub></a><br /><a href="https://github.com/ashutosh1919/masterPortfolio/commits?author=ashutosh1919" title="Code">💻</a> <a href="https://github.com/ashutosh1919/masterPortfolio/commits?author=ashutosh1919" title="Documentation">📖</a> <a href="#design-ashutosh1919" title="Design">🎨</a> <a href="#maintenance-ashutosh1919" title="Maintenance">🚧</a> <a href="#ideas-ashutosh1919" title="Ideas, Planning, & Feedback">🤔</a></td>
+  </tr>
 </table>
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
