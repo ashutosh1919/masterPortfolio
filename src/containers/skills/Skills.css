@@ -19,12 +19,12 @@
 }
 
 
-.skills-main-div > * {
+.skills-main-div>* {
   flex: 1;
   margin-bottom: 30px;
 }
 
-.skills-image-div > * {
+.skills-image-div>* {
   max-width: 100%;
   height: auto;
   margin-top: 100px;
@@ -33,6 +33,7 @@
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
+  line-height: 1em;
   font-family: "Google Sans Regular";
 }
 
@@ -41,44 +42,55 @@
   .skills-heading {
     font-size: 40px;
   }
+
   .skills-header {
     font-size: 50px;
   }
+
   /* .skills-image-div > img {
     margin-top: 0px;
   } */
 }
+
 @media (max-width: 768px) {
   .skills-heading {
     font-size: 30px;
     text-align: center;
   }
+
   .skills-header {
     font-size: 30px;
   }
+
   .greeting-text-p {
     font-size: 16px;
     line-height: normal;
   }
+
   .skills-main-div {
     flex-direction: column;
   }
+
   .skills-text-div {
     margin-left: 0px;
     margin: 20px;
   }
+
   .skills-text {
     font-size: 16px;
   }
+
   .skills-text-subtitle {
     font-size: 16px;
     text-align: center;
   }
+
   .skills-image-div {
     /* display: none; */
     order: 2;
   }
-  .skills-image-div > * {
+
+  .skills-image-div>* {
     margin-top: 0px;
   }
 }
