@@ -1,3 +1,6 @@
+masterPortfolio is being sponsored by the following tool. Please help to support us by taking a look and signing up to a free trial.
+<a href="https://tracking.gitads.io/?repo=masterPortfolio"><img src="https://images.gitads.io/masterPortfolio" alt="GitAds"/></a>
+
 <p align="center"> 
   <kbd>
     <img src="images/MasterPortfolioLogo.png" align="center" height="150"></img>
@@ -157,6 +160,3 @@ If you can help us with these. Please don't hesitate to open an [pull request](h
 
 # References 👏🏻
 Some Design and Implementation Ideas are taken from [Saad Pasta's Portfolio Project](https://github.com/saadpasta/developerFolio).
-
-# Sponsors 🚩
-<a href="https://tracking.gitads.io/?repo=masterPortfolio"><img src="https://images.gitads.io/masterPortfolio" alt="GitAds"/></a>
