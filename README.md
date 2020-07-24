@@ -40,7 +40,7 @@ To view a live example, **[click here](https://ashutosh1919.github.io/)**
 # Clone And Use 📋
 - The website is completely built on `react-js` framework of `javascript` and that's why we need `nodejs` and `npm` installed.
 - While installing `nodejs` and `npm`, try to install versions which are equal or greater than the versions mentioned in badges above.
-- You can fork the repository just by clicking the button on the top-right corner of this page.
+- In case you want to help developing it or simply saving it, you can fork the repository just by clicking the button on the top-right corner of this page.
 - After the successful installation of `nodejs` and `npm`, clone the repository into your local system using below command:
     - ```python
        git clone https://github.com/ashutosh1919/masterPortfolio.git
@@ -54,7 +54,11 @@ To view a live example, **[click here](https://ashutosh1919.github.io/)**
 - You can check it using `npm start`, it will open the website locally on your browser.
 
 # Customize it to make your own portfolio ✏️
-In this project, there are basically 3 things that you need to change to customize this to anyone else's portfolio: **Personal Information**, **Github Information** and **Splash Logo**.
+In this project, there are basically 4 things that you need to change to customize this to anyone else's portfolio: **package.json**, **Personal Information**, **Github Information** and **Splash Logo**.
+
+### package.json
+Open this file, which is in the main cloned directory, choose any "name" and change "homepage " to `https://<your-github-username>.github.io`. Do not forget the `https://`, otherwise fonts will not load.
+
 ### Personal Information
 You will find `src/portfolio.js` file which contains the complete information about the user. The file looks something like below:
 ```python
@@ -81,7 +85,7 @@ const openSource = {
   githubUserName: "Your Github Username Here.",
 };
 ```
-You can get github token as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Give all permissions while generating token. Also add your github username.
+You can get a github token as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Give all permissions while generating token. Also add your `githubUserName` in the correct field inside `git_data_fetcher.js`.
 Now, you need to run following command.
 ```python
 node git_data_fetcher.js
@@ -113,16 +117,24 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
   - You can define new theme similarly as other themes and you can assign name of that new defined theme to `chosenTheme`.
 - That's it. You just need to change the theme name and the code will take care of everything else.
   
+  Run `npm start` to check if everything is ok.
+  
 # Deployment 📦 
-- Once you have done with your setup and you have successfully completed all steps above, You need to put your website online!
-- I highly recommend to use [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) to achieve this on the EASIEST WAY.
-- To deploy your website, first you need to create github repository with name `<your-github-username>.github.io`. Please don't give any other name.
-- Push the generated code to the `master` branch of this repository.
-- Now, we need to generate production build and deploy website.
-  - ```npm run build``` command will generate the production build.
-  - ```npm run deploy``` will create another branch called `gh-pages` and it will push the `build` files to that branch.
-- The last step in deploying is to enable `Github Pages` in settings of the repository and select `gh-pages` branch.
-- Now, your website is successfully deployed and you can visit it at `<your-github-username>.github.io`.
+- Once you are done with your setup and have successfully completed all steps above, you need to put your website online!
+- I highly recommend using [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) to achieve this the EASIEST WAY.
+- To deploy your website, you have two options. First you need to create a github repository with the name `<your-github-username>.github.io`. Please don't give it any other name.
+- Now, you need to generate a production build and deploy the website.
+
+Option 1:
+  - Run ```npm run build``` to generate the production build folder.
+  - Enter the build folder, `git init` and push the generated code to the `master` branch of your new repository. That's it. Done. 
+   You may need to `git init` and force push at every new build.
+   
+Option 2 (will not work with [user pages](https://docs.github.com/en/github/working-with-github-pages/about-github-pages)):
+  - Run ```npm run deploy``` to build and create a branch called `gh-pages`. It will push the `build` files to that branch.
+  - The last step in deploying is to enable `Github Pages` in settings of the repository and select `gh-pages` branch.
+
+Now, your website is successfully deployed and you can visit it at `<your-github-username>.github.io`.
   
 # Technologies used 🛠️
 - [React](https://reactjs.org/)
