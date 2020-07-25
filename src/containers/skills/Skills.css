@@ -18,7 +18,6 @@
   font-family: "Google Sans Regular";
 }
 
-
 .skills-main-div > * {
   flex: 1;
   margin-bottom: 30px;
@@ -31,7 +30,7 @@
 }
 
 .skills-heading {
-  font-size: 56px;
+  font-size: 52px;
   font-weight: 400;
   font-family: "Google Sans Regular";
 }
