@@ -1,0 +1,33 @@
+name: Deploy Preview (Netlify)
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Install
+        run: |
+          npm ci
+      - name: Build
+        run: |
+          npm run build
+      - name: Waiting for 200 from the Netlify Preview
+        uses: kamranayub/wait-for-netlify-action@2.0.0
+        id: wait-for-netflify-preview
+        with:
+          site_name: "masterPortfolio"
+        env:
+          NETLIFY_TOKEN: ${{secrets.NETLIFY_TOKEN}}
+      - name: Deploy Preview CI
+        run: |
+          npm install -g @lhci/cli@0.3.x
+          lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.wait-for-netflify-preview.outputs.url }} || echo "LHCI failed!"
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
