@@ -22,7 +22,7 @@ jobs:
         uses: kamranayub/wait-for-netlify-action@2.0.0
         id: wait-for-netflify-preview
         with:
-          site_name: "masterPortfolio"
+          site_name: "https://ashutosh1919portfolio.netlify.app"
         env:
           NETLIFY_TOKEN: ${{secrets.NETLIFY_TOKEN}}
       - name: Deploy Preview CI
