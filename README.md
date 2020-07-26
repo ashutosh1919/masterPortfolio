@@ -125,7 +125,7 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
 - To deploy your website, you have two options. First you need to create a github repository with the name `<your-github-username>.github.io`. Please don't give it any other name.
 - Now, you need to generate a production build and deploy the website.
 
-Option 1:
+**Option 1:**
   - Run ```npm run build``` to generate the production build folder.
   - Enter the build folder, `git init` and push the generated code to the `master` branch of your new repository. That's it. Done. 
    You may need to `git init` and force push at every new build.
