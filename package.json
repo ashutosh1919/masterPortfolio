@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "masterPortfolio",
-  "homepage": "https://ashutosh1919.github.io/masterPortfolio/",
+  "homepage": ".",
   "version": "0.1.0",
   "scripts": {
     "build": "react-scripts build",
