@@ -17,6 +17,15 @@
         "maintenance",
         "ideas"
       ]
+    },
+    {
+      "login": "danielmarostica",
+      "name": "Daniel Marostica",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3595998?v=4",
+      "profile": "https://danielmarostica.github.io/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 4,
