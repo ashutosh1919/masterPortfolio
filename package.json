@@ -52,6 +52,17 @@
   },
   "devDependencies": {
     "@iconify/icons-logos": "^1.0.9",
-    "@iconify/react": "^1.1.1"
+    "@iconify/react": "^1.1.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
