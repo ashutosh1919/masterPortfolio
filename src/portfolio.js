@@ -3,13 +3,14 @@
 // Website related settings
 const settings = {
   isSplash: true, // Change this to false if you don't want Splash screen.
+  isNickName: false, // Change this to false if you don't want' NickName to be displayed
 };
 
 //Home Page
 const greeting = {
   title: "Ashutosh Hathidara",
   logo_name: "AshutoshHathidara",
-  nickname: "layman_brother", //optional, leave it as an empty string if you dont want to provide nickname
+  nickname: "layman_brother",
   subTitle:
     "A passionate individual who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
