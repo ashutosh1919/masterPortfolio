@@ -3,7 +3,7 @@
 // Website related settings
 const settings = {
   isSplash: true, // Change this to false if you don't want Splash screen.
-  isNickName: false, // Change this to false if you don't want' NickName to be displayed
+  isNickName: false, // Change this to false if you don't want NickName to be displayed
 };
 
 //Home Page
