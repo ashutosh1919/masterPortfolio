@@ -31,7 +31,7 @@
 
 <p align="center"> 
   <kbd>
-    <a href="https://ashutosh1919.github.io" target="_blank">
+    <a href="https://Bhuvan-Arora.github.io" target="_blank">
     <img src="images/masterPortfolioThemes.png"></img>
   </a>
   </kbd>
@@ -49,7 +49,7 @@
 ✔️ Education\
 ✔️ Contact me
 
-To view a live example, **[click here](https://ashutosh1919.github.io/)**
+To view a live example, **[click here](https://Bhuvan-Arora.github.io/)**
 
 # Clone And Use 📋
 - The website is completely built on `react-js` framework of `javascript` and that's why we need `nodejs` and `npm` installed.
