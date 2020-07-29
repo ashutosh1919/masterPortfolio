@@ -1,25 +1,31 @@
 .dev-icons-orgs {
-  padding-left: 0;
-  list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  text-align: center;
+    padding-left: 0;
+    list-style: none;
+    font-size: 3rem;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
 }
 
-.organizations-img{
+.organizations-img {
     width: 100px;
     height: auto;
+    border-radius: 5px;
 }
 
 .organizations-inline {
-  display: inline-block;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  /* border: 1px solid #000000; */
-  font-family: "Google Sans Regular";
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    /* border: 1px solid #000000; */
+    font-family: "Google Sans Regular";
+    transition: transform .25s ease-out,
+        -webkit-transform .25s ease-out,
+        -moz-transform .25s ease-out,
+        -o-transform .25s ease-out,
+        -ms-transform .25s ease-out;
 }
 
 .organizations-inline:hover {
@@ -30,21 +36,42 @@
     transform: translate(0px, -5px)
 }
 
+.tooltip-container {
 
-@media (max-width:1380px){
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #2c2c2c;
+    border-color: transparent;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-@media (max-width:768px){
-    .organizations-img{
+.tooltip-container::before {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #2c2c2c;
+}
+
+@media (max-width:1380px) {}
+
+@media (max-width:768px) {
+    .organizations-img {
         width: 60px;
     }
-    
-    .dev-icons-orgs{
+
+    .dev-icons-orgs {
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    .organizations-inline{
+    .organizations-inline {
         margin-right: 30px;
         margin-bottom: 30px;
     }
