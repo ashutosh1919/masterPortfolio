@@ -18,16 +18,47 @@ const greeting = {
 	portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
 };
 
-const socialMediaLinks = {
+const socialMediaLinks = [
 	/* Your Social Media Link */
-	github: "https://github.com/ashutosh1919",
-	linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-	gmail: "ashutoshhathidara98@gmail.com",
-	gitlab: "https://gitlab.com/ashutoshhathidara98",
-	facebook: "https://www.facebook.com/laymanbrother.19/",
-	twitter: "https://twitter.com/ashutosh_1919",
-	instagram: "https://www.instagram.com/layman_brother/"
-};
+	// github: "https://github.com/ashutosh1919",
+	// linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
+	// gmail: "ashutoshhathidara98@gmail.com",
+	// gitlab: "https://gitlab.com/ashutoshhathidara98",
+	// facebook: "https://www.facebook.com/laymanbrother.19/",
+	// twitter: "https://twitter.com/ashutosh_1919",
+	// instagram: "https://www.instagram.com/layman_brother/"
+  
+	{
+	  name: "Github",
+	  link: "https://github.com/ashutosh1919",
+	  className: "github",
+	  iconName: "fa-github",
+	},
+	{
+	  name: "LinkedIn",
+	  link: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
+	  className: "linkedin",
+	  iconName: "fa-linkedin-in",
+	},
+	{
+	  name: "Gmail",
+	  link: "mailto:ashutoshhathidara98@gmail.com",
+	  className: "google",
+	  iconName: "fa-google",
+	},
+	{
+	  name: "Twitter",
+	  link: "https://twitter.com/ashutosh_1919",
+	  className: "twitter",
+	  iconName: "fa-twitter",
+	},
+	{
+	  name: "Facebook",
+	  link: "https://www.facebook.com/laymanbrother.19/",
+	  className: "facebook",
+	  iconName: "fa-facebook-f",
+	},
+  ];
 
 const skills = {
   data: [
