@@ -3,7 +3,7 @@
 <a href="https://tracking.gitads.io/?repo=masterPortfolio"><img src="https://images.gitads.io/masterPortfolio" alt="GitAds"/></a>
 
 <p align="center"> 
-    <img src="images/masterportfolio-banner-dark.png" align="center" height="170"></img>
+    <img src="images/masterportfolio-banner-light.png" align="center" height="150"></img>
 </p>
 
 <h1 align="center"> Software Developer Master Portfolio 🔥 </h1> 
