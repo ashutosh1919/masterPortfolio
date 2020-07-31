@@ -176,6 +176,7 @@ export default class Main extends Component {
 							)}
 						/>
 					</Switch>
+					<Top />
 				</HashRouter>
 				</div>
 			);
