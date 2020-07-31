@@ -58,6 +58,12 @@ const socialMediaLinks = [
 		className: "facebook",
 		fontAwesomeIcon: "fa-facebook-f", //For more details check out the FontAwesome icons list
 	  },
+	  {
+		name: "Instagram",
+		link: "https://www.instagram.com/layman_brother/",
+		className: "instagram",
+		fontAwesomeIcon: "fa-instagram", //For more details check out the FontAwesome icons list
+	  },
   ];
 
 const skills = {
