@@ -4,7 +4,7 @@
 
 <p align="center"> 
   <kbd>
-    <img src="images/masterportfolio-banner-light" align="center" height="150"></img>
+    <img src="images/masterportfolio-banner-light.png" align="center" height="150"></img>
   </kbd>
 </p>
 
