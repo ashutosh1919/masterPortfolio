@@ -13,7 +13,7 @@ export default function socialMedia() {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<i className={`fab ${media.iconName}`}></i>
+						<i className={`fab ${media.fontAwesomeIcon}`}></i>
 						<span></span>
 					</a>
 				);
