@@ -4,7 +4,7 @@
 
 <p align="center"> 
   <kbd>
-    <img src="images/masterportfolio-banner-light.png" align="center" height="150"></img>
+    <img src="https://user-images.githubusercontent.com/20843596/89031990-431ce400-d351-11ea-8e93-ae57a6f5b8d6.png" align="center" height="150"></img>
   </kbd>
 </p>
 
