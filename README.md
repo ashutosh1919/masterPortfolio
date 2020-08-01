@@ -27,11 +27,9 @@
 </p>
 
 <p align="center"> 
-  <kbd>
     <a href="https://ashutosh1919.github.io" target="_blank">
     <img src="images/masterPortfolioThemes.png"></img>
   </a>
-  </kbd>
 </p>
 
 :star: Star us on GitHub — it helps!
