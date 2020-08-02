@@ -18,16 +18,53 @@ const greeting = {
 	portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
 };
 
-const socialMediaLinks = {
+const socialMediaLinks = [
 	/* Your Social Media Link */
-	github: "https://github.com/ashutosh1919",
-	linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-	gmail: "ashutoshhathidara98@gmail.com",
-	gitlab: "https://gitlab.com/ashutoshhathidara98",
-	facebook: "https://www.facebook.com/laymanbrother.19/",
-	twitter: "https://twitter.com/ashutosh_1919",
-	instagram: "https://www.instagram.com/layman_brother/"
-};
+	// github: "https://github.com/ashutosh1919",
+	// linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
+	// gmail: "ashutoshhathidara98@gmail.com",
+	// gitlab: "https://gitlab.com/ashutoshhathidara98",
+	// facebook: "https://www.facebook.com/laymanbrother.19/",
+	// twitter: "https://twitter.com/ashutosh_1919",
+	// instagram: "https://www.instagram.com/layman_brother/"
+  
+	{
+		name: "Github",
+		link: "https://github.com/ashutosh1919",
+		className: "github",
+		fontAwesomeIcon: "fa-github", //For more details check out the FontAwesome icons list
+	  },
+	  {
+		name: "LinkedIn",
+		link: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
+		className: "linkedin",
+		fontAwesomeIcon: "fa-linkedin-in", //For more details check out the FontAwesome icons list
+	  },
+	  {
+		name: "Gmail",
+		link: "mailto:ashutoshhathidara98@gmail.com",
+		className: "google",
+		fontAwesomeIcon: "fa-google", //For more details check out the FontAwesome icons list
+	  },
+	  {
+		name: "Twitter",
+		link: "https://twitter.com/ashutosh_1919",
+		className: "twitter",
+		fontAwesomeIcon: "fa-twitter", //For more details check out the FontAwesome icons list
+	  },
+	  {
+		name: "Facebook",
+		link: "https://www.facebook.com/laymanbrother.19/",
+		className: "facebook",
+		fontAwesomeIcon: "fa-facebook-f", //For more details check out the FontAwesome icons list
+	  },
+	  {
+		name: "Instagram",
+		link: "https://www.instagram.com/layman_brother/",
+		className: "instagram",
+		fontAwesomeIcon: "fa-instagram", //For more details check out the FontAwesome icons list
+	  },
+  ];
 
 const skills = {
   data: [
