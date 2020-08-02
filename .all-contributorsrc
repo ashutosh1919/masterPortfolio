@@ -26,6 +26,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "dineshnadimpalli",
+      "name": "Dinesh Nadimpalli",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13104926?v=4",
+      "profile": "https://dineshnadimpalli.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 4,
