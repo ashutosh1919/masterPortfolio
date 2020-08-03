@@ -47,7 +47,12 @@ export default function TopButton({ theme }) {
       onMouseEnter={(event) => onMouseEnter(event, theme.text, theme.body)}
       onMouseLeave={(event) => onMouseLeave(event, theme.body, theme.text)}
     >
-      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+      <i
+        class="fas fa-arrow-up"
+        aria-hidden="true"
+        onMouseEnter={(event) => onMouseEnter(event, theme.text, theme.body)}
+        onMouseLeave={(event) => onMouseLeave(event, theme.body, theme.text)}
+      ></i>
     </button>
   );
 }
