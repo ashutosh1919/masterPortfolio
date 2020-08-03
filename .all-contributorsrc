@@ -44,6 +44,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "mrjatinchauhan",
+      "name": "Jatin Chauhan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/40722235?v=4",
+      "profile": "http://jatinchauhan.tech",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 4,
