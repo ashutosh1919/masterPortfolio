@@ -1,5 +1,5 @@
 .os-charts-header {
-    font-size: 40px;
+  font-size: 40px;
   line-height: 1.1;
   font-family: "Google Sans Regular";
   text-align: center;
@@ -8,29 +8,29 @@
 }
 
 .os-charts-body-div {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    /* table-layout: fixed; */
-    width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  /* table-layout: fixed; */
+  width: 100%;
 }
 /* 
 .tb-item {
     display: table-cell;
 } */
 
-@media (max-width:1380px){
-    .os-charts-header{
-        font-size: 35px;
-    }
+@media (max-width: 1380px) {
+  .os-charts-header {
+    font-size: 35px;
+  }
 }
 
-@media (max-width:768px){
-    .os-charts-header{
-        font-size: 25px;
-    }
+@media (max-width: 768px) {
+  .os-charts-header {
+    font-size: 25px;
+  }
 
-    .os-charts-body-div {
-        flex-direction: column;
-    }
+  .os-charts-body-div {
+    flex-direction: column;
+  }
 }

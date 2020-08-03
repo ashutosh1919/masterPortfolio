@@ -5,15 +5,14 @@
   text-align: center;
 }
 
-
-@media (max-width:1380px){
-    .educations-header{
-        font-size: 35px;
-    }
+@media (max-width: 1380px) {
+  .educations-header {
+    font-size: 35px;
+  }
 }
 
-@media (max-width:768px){
-    .educations-header{
-        font-size: 30px;
-    }
+@media (max-width: 768px) {
+  .educations-header {
+    font-size: 30px;
+  }
 }
