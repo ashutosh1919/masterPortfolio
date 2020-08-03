@@ -22,20 +22,32 @@ export default function TopButton({ theme }) {
     scrollFunction();
   };
 
-  const onMouseEnter = (event, color, bgColor) => {
-    const el = event.target;
-    el.style.color = color;
-    el.style.backgroundColor = bgColor;
+  const onMouseEnter = (color, bgColor) => {
+    /* For the button */
+    const topButton = document.getElementById("topButton");
+    topButton.style.color = color;
+    topButton.style.backgroundColor = bgColor;
+
+    /* For arrow icon */
+    const arrow = document.getElementById("arrow");
+    arrow.style.color = color;
+    arrow.style.backgroundColor = bgColor;
   };
 
-  const onMouseLeave = (event, color, bgColor) => {
-    const el = event.target;
-    el.style.color = color;
-    el.style.backgroundColor = bgColor;
+  const onMouseLeave = (color, bgColor) => {
+    /* For the button */
+    const topButton = document.getElementById("topButton");
+    topButton.style.color = color;
+    topButton.style.backgroundColor = bgColor;
+
+    /* For arrow icon */
+    const arrow = document.getElementById("arrow");
+    arrow.style.color = color;
+    arrow.style.backgroundColor = bgColor;
   };
 
   return (
-    <button
+    <div
       onClick={GoUpEvent}
       id="topButton"
       style={{
@@ -44,15 +56,10 @@ export default function TopButton({ theme }) {
         border: `solid 1px ${theme.text}`,
       }}
       title="Go up"
-      onMouseEnter={(event) => onMouseEnter(event, theme.text, theme.body)}
-      onMouseLeave={(event) => onMouseLeave(event, theme.body, theme.text)}
+      onMouseEnter={() => onMouseEnter(theme.text, theme.body)}
+      onMouseLeave={() => onMouseLeave(theme.body, theme.text)}
     >
-      <i
-        class="fas fa-arrow-up"
-        aria-hidden="true"
-        onMouseEnter={(event) => onMouseEnter(event, theme.text, theme.body)}
-        onMouseLeave={(event) => onMouseLeave(event, theme.body, theme.text)}
-      ></i>
-    </button>
+      <i class="fas fa-arrow-up" id="arrow" aria-hidden="true" />
+    </div>
   );
 }
