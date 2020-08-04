@@ -35,9 +35,27 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "jivthesh",
+      "name": "Jivthesh M R",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/20579980?v=4",
+      "profile": "http://jivthesh.github.io",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "mrjatinchauhan",
+      "name": "Jatin Chauhan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/40722235?v=4",
+      "profile": "http://jatinchauhan.tech",
+      "contributions": [
+        "code"
+      ]
     }
   ],
-  "contributorsPerLine": 4,
+  "contributorsPerLine": 7,
   "projectName": "masterPortfolio",
   "projectOwner": "ashutosh1919",
   "repoType": "github",
