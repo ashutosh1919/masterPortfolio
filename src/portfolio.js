@@ -31,39 +31,39 @@ const socialMediaLinks = [
 	{
 		name: "Github",
 		link: "https://github.com/ashutosh1919",
-		className: "github",
 		fontAwesomeIcon: "fa-github", //For more details check out the FontAwesome icons list
-	  },
-	  {
+		backgroundColor: '#333'
+	},
+	{
 		name: "LinkedIn",
 		link: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-		className: "linkedin",
 		fontAwesomeIcon: "fa-linkedin-in", //For more details check out the FontAwesome icons list
-	  },
-	  {
+		backgroundColor: '#0e76a8'
+	},
+	{
 		name: "Gmail",
 		link: "mailto:ashutoshhathidara98@gmail.com",
-		className: "google",
 		fontAwesomeIcon: "fa-google", //For more details check out the FontAwesome icons list
-	  },
-	  {
+		backgroundColor: '#ea4335'
+	},
+	{
 		name: "Twitter",
 		link: "https://twitter.com/ashutosh_1919",
-		className: "twitter",
 		fontAwesomeIcon: "fa-twitter", //For more details check out the FontAwesome icons list
-	  },
-	  {
+		backgroundColor: '#1da1f2'
+	},
+	{
 		name: "Facebook",
 		link: "https://www.facebook.com/laymanbrother.19/",
-		className: "facebook",
 		fontAwesomeIcon: "fa-facebook-f", //For more details check out the FontAwesome icons list
-	  },
-	  {
+		backgroundColor: '#3b5998'
+	},
+	{
 		name: "Instagram",
 		link: "https://www.instagram.com/layman_brother/",
-		className: "instagram",
 		fontAwesomeIcon: "fa-instagram", //For more details check out the FontAwesome icons list
-	  },
+		backgroundColor: '#E4405F'
+	},
   ];
 
 const skills = {

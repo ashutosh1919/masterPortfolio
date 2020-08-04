@@ -27,7 +27,7 @@
   margin-bottom: 10px;
 }
 
-.facebook i {
+/* .facebook i {
   background-color: #3b5998;
 }
 
@@ -53,14 +53,14 @@
 
 .instagram i {
   background-color: #E4405F;
-}
+} */
 
 /*Hover Transition*/
-.twitter i:hover, .google i:hover, .gitlab i:hover,
+/* .twitter i:hover, .google i:hover, .gitlab i:hover,
 .github i:hover ,.linkedin i:hover ,.facebook i:hover, .instagram i:hover{
   background-color: black;
   transition: 0.3s ease-in;
-}
+} */
 
 /* Media Query */
 @media (max-width: 768px) {
