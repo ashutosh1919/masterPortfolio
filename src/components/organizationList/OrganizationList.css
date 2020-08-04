@@ -9,9 +9,9 @@
   text-align: center;
 }
 
-.organizations-img{
-    width: 100px;
-    height: auto;
+.organizations-img {
+  width: 100px;
+  height: auto;
 }
 
 .organizations-inline {
@@ -23,29 +23,28 @@
 }
 
 .organizations-inline:hover {
-    -moz-transform: translate(0px, -5px);
-    -ms-transform: translate(0px, -5px);
-    -o-transform: translate(0px, -5px);
-    -webkit-transform: translate(0px, -5px);
-    transform: translate(0px, -5px)
+  -moz-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  -o-transform: translate(0px, -5px);
+  -webkit-transform: translate(0px, -5px);
+  transform: translate(0px, -5px);
 }
 
-
-@media (max-width:1380px){
+@media (max-width: 1380px) {
 }
 
-@media (max-width:768px){
-    .organizations-img{
-        width: 60px;
-    }
-    
-    .dev-icons-orgs{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+@media (max-width: 768px) {
+  .organizations-img {
+    width: 60px;
+  }
 
-    .organizations-inline{
-        margin-right: 30px;
-        margin-bottom: 30px;
-    }
+  .dev-icons-orgs {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .organizations-inline {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }

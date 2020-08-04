@@ -17,9 +17,55 @@
         "maintenance",
         "ideas"
       ]
+    },
+    {
+      "login": "danielmarostica",
+      "name": "Daniel Marostica",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3595998?v=4",
+      "profile": "https://danielmarostica.github.io/",
+      "contributions": [
+        "doc",
+        "design"
+      ]
+    },
+    {
+      "login": "dineshnadimpalli",
+      "name": "Dinesh Nadimpalli",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13104926?v=4",
+      "profile": "https://dineshnadimpalli.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jivthesh",
+      "name": "Jivthesh M R",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/20579980?v=4",
+      "profile": "http://jivthesh.github.io",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "mrjatinchauhan",
+      "name": "Jatin Chauhan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/40722235?v=4",
+      "profile": "http://jatinchauhan.tech",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "th3c0d3br34ker",
+      "name": "Jainam Desai",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/60807938?v=4",
+      "profile": "https://th3c0d3br34ker.github.io/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
-  "contributorsPerLine": 4,
+  "contributorsPerLine": 7,
   "projectName": "masterPortfolio",
   "projectOwner": "ashutosh1919",
   "repoType": "github",

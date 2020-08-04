@@ -16,13 +16,13 @@ export default function Projects() {
   function getRepoData() {
     const client = new ApolloClient({
       uri: "https://api.github.com/graphql",
-      request: operation => {
+      request: (operation) => {
         operation.setContext({
           headers: {
-            authorization: `Bearer ${atob(openSource.githubConvertedToken)}`
-          }
+            authorization: `Bearer ${atob(openSource.githubConvertedToken)}`,
+          },
         });
-      }
+      },
     });
 
     client
@@ -53,9 +53,9 @@ export default function Projects() {
               }
             }
           }
-        `
+        `,
       })
-      .then(result => {
+      .then((result) => {
         setrepoFunction(result.data.repositoryOwner.pinnedRepositories.edges);
         console.log(result);
       });
@@ -73,7 +73,12 @@ export default function Projects() {
           return <GithubRepoCard repo={v} key={v.node.id} />;
         })}
       </div>
-      <Button text={"More Projects"} className="project-button" href="https://github.com/ashutosh1919" newTab={true} />
+      <Button
+        text={"More Projects"}
+        className="project-button"
+        href="https://github.com/ashutosh1919"
+        newTab={true}
+      />
     </div>
   );
 }
