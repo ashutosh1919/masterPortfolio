@@ -8,12 +8,12 @@ const IconWrapper = styled.span`
 		background-color: ${props => props.backgroundColor};
 	}
 	&:hover i {
-		background-color: black;
+		background-color: ${({theme}) => theme.text};
 		transition: 0.3s ease-in;
 	}
 `
 
-export default function socialMedia() {
+export default function socialMedia(props) {
 	return (
 		<div className="social-media-div">
 			{socialMediaLinks.map((media) => {
@@ -24,7 +24,7 @@ export default function socialMedia() {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<IconWrapper {...media}>
+						<IconWrapper {...media} {...props}>
 							<i className={`fab ${media.fontAwesomeIcon}`}></i>
 						</IconWrapper>
 						{/* <span></span> */}
