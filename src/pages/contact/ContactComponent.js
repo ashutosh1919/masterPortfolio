@@ -43,7 +43,7 @@ class Contact extends Component {
                 >
                   {ContactData["description"]}
                 </p>
-                <SocialMedia />
+                <SocialMedia theme={theme} />
                 <div className="resume-btn-div">
                   <Button
                     text="See My Resume"
