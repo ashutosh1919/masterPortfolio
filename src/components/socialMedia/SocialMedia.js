@@ -1,55 +1,36 @@
 import React from "react";
 import "./SocialMedia.css";
 import { socialMediaLinks } from "../../portfolio";
+import styled from "styled-components";
 
-export default function socialMedia() {
+const IconWrapper = styled.span`
+  i {
+    background-color: ${(props) => props.backgroundColor};
+  }
+  &:hover i {
+    background-color: ${({ theme }) => theme.text};
+    transition: 0.3s ease-in;
+  }
+`;
+
+export default function socialMedia(props) {
   return (
-		<div className="social-media-div">
-			<a
-				href={socialMediaLinks.github}
-				className="icon-button github"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<i className="fab fa-github"></i>
-				<span></span>
-			</a>
-			<a
-				href={socialMediaLinks.linkedin}
-				className="icon-button linkedin"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<i className="fab fa-linkedin-in"></i>
-				<span></span>
-			</a>
-			<a
-				href={`mailto:${socialMediaLinks.gmail}`}
-				className="icon-button google"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<i className="fab fa-google"></i>
-				<span></span>
-			</a>
-			<a
-				href={socialMediaLinks.twitter}
-				className="icon-button twitter"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<i className="fab fa-twitter"></i>
-				<span></span>
-			</a>
-			<a
-				href={socialMediaLinks.facebook}
-				className="icon-button facebook"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<i className="fab fa-facebook-f"></i>
-				<span></span>
-			</a>
-		</div>
-	);
+    <div className="social-media-div">
+      {socialMediaLinks.map((media) => {
+        return (
+          <a
+            href={media.link}
+            className={`icon-button`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconWrapper {...media} {...props}>
+              <i className={`fab ${media.fontAwesomeIcon}`}></i>
+            </IconWrapper>
+            {/* <span></span> */}
+          </a>
+        );
+      })}
+    </div>
+  );
 }

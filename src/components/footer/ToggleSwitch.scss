@@ -16,15 +16,15 @@ $breakpoint-tablet: 768px;
   background: grey;
   border-radius: 80px;
   position: relative;
-  transition: background-color .2s;
-  @media screen and (max-width: $breakpoint-tablet){
+  transition: background-color 0.2s;
+  @media screen and (max-width: $breakpoint-tablet) {
     width: 50px;
     height: 26px;
   }
 }
 
 .react-switch-label .react-switch-button {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 2px;
@@ -34,7 +34,7 @@ $breakpoint-tablet: 768px;
   transition: 0.2s;
   background: #fff;
   box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
-  @media screen and (max-width: $breakpoint-tablet){
+  @media screen and (max-width: $breakpoint-tablet) {
     width: 22px;
     height: 22px;
   }
