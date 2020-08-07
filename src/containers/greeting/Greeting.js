@@ -2,8 +2,10 @@ import React from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
+import NickName from "../../components/NickName/NickName";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
+import { settings } from "../../portfolio";
 import FeelingProud from "./FeelingProud";
 
 export default function Greeting(props) {
@@ -17,9 +19,12 @@ export default function Greeting(props) {
               <h1 className="greeting-text" style={{ color: theme.text }}>
                 {greeting.title}
               </h1>
-              <h2 className="greeting-nickname" style={{ color: theme.text }}>
-                ( {greeting.nickname} )
-              </h2>
+              <NickName
+                isNickName={settings.isNickName}
+                theme={theme}
+                nickname={greeting.nickname}
+                className="greeting-nickname"
+              />
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
