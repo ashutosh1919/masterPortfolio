@@ -1,7 +1,3 @@
-> masterPortfolio is being sponsored by the following tool. Please help to support us by taking a look and signing up to a free trial.
-
-<a href="https://tracking.gitads.io/?repo=masterPortfolio"><img src="https://images.gitads.io/masterPortfolio" alt="GitAds"/></a>
-
 <p align="center"> 
     <img src="images/masterportfolio-banner-light.png" align="center" height="150"></img>
 </p>
