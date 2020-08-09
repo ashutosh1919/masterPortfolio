@@ -158,9 +158,9 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
 - Run `npm run deploy` to build and create a branch called `gh-pages`. It will push the `build` files to that branch.
 - The last step in deploying is to enable `Github Pages` in settings of the repository and select `gh-pages` branch.
 
-Now, your website is successfully deployed and you can visit it at `<your-github-username>.github.io`.
+Now, your website is successfully deployed and you can visit it at `<your-github-username>.github.io`.  
 If you are stuck somewhere and want to observe the deployment process in depth, then please watch below video.  
-[![Deploy React Website to Github Pages for Free](http://img.youtube.com/vi/IwBS39TOmpA/0.jpg)](http://www.youtube.com/watch?v=IwBS39TOmpA "Deploy React Website to Github Pages for Free")
+[![Deploy React Website to Github Pages for Free](http://img.youtube.com/vi/IwBS39TOmpA/0.jpg)](http://www.youtube.com/watch?v=IwBS39TOmpA)
 
 # Technologies used 🛠️
 
