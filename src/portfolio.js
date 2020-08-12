@@ -617,6 +617,13 @@ const contactPageData = {
 		subtitle: "+91 8320758513",
 	},
 };
+  const memories = {
+        memoriesSection: [
+             {
+      // title: "",
+             },
+       ],
+};
 
 export {
 	settings,
@@ -629,4 +636,5 @@ export {
 	experience,
 	projectsHeader,
 	contactPageData,
+	memories,
 };
