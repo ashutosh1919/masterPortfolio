@@ -86,10 +86,10 @@
   .greeting-main {
     display: block;
   }
-  
-  .portfolio-repo-btn-div{
-    width:100%;
+
+  .portfolio-repo-btn-div {
+    width: 100%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
   }
 }

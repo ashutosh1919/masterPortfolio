@@ -15,7 +15,7 @@ class SoftwareSkill extends React.Component {
               </li>
             );
           })} */}
-            {this.props.logos.map(logo => {
+            {this.props.logos.map((logo) => {
               return (
                 <OverlayTrigger
                   key={logo.skillName}

@@ -1,9 +1,9 @@
-.pull-requests-header-div{
-    margin-top: 100px;
+.pull-requests-header-div {
+  margin-top: 100px;
 }
 
 .pull-requests-header {
-    font-size: 40px;
+  font-size: 40px;
   line-height: 1.1;
   font-family: "Google Sans Regular";
   text-align: center;
@@ -12,23 +12,22 @@
 }
 
 .pull-request-body-div {
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
-@media (max-width:1380px){
-    .pull-requests-header{
-        font-size: 35px;
-    }
+@media (max-width: 1380px) {
+  .pull-requests-header {
+    font-size: 35px;
+  }
 }
 
-@media (max-width:768px){
+@media (max-width: 768px) {
+  .pull-requests-header-div {
+    margin-top: 40px;
+  }
 
-    .pull-requests-header-div{
-       margin-top: 40px;
-    }
-
-    .pull-requests-header{
-        font-size: 25px;
-    }
+  .pull-requests-header {
+    font-size: 25px;
+  }
 }

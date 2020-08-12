@@ -1,6 +1,6 @@
 .projects-main {
-    width: 100vw;
-    text-align: center;
+  width: 100vw;
+  text-align: center;
 }
 
 .basic-projects {
@@ -47,9 +47,9 @@
 }
 
 .projects-header-detail-text {
-    font-size: 20px;
+  font-size: 20px;
   line-height: 30px;
-  margin-top:0px;
+  margin-top: 0px;
   margin-left: 20px;
   margin-right: 20px;
   font-family: "Google Sans Medium";
@@ -96,10 +96,10 @@
     text-align: center;
   }
 
-  .repo-cards-div-main{
+  .repo-cards-div-main {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 30px;
+    margin-right: 10px;
+    margin-top: 30px;
   }
 }

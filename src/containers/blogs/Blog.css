@@ -34,7 +34,7 @@
   max-width: 100%;
   height: auto;
 }
-.blog-text-div{
+.blog-text-div {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

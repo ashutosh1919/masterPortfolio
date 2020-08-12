@@ -78,7 +78,7 @@
 @media (max-width: 768px) {
   .mask {
     clip-path: none;
-    position: relative
+    position: relative;
   }
   .blog-card-title {
     margin-top: 10px;

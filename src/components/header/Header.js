@@ -1,21 +1,20 @@
-import React , { Component }from "react";
+import React, { Component } from "react";
 import "./Header.css";
 import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
-import {greeting, settings} from '../../portfolio.js';
+import { greeting, settings } from "../../portfolio.js";
 
 const onMouseEnter = (event, color) => {
-	const el = event.target;
-	el.style.backgroundColor = color;
-}
+  const el = event.target;
+  el.style.backgroundColor = color;
+};
 
 const onMouseOut = (event) => {
-	const el = event.target;
-	el.style.backgroundColor = "transparent";
-}
+  const el = event.target;
+  el.style.backgroundColor = "transparent";
+};
 
 class Header extends Component {
-
 	render(){
 	const theme = this.props.theme;
 	console.log(theme);
@@ -111,23 +110,23 @@ class Header extends Component {
 								Contact Me
 							</NavLink>
 						</li>
-                                                <li>
-                                                         <NavLink
-                                                                to="/memories"
-                                                                tag={Link}
-                                                                activeStyle={{ fontWeight: "bold" }}
-                                                                style={{ color: theme.text }}
-                                                                onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                                                                onMouseOut={(event) => onMouseOut(event)}
-                                                        >
-                                                                Memories
-                                                       </NavLink>
-                                                </li>
+              <li>
+                 <NavLink
+                    to="/memories"
+                    tag={Link}
+                    activeStyle={{ fontWeight: "bold" }}
+                    style={{ color: theme.text }}
+                    onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
+                    onMouseOut={(event) => onMouseOut(event)}
+                   >
+                     Memories
+                  </NavLink>
+              </li>
 					</ul>
 				</header>
 			</div>
 		</Fade>
-	);
+	); 
   }
 }
 export default Header;

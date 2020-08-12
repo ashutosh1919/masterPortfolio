@@ -75,7 +75,7 @@
 }
 
 .repo-details {
-  display:flex;
+  display: flex;
   flex-direction: row;
 }
 

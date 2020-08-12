@@ -15,8 +15,8 @@
 }
 
 @media (max-width: 768px) {
-    .software-skill-inline-languages{
+  .software-skill-inline-languages {
     margin-right: 10px;
-  margin-bottom: 0px;
-    }
+    margin-bottom: 0px;
+  }
 }
