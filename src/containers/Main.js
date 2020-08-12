@@ -7,6 +7,7 @@ import Experience from "../pages/experience/Experience";
 import Opensource from "../pages/opensource/Opensource";
 import Contact from '../pages/contact/ContactComponent';
 import Projects from '../pages/projects/Projects';
+import Memories from "../pages/memories/MemoriesComponent";
 import { settings } from '../portfolio.js';
 
 export default class Main extends Component {
@@ -92,6 +93,15 @@ export default class Main extends Component {
 								/>
 							)}
 						/>
+                                                 <Route
+                                                        path="/memories"
+                                                        render={(props) => (
+                                                               <Memories 
+								{...props} theme={this.props.theme}
+                                                                 />
+									
+                                                         )}
+                                                 />
 					</Switch>
 				</HashRouter>
 			</div>
@@ -175,6 +185,15 @@ export default class Main extends Component {
 								/>
 							)}
 						/>
+                                                   <Route
+                                                        path="/memories"
+                                                        render={(props) => (
+                                                        <Memories 
+								{...props} 
+                                                                  theme={this.props.theme} 
+                                                                />
+                                                          )}
+                                                 />
 					</Switch>
 				</HashRouter>
 				</div>
