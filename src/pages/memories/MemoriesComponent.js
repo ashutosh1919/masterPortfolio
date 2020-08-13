@@ -1,6 +1,5 @@
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import { memories } from "../../portfolio";
 import React, { Component } from "react";
 import { Fade } from "react-reveal";
 import "./MemoriesComponent.css";
