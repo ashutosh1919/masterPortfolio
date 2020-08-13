@@ -1,30 +1,49 @@
 # Customize it to make your own portfolio ✏️
 
-In this project, there are basically 4 things that you need to change to customize this to anyone else's portfolio: **package.json**, **Personal Information**, **Github Information** and **Splash Logo**.
+In this project, there are basically 5 things that you need to change to customize this to be your own portfolio: **package.json**, **Personal Information (portfolio.js)**, **Github Information**, **Splash Logo** and **Favicon**.
 
 ### package.json
 
-Open this file, which is in the main cloned directory, choose any "name" and change "homepage " to `https://<your-github-username>.github.io`. Do not forget the `https://`, otherwise fonts will not load.
+Open this file, which is in the main cloned directory, choose any "name" and change "homepage" to `https://<your-github-username>.github.io`. Do not forget the `https://`, otherwise fonts will not load.
 
 ### Personal Information
 
-You will find `src/portfolio.js` file which contains the complete information about the user. The file looks something like below:
+You will find a file named `src/portfolio.js` which contains information about the user. 
 
-```python
-// Home Page
-const greeting = {
-    ...
-}
-
-// Social Media
-const socialMediaLinks = {
-    ...
-}
-
-...
-```
 
 You can change the personal information, experience, education, social media, certifications, blog information, contact information etc. in `src/portfolio.js` to directly reflect them in portfolio website.
+
+#### Splash settings
+Set it to true only if you have set up your own logo on the splashscreen.
+
+#### Greeting
+The main information, found as soon as someone lands on your website. Be creative and concise. It is their first impression. 
+
+You can upload your CV in another branch of your portfolio's repository and link it from here, or rename this button at `src/containers/greeting/Greeting.js` and insert whatever url you need.
+
+#### Social Media URLs
+Fill in your social network URLs and, in case you need another one which is not listed here, look for its icon at [Iconify](https://iconify.design) and fill in the `fontAwesomeIcon` variable.
+
+#### Skills
+This is where you will begin to be considered for the job position. Think really well about what you write here, since this is your skills' description abilities being put to the test. You have to be confident, truthful and concise. Look for icons at [Iconify](https://iconify.design) and fill in the `fontAwesomeClassname` variable.
+
+#### Competitive Websites
+This is optional and can be replaced by text with a few changes at `src/pages/education/EducationComponent.js` (comment CompetitiveSites line).
+
+#### Degrees
+Upload your institution logo to `src/assests/images/` and fix names at `logo_path`. This is where you can write longer about your education.
+
+#### Certifications
+Upload your institution logo to `src/assests/images/` and fix names at `logo_path`. Change colors accordingly (optional).
+
+#### Experience
+Briefly describe what you have worked with, so far. Afterwards, give yourself time to talk about your experiences. 
+
+#### Projects
+This is only a brief description about your Github projects, which will be automatically imported through the API in `git_data_fetcher.js` (see further below).
+
+#### Contact Me
+This is intuitive. This part is done!
 
 ### Github Information
 
@@ -66,6 +85,9 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
   - Change `isSplash` from `true` to `false`.
   - Now, if you see your website using `npm start`, it will directly open `home` rather than animating logo `splash` screen.
   - If you design your logo in future, then edit the files in `./src/components/Loader` and then revert `isSplash` to `true` in `src/portfolio.js`.
+
+### Favicon
+Replace all the icons by your own.
 
 # Choose Theme 🌈
 
