@@ -4,8 +4,7 @@ import { memories } from "../../portfolio";
 import React, { Component } from "react";
 import { Fade } from "react-reveal";
 import "./MemoriesComponent.css";
-
-const MemoriesData = memories.memoriesSection;
+/* eslint-disable jsx-a11y/accessible-emoji */
 
 class Memories extends Component {
   render() {
@@ -16,7 +15,7 @@ class Memories extends Component {
         <Fade bottom duration={2000} distance="20px">
           <div className="heading-div">
             <h1 className="headingtext" style={{ color: theme.text }}>
-              Some Precious Moments 😇{" "}
+              Some Precious Moments <span role="img">😇</span>
             </h1>
           </div>
           <div className="imgg-div">
