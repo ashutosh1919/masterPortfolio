@@ -2,6 +2,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import React, { Component } from "react";
 import { Fade } from "react-reveal";
+import TopButton from "../../components/topButton/TopButton";
 import "./MemoriesComponent.css";
 /* eslint-disable jsx-a11y/accessible-emoji */
 
@@ -50,6 +51,7 @@ class Memories extends Component {
           </div>
         </Fade>
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
+        <TopButton theme={this.props.theme} />
       </div>
     );
   }
