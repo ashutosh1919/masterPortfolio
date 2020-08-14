@@ -656,16 +656,24 @@ const contactPageData = {
     subtitle: "+91 8320758513",
   },
 };
+  const memories = {
+        memoriesSection: [
+             {
+      // title: "",
+             },
+       ],
+};
 
 export {
-  settings,
-  greeting,
-  socialMediaLinks,
-  skills,
-  competitiveSites,
-  degrees,
-  certifications,
-  experience,
-  projectsHeader,
-  contactPageData,
+	settings,
+	greeting,
+	socialMediaLinks,
+	skills,
+	competitiveSites,
+	degrees,
+	certifications,
+	experience,
+	projectsHeader,
+	contactPageData,
+	memories,
 };
