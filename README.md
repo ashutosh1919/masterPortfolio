@@ -159,14 +159,13 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
 - The last step in deploying is to enable `Github Pages` in settings of the repository and select `gh-pages` branch.
 
 Now, your website is successfully deployed and you can visit it at `<your-github-username>.github.io`.  
-If you are stuck somewhere and want to observe the deployment process in depth, then please watch below video.  
-  
+If you are stuck somewhere and want to observe the deployment process in depth, then please watch below video.
+
 <p align="center"> 
     <a href="http://www.youtube.com/watch?v=IwBS39TOmpA" target="_blank">
     <img src="http://img.youtube.com/vi/IwBS39TOmpA/0.jpg"></img>
   </a>
 </p>
-
 
 # Technologies used 🛠️
 
@@ -212,6 +211,7 @@ If you can help us with these. Please don't hesitate to open an [pull request](h
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 # References 👏🏻
