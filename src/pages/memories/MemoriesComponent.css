@@ -1,0 +1,32 @@
+.heading-img-div {
+  max-width: 70%;
+  height: 5%;
+  display: flex;
+  margin-right: 3%;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+
+.new-img-div > * {
+  max-width: 20%;
+  margin-right: 2%;
+  display: inline;
+  margin-left: 3%;
+}
+
+.img-div > * {
+  max-width: 35%;
+  margin-right: 2%;
+  display: inline;
+  margin-top: 7%;
+  margin-left: 8%;
+}
+
+.headingtext {
+  font-size: 46px;
+  font-weight: 400;
+  font-family: "Google Sans Bold Italic";
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
