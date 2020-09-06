@@ -5,18 +5,18 @@ class ExperienceCard extends Component {
   render() {
     const experience = this.props.experience;
     const theme = this.props.theme;
+    const renderDuration = () => {
+      if ("Issued On" in experience) return experience["Issued On"];
+      else
+        return `${experience["Started On"]}  - ${
+          experience["Finished On"] || "Present"
+        } `;
+    };
     return (
       <div
         className="experience-card"
         style={{ border: `1px solid ${experience["color"]}` }}
       >
-        <div className="experience-card-logo-div">
-          <img
-            className="experience-card-logo"
-            src={require(`../../assests/images/${experience["logo_path"]}`)}
-            alt=""
-          />
-        </div>
         <div className="experience-card-body-div">
           <div className="experience-card-header-div">
             <div className="experience-card-heading-left">
@@ -24,7 +24,7 @@ class ExperienceCard extends Component {
                 className="experience-card-title"
                 style={{ color: theme.text }}
               >
-                {experience["title"]}
+                {experience["Company Name"]}
               </h3>
               <p
                 className="experience-card-company"
@@ -35,7 +35,7 @@ class ExperienceCard extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {experience["company"]}
+                  {experience["Title"]}
                 </a>
               </p>
             </div>
@@ -44,13 +44,13 @@ class ExperienceCard extends Component {
                 className="experience-card-duration"
                 style={{ color: theme.secondaryText }}
               >
-                {experience["duration"]}
+                {renderDuration()}
               </p>
               <p
                 className="experience-card-location"
                 style={{ color: theme.secondaryText }}
               >
-                {experience["location"]}
+                {experience["Location"]}
               </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ class ExperienceCard extends Component {
             className="experience-card-description"
             style={{ color: theme.text }}
           >
-            {experience["description"]}
+            {experience["Description"]}
           </p>
         </div>
       </div>

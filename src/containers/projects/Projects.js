@@ -4,7 +4,7 @@ import { gql } from "apollo-boost";
 import "./Project.css";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
 import Button from "../../components/button/Button";
-import { openSource } from "../../portfolio";
+import { openSource, settings } from "../../portfolio";
 
 export default function Projects() {
   const [repo, setrepo] = useState([]);
@@ -76,7 +76,7 @@ export default function Projects() {
       <Button
         text={"More Projects"}
         className="project-button"
-        href="https://github.com/ashutosh1919"
+        href={settings.githubUrl}
         newTab={true}
       />
     </div>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Certifications.css";
 import { Fade } from "react-reveal";
-import { certifications } from "../../portfolio";
+import certifications from "../../shared/profile/certifications";
 import CertificationCard from "../../components/certificationCard/CertificationCard";
 
 class Certifications extends Component {
@@ -17,7 +17,7 @@ class Certifications extends Component {
           </Fade>
         </div>
         <div className="certs-body-div">
-          {certifications.certifications.map((cert) => {
+          {certifications.map((cert) => {
             return <CertificationCard certificate={cert} theme={theme} />;
           })}
         </div>
