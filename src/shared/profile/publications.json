@@ -1,0 +1,23 @@
+{
+  "0": {
+    "Name": "High Performance Cluster Computing based MapReduce",
+    "Published On": "",
+    "Description": "Researching machine learning algorithms in MapReduce paradigm on OpenMP/MPI based distributed HPC systems using Containerized C++17 environments",
+    "Publisher": "Submitted to Degruyter Publications",
+    "Url": "https://arxiv.org/abs/2005.07600/"
+  },
+  "1": {
+    "Name": "Application of Neuroevolution in Autonomous Cars",
+    "Published On": "",
+    "Description": "Presented at IVCPS conference at VIT Chennai. To be published in Springer. Research on the application of NeuroEvolution in self driving cars simulated using Unreal Environment and NEAT algorithm.",
+    "Publisher": "Accepted to Springer CCIS",
+    "Url": "https://arxiv.org/abs/2006.15175"
+  },
+  "2": {
+    "Name": "Deep Residual Network Based Food Recognition for Enhanced Augmented Reality Application",
+    "Published On": "",
+    "Description": "Research on real-time integration of Deep Convolutional Neural Networks with Augmented Reality. Submitted to Scopus indexed De Gruyter Open Computer Science Journal.",
+    "Publisher": "Submitted to DeGruyter Publications",
+    "Url": "https://arxiv.org/abs/2005.04292"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "0": {
+    "Title": "Smart India Hackathon 2019",
+    "Description": "Grand Finalist at NIT Warangal for SIH 2019. National Level Hackathon, Grand Finalist, developed an automation tool for Scada systems using Django Framework.",
+    "Issued On": "Mar 2019"
+  },
+  "1": {
+    "Title": "Renaissance Startup Hunt Hackathon",
+    "Description": "Secured 1st place  Developed a multi phase driver monitoring system for reducing road accidents with AI parking system.",
+    "Issued On": "Dec 2018"
+  },
+  "2": {
+    "Title": "SSN Invente - Webaholic Web Development Contest",
+    "Description": "Secured 1st place",
+    "Issued On": "Sep 2018"
+  },
+  "3": {
+    "Title": "Valeo Codeathon 2018",
+    "Description": "Secured 1st place  Valeo conducted codeathon at VIT.",
+    "Issued On": "Sep 2018"
+  },
+  "4": {
+    "Title": "Valeo Codeathon 2019",
+    "Description": "Secured 1st place Valeo conducted codeathon at VIT.",
+    "Issued On": "Sep 2019"
+  },
+  "5": {
+    "Title": "SSN Invente 3.0 - In-a-way-te",
+    "Description": "Secured 1st Place SSN TechFest’s Algorithmic Coding competition.",
+    "Issued On": "Sep 2018"
+  },
+  "6": {
+    "Title": "Smart India Hackathon 2020 - Grand Finalist",
+    "Description": "National Level Hackathon, Grand Finalist, developed a Virtual Reality  yoga instructor using Posenet based correction AI to enhance in a Unreal VR environment.",
+    "Issued On": ""
+  },
+  "7": {
+    "Title": "1st Place SRM HackSummit",
+    "Description": "First Place in HealthCare. Developed a Blockchain system and quick diagnostic solution AI to create a robust platform for medical care.",
+    "Issued On": "Sep 2019"
+  },
+  "8": {
+    "Title": "Consolation Prize ACM Hackathon",
+    "Description": "Secured Consolation Prize for building blockchain based decentralized elections.",
+    "Issued On": ""
+  },
+  "9": {
+    "Title": "2nd Prize Microsoft Innovation Club HackDay Hackathon",
+    "Description": "",
+    "Issued On": ""
+  }
+}

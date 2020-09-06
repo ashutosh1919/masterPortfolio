@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "masterPortfolio",
-  "homepage": ".",
+  "name": "trevahok",
+  "homepage": "https://trevahok.github.io",
   "version": "0.1.0",
   "scripts": {
     "build": "react-scripts build",
@@ -17,6 +17,7 @@
     "baseui": "^9.65.3",
     "bootstrap": "^4.4.1",
     "chart.js": "^2.9.3",
+    "csvtojson": "^2.0.10",
     "fs": "0.0.1-security",
     "gh-pages": "^2.1.1",
     "graphql": "^14.5.8",
