@@ -1,5 +1,4 @@
 import React from "react";
-import ProjectLanguages from "../projectLanguages/ProjectLanguages";
 import "./PatentCard.css";
 import { Fade } from "react-reveal";
 
