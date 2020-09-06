@@ -104,11 +104,29 @@ You can get a github token as described [here](https://docs.github.com/en/github
 Now, you need to run following command.
 
 ```python
-node git_data_fetcher.js
+node extra/git_data_fetcher.js
 ```
 
 This will fetch all the data from your github and it will automatically replace my data with yours.
 Whenever you want to update the github related information on the website you need to run this command.
+
+### LinkedIn Information
+
+LinkedIn doesn't provide API access to profile data. Hence we use a workaround by extracting the necessary data from LinkedIn personal account data archive.
+
+- Go to https://www.linkedin.com/psettings/member-data, click `Get a copy of your data`.
+- Select `Download larger data archive` and click `Download archive`.
+- Wait for a while (typically 15 mins) till you receive a mail saying your archive is ready to download.
+- Download the archive, it is typically of the format Basic_LinkedInDataExportXXXXXXX.zip .
+- Unzip the file and copy the inner contents into `extra/BasicProfile` folder.
+- Now run the command:
+  `bash node extra/csvToJson.js`
+- That's it. Now all your pages should reflect data about your Patents, Publications, Projects, Certificates, Achievements and Work Experience.
+
+**Note:**
+
+- To read more on how to download your data: [click here](https://www.linkedin.com/help/linkedin/answer/50191/downloading-your-account-data?lang=en).
+- All the data from your Archive isn't necessary, only: Honors.csv, Certifications.csv, Patents.csv, Positions.csv, Projects.csv, Publications.csv and Education.csv is sufficient.
 
 ### Splash Logo
 
@@ -175,6 +193,7 @@ If you are stuck somewhere and want to observe the deployment process in depth, 
 - [baseui](https://github.com/uber/baseweb)
 - [react-reveal](https://www.react-reveal.com/)
 - [styled-components](https://styled-components.com/)
+- [clearbit](https://clearbit.com/logo)
 
 # illustrations 🍥
 
