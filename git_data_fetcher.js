@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
   githubUserName: "Your Github Username Here.",

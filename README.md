@@ -121,6 +121,7 @@ You can get a github token as described [here](https://docs.github.com/en/github
 Now, you need to run following command.
 
 ```python
+npm install dotenv --save
 node git_data_fetcher.js
 ```
 
