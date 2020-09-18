@@ -90,14 +90,31 @@ You can change the personal information, experience, education, social media, ce
 
 ### Github Information
 
+
 You will find `git_data_fetcher.js` file in the main directory of the repository. This file is used to fetch the data (Pull requests, Issues, Organizations, Pinned projects etc.) from your github.
 If you open the file, you will see below component at the top of the file. You need to change only that component.
 
-```python
-const openSource = {
-  githubConvertedToken: "Your Github Token Here.",
-  githubUserName: "Your Github Username Here.",
-};
+1. Create a file called .env in the root directory of your project, check the base file
+
+Note: Instead of creating a .env file, you can just run this command "cp env.example .env" inside the root directory
+
+```bash
+- masterportFolio
+  - node_modules
+  - public
+  - src
+  - .env         <-- create it here
+  - env.example  <-- this is the base file
+  - .gitignore
+  - package-lock.json
+  - package.json
+```
+
+2. Inside the .env file, add key `REACT_APP_GITHUB_TOKEN` and assign your github token like this.
+
+```javascript
+ // .env
+  REACT_APP_GITHUB_TOKEN = "YOUR GITHUB TOKEN HERE"
 ```
 
 You can get a github token as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Give all permissions while generating token. Also add your `githubUserName` in the correct field inside `git_data_fetcher.js`.
