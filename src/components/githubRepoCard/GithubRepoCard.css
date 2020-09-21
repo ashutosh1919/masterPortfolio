@@ -58,6 +58,7 @@
   font-weight: 700;
   letter-spacing: -0.5px;
   overflow: hidden;
+  line-height: 1.2;
   margin: 0px;
 }
 
@@ -72,6 +73,7 @@
   font-family: "Google Sans Regular";
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  margin-top: 0.8rem;
 }
 
 .repo-details {
