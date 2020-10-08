@@ -376,25 +376,43 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "I have worked with well established companies as an Intern, Associate Software Developer and Software Developer. I am expert in Javascript, Jquery, SASS, Bootstrap4. I am trying my hands on Typescript, Angular 8, NodeJS these days.",
+    "I have worked with well established companies in multi-disciplinary domains like HR, Finance (NBFC) and Construction Industry. I have good hands-on experience in Angular-8, Typescript, Javascript, Jquery, SASS and Bootstrap4. I am trying my hands on NodeJS these days.",
   header_image_path: "experience.svg",
   sections: [
     {
       title: "Work",
       experiences: [
         {
+          title: "FrontEnd Engineer",
+          company: "Arth Design Build pvt. ltd.",
+          company_url: "https://www.arthdesignbuild.com/",
+          logo_path: "arth-logo.jpg",
+          duration: "Sep 2020 - Present",
+          location: "Hyderabad, Telangana, India",
+          description: `Job Responsibilities :
+						(1)Contributing in adding new features in existing modules.
+						(2)Contributing in creating new modules from scratch.
+						(3)Contributing in migrating Angular-Js app into Angular-8.
+						(4)Contributing in scaling PWA for the product.
+						Technologies Used :- Angular-8, TypeScript, JavaScript, jQuery, Bootstra4, HTML5, SASS.
+						Revision Control Tool :- Git.
+						Development Methodology :- Agile .
+						Model of Working :- Scrum.`,
+          color: "#ee3c26",
+        },
+        {
           title: "Software Developer",
           company: "Catalystone InfoSolutions pvt. ltd.",
           company_url: "https://www.catalystone.com/",
           logo_path: "co-logo.png",
-          duration: "April 2019 - Present",
+          duration: "Apr 2019 - Aug 2020",
           location: "Mohali, Punjab, India",
           description: `Job Responsibilities :
-						(1)Contributing in making multiple modules responsive and mobile friendly.
-						(2)Contributing in strategy approvals, code reviews to maintain and ensure the code quality and architecture.
-						(3)Contributing in providing support for CatalystOne Design System.
-						(4)Contributing in making common reusable plugins for whole application suite.
-						(5)Following the scrum framework and Contributing to make team self-organized.
+						(1)Contributed in making multiple modules responsive and mobile friendly.
+						(2)Contributed in strategy approvals, code reviews to maintain and ensure the code quality and architecture.
+						(3)Contributed in providing support for CatalystOne Design System.
+						(4)Contributed in making common reusable plugins for whole application suite.
+						(5)Followed the scrum framework and Contributing to make team self-organized.
 						(6)Contributed in fixing performance related issues in application.
 						(7)Contributed in "All Hands Testing" initiative to do the quality testing of application suite from users perspective.
 						Technologies Used :- JavaScript, jQuery, Bootstra4, HTML5, SASS, Java.
@@ -408,7 +426,7 @@ const experience = {
           company: "Catalystone InfoSolutions pvt. ltd.",
           company_url: "https://www.catalystone.com/",
           logo_path: "co-logo.png",
-          duration: "July 2018 - Mar 2019",
+          duration: "Jul 2018 - Mar 2019",
           location: "Mohali, Punjab, India",
           description: `Job Responsibilities :
 						(1) Contributed in development of reusable components for CatalystOne Design System.
