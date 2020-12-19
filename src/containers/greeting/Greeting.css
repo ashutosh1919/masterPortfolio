@@ -8,7 +8,7 @@
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .gretting-main {
@@ -51,7 +51,7 @@
 }
 
 .greeting-image-div > * {
-  max-width: 100%;
+  max-width: 91%;
   height: auto;
 }
 
@@ -87,7 +87,7 @@
     display: block;
   }
 
-  .portfolio-repo-btn-div {
+  .github-account-btn-div {
     width: 100%;
     display: flex;
     justify-content: center;
