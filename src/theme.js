@@ -143,4 +143,4 @@ export const materialdarkTheme = {
   headerColor: "#1E272C",
 };
 
-export const chosenTheme = blueTheme;
+export const chosenTheme = yellowTheme;
