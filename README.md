@@ -17,8 +17,8 @@
   <a href="https://travis-ci.org/badges/badgerbadgerbadger"><img alt="Build Status" src="http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square?style=flat-square" /></a>
   <a href="http://badges.mit-license.org/"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
   <a href="https://github.com/ashutosh1919/masterPortfolio/commits/master"><img alt="Maintenance" src="https://img.shields.io/badge/maintained-yes-green.svg?style=flat-square" /></a>
-  <a href="http://badges.mit-license.org/"><img alt="Website" src="https://img.shields.io/badge/website-up-yellow?style=flat-square" /></a>
-  <a href="https://ashutoshhathidara.com/"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
+  <a href="https://ashutoshhathidara.com/"><img alt="Website" src="https://img.shields.io/badge/website-up-yellow?style=flat-square" /></a>
+  <a href="http://badges.mit-license.org/"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
   <a href="https://img.shields.io/badge/price-free-ff69b4"><img alt="Price" src="https://img.shields.io/badge/price-free-ff69b4?style=flat-square" /></a>
 </p>
 
@@ -90,24 +90,22 @@ You can change the personal information, experience, education, social media, ce
 
 ### Github Information
 
-You will find `git_data_fetcher.js` file in the main directory of the repository. This file is used to fetch the data (Pull requests, Issues, Organizations, Pinned projects etc.) from your github.
-If you open the file, you will see below component at the top of the file. You need to change only that component.
+Create a copy of `.env_example` in root folder and rename it as `.env`. Open it and put your Github Token and Github Username in the place.
 
 ```python
-const openSource = {
-  githubConvertedToken: "Your Github Token Here.",
-  githubUserName: "Your Github Username Here.",
-};
+GITHUB_TOKEN = Your Github Token Here.
+GITHUB_USERNAME = Your Github Username Here.
 ```
 
-You can get a github token as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Give all permissions while generating token. Also add your `githubUserName` in the correct field inside `git_data_fetcher.js`.
-Now, you need to run following command.
+You can get a github token as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Give all permissions while generating token.
 
-**Warning:** Treat your tokens like passwords and keep them secret. When working with the API, use tokens as environment variables instead of hardcoding them into your programs.
+Now, you need to run following command.
 
 ```python
 node git_data_fetcher.js
 ```
+
+You will find `git_data_fetcher.js` file in the main directory of the repository. This file is used to fetch the data (Pull requests, Issues, Organizations, Pinned projects etc.) from your github.
 
 This will fetch all the data from your github and it will automatically replace my data with yours.
 Whenever you want to update the github related information on the website you need to run this command.
@@ -218,6 +216,7 @@ If you can help us with these. Please don't hesitate to open an [pull request](h
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 # References 👏🏻
