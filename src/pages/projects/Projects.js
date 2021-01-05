@@ -51,7 +51,7 @@ class Projects extends Component {
         <Button
           text={"More Projects"}
           className="project-button"
-          href="https://github.com/ashutosh1919"
+          href="https://github.com/codernishchay"
           newTab={true}
           theme={theme}
         />

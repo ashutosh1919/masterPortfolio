@@ -7,19 +7,19 @@ const settings = {
 
 //Home Page
 const greeting = {
-  title: "Ashutosh Hathidara",
+  title: "Nishchay Verma",
   logo_name: "AshutoshHathidara",
   nickname: "layman_brother",
   subTitle:
     "A passionate individual who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
     "https://drive.google.com/open?id=1XYpYhLeqCdyx_q6l0bQoC7RgwQjAjXPf",
-  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
+  portfolio_repository: "https://github.com/codernishchay/masterPortfolio",
 };
 
 const socialMediaLinks = [
   /* Your Social Media Link */
-  // github: "https://github.com/ashutosh1919",
+  // github: "https://github.com/codernishchay",
   // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
   // gmail: "ashutoshhathidara98@gmail.com",
   // gitlab: "https://gitlab.com/ashutoshhathidara98",
@@ -29,7 +29,7 @@ const socialMediaLinks = [
 
   {
     name: "Github",
-    link: "https://github.com/ashutosh1919",
+    link: "https://github.com/codernishchay",
     fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
     backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
   },
