@@ -5,6 +5,7 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
+import emoji from "react-easy-emoji";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -17,9 +18,11 @@ export default function Greeting(props) {
               <h1 className="greeting-text" style={{ color: theme.text }}>
                 {greeting.title}
               </h1>
-              <h2 className="greeting-nickname" style={{ color: theme.text }}>
-                ( {greeting.nickname} )
-              </h2>
+              <h1 className="greeting-nickname" style={{ color: theme.text }}>
+                {greeting.nickname} /
+                <span className="wave-emoji">{emoji("👋🏻")}</span>
+                {/* I added a slash between nickname <h1> and emoji<span> tags to get options if you want both you can add both or else remove <h1> to get emoji or remove <span> to get emoji */}
+              </h1>
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}

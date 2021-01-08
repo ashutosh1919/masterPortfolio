@@ -1,20 +1,18 @@
 .main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 4rem;
+  margin: 4rem auto 0px;
 }
 .greet-main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
+  margin: 2rem auto 0;
 }
 
 .gretting-main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .greeting-main {
@@ -31,28 +29,60 @@
 }
 
 .greeting-text {
-  margin-top: 80px;
+  margin-top: 30px;
   font-size: 70px;
   line-height: 1.1;
-  font-family: "Google Sans Bold";
+  font-family: "Google Sans Bold", serif;
 }
 
 .greeting-nickname {
-  font-size: 30px;
-  line-height: 0px;
-  font-family: "Google Sans Bold Italic";
+  font-size: 80px;
+  line-height: 0;
+  font-family: "Google Sans Bold", serif;
 }
 
 .greeting-text-p {
   font-size: 40px;
   line-height: 40px;
   margin-right: 40px;
-  font-family: "Google Sans Medium";
+  font-family: "Google Sans Medium", serif;
 }
 
 .greeting-image-div > * {
   max-width: 100%;
   height: auto;
+}
+
+.wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* Media Query */
