@@ -5,6 +5,18 @@ const settings = {
   isSplash: true, // Change this to false if you don't want Splash screen.
 };
 
+//SEO Related settings
+const seo = {
+  title: "Ashutosh's Portfolio",
+  description:
+    "A passionate individual who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+  og: {
+    title: "Ashutosh Hathidara Portfolio",
+    type: "website",
+    url: "http://ashutoshhathidara.com/",
+  },
+};
+
 //Home Page
 const greeting = {
   title: "Ashutosh Hathidara",
@@ -659,6 +671,7 @@ const contactPageData = {
 
 export {
   settings,
+  seo,
   greeting,
   socialMediaLinks,
   skills,
