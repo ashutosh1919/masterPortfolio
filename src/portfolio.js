@@ -21,7 +21,7 @@ const seo = {
 const greeting = {
   title: "Ashutosh Hathidara",
   logo_name: "AshutoshHathidara",
-  nickname: "layman_brother",
+  nickname: "Hi!!",
   subTitle:
     "A passionate individual who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
