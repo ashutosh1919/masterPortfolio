@@ -46,7 +46,7 @@ To view a live example, **[click here](https://ashutosh1919.github.io/)**
 
 # Clone And Use 📋
 
-- The website is completely built on `react-js` framework of `javascript` and that's why we need `nodejs` and `npm` installed.
+- The website is completely built on `react-js` library of `javascript` and that's why we need `nodejs` and `npm` installed.
 - While installing `nodejs` and `npm`, try to install versions which are equal or greater than the versions mentioned in badges above.
 - In case you want to help developing it or simply saving it, you can fork the repository just by clicking the button on the top-right corner of this page.
 - After the successful installation of `nodejs` and `npm`, clone the repository into your local system using below command:
