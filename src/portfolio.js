@@ -9,7 +9,7 @@ const settings = {
 const seo = {
   title: "Ashutosh's Portfolio",
   description:
-    "A passionate individual who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   og: {
     title: "Ashutosh Hathidara Portfolio",
     type: "website",
@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "AshutoshHathidara",
   nickname: "layman_brother",
   subTitle:
-    "A passionate individual who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
     "https://drive.google.com/open?id=1XYpYhLeqCdyx_q6l0bQoC7RgwQjAjXPf",
   portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
