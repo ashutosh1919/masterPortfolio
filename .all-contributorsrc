@@ -109,6 +109,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "baulml",
+      "name": "paul",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33395806?v=4",
+      "profile": "http://baul.ml",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
