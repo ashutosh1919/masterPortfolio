@@ -387,7 +387,7 @@ const experience = {
           company: "Arth Design Build pvt. ltd.",
           company_url: "https://www.arthdesignbuild.com/",
           logo_path: "arth-logo.jpg",
-          duration: "Sep 2020 - Present",
+          duration: "Aug 2020 - Present",
           location: "Hyderabad, Telangana, India",
           description: `Job Responsibilities :
 						(1)Contributing in adding new features in existing modules.
