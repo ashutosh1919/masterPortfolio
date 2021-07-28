@@ -19,6 +19,11 @@
     display: table-cell;
 } */
 
+.main-div {
+  width: 90%;
+  margin: 0 auto;
+}
+
 @media (max-width: 1380px) {
   .os-charts-header {
     font-size: 35px;
