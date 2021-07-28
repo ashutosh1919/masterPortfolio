@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
 .App {
   text-align: center;
 }
