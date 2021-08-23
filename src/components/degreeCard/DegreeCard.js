@@ -16,7 +16,7 @@ class DegreeCard extends Component {
                 maxHeight: "100%",
                 transform: "scale(50%, 50%)",
               }}
-              src={require(`../../assests/images/${degree.logo_path}`)}
+              src={"https://instagram.fjai2-1.fna.fbcdn.net/v/t51.2885-15/e15/p480x480/240114485_831432690704020_332072750556121069_n.jpg?_nc_ht=instagram.fjai2-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=gJQ3il3OvQUAX_2PBl6&edm=ABJHkxYAAAAA&ccb=7-4&oh=2fd5b8551a652c0b5efa27488c951ff7&oe=6129DC18&_nc_sid=fa978c&ig_cache_key=MjY0NjQwMTk0MTcxMTk1ODg4Nw%3D%3D.2-ccb7-4"}
               alt={degree.alt_name}
             />
           </div>
