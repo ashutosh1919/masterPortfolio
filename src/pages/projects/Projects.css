@@ -54,7 +54,16 @@
   margin-right: 20px;
   font-family: "Google Sans Medium";
 }
+.publications-heading-text-div {
+  text-align: center;
+  font-family: "Google Sans Regular";
+  margin-top: 70px;
+}
 
+.publications-heading-text {
+  font-size: 56px;
+  font-weight: 600;
+}
 .repo-cards-div-main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -75,7 +84,8 @@
 }
 
 @media (max-width: 768px) {
-  .projects-heading-text {
+  .projects-heading-text,
+  .publications-heading-text {
     font-size: 30px;
     margin-top: 20px;
   }
