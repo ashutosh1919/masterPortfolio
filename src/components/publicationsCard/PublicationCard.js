@@ -12,22 +12,22 @@ export default function GithubRepoCard({ repo, theme }) {
     <div>
       <Fade bottom duration={2000} distance="40px">
         <div
-          className="repo-card-div"
+          className="publication-card-div"
           key={repo.id}
           onClick={() => openRepoinNewTab(repo.url)}
           style={{ backgroundColor: theme.highlight }}
         >
-          <div className="repo-name-div">
-            <p className="repo-name" style={{ color: theme.text }}>
+          <div className="publication-name-div">
+            <p className="publication-name" style={{ color: theme.text }}>
               {repo.name}
             </p>
           </div>
-          <p className="repo-description" style={{ color: theme.text }}>
+          <p className="publication-description" style={{ color: theme.text }}>
             {repo.description}
           </p>
-          <div className="repo-details">
+          <div className="publication-details">
             <p
-              className="repo-creation-date subTitle"
+              className="publication-creation-date subTitle"
               style={{ color: theme.secondaryText }}
             >
               Published on {repo.createdAt.split("T")[0]}
