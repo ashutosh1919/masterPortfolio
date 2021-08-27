@@ -136,6 +136,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "priyanshk20",
+      "name": "Priyansh Khandelwal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/52736997?v=4",
+      "profile": "https://github.com/priyanshk20",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
