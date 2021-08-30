@@ -132,6 +132,25 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
   - Now, if you see your website using `npm start`, it will directly open `home` rather than animating logo `splash` screen.
   - If you design your logo in future, then edit the files in `./src/components/Loader` and then revert `isSplash` to `true` in `src/portfolio.js`.
 
+
+
+### Opensource Page Optional 
+
+- Since everyone do not have an opensource contribution profile or they do not want to show the open source page.
+- Follow the steps mentioned below to remove the open source page.
+Steps:
+  1. Go to src/portfolio.js file
+  2. Inside portfolio.js file, go to line number 4, you will se the settings code:
+
+    ```javascript 
+    const settings = {
+      opensourcePageRequired: true, // Change this to 'false' if you do not want opensource page
+    };```
+
+- Change the opensourcePageRequired: false, if you want to remove the open source page.
+- In future, you can add the page again making it true once again
+
+
 # Choose Theme 🌈
 
 - You can take a look at `src/theme.js` file where all available themes are mentioned with respective color codes.

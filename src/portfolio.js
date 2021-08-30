@@ -3,6 +3,7 @@
 // Website related settings
 const settings = {
   isSplash: true, // Change this to false if you don't want Splash screen.
+  opensourcePageRequired: true, // Change this to 'false' if you do not want opensource page
 };
 
 //SEO Related settings

@@ -86,16 +86,26 @@ class Header extends Component {
                 </NavLink>
               </li>
               <li>
+
+              {
+                settings.opensourcePageRequired ? 
+
                 <NavLink
-                  to="/opensource"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Open Source
-                </NavLink>
+                to="/opensource"
+                tag={Link}
+                activeStyle={{ fontWeight: "bold" }}
+                style={{ color: theme.text }}
+                onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
+                onMouseOut={(event) => onMouseOut(event)}
+              >
+                Open Source
+              </NavLink>
+
+              : 
+              
+              ''
+              }
+               
               </li>
               <li>
                 <NavLink
