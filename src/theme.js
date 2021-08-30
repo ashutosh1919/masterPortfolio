@@ -1,6 +1,12 @@
 // theme.js
 export const blueTheme = {
-  body: "#EDF9FE",
+  body: "#E0EAFC" /* fallback for old browsers */,
+  body:
+    "-webkit-linear-gradient(to right, #CFDEF3, #E0EAFC)" /* Chrome 10-25, Safari 5.1-6 */,
+  body:
+    "linear-gradient(to right, #CFDEF3, #E0EAFC)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
+
+  //body: "#EDF9FE",
   text: "#001C55",
   highlight: "#A6E1FA",
   dark: "#00072D",
@@ -12,7 +18,13 @@ export const blueTheme = {
 };
 
 export const brownTheme = {
-  body: "#FFFEFD",
+  body: "#eacda3" /* fallback for old browsers */,
+  body:
+    "-webkit-linear-gradient(to right, #d6ae7b, #eacda3)" /* Chrome 10-25, Safari 5.1-6 */,
+  body:
+    "linear-gradient(to right, #d6ae7b, #eacda3)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
+
+  //body: "#FFFEFD",
   text: "#5D2A42",
   highlight: "#FFF9EC",
   dark: "#00072D",
@@ -24,7 +36,13 @@ export const brownTheme = {
 };
 
 export const purpleTheme = {
-  body: "#F8EFF4",
+  body: "#654ea3" /* fallback for old browsers */,
+  body:
+    "-webkit-linear-gradient(to right, #eaafc8, #654ea3)" /* Chrome 10-25, Safari 5.1-6 */,
+  body:
+    "linear-gradient(to right, #eaafc8, #654ea3)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
+
+  //body: "#F8EFF4",
   text: "#231942",
   highlight: "#E0B1CB",
   dark: "#00072D",
@@ -36,7 +54,13 @@ export const purpleTheme = {
 };
 
 export const yelGreenTheme = {
-  body: "#FFFFEB",
+  body: "#A1FFCE" /* fallback for old browsers */,
+  body:
+    "-webkit-linear-gradient(to right, #FAFFD1, #A1FFCE)" /* Chrome 10-25, Safari 5.1-6 */,
+  body:
+    "linear-gradient(to right, #FAFFD1, #A1FFCE)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
+
+  //body: "#FFFFEB",
   text: "#003F2F",
   highlight: "#dddf00",
   dark: "#00072D",
@@ -48,7 +72,13 @@ export const yelGreenTheme = {
 };
 
 export const redTheme = {
-  body: "#FFF8E6",
+  body: "#EF3B36" /* fallback for old browsers */,
+  body:
+    "-webkit-linear-gradient(to right, #FFFFFF, #EF3B36)" /* Chrome 10-25, Safari 5.1-6 */,
+  body:
+    "linear-gradient(to right, #FFFFFF, #EF3B36)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
+
+  //body: "#FFF8E6",
   text: "#6a040f",
   highlight: "#ffba08",
   dark: "#03071e",
@@ -60,7 +90,10 @@ export const redTheme = {
 };
 
 export const blackTheme = {
-  body: "#E5E5E5",
+  body: "#2d3436",
+  body: "linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%)",
+
+  //body: "#E5E5E5",
   text: "#14213d",
   highlight: "#ffffff",
   dark: "#000000",
@@ -72,7 +105,13 @@ export const blackTheme = {
 };
 
 export const pinkTheme = {
-  body: "#FEE9F2",
+  body: "#f4c4f3" /* fallback for old browsers */,
+  body:
+    "-webkit-linear-gradient(to right, #fc67fa, #f4c4f3)" /* Chrome 10-25, Safari 5.1-6 */,
+  body:
+    "linear-gradient(to right, #fc67fa, #f4c4f3)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
+
+  //body: "#FEE9F2",
   text: "#620E34",
   highlight: "#FBA7CD",
   dark: "#31071A",
@@ -84,7 +123,13 @@ export const pinkTheme = {
 };
 
 export const violetTheme = {
-  body: "#F4EEFC",
+  body: "#CC95C0" /* fallback for old browsers */,
+  body:
+    "-webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0)" /* Chrome 10-25, Safari 5.1-6 */,
+  body:
+    "linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
+
+  //body: "#F4EEFC",
   text: "#430A58",
   highlight: "#D6BEF4",
   dark: "#21052C",
@@ -96,7 +141,13 @@ export const violetTheme = {
 };
 
 export const greenTheme = {
-  body: "#E6FAF5",
+  body: "#A1FFCE" /* fallback for old browsers */,
+  body:
+    "-webkit-linear-gradient(to right, #FAFFD1, #A1FFCE)" /* Chrome 10-25, Safari 5.1-6 */,
+  body:
+    "linear-gradient(to right, #FAFFD1, #A1FFCE)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
+
+  //body: "#E6FAF5",
   text: "#084c61",
   highlight: "#9BEED8",
   dark: "#031E26",
@@ -108,7 +159,13 @@ export const greenTheme = {
 };
 
 export const orangeTheme = {
-  body: "#FFF0EA",
+  body: "#C6FFDD" /* fallback for old browsers */,
+  body:
+    "-webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD)" /* Chrome 10-25, Safari 5.1-6 */,
+  body:
+    "linear-gradient(to right, #f7797d, #FBD786, #C6FFDD)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
+
+  //body: "#FFF0EA",
   text: "#99401F",
   highlight: "#FFB59A",
   dark: "#33150A",
@@ -119,4 +176,4 @@ export const orangeTheme = {
   headerColor: "#FF6B3577",
 };
 
-export const chosenTheme = blueTheme;
+export const chosenTheme = blackTheme;
