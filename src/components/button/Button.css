@@ -21,12 +21,14 @@
 .main-button:hover {
   /* background-color: #ffffff; */
   /* color: black; */
+  color: white;
   transition: ease-in 0.3s;
 }
 .project-button {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  
 }
 /* Media Query */
 @media (max-width: 768px) {
@@ -35,9 +37,21 @@
     padding: 12px 18px;
     margin-right: 0px;
   }
+  .main-button:hover {
+    /* background-color: #ffffff; */
+    /* color: black; */
+    color: white;
+    transition: ease-in 0.3s;
+  }
 }
 @media (max-width: 320px) {
   .main-button {
     font-size: 12px;
+  }
+  .main-button:hover {
+    /* background-color: #ffffff; */
+    /* color: black; */
+    color: white;
+    transition: ease-in 0.3s;
   }
 }

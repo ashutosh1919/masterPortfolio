@@ -3,13 +3,13 @@ import "./Button.css";
 
 const onMouseEnter = (event, color, bgColor) => {
   const el = event.target;
-  el.style.color = color;
+  el.style.color = 'grey';
   el.style.backgroundColor = bgColor;
 };
 
 const onMouseOut = (event, color, bgColor) => {
   const el = event.target;
-  el.style.color = color;
+  el.style.color = 'white';
   el.style.backgroundColor = bgColor;
 };
 

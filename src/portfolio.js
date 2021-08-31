@@ -84,6 +84,26 @@ const socialMediaLinks = [
   },
 ];
 
+const achievementSection = {
+  title: "Achievements",
+  achievementCard: [
+    {
+      title: "Google Explore ML Facilitator",
+      subtitle:
+        "Explore Machine Learning (ML) is a Google-sponsored program for university students to get started with Machine Learning. The curriculum offers 3 tracks of ML Content (Beginner, Intermediate, Advanced) and relies on university student facilitators to train other students on campus and to build opensource projects under this program.",
+
+      footerLink: "https://about.google/",
+    },
+    {
+      title: "Microsoft Student Partner",
+      subtitle:
+        "Microsoft Student Partner is a program for university students to lead the awareness and use of Cloud especially Azure tools in the development of their projects and startups. Under this program, I have organised hands on workshops and seminars to teach Cloud Computing concepts to students.",
+
+      footerLink: "https://www.microsoft.com/",
+    },
+  ],
+};
+
 const skills = {
   data: [
     {
@@ -676,6 +696,7 @@ export {
   greeting,
   socialMediaLinks,
   skills,
+  achievementSection,
   competitiveSites,
   degrees,
   certifications,

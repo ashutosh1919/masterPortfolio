@@ -3,7 +3,7 @@ import "./Achievement.css";
 import AchivementCard from "../../components/achievementCard/AchivementCard";
 import { achievementSection } from "../../portfolio";
 
-export default function Achievement() {
+export default function Achievement({theme}) {
   // function openUrlInNewTab(url) {
   //   var win = window.open(url, "_blank");
   //   win.focus();
@@ -15,19 +15,23 @@ export default function Achievement() {
           <h1 className="heading achievement-heading">
             {achievementSection.title}
           </h1>
-          <p className="subTitle achievement-subtitle">
+          {/**
+          
+            <p className="subTitle achievement-subtitle">
             {achievementSection.subtitle}
           </p>
+
+          */}
         </div>
         <div className="achievement-cards-div">
-          {achievementSection.achivementsCards.map((card) => {
+          {achievementSection.achievementCard.map((card) => {
             return (
               <AchivementCard
                 cardInfo={{
                   title: card.title,
                   description: card.subtitle,
-                  image: card.image,
                   footer: card.footerLink,
+                  theme: theme,
                 }}
               />
             );
