@@ -71,6 +71,18 @@ export const blackTheme = {
   headerColor: "#fca31177",
 };
 
+export const blackYellowTheme = {
+  body: "#121212",
+  text: "white",
+  highlight: "black",
+  dark: "#000000",
+  secondaryText: "#5A6377",
+  imageHighlight: "#fca311",
+  compImgHighlight: "#E6E6E6",
+  jacketColor: "#8d99ae",
+  headerColor: "#fca31177", 
+};
+
 export const pinkTheme = {
   body: "#FEE9F2",
   text: "#620E34",
