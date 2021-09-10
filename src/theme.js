@@ -72,7 +72,7 @@ export const blackTheme = {
 };
 
 export const blackYellowTheme = {
-  body: "#121212",
+  body: "#181818",
   text: "white",
   highlight: "black",
   dark: "#000000",
