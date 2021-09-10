@@ -153,7 +153,7 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
 **Option 1:**
 
 - Run `npm run build` to generate the production build folder.
-- Enter the build folder, `git init` and push the generated code to the `master` branch of your new repository. That's it. Done.
+- Enter the build folder, `git init` and push the generated code to the default branch `main` of your new repository. That's it. Done.
   You may need to `git init` and force push at every new build.
 
 **Option 2 (will not work with [user pages](https://docs.github.com/en/github/working-with-github-pages/about-github-pages)):**
