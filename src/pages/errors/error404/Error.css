@@ -1,0 +1,22 @@
+.error-main {
+  width: 100vw;
+}
+
+.error-main > .error-class {
+  width: 90%;
+  margin: auto 5%;
+  /* min-height: calc(100vh - 192px); */
+  vertical-align: middle;
+  display: grid;
+  text-align: center;
+}
+
+.error-main > .error-class > .error-404 {
+  font-size: 7em;
+  margin: 10px 0;
+}
+
+.error-main > .error-class p {
+  font-size: 1.4em;
+  margin-top: 0;
+}
