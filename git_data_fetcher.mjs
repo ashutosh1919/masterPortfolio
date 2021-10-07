@@ -1,10 +1,10 @@
-const openSource = {
-  githubConvertedToken: "Your Github Token Here.",
-  githubUserName: "Your Github Username Here.",
-};
+import fetch from 'node-fetch';
+import fs from 'fs';
 
-const fetch = require("node-fetch");
-var fs = require("fs");
+const openSource = {
+  githubConvertedToken: "Your Github Token Here",
+  githubUserName: "Your Github Username Here",
+};
 
 const query_pr = {
   query: `
