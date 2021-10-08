@@ -155,6 +155,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "dhruvkrishnavaid",
+      "name": "Dhruv Krishna Vaid",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69188774?v=4",
+      "profile": "https://dhruvkrishnavaid.github.io",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
