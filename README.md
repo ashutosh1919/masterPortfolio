@@ -89,19 +89,15 @@ const socialMediaLinks = {
 
 You can change the personal information, experience, education, social media, certifications, blog information, contact information etc. in `src/portfolio.js` to directly reflect them in portfolio website.
 
-### Github Information
-
-You will find `git_data_fetcher.mjs` file in the main directory of the repository. This file is used to fetch the data (Pull requests, Issues, Organizations, Pinned projects etc.) from your github.
-If you open the file, you will see below component at the top of the file. You need to change only that component.
+In the root directory there is a `.env_example` file. Open it and copy all the contents, now create a new file `.env` in the root directory and paste all the contents there.
+You will see below components in the file. Now you need to change only the components.
 
 ```javascript
-const openSource = {
-  githubConvertedToken: "Your Github Token Here.",
-  githubUserName: "Your Github Username Here.",
-};
+  GITHUB_TOKEN = YOUR GITHUB TOKEN
+  GITHUB_USERNAME = YOUR USERNAME
 ```
 
-You can get a github token as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Give all permissions while generating token. Also add your `githubUserName` in the correct field inside `git_data_fetcher.js`.
+You can get a github token as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Give all permissions while generating token. Also add your `GITHUB_USERNAME` in the correct field inside `.env`.
 Now, you need to run following command.
 
 **Warning:** Treat your tokens like passwords and keep them secret. When working with the API, use tokens as environment variables instead of hardcoding them into your programs.

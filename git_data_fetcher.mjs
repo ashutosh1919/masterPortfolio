@@ -1,9 +1,10 @@
 import fetch from 'node-fetch';
 import fs from 'fs';
+require('dotenv').config()
 
 const openSource = {
-  githubConvertedToken: "Your Github Token Here",
-  githubUserName: "Your Github Username Here",
+  githubConvertedToken: process.env.GITHUB_TOKEN,
+  githubUserName: process.env.GITHUB_USERNAME,
 };
 
 const query_pr = {
