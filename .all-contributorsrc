@@ -166,6 +166,15 @@
         "doc",
         "ideas"
       ]
+    },
+    {
+      "login": "KasRoudra",
+      "name": "KasRoudra",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78908440?v=4",
+      "profile": "https://kasroudra.github.io",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
