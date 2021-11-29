@@ -250,6 +250,11 @@ const languages_icons = {
   JavaScript: "logos-javascript",
   "C#": "logos-c-sharp",
   Java: "logos-java",
+  Shell: "simple-icons:shell",
+  Ruby: "logos:ruby",
+  PHP: "logos-php",
+  Dockerfile: "simple-icons:docker",
+  Rust: "logos-rust",
 };
 
 fetch(baseUrl, {
