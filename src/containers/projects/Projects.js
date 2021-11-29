@@ -77,7 +77,7 @@ export default function Projects() {
       <Button
         text={"More Projects"}
         className="project-button"
-        href={greeting.more_projects}
+        href={greeting.githubProfile}
         newTab={true}
       />
     </div>
