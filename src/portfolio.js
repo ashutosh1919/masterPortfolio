@@ -27,6 +27,7 @@ const greeting = {
   resumeLink:
     "https://drive.google.com/open?id=1XYpYhLeqCdyx_q6l0bQoC7RgwQjAjXPf",
   portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
+  more_projects: "https://github.com/ashutosh1919",
 };
 
 const socialMediaLinks = [

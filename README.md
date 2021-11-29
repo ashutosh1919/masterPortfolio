@@ -132,6 +132,15 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
   - Now, if you see your website using `npm start`, it will directly open `home` rather than animating logo `splash` screen.
   - If you design your logo in future, then edit the files in `./src/components/Loader` and then revert `isSplash` to `true` in `src/portfolio.js`.
 
+## Other
+
+ - You need to change the website title and other descriptions in `public/index.html`
+ 
+ - You can define your own favicon in `public/icons` directory. If you don't have a favicon, you can generate favicons from [Favicon Generator](https://www.favicon-generator.org/) and [Favicon IO](https://favicon.io/)
+
+ - Also you can edit your website preview known as description image. Run your site locally, take a screenshot and replace with `public/icons/desc.png`. Note that your screenshot should be 1280x640 for better preview
+
+
 # Choose Theme 🌈
 
 - You can take a look at `src/theme.js` file where all available themes are mentioned with respective color codes.
