@@ -1,15 +1,15 @@
 {
   "private": true,
   "name": "masterPortfolio",
-  "homepage": ".",
   "version": "0.1.0",
+  "homepage": ".",
   "scripts": {
-    "build": "react-scripts build",
+    "build": "cra-preact build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d build",
     "eject": "react-scripts eject",
-    "start": "react-scripts start",
-    "test": "react-scripts test"
+    "start": "cra-preact start",
+    "test": "cra-preact test"
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.1.3",
@@ -22,6 +22,7 @@
     "graphql": "^14.5.8",
     "node-fetch": "^2.6.0",
     "node-sass": "^4.14.1",
+    "preact": "^10.6.4",
     "prettier-package-json": "^2.1.3",
     "radium": "^0.26.0",
     "react": "^16.10.2",
@@ -31,7 +32,7 @@
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "^3.4.0",
     "react-spring": "^8.0.27",
     "styled-components": "^5.1.1",
     "styletron-engine-atomic": "^1.4.6",
@@ -40,6 +41,7 @@
   "devDependencies": {
     "@iconify/icons-logos": "^1.0.9",
     "@iconify/react": "^1.1.1",
+    "cra-preact": "^0.4.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "2.0.5"
