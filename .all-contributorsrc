@@ -176,6 +176,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "AlbertEinsteinTG",
+      "name": "Albert Einstein",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73480087?v=4",
+      "profile": "https://telegram.dog/AlbertEinstein_TG",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
