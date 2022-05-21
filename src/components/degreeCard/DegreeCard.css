@@ -59,7 +59,7 @@
   max-width: inherit;
   /* width: 100%; */
   border-radius: 0px 0px 7px 7px;
-  padding: 5px;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   /* box-shadow: 5px 5px 5px #d3d3d3; */
@@ -77,7 +77,6 @@
   border-left: 1px solid #d9dbdf;
   border-right: 1px solid #d9dbdf;
   border-radius: 7px;
-  width: 90%;
   margin: 10px;
   box-shadow: 5px 5px 5px #d9dbdf;
 }
@@ -136,7 +135,7 @@
   }
 
   .card-body {
-    width: 100%;
+    width: 100% !important;
   }
 
   .card-title {
