@@ -4,6 +4,7 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
   padding: 2rem;
   cursor: pointer;
+  flex: 1 1 25%;
 }
 .publication-card-div:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
@@ -15,8 +16,7 @@
 }
 
 .publication-name {
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  text-align: left;
   color: rgb(36, 41, 46);
   font-family: "Google Sans Regular";
   margin-bottom: 0.75rem;
@@ -51,7 +51,17 @@
   margin-right: auto;
 }
 
+@media (max-width: 1200px) {
+  .publication-card-div {
+    flex: 1 1 40%;
+  }
+}
+
 @media (max-width: 768px) {
+  .publication-card-div {
+    flex: 1 1 100%;
+  }
+
   .publication-name {
     font-size: 16px;
   }
