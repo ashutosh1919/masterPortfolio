@@ -8,21 +8,26 @@ class DegreeCard extends Component {
     const theme = this.props.theme;
     return (
       <div className="degree-card">
-        <Flip left duration={2000}>
-          <div className="card-img">
-            <img
-              style={{
-                maxWidth: "100%",
-                maxHeight: "100%",
-                transform: "scale(0.9)",
-              }}
-              src={require(`../../assests/images/${degree.logo_path}`)}
-              alt={degree.alt_name}
-            />
-          </div>
-        </Flip>
+        {degree.logo_path && (
+          <Flip left duration={2000}>
+            <div className="card-img">
+              <img
+                style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  transform: "scale(0.9)",
+                }}
+                src={require(`../../assests/images/${degree.logo_path}`)}
+                alt={degree.alt_name}
+              />
+            </div>
+          </Flip>
+        )}
         <Fade right duration={2000} distance="40px">
-          <div className="card-body">
+          <div
+            className="card-body"
+            style={{ width: degree.logo_path ? "90%" : "100%" }}
+          >
             <div
               className="body-header"
               style={{ backgroundColor: theme.headerColor }}
@@ -41,7 +46,7 @@ class DegreeCard extends Component {
                 </h3>
               </div>
             </div>
-            <div classname="body-content">
+            <div className="body-content">
               {degree.descriptions.map((sentence) => {
                 return (
                   <p className="content-list" style={{ color: theme.text }}>
@@ -49,20 +54,22 @@ class DegreeCard extends Component {
                   </p>
                 );
               })}
-              <a
-                href={degree.website_link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div
-                  className="visit-btn"
-                  style={{ backgroundColor: theme.headerColor }}
+              {degree.website_link && (
+                <a
+                  href={degree.website_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <p className="btn" style={{ color: theme.text }}>
-                    Visit Website
-                  </p>
-                </div>
-              </a>
+                  <div
+                    className="visit-btn"
+                    style={{ backgroundColor: theme.headerColor }}
+                  >
+                    <p className="btn" style={{ color: theme.text }}>
+                      Visit Website
+                    </p>
+                  </div>
+                </a>
+              )}
             </div>
           </div>
         </Fade>
