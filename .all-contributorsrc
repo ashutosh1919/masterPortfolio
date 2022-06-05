@@ -201,7 +201,9 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/40917760?v=4",
       "profile": "https://lightmap.dev",
       "contributions": [
-        "code"
+        "code",
+        "doc",
+        "maintenance"
       ]
     }
   ],
