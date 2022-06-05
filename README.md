@@ -89,7 +89,7 @@ const socialMediaLinks = {
 
 You can change the personal information, experience, education, social media, certifications, blog information, contact information etc. in `src/portfolio.js` to directly reflect them in portfolio website.
 
-**How to change the icons on homepage under what i do section?**
+### How to change the icons on homepage under what i do section?
 
 1. This section pulls data from `skills` in portfolio.js file.
 2. Visit this website: https://icon-sets.iconify.design/
