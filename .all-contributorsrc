@@ -206,6 +206,15 @@
         "maintenance",
         "ideas"
       ]
+    },
+    {
+      "login": "AnirudhPanda",
+      "name": "Anirudh Panda",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66218496?v=4",
+      "profile": "https://anirudhpanda.in/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
