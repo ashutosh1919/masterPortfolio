@@ -44,7 +44,7 @@
 
 To view a live example, **[click here](https://ashutosh1919.github.io/)**
 
-# Clone and use 📋
+# Clone and Use 📋
 
 - The website is completely built on `react-js` library of `javascript` and that's why we need `nodejs` and `npm` installed
 - While installing `nodejs` and `npm`, try to install versions which are equal or greater than the versions mentioned in badges above
