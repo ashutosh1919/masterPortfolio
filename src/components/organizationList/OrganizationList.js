@@ -1,14 +1,17 @@
-import React, { Component } from "react";
-import "./OrganizationList.css";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import React from "react";
 import { Fade } from "react-reveal";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import "./OrganizationList.css";
 
-class OrganizationList extends Component {
-  render() {
+const OrganizationList = (props) => {
+    const open= (url) => {
+      const win = window.open(url, "_blank");
+      win.focus();
+    }
     return (
       <div className="organizations-main-div">
         <ul className="dev-icons-orgs">
-          {this.props.logos.map((logo) => {
+          {props.logos.map((logo) => {
             return (
               <OverlayTrigger
                 key={logo["login"]}
@@ -24,6 +27,7 @@ class OrganizationList extends Component {
                   <Fade bottom duration={2000} distance="40px">
                     <img
                       className="organizations-img"
+                      onClick={()=>open(logo["url"])}
                       src={logo["avatarUrl"]}
                       alt={logo["login"]}
                     />
@@ -35,7 +39,6 @@ class OrganizationList extends Component {
         </ul>
       </div>
     );
-  }
 }
 
 export default OrganizationList;
