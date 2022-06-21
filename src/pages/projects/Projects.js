@@ -6,7 +6,11 @@ import PublicationCard from "../../components/publicationsCard/PublicationCard";
 import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
-import { greeting, projectsHeader, publicationsHeader } from "../../portfolio.js";
+import {
+  greeting,
+  projectsHeader,
+  publicationsHeader,
+} from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import PublicationData from "../../shared/opensource/publications.json";
 import "./Projects.css";
@@ -46,8 +50,8 @@ class Projects extends Component {
           </Fade>
         </div>
         <div className="repo-cards-div-main">
-          {ProjectsData.data.map((repo) => {
-            return <GithubRepoCard repo={repo} theme={theme} />;
+          {ProjectsData.data.map((repo, index) => {
+            return <GithubRepoCard repo={repo} theme={theme} key={index} />;
           })}
         </div>
         <Button
@@ -82,8 +86,8 @@ class Projects extends Component {
         </div>
 
         <div className="repo-cards-div-main">
-          {PublicationData.data.map((repo) => {
-            return <PublicationCard repo={repo} theme={theme} />;
+          {PublicationData.data.map((repo, index) => {
+            return <PublicationCard repo={repo} theme={theme} key={index} />;
           })}
         </div>
 

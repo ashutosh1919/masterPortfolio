@@ -7,12 +7,10 @@ class FeelingProud extends Component {
       <svg
         id="b52d7e2d-d80f-4111-b6ed-d15502ee1edd"
         data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
         width="711.1879"
         height="669.68268"
         viewBox="0 0 711.1879 669.68268"
       >
-        <title>feeling_proud</title>
         <polygon
           points="516.326 380.018 516.326 565.013 547.27 615.443 549.625 619.279 671.722 619.279 674.189 380.018 516.326 380.018"
           fill="#e6e6e6"
