@@ -164,7 +164,8 @@
       "contributions": [
         "code",
         "doc",
-        "ideas"
+        "ideas",
+        "question"
       ]
     },
     {
@@ -172,6 +173,72 @@
       "name": "KasRoudra",
       "avatar_url": "https://avatars.githubusercontent.com/u/78908440?v=4",
       "profile": "https://kasroudra.github.io",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "AlbertEinsteinTG",
+      "name": "Albert Einstein",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73480087?v=4",
+      "profile": "https://telegram.dog/AlbertEinstein_TG",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "SurajPratap10",
+      "name": "Suraj Pratap",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92919173?v=4",
+      "profile": "https://github.com/SurajPratap10",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "saiteja13427",
+      "name": "Sai Teja",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40917760?v=4",
+      "profile": "https://lightmap.dev",
+      "contributions": [
+        "code",
+        "doc",
+        "maintenance",
+        "ideas"
+      ]
+    },
+    {
+      "login": "AnirudhPanda",
+      "name": "Anirudh Panda",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66218496?v=4",
+      "profile": "https://anirudhpanda.in/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "hidayat7z",
+      "name": "Md Hidayat Rasool",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63554016?v=4",
+      "profile": "https://hidayat7z.github.io",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "SiddhantSadangi",
+      "name": "Siddhant Sadangi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41324509?v=4",
+      "profile": "https://www.linkedin.com/in/siddhantsadangi/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "vanoop729",
+      "name": "Anoop V",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59723767?v=4",
+      "profile": "https://anoopvarghese.in/",
       "contributions": [
         "code"
       ]
