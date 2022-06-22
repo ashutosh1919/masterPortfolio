@@ -7,8 +7,6 @@ export default class EducationImg extends Component {
       <svg
         id="eb113788-f1f1-4c1f-be62-f1d0ea2e1eb6"
         data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        // xmlns:xlink="http://www.w3.org/1999/xlink"
         width="795.39431"
         height="574.03802"
         viewBox="0 0 795.39431 574.03802"
@@ -28,7 +26,6 @@ export default class EducationImg extends Component {
             <stop offset="1" stopColor="gray" stopOpacity="0.1" />
           </linearGradient>
         </defs>
-        <title>Graduation</title>
         <ellipse
           cx="232.05775"
           cy="450.06897"

@@ -7,8 +7,6 @@ export default class ProjectsImg extends Component {
       <svg
         id="a6dc9487-50e2-4fb9-af91-bf1b7118d463"
         data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        // xmlns:xlink="http://www.w3.org/1999/xlink"
         width="1103.79"
         height="707.8"
         viewBox="0 0 1103.79 707.8"
@@ -27,7 +25,6 @@ export default class ProjectsImg extends Component {
             <stop offset="1" stopColor="gray" stopOpacity="0.1" />
           </linearGradient>
         </defs>
-        <title>mind map</title>
         <ellipse
           cx="843.39"
           cy="664.8"
