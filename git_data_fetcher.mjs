@@ -189,13 +189,19 @@ fetch(baseUrl, getOptions("", query_pr))
   .then(async(response) => {
     const data = { data: response.data }
     let cursor = response["data"]["user"]["pullRequests"]["pageInfo"]["startCursor"];
-    while (response["data"]["user"]["pullRequests"]["nodes"].length === 100) {
-        if (response["data"]["user"]["pullRequests"]["nodes"].length >= pr_limit) break
+    if (pr_limit <= 100) {
+        data["data"]["user"]["pullRequests"]["nodes"].length = pr_limit
+    }
+    while (response["data"]["user"]["pullRequests"]["nodes"].length === 100 && pr_limit > 100) {
         const options = getOptions(cursor, query_pr);
         const resp = await fetch(baseUrl, options);
         response = await resp.json();
         let currentPullRequests = response["data"]["user"]["pullRequests"];
         data["data"]["user"]["pullRequests"]["nodes"] = [...currentPullRequests["nodes"], ...data["data"]["user"]["pullRequests"]["nodes"]];
+        if (data["data"]["user"]["pullRequests"]["nodes"].length >= pr_limit) {
+             data["data"]["user"]["pullRequests"]["nodes"].length = pr_limit
+             break
+        }
         cursor = currentPullRequests["pageInfo"]["startCursor"];
     }
     const cropped = { data: [] };
@@ -233,13 +239,19 @@ fetch(baseUrl, getOptions("", query_issue))
   .then(async(response) => {
     const data = { data: response.data }
     let cursor = response["data"]["user"]["issues"]["pageInfo"]["startCursor"];
-    while (response["data"]["user"]["issues"]["nodes"].length === 100) {
-        if (response["data"]["user"]["issues"]["nodes"].length >= issue_limit) break
+    if (issue_limit <= 100) {
+        data["data"]["user"]["issues"]["nodes"].length = issue_limit
+    }
+    while (response["data"]["user"]["issues"]["nodes"].length === 100 && issue_limit > 100) {
         const options = getOptions(cursor, query_issue);
         const resp = await fetch(baseUrl, options);
         response = await resp.json();
         let currentIssues = response["data"]["user"]["issues"];
         data["data"]["user"]["issues"]["nodes"] = [...currentIssues["nodes"], ...data["data"]["user"]["issues"]["nodes"]];
+        if (data["data"]["user"]["issues"]["nodes"].length >= issue_limit) {
+             data["data"]["user"]["issues"]["nodes"].length = issue_limit
+             break
+        }
         cursor = currentIssues["pageInfo"]["startCursor"];
     }
     const cropped = { data: [] };
@@ -274,13 +286,19 @@ fetch(baseUrl, getOptions("", query_org))
   .then(async(response) => {
     const data = { data: response.data }
     let cursor = response["data"]["user"]["repositoriesContributedTo"]["pageInfo"]["startCursor"];
-    while (response["data"]["user"]["repositoriesContributedTo"]["nodes"].length === 100) {
-        if (response["data"]["user"]["repositoriesContributedTo"]["nodes"].length >= org_limit) break
+    if (org_limit <= 100) {
+        data["data"]["user"]["repositoriesContributedTo"]["nodes"].length = org_limit
+    }
+    while (response["data"]["user"]["repositoriesContributedTo"]["nodes"].length === 100 && org_limit > 100) {
         const options = getOptions(cursor, query_org);
         const resp = await fetch(baseUrl, options);
         response = await resp.json();
         let currentContributedTo = response["data"]["user"]["repositoriesContributedTo"];
         data["data"]["user"]["repositoriesContributedTo"]["nodes"] = [...currentContributedTo["nodes"], ...data["data"]["user"]["repositoriesContributedTo"]["nodes"]];
+        if (data["data"]["user"]["repositoriesContributedTo"]["nodes"].length >= org_limit) {
+             data["data"]["user"]["repositoriesContributedTo"]["nodes"].length = org_limit
+             break
+        }
         cursor = currentContributedTo["pageInfo"]["startCursor"];
     }
     const orgs = data["data"]["user"]["repositoriesContributedTo"]["nodes"];
