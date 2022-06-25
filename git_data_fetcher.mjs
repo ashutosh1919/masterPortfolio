@@ -187,25 +187,24 @@ const getOptions = (cursor, query) => ({
 fetch(baseUrl, getOptions("", query_pr))
   .then((res) => res.json())
   .then(async(response) => {
-    const data = { data: response.data }
+    let pullRequests = response["data"]["user"]["pullRequests"]["nodes"]
     let cursor = response["data"]["user"]["pullRequests"]["pageInfo"]["startCursor"];
-    if (pr_limit <= 100) {
-        data["data"]["user"]["pullRequests"]["nodes"].length = pr_limit
+    if (pr_limit <= 100 && pullRequests.length >= pr_limit) {
+        pullRequests.length = pr_limit
     }
-    while (response["data"]["user"]["pullRequests"]["nodes"].length === 100 && pr_limit > 100) {
+    while (response["data"]["user"]["pullRequests"]["nodes"].length === 100 && pullRequests.length < pr_limit) {
         const options = getOptions(cursor, query_pr);
         const resp = await fetch(baseUrl, options);
         response = await resp.json();
-        let currentPullRequests = response["data"]["user"]["pullRequests"];
-        data["data"]["user"]["pullRequests"]["nodes"] = [...currentPullRequests["nodes"], ...data["data"]["user"]["pullRequests"]["nodes"]];
-        if (data["data"]["user"]["pullRequests"]["nodes"].length >= pr_limit) {
-             data["data"]["user"]["pullRequests"]["nodes"].length = pr_limit
-             break
+        const current = response["data"]["user"]["pullRequests"];
+        pullRequests = [...current["nodes"], ...pullRequests];
+        if (pullRequests.length >= pr_limit) {
+            pullRequests.length = pr_limit
+            break
         }
-        cursor = currentPullRequests["pageInfo"]["startCursor"];
+        cursor = current["pageInfo"]["startCursor"];
     }
-    const cropped = { data: [] };
-    cropped["data"] = data["data"]["user"]["pullRequests"]["nodes"];
+    const cropped = { data: pullRequests };
     
     let open = 0;
     let closed = 0;
@@ -237,26 +236,25 @@ fetch(baseUrl, getOptions("", query_pr))
 fetch(baseUrl, getOptions("", query_issue))
   .then((res) => res.json())
   .then(async(response) => {
-    const data = { data: response.data }
+    let issues = response["data"]["user"]["issues"]["nodes"];
     let cursor = response["data"]["user"]["issues"]["pageInfo"]["startCursor"];
-    if (issue_limit <= 100) {
-        data["data"]["user"]["issues"]["nodes"].length = issue_limit
+    if (issue_limit <= 100 && issues.length >= issue_limit) {
+        issues.length = issue_limit;
     }
-    while (response["data"]["user"]["issues"]["nodes"].length === 100 && issue_limit > 100) {
+    while (response["data"]["user"]["issues"]["nodes"].length === 100 && issues.length < issue_limit) {
         const options = getOptions(cursor, query_issue);
         const resp = await fetch(baseUrl, options);
         response = await resp.json();
-        let currentIssues = response["data"]["user"]["issues"];
-        data["data"]["user"]["issues"]["nodes"] = [...currentIssues["nodes"], ...data["data"]["user"]["issues"]["nodes"]];
-        if (data["data"]["user"]["issues"]["nodes"].length >= issue_limit) {
-             data["data"]["user"]["issues"]["nodes"].length = issue_limit
-             break
+        const current = response["data"]["user"]["issues"];
+        issues = [...current["nodes"], ...issues];
+        if (issues.length >= issue_limit) {
+            issues.length = issue_limit;
+            break;
         }
-        cursor = currentIssues["pageInfo"]["startCursor"];
+        cursor = current["pageInfo"]["startCursor"];
     }
-    const cropped = { data: [] };
-    cropped["data"] = data["data"]["user"]["issues"]["nodes"];
-
+    const cropped = { data: issues };
+    
     let open = 0;
     let closed = 0;
     for (let i = 0; i < cropped["data"].length; i++) {
@@ -284,24 +282,26 @@ fetch(baseUrl, getOptions("", query_issue))
 fetch(baseUrl, getOptions("", query_org))
   .then((res) => res.json())
   .then(async(response) => {
-    const data = { data: response.data }
+    let repositoriesContributedTo = response["data"]["user"]["repositoriesContributedTo"]["nodes"]
     let cursor = response["data"]["user"]["repositoriesContributedTo"]["pageInfo"]["startCursor"];
-    if (org_limit <= 100) {
-        data["data"]["user"]["repositoriesContributedTo"]["nodes"].length = org_limit
+    if (org_limit <= 100 && repositoriesContributedTo.length >= org_limit) {
+        repositoriesContributedTo.length = org_limit
     }
-    while (response["data"]["user"]["repositoriesContributedTo"]["nodes"].length === 100 && org_limit > 100) {
+    while (response["data"]["user"]["repositoriesContributedTo"]["nodes"].length === 100 && repositoriesContributedTo.length < org_limit) {
         const options = getOptions(cursor, query_org);
         const resp = await fetch(baseUrl, options);
         response = await resp.json();
-        let currentContributedTo = response["data"]["user"]["repositoriesContributedTo"];
-        data["data"]["user"]["repositoriesContributedTo"]["nodes"] = [...currentContributedTo["nodes"], ...data["data"]["user"]["repositoriesContributedTo"]["nodes"]];
-        if (data["data"]["user"]["repositoriesContributedTo"]["nodes"].length >= org_limit) {
-             data["data"]["user"]["repositoriesContributedTo"]["nodes"].length = org_limit
-             break
+        const current = response["data"]["user"]["repositoriesContributedTo"];
+        repositoriesContributedTo = [...current["nodes"], ...repositoriesContributedTo];
+        if (repositoriesContributedTo.length >= org_limit) {
+            repositoriesContributedTo.length = org_limit;
+            break;
         }
-        cursor = currentContributedTo["pageInfo"]["startCursor"];
+        cursor = current["pageInfo"]["startCursor"];
     }
-    const orgs = data["data"]["user"]["repositoriesContributedTo"]["nodes"];
+    const cropped = { data: repositoriesContributedTo };
+    
+    const orgs = cropped["data"]
     
     let newOrgs = { data: [] };
     for (let i = 0; i < orgs.length; i++) {
