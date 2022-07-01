@@ -25,7 +25,10 @@
   border-radius: 50%;
   padding: 10px;
   border: 1px solid #d9dbdf;
-  /* background-color: #6c63ff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8c313;
   /* background: transparent; */
   box-shadow: 5px 5px 5px #d9dbdf;
 }

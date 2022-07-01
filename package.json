@@ -17,6 +17,8 @@
     "baseui": "^9.65.3",
     "bootstrap": "^4.4.1",
     "chart.js": "^2.9.3",
+    "digital": "^0.0.1",
+    "envelope": "^2.1.0",
     "fs": "0.0.1-security",
     "gh-pages": "^2.1.1",
     "graphql": "^14.5.8",
@@ -32,6 +34,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-spring": "^8.0.27",
+    "routines": "^0.3.0",
     "styled-components": "^5.1.1",
     "styletron-engine-atomic": "^1.4.6",
     "styletron-react": "^5.2.7"

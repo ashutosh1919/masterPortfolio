@@ -13,7 +13,9 @@ class SoftwareSkill extends React.Component {
               <li className="software-skill-inline" name={skills.skillName}>
                 <i className={skills.fontAwesomeClassname}></i>
               </li>
-            );
+            );  <i class="fa-brands fa-bootstrap"></i>
+            <FontAwesomeIcon icon="fa-brands fa-bootstrap" />
+            <svg xmlns="/></svg>
           })} */}
             {this.props.logos.map((logo) => {
               return (
@@ -29,10 +31,16 @@ class SoftwareSkill extends React.Component {
                   <li className="software-skill-inline" name={logo.skillName}>
                     <span
                       className="iconify"
-                      data-icon={logo.fontAwesomeClassname}
-                      style={logo.style}
+                      style={{ margin: "5px" }}
                       data-inline="false"
-                    ></span>
+                    >
+                      <img
+                        src={logo.imgurl}
+                        style={{
+                          width: "65px",
+                        }}
+                      />
+                    </span>
                   </li>
                 </OverlayTrigger>
               );
