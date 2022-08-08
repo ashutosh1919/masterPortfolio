@@ -2,7 +2,7 @@ module.exports = {
   ci: {
     collect: {
       startServerCommand: "npm run start",
-      numberOfRuns: 2,
+      numberOfRuns: 3,
       url: [
         "http://localhost:3000/#/home",
         "http://localhost:3000/#/education",
@@ -15,7 +15,7 @@ module.exports = {
     asserts: {
       assertions: {
         "categories:performance": ["error", { minScore: 0.1 }],
-        "categories:accessibility": ["error", { minScore: 0.8 }],
+        "categories:accessibility": ["error", { minScore: 0.9 }],
         "categories:best-practices": ["error", { minScore: 0.8 }],
         "categories:seo": ["error", { minScore: 0.8 }],
         "categories.pwa": "off",
