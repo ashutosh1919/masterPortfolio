@@ -18,7 +18,6 @@ class DegreeCard extends Component {
                   transform: "scale(0.9)",
                 }}
                 src={require(`../../assests/images/${degree.logo_path}`)}
-                alt={degree.alt_name}
               />
             </div>
           </Flip>
@@ -33,17 +32,17 @@ class DegreeCard extends Component {
               style={{ backgroundColor: theme.headerColor }}
             >
               <div className="body-header-title">
-                <h2 className="card-title" style={{ color: theme.text }}>
+                <h5 className="card-title" style={{ color: theme.text }}>
                   {degree.title}
-                </h2>
+                </h5>
                 <h3 className="card-subtitle" style={{ color: theme.text }}>
                   {degree.subtitle}
                 </h3>
               </div>
               <div className="body-header-duration">
-                <h3 className="duration" style={{ color: theme.text }}>
+                <h2 className="duration" style={{ color: theme.text }}>
                   {degree.duration}
-                </h3>
+                </h2>
               </div>
             </div>
             <div className="body-content">
@@ -55,11 +54,7 @@ class DegreeCard extends Component {
                 );
               })}
               {degree.website_link && (
-                <a
-                  href={degree.website_link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={degree.website_link} target="_blank">
                   <div
                     className="visit-btn"
                     style={{ backgroundColor: theme.headerColor }}

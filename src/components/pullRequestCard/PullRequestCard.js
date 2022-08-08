@@ -55,7 +55,6 @@ class PullRequestCard extends Component {
             <img
               className="merge-by-img"
               src={pullRequest["mergedBy"]["avatarUrl"]}
-              alt=""
             />
           </a>
         </OverlayTrigger>
@@ -135,7 +134,6 @@ class PullRequestCard extends Component {
                 <img
                   className="owner-img"
                   src={pullRequest["baseRepository"]["owner"]["avatarUrl"]}
-                  alt=""
                 />
               </a>
             </div>

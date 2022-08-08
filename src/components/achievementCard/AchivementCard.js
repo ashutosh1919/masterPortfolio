@@ -12,7 +12,7 @@ export default function AchivementCard({ cardInfo }) {
         <img src={cardInfo.image} alt="PWA" className="card-image"></img>
       </div>
       <div className="certificate-detail-div">
-        <h5 className="card-title">{cardInfo.title}</h5>
+        <h1 className="card-title">{cardInfo.title}</h1>
         <p className="card-subtitle">{cardInfo.description}</p>
       </div>
       <div className="certificate-card-footer">

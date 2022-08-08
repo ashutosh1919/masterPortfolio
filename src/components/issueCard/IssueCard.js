@@ -46,7 +46,6 @@ class IssueCard extends Component {
             <img
               className="assigned-to-img"
               src={issue["assignees"]["nodes"][0]["avatarUrl"]}
-              alt=""
             />
           </a>
         </OverlayTrigger>
@@ -126,7 +125,6 @@ class IssueCard extends Component {
                 <img
                   className="owner-img"
                   src={issue["repository"]["owner"]["avatarUrl"]}
-                  alt=""
                 />
               </a>
             </div>

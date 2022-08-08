@@ -1,0 +1,174 @@
+
+Welcome to Pa11y
+
+ > Running Pa11y on URL http://localhost:3000/#/home
+
+Results for URL: http://localhost:3000/#/home
+
+ • Error: This link points to a named anchor "/splash" within the document, but no anchor exists with that name.
+   ├── WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+   ├── #root > div:nth-child(1) > div > div > div > div:nth-child(2) > header > a
+   └── <a class="logo" tag="[object Object]" href="#/splash"><span style="color: rgb(0, 28, ...</a>
+
+ • Error: This link points to a named anchor "/home" within the document, but no anchor exists with that name.
+   ├── WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+   ├── #root > div:nth-child(1) > div > div > div > div:nth-child(2) > header > ul > li:nth-child(1) > a
+   └── <a aria-current="page" class="active" tag="[object Object]" href="#/home" style="color: rgb(0, 28, 85); font-weight: bold;">Home</a>
+
+ • Error: This link points to a named anchor "/education" within the document, but no anchor exists with that name.
+   ├── WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+   ├── #root > div:nth-child(1) > div > div > div > div:nth-child(2) > header > ul > li:nth-child(2) > a
+   └── <a tag="[object Object]" href="#/education" style="color: rgb(0, 28, 85);">Education</a>
+
+ • Error: This link points to a named anchor "/experience" within the document, but no anchor exists with that name.
+   ├── WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+   ├── #root > div:nth-child(1) > div > div > div > div:nth-child(2) > header > ul > li:nth-child(3) > a
+   └── <a tag="[object Object]" href="#/experience" style="color: rgb(0, 28, 85);">Experience</a>
+
+ • Error: This link points to a named anchor "/projects" within the document, but no anchor exists with that name.
+   ├── WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+   ├── #root > div:nth-child(1) > div > div > div > div:nth-child(2) > header > ul > li:nth-child(4) > a
+   └── <a tag="[object Object]" href="#/projects" style="color: rgb(0, 28, 85);">Projects</a>
+
+ • Error: This link points to a named anchor "/opensource" within the document, but no anchor exists with that name.
+   ├── WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+   ├── #root > div:nth-child(1) > div > div > div > div:nth-child(2) > header > ul > li:nth-child(5) > a
+   └── <a tag="[object Object]" href="#/opensource" style="color: rgb(0, 28, 85);">Open Source</a>
+
+ • Error: This link points to a named anchor "/contact" within the document, but no anchor exists with that name.
+   ├── WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+   ├── #root > div:nth-child(1) > div > div > div > div:nth-child(2) > header > ul > li:nth-child(6) > a
+   └── <a tag="[object Object]" href="#/contact" style="color: rgb(0, 28, 85);">Contact Me</a>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #greeting > div > div:nth-child(1) > div > p
+   └── <p class="greeting-text-p subTitle" style="color: rgb(127, 141, 170);">A passionate individual who alw...</p>
+
+ • Error: Anchor element found with a valid href attribute, but no link content has been supplied.
+   ├── WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+   ├── #greeting > div > div:nth-child(1) > div > div:nth-child(4) > a:nth-child(1)
+   └── <a href="https://github.com/ashutosh1919" class="icon-button" target="_blank" rel="noopener noreferrer"><span name="Github" class="sc-A...</a>
+
+ • Error: Anchor element found with a valid href attribute, but no link content has been supplied.
+   ├── WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+   ├── #greeting > div > div:nth-child(1) > div > div:nth-child(4) > a:nth-child(2)
+   └── <a href="https://www.linkedin.com/in/ashutosh-hathidara-88710b138/" class="icon-button" target="_blank" rel="noopener noreferrer"><span name="LinkedIn" class="sc...</a>
+
+ • Error: Anchor element found with a valid href attribute, but no link content has been supplied.
+   ├── WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+   ├── #greeting > div > div:nth-child(1) > div > div:nth-child(4) > a:nth-child(3)
+   └── <a href="https://www.youtube.com/channel/UC_amoXmmxSY9KusoDczDTXQ" class="icon-button" target="_blank" rel="noopener noreferrer"><span name="YouTube" class="sc-...</a>
+
+ • Error: Anchor element found with a valid href attribute, but no link content has been supplied.
+   ├── WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+   ├── #greeting > div > div:nth-child(1) > div > div:nth-child(4) > a:nth-child(4)
+   └── <a href="mailto:ashutoshhathidara98@gmail.com" class="icon-button" target="_blank" rel="noopener noreferrer"><span name="Gmail" class="sc-Ax...</a>
+
+ • Error: Anchor element found with a valid href attribute, but no link content has been supplied.
+   ├── WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+   ├── #greeting > div > div:nth-child(1) > div > div:nth-child(4) > a:nth-child(5)
+   └── <a href="https://twitter.com/ashutosh_1919" class="icon-button" target="_blank" rel="noopener noreferrer"><span name="Twitter" class="sc-...</a>
+
+ • Error: Anchor element found with a valid href attribute, but no link content has been supplied.
+   ├── WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+   ├── #greeting > div > div:nth-child(1) > div > div:nth-child(4) > a:nth-child(6)
+   └── <a href="https://www.facebook.com/laymanbrother.19/" class="icon-button" target="_blank" rel="noopener noreferrer"><span name="Facebook" class="sc...</a>
+
+ • Error: Anchor element found with a valid href attribute, but no link content has been supplied.
+   ├── WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+   ├── #greeting > div > div:nth-child(1) > div > div:nth-child(4) > a:nth-child(7)
+   └── <a href="https://www.instagram.com/layman_brother/" class="icon-button" target="_blank" rel="noopener noreferrer"><span name="Instagram" class="s...</a>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #skills > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > p:nth-child(1)
+   └── <p class="subTitle skills-text" style="color: rgb(127, 141, 170);">⚡ Developing highly scalable pr...</p>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #skills > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > p:nth-child(2)
+   └── <p class="subTitle skills-text" style="color: rgb(127, 141, 170);">⚡ Experience of working with Co...</p>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #skills > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > p:nth-child(3)
+   └── <p class="subTitle skills-text" style="color: rgb(127, 141, 170);">⚡ Complex quantitative modellin...</p>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #skills > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > p:nth-child(1)
+   └── <p class="subTitle skills-text" style="color: rgb(127, 141, 170);">⚡ Building responsive website f...</p>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #skills > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > p:nth-child(2)
+   └── <p class="subTitle skills-text" style="color: rgb(127, 141, 170);">⚡ Developing mobile application...</p>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #skills > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > p:nth-child(3)
+   └── <p class="subTitle skills-text" style="color: rgb(127, 141, 170);">⚡ Creating application backend ...</p>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #skills > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > p:nth-child(1)
+   └── <p class="subTitle skills-text" style="color: rgb(127, 141, 170);">⚡ Experience working on multipl...</p>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #skills > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > p:nth-child(2)
+   └── <p class="subTitle skills-text" style="color: rgb(127, 141, 170);">⚡ Hosting and maintaining websi...</p>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #skills > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > p:nth-child(3)
+   └── <p class="subTitle skills-text" style="color: rgb(127, 141, 170);">⚡ Deploying deep learning model...</p>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #skills > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > p:nth-child(4)
+   └── <p class="subTitle skills-text" style="color: rgb(127, 141, 170);">⚡ Setting up streaming jobs fro...</p>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #skills > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > p:nth-child(1)
+   └── <p class="subTitle skills-text" style="color: rgb(127, 141, 170);">⚡ Designing highly attractive u...</p>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #skills > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > p:nth-child(2)
+   └── <p class="subTitle skills-text" style="color: rgb(127, 141, 170);">⚡ Customizing logo designs and ...</p>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #skills > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > p:nth-child(3)
+   └── <p class="subTitle skills-text" style="color: rgb(127, 141, 170);">⚡ Creating the flow of applicat...</p>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #root > div:nth-child(1) > div > div > div > div:nth-child(5) > p
+   └── <p class="react-reveal footer-text" style="color: rgb(127, 141, 170);">Made with <span role="img">❤️</...</p>
+
+ • Error: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.11:1. Recommendation:  change text colour to #000205.
+   ├── WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail
+   ├── #root > div:nth-child(1) > div > div > div > div:nth-child(5) > p > span
+   └── <span role="img">❤️</span>
+
+ • Error: Iframe element requires a non-empty title attribute that identifies the frame.
+   ├── WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.1
+   ├── #aswift_0
+   └── <iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-...
+
+ • Error: Iframe element requires a non-empty title attribute that identifies the frame.
+   ├── WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.1
+   ├── html > body > iframe
+   └── <iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe>
+
+ • Error: Iframe element requires a non-empty title attribute that identifies the frame.
+   ├── WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.1
+   ├── #google_esf
+   └── <iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20220803/r20190131/zrt_lookup.html" style="display: none;"></iframe>
+
+33 Errors
+

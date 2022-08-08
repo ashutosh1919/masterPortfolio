@@ -25,7 +25,6 @@ class OrganizationList extends Component {
                     <img
                       className="organizations-img"
                       src={logo["avatarUrl"]}
-                      alt={logo["login"]}
                     />
                   </Fade>
                 </li>
