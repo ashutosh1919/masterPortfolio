@@ -1,0 +1,20 @@
+{
+  "defaults": {
+    "timeout": 20000,
+    "reporters": [
+      "pa11y-ci-reporter-html",
+      {
+        "destination": "./reports",
+        "includeZeroIssues": true
+      }
+    ]
+  },
+  "urls": [
+    "http://localhost:3000/#/home",
+    "http://localhost:3000/#/education",
+    "http://localhost:3000/#/experience",
+    "http://localhost:3000/#/projects",
+    "http://localhost:3000/#/opensource",
+    "http://localhost:3000/#/contact"
+  ]
+}

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>
+		Pa11y results for "http://localhost:3000/#/home"
+	</title>
+	<style>
+		html,
+		body {
+			background-color: #ffffff;
+			color: #333333;
+			font-family: 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, Cantarell,
+				'Helvetica Neue', sans-serif;
+			font-size: 16px;
+			line-height: 1.3rem;
+			margin: 0;
+			padding: 0;
+		}
+
+		main {
+			margin: 0 auto;
+			max-width: 900px;
+			padding: 1.25rem;
+		}
+
+		h1 {
+			font-size: 1.5rem;
+			line-height: 1.5rem;
+			margin: 0;
+			margin-bottom: 0.5rem;
+		}
+
+		h2,
+		h3 {
+			font-size: 1.15rem;
+			font-weight: normal;
+			margin: 0;
+			padding-bottom: 0.5rem;
+		}
+
+		h3 {
+			padding-bottom: 0;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.error {
+			background-color: #f8d7da;
+			color: #67191f;
+		}
+
+		.error a {
+			color: #842029;
+		}
+
+		.warning {
+			background-color: #fff3cd;
+			color: #544003;
+		}
+
+		.warning a {
+			color: #664d03;
+		}
+
+		.notice {
+			background-color: #cfe2ff;
+			color: #062c65;
+		}
+
+		.notice a {
+			color: #074197;
+		}
+
+		.error .left-bar {
+			background-color: #d53447;
+		}
+
+		.error .body {
+			border-color: #f2bbc1;
+		}
+
+		.warning .left-bar {
+			background-color: #c79500;
+		}
+
+		.warning .body {
+			border-color: #ffd761;
+		}
+
+		.notice .left-bar {
+			background-color: #015cda;
+		}
+
+		.notice .body {
+			border-color: #a9cefe;
+		}
+
+		.filter {
+			display: inline-grid;
+			grid-template-columns: 8.5rem 1fr 1fr 1fr;
+			margin-top: 1rem;
+		}
+
+		.filter .label {
+			font-size: 1.15rem;
+			padding: 0.45rem 0;
+		}
+
+		.count {
+			border-radius: 0;
+			border-width: 0;
+			box-shadow: 0.1rem 0.25rem 0.5rem rgba(0 0 0 / 15%);
+			cursor: pointer;
+			display: inline-grid;
+			font-size: 1.15rem;
+			grid-template-columns: 0.35rem 1fr;
+			margin-right: 0.75rem;
+			min-width: 80px;
+		}
+
+		.count .body {
+			border-style: solid;
+			border-width: 1px 1px 1px 0;
+			overflow-x: hidden;
+			padding: 0.35rem 0.7rem;
+			text-align: center;
+		}
+
+		.count.hidden {
+			background-color: #f4f4f4;
+			color: #323232;
+		}
+
+		.count.hidden .left-bar {
+			background-color: #b6b6b6;
+		}
+
+		.count.hidden .body {
+			border-color: #e9e9e9;
+		}
+
+		.issues {
+			list-style: none;
+			margin: 0;
+			margin-top: 1.5rem;
+			padding-left: 0;
+		}
+
+		.issue {
+			border-radius: 0;
+			border-width: 0;
+			box-shadow: 0.1rem 0.25rem 0.5rem rgba(0 0 0 / 15%);
+			display: grid;
+			grid-template-columns: 0.5rem 1fr;
+			margin: 0;
+			margin-bottom: 1.5rem;
+			padding: 0;
+		}
+
+		.issue p:not(:last-child) {
+			padding-bottom: 0.1rem;
+		}
+
+		.issue.hidden {
+			display: none;
+		}
+
+		/* stylelint-disable-next-line no-descending-specificity -- different parent elements */
+		.issue .body {
+			border-style: solid;
+			border-width: 1px 1px 1px 0;
+			overflow-x: hidden;
+			padding: 0.5rem;
+		}
+
+		.issue .body h3 {
+			padding-bottom: 0.25rem;
+		}
+
+		.code {
+			font-family: monospace;
+			font-size: 0.95rem;
+			padding-top: 0.1rem;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<h1>Pa11y results for "http://localhost:3000/#/home"</h1>
+		<h2>Generated at: Tue Aug 09 2022 12:10:32 GMT-0500 (Colombia Standard Time)</h2>
+		<h2>Runners (with issues): htmlcs</h2>
+
+		<p class="filter">
+			<span class="label">Toggle by type</span>
+			<span class="count error" id="error-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">42 errors</span>
+			</span>
+			<span class="count warning" id="warning-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">0 warnings</span>
+			</span>
+			<span class="count notice" id="notice-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">0 notices</span>
+			</span>
+		</p>
+		<ul class="issues">
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: The html element should have a lang or xml:lang attribute which describes the language of the document.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc3_1_1">htmlcs: WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2</a></p><p class="code">&lt;html&gt;&lt;head&gt;&lt;style type&#x3D;&quot;text/css&quot;&gt;sp...&lt;/html&gt;</p><p class="code">(selector "html")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.06:1. Recommendation:  change text colour to #002dbc.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;noscript&gt;You need to enable JavaScript t...&lt;/noscript&gt;</p><p class="code">(selector "html &gt; body &gt; noscript")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This link points to a named anchor &quot;/splash&quot; within the document, but no anchor exists with that name.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_4_1">htmlcs: WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID</a></p><p class="code">&lt;a class&#x3D;&quot;logo&quot; tag&#x3D;&quot;[object Object]&quot; href&#x3D;&quot;#/splash&quot;&gt;&lt;span style&#x3D;&quot;color: rgb(12, 67,...&lt;/a&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; header &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.06:1. Recommendation:  change text colour to #002dbc.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;a aria-current&#x3D;&quot;page&quot; class&#x3D;&quot;active&quot; tag&#x3D;&quot;[object Object]&quot; href&#x3D;&quot;#/home&quot; style&#x3D;&quot;color: rgb(12, 67, 242); font-weight: bold;&quot;&gt;Home&lt;/a&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; header &gt; ul &gt; li:nth-child(1) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This link points to a named anchor &quot;/home&quot; within the document, but no anchor exists with that name.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_4_1">htmlcs: WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID</a></p><p class="code">&lt;a aria-current&#x3D;&quot;page&quot; class&#x3D;&quot;active&quot; tag&#x3D;&quot;[object Object]&quot; href&#x3D;&quot;#/home&quot; style&#x3D;&quot;color: rgb(12, 67, 242); font-weight: bold;&quot;&gt;Home&lt;/a&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; header &gt; ul &gt; li:nth-child(1) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.06:1. Recommendation:  change text colour to #002dbc.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;a tag&#x3D;&quot;[object Object]&quot; href&#x3D;&quot;#/education&quot; style&#x3D;&quot;color: rgb(12, 67, 242);&quot;&gt;Education&lt;/a&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; header &gt; ul &gt; li:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This link points to a named anchor &quot;/education&quot; within the document, but no anchor exists with that name.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_4_1">htmlcs: WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID</a></p><p class="code">&lt;a tag&#x3D;&quot;[object Object]&quot; href&#x3D;&quot;#/education&quot; style&#x3D;&quot;color: rgb(12, 67, 242);&quot;&gt;Education&lt;/a&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; header &gt; ul &gt; li:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.06:1. Recommendation:  change text colour to #002dbc.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;a tag&#x3D;&quot;[object Object]&quot; href&#x3D;&quot;#/experience&quot; style&#x3D;&quot;color: rgb(12, 67, 242);&quot;&gt;Experience&lt;/a&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; header &gt; ul &gt; li:nth-child(3) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This link points to a named anchor &quot;/experience&quot; within the document, but no anchor exists with that name.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_4_1">htmlcs: WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID</a></p><p class="code">&lt;a tag&#x3D;&quot;[object Object]&quot; href&#x3D;&quot;#/experience&quot; style&#x3D;&quot;color: rgb(12, 67, 242);&quot;&gt;Experience&lt;/a&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; header &gt; ul &gt; li:nth-child(3) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.06:1. Recommendation:  change text colour to #002dbc.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;a tag&#x3D;&quot;[object Object]&quot; href&#x3D;&quot;#/projects&quot; style&#x3D;&quot;color: rgb(12, 67, 242);&quot;&gt;Projects&lt;/a&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; header &gt; ul &gt; li:nth-child(4) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This link points to a named anchor &quot;/projects&quot; within the document, but no anchor exists with that name.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_4_1">htmlcs: WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID</a></p><p class="code">&lt;a tag&#x3D;&quot;[object Object]&quot; href&#x3D;&quot;#/projects&quot; style&#x3D;&quot;color: rgb(12, 67, 242);&quot;&gt;Projects&lt;/a&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; header &gt; ul &gt; li:nth-child(4) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.06:1. Recommendation:  change text colour to #002dbc.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;a tag&#x3D;&quot;[object Object]&quot; href&#x3D;&quot;#/opensource&quot; style&#x3D;&quot;color: rgb(12, 67, 242);&quot;&gt;Open Source&lt;/a&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; header &gt; ul &gt; li:nth-child(5) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This link points to a named anchor &quot;/opensource&quot; within the document, but no anchor exists with that name.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_4_1">htmlcs: WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID</a></p><p class="code">&lt;a tag&#x3D;&quot;[object Object]&quot; href&#x3D;&quot;#/opensource&quot; style&#x3D;&quot;color: rgb(12, 67, 242);&quot;&gt;Open Source&lt;/a&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; header &gt; ul &gt; li:nth-child(5) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.06:1. Recommendation:  change text colour to #002dbc.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;a tag&#x3D;&quot;[object Object]&quot; href&#x3D;&quot;#/contact&quot; style&#x3D;&quot;color: rgb(12, 67, 242);&quot;&gt;Contact Me&lt;/a&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; header &gt; ul &gt; li:nth-child(6) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This link points to a named anchor &quot;/contact&quot; within the document, but no anchor exists with that name.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_4_1">htmlcs: WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID</a></p><p class="code">&lt;a tag&#x3D;&quot;[object Object]&quot; href&#x3D;&quot;#/contact&quot; style&#x3D;&quot;color: rgb(12, 67, 242);&quot;&gt;Contact Me&lt;/a&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; header &gt; ul &gt; li:nth-child(6) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;greeting-text-p subTitle&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;A passionate individual who alw...&lt;/p&gt;</p><p class="code">(selector "#greeting &gt; div &gt; div:nth-child(1) &gt; div &gt; p")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: Anchor element found with a valid href attribute, but no link content has been supplied.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_2">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent</a></p><p class="code">&lt;a href&#x3D;&quot;https://github.com/ashutosh1919&quot; class&#x3D;&quot;icon-button&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener noreferrer&quot;&gt;&lt;span name&#x3D;&quot;Github&quot; class&#x3D;&quot;sc-A...&lt;/a&gt;</p><p class="code">(selector "#greeting &gt; div &gt; div:nth-child(1) &gt; div &gt; div:nth-child(4) &gt; a:nth-child(1)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: Anchor element found with a valid href attribute, but no link content has been supplied.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_2">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent</a></p><p class="code">&lt;a href&#x3D;&quot;https://www.linkedin.com/in/ashutosh-hathidara-88710b138/&quot; class&#x3D;&quot;icon-button&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener noreferrer&quot;&gt;&lt;span name&#x3D;&quot;LinkedIn&quot; class&#x3D;&quot;sc...&lt;/a&gt;</p><p class="code">(selector "#greeting &gt; div &gt; div:nth-child(1) &gt; div &gt; div:nth-child(4) &gt; a:nth-child(2)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: Anchor element found with a valid href attribute, but no link content has been supplied.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_2">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent</a></p><p class="code">&lt;a href&#x3D;&quot;https://www.youtube.com/channel/UC_amoXmmxSY9KusoDczDTXQ&quot; class&#x3D;&quot;icon-button&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener noreferrer&quot;&gt;&lt;span name&#x3D;&quot;YouTube&quot; class&#x3D;&quot;sc-...&lt;/a&gt;</p><p class="code">(selector "#greeting &gt; div &gt; div:nth-child(1) &gt; div &gt; div:nth-child(4) &gt; a:nth-child(3)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: Anchor element found with a valid href attribute, but no link content has been supplied.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_2">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent</a></p><p class="code">&lt;a href&#x3D;&quot;mailto:ashutoshhathidara98@gmail.com&quot; class&#x3D;&quot;icon-button&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener noreferrer&quot;&gt;&lt;span name&#x3D;&quot;Gmail&quot; class&#x3D;&quot;sc-Ax...&lt;/a&gt;</p><p class="code">(selector "#greeting &gt; div &gt; div:nth-child(1) &gt; div &gt; div:nth-child(4) &gt; a:nth-child(4)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: Anchor element found with a valid href attribute, but no link content has been supplied.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_2">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent</a></p><p class="code">&lt;a href&#x3D;&quot;https://twitter.com/ashutosh_1919&quot; class&#x3D;&quot;icon-button&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener noreferrer&quot;&gt;&lt;span name&#x3D;&quot;Twitter&quot; class&#x3D;&quot;sc-...&lt;/a&gt;</p><p class="code">(selector "#greeting &gt; div &gt; div:nth-child(1) &gt; div &gt; div:nth-child(4) &gt; a:nth-child(5)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: Anchor element found with a valid href attribute, but no link content has been supplied.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_2">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent</a></p><p class="code">&lt;a href&#x3D;&quot;https://www.facebook.com/laymanbrother.19/&quot; class&#x3D;&quot;icon-button&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener noreferrer&quot;&gt;&lt;span name&#x3D;&quot;Facebook&quot; class&#x3D;&quot;sc...&lt;/a&gt;</p><p class="code">(selector "#greeting &gt; div &gt; div:nth-child(1) &gt; div &gt; div:nth-child(4) &gt; a:nth-child(6)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: Anchor element found with a valid href attribute, but no link content has been supplied.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_2">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent</a></p><p class="code">&lt;a href&#x3D;&quot;https://www.instagram.com/layman_brother/&quot; class&#x3D;&quot;icon-button&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener noreferrer&quot;&gt;&lt;span name&#x3D;&quot;Instagram&quot; class&#x3D;&quot;s...&lt;/a&gt;</p><p class="code">(selector "#greeting &gt; div &gt; div:nth-child(1) &gt; div &gt; div:nth-child(4) &gt; a:nth-child(7)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 3.06:1. Recommendation:  change background to #002dbc.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;a class&#x3D;&quot;main-button&quot; href&#x3D;&quot;https://github.com/ashutosh1919/masterPortfolio&quot; target&#x3D;&quot;_blank&quot; style&#x3D;&quot;color: rgb(12, 188, 242); background-color: rgb(12, 67, 242); border: 1px solid rgb(12, 67, 242);&quot;&gt;⭐ Star Me On Github&lt;/a&gt;</p><p class="code">(selector "#greeting &gt; div &gt; div:nth-child(1) &gt; div &gt; div:nth-child(5) &gt; div &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;subTitle skills-text&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;⚡ Developing highly scalable pr...&lt;/p&gt;</p><p class="code">(selector "#skills &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; p:nth-child(1)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;subTitle skills-text&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;⚡ Experience of working with Co...&lt;/p&gt;</p><p class="code">(selector "#skills &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; p:nth-child(2)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;subTitle skills-text&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;⚡ Complex quantitative modellin...&lt;/p&gt;</p><p class="code">(selector "#skills &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; p:nth-child(3)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;subTitle skills-text&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;⚡ Building responsive website f...&lt;/p&gt;</p><p class="code">(selector "#skills &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; p:nth-child(1)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;subTitle skills-text&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;⚡ Developing mobile application...&lt;/p&gt;</p><p class="code">(selector "#skills &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; p:nth-child(2)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;subTitle skills-text&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;⚡ Creating application backend ...&lt;/p&gt;</p><p class="code">(selector "#skills &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; p:nth-child(3)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;subTitle skills-text&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;⚡ Experience working on multipl...&lt;/p&gt;</p><p class="code">(selector "#skills &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; p:nth-child(1)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;subTitle skills-text&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;⚡ Hosting and maintaining websi...&lt;/p&gt;</p><p class="code">(selector "#skills &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; p:nth-child(2)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;subTitle skills-text&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;⚡ Deploying deep learning model...&lt;/p&gt;</p><p class="code">(selector "#skills &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; p:nth-child(3)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;subTitle skills-text&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;⚡ Setting up streaming jobs fro...&lt;/p&gt;</p><p class="code">(selector "#skills &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; p:nth-child(4)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;subTitle skills-text&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;⚡ Designing highly attractive u...&lt;/p&gt;</p><p class="code">(selector "#skills &gt; div:nth-child(2) &gt; div:nth-child(4) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; p:nth-child(1)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;subTitle skills-text&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;⚡ Customizing logo designs and ...&lt;/p&gt;</p><p class="code">(selector "#skills &gt; div:nth-child(2) &gt; div:nth-child(4) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; p:nth-child(2)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;subTitle skills-text&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;⚡ Creating the flow of applicat...&lt;/p&gt;</p><p class="code">(selector "#skills &gt; div:nth-child(2) &gt; div:nth-child(4) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; p:nth-child(3)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;p class&#x3D;&quot;react-reveal footer-text&quot; style&#x3D;&quot;color: rgb(12, 232, 226);&quot;&gt;Made with &lt;span role&#x3D;&quot;img&quot;&gt;❤️&lt;/...&lt;/p&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(5) &gt; p")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.44:1. Recommendation:  change background to #000.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail</a></p><p class="code">&lt;span role&#x3D;&quot;img&quot;&gt;❤️&lt;/span&gt;</p><p class="code">(selector "#root &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div:nth-child(5) &gt; p &gt; span")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: Iframe element requires a non-empty title attribute that identifies the frame.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_4_1">htmlcs: WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.1</a></p><p class="code">&lt;iframe id&#x3D;&quot;aswift_0&quot; name&#x3D;&quot;aswift_0&quot; style&#x3D;&quot;left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;&quot; sandbox&#x3D;&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-...</p><p class="code">(selector "#aswift_0")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: Iframe element requires a non-empty title attribute that identifies the frame.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_4_1">htmlcs: WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.1</a></p><p class="code">&lt;iframe src&#x3D;&quot;https://www.google.com/recaptcha/api2/aframe&quot; width&#x3D;&quot;0&quot; height&#x3D;&quot;0&quot; style&#x3D;&quot;display: none;&quot;&gt;&lt;/iframe&gt;</p><p class="code">(selector "html &gt; body &gt; iframe")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: Iframe element requires a non-empty title attribute that identifies the frame.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_4_1">htmlcs: WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.1</a></p><p class="code">&lt;iframe id&#x3D;&quot;google_esf&quot; name&#x3D;&quot;google_esf&quot; src&#x3D;&quot;https://googleads.g.doubleclick.net/pagead/html/r20220804/r20190131/zrt_lookup.html&quot; style&#x3D;&quot;display: none;&quot;&gt;&lt;/iframe&gt;</p><p class="code">(selector "#google_esf")</p></div>
+			</li>
+		</ul>
+	</main>
+	<script>
+		const toggleIssues = (btn, pageQuery) => {
+			const className = 'hidden';
+			document.getElementById(btn).classList.toggle(className);
+			document.querySelectorAll(pageQuery).forEach((page) => {
+				page.classList.toggle(className);
+			});
+		};
+
+		document
+			.getElementById('error-count')
+			.addEventListener('click', () =>
+				toggleIssues('error-count', '.issues .issue.error')
+			);
+		document
+			.getElementById('warning-count')
+			.addEventListener('click', () =>
+				toggleIssues('warning-count', '.issues .issue.warning')
+			);
+		document
+			.getElementById('notice-count')
+			.addEventListener('click', () =>
+				toggleIssues('notice-count', '.issues .issue.notice')
+			);
+	</script>
+</body>
+
+</html>
