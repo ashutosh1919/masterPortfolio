@@ -1,8 +1,8 @@
-[
-  {
+{
+  "0": {
     "name": "minScore",
-    "expected": 1,
-    "actual": 0.94,
+    "expected": 0.8,
+    "actual": 0.79,
     "values": [
       0.92,
       0.92,
@@ -30,4 +30,4 @@
     "level": "error",
     "url": "http://localhost:3000/"
   }
-]
+}
