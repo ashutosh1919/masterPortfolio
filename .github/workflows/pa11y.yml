@@ -15,9 +15,13 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install
-      - name: run pa11y CI
+      - name: Install pa11y CI
         run: |
           npm install --save-dev pa11y-ci
+      - name: Install Reporter
+        run: |
           npm install pa11y-ci-reporter-html
+      - name: Run tests
+        run: |
           npm run test-pa11y
           
