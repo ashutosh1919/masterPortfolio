@@ -1,0 +1,23 @@
+name: Accesibility Report
+on: [push]
+jobs:
+  lighthouse:
+    name: Pa11y CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: 'npm'
+      - name: Install Dependencies
+        run: |
+          npm install
+      - name: run pa11y CI
+        run: |
+          npm install --save-dev pa11y-ci
+          npm install pa11y-ci-reporter-html
+          pa11y-ci
+          
