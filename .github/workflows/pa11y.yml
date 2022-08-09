@@ -19,5 +19,5 @@ jobs:
         run: |
           npm install --save-dev pa11y-ci
           npm install pa11y-ci-reporter-html
-          pa11y-ci
+          npm run test-pa11y
           
