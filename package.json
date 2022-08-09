@@ -10,7 +10,7 @@
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "test-pa11y": "npm run start & sleep 5; npm run test-pa11y"
+    "test-pa11y": "pa11y-ci"
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.1.3",

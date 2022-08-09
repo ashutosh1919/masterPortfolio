@@ -23,5 +23,5 @@ jobs:
           npm install pa11y-ci-reporter-html
       - name: Run tests
         run: |
-          npm run test-pa11y
+          npm run start & sleep 5; npm run test-pa11y
           
