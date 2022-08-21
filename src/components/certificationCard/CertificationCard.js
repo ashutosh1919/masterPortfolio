@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 import "./CertificationCard.css";
 import { Fade } from "react-reveal";
 
@@ -50,4 +50,4 @@ class CertificationCard extends Component {
   }
 }
 
-export default CertificationCard;
+export default CertificationCard;*/
