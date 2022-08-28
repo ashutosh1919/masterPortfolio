@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "gustina Regular";
+  src: url("../../assets/fonts/Allise.ttf");
+}
+.mercy {
+    font-family: "gustina Regular";
+    font-weight: 900;
+    font-size: 34px;
+}
+.entity {
+ font-size: 25px;
+font-weight: 200;
+  border: "1px solid red";
+}

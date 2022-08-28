@@ -1,0 +1,10 @@
+axios
+redux
+react-redux
+react-reveal
+react-router-dom@6
+@chakra-ui/react
+@emotion/react
+@emotion/styled
+framer-motion
+npm i font-awesome

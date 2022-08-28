@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "gustina Regular";
+  src: url("../../assets/fonts/Allise.ttf");
+}
+
+.switch {
+  font-weight: 500;
+  color: #576c93;
+}
+.switch:active {
+  color: #001c55;
+}
