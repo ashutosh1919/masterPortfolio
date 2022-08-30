@@ -1,5 +1,5 @@
 import React from "react";
-import "./PublicationCard.css";
+import "./PublicationCard.module.css";
 import { Fade } from "react-reveal";
 
 export default function GithubRepoCard({ repo, theme }) {

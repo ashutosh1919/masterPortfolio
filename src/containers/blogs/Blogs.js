@@ -1,5 +1,5 @@
 import React from "react";
-import "./Blog.css";
+import "./Blog.module.css";
 import BlogCard from "../../components/blogCard/BlogCard";
 import { blogSection } from "../../portfolio";
 

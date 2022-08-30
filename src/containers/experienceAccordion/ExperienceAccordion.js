@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
-import "./ExperienceAccordion.css";
+import "./ExperienceAccordion.module.css";
 import { Accordion, Panel } from "baseui/accordion";
 
 class ExperienceAccordion extends Component {

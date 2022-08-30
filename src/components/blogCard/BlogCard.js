@@ -1,5 +1,5 @@
 import React from "react";
-import "./BlogCard.css";
+import "./BlogCard.module.css";
 
 export default function BlogCard({ blog }) {
   return (

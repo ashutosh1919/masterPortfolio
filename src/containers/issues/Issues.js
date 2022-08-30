@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Issues.css";
+import "./Issues.module.css";
 import { Fade } from "react-reveal";
 import IssueCard from "../../components/issueCard/IssueCard";
 import issuesData from "../../shared/opensource/issues.json";

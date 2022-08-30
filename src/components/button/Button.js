@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button.css";
+import "./Button.module.css";
 
 const onMouseEnter = (event, color, bgColor) => {
   const el = event.target;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "./Footer.module.css";
 import { Fade } from "react-reveal";
 import { greeting } from "../../portfolio.js";
 /* eslint-disable jsx-a11y/accessible-emoji */

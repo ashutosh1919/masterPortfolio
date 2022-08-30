@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./CertificationCard.css";
+import "./CertificationCard.module.css";
 import { Fade } from "react-reveal";
 
 class CertificationCard extends Component {

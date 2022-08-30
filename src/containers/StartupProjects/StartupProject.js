@@ -1,5 +1,5 @@
 import React from "react";
-import "./StartupProjects.css";
+import "./StartupProjects.module.css";
 import { bigProjects } from "../../portfolio";
 
 export default function StartupProject() {

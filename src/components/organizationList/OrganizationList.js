@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./OrganizationList.css";
+import "./OrganizationList.module.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Fade } from "react-reveal";
 

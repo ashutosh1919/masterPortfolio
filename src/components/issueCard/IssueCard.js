@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./IssueCard.css";
+import "./IssueCard.module.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Fade } from "react-reveal";
 

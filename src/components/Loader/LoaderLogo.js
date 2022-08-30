@@ -1,5 +1,5 @@
 import React from "react";
-import "./LoaderLogo.css";
+import "./LoaderLogo.module.css";
 
 class LogoLoader extends React.Component {
   render() {

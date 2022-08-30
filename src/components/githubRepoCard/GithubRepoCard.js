@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectLanguages from "../../components/projectLanguages/ProjectLanguages";
-import "./GithubRepoCard.css";
+import "./GithubRepoCard.module.css";
 import { Fade } from "react-reveal";
 
 export default function GithubRepoCard({ repo, theme }) {

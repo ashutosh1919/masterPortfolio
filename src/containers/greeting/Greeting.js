@@ -1,5 +1,5 @@
 import React from "react";
-import "./Greeting.css";
+import "./Greeting.module.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";

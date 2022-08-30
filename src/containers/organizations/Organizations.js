@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Organizations.css";
+import "./Organizations.module.css";
 import { Fade } from "react-reveal";
 import OrganizationList from "../../components/organizationList/OrganizationList";
 import OrganizationsData from "../../shared/opensource/organizations.json";

@@ -12,13 +12,13 @@
   justify-content: center;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/*body {*/
+/*  padding: 0;*/
+/*  margin: 0;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*}*/
 
 .screen {
   /* background-color: #55198b; */

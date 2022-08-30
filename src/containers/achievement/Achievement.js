@@ -1,5 +1,5 @@
 import React from "react";
-import "./Achievement.css";
+import "./Achievement.module.css";
 import AchivementCard from "../../components/achievementCard/AchivementCard";
 import { achievementSection } from "../../portfolio";
 

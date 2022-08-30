@@ -1,5 +1,5 @@
 import React from "react";
-import "./SoftwareSkill.css";
+import "./SoftwareSkill.module.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 class SoftwareSkill extends React.Component {

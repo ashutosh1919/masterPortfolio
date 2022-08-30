@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./DegreeCard.css";
+import "./DegreeCard.module.css";
 import { Fade, Flip } from "react-reveal";
 
 class DegreeCard extends Component {
