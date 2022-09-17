@@ -50,14 +50,14 @@ To view a live example, **[click here](https://ashutosh1919.github.io/)**
 - While installing `nodejs` and `npm`, try to install versions which are equal or greater than the versions mentioned in badges above
 - In case you want to help developing it or simply saving it, you can fork the repository just by clicking the button on the top-right corner of this page
 - After the successful installation of `nodejs` and `npm`, clone the repository into your local system using below command:
-    ```bash
-     git clone https://github.com/ashutosh1919/masterPortfolio.git
-    ```
-    This will clone the whole repository in your system.
+  ```bash
+   git clone https://github.com/ashutosh1919/masterPortfolio.git
+  ```
+  This will clone the whole repository in your system.
 - To download required dependencies to your system, navigate to the directory where the cloned repository resides and execute following command:
-    ```node
-    npm install
-    ```
+  ```node
+  npm install
+  ```
 - Now the project is ready to use
 - You can check it using `npm start`, it will open the website locally on your browser.
 
@@ -100,13 +100,12 @@ You can change the personal information, experience, education, social media, ce
 ### Github Information
 
 You will find `git_data_fetcher.mjs` file in the main directory of the repository. This file is used to fetch the data (Pull requests, Issues, Organizations, Pinned projects etc.) from your github.
-If you open the file, you will see below component at the top of the file. You need to change only that component.
+
+In the project you will see a `env.example` file, rename it to `.env`. In that file, you will see the following environment variables
 
 ```javascript
-const openSource = {
-  githubConvertedToken: "Your Github Token Here.",
-  githubUserName: "Your Github Username Here.",
-};
+GITHUB_TOKEN = your_token;
+GITHUB_USERNAME = your_username;
 ```
 
 You can get a github token as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Give all permissions while generating token. Also add your `githubUserName` in the correct field inside `git_data_fetcher.mjs`.
