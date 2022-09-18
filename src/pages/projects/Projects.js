@@ -63,27 +63,28 @@ class Projects extends Component {
         />
 
         {/* Publications  */}
-
-        <div className="basic-projects">
-          <Fade bottom duration={2000} distance="40px">
-            <div className="publications-heading-div">
-              <div className="publications-heading-text-div">
-                <h1
-                  className="publications-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {publicationsHeader.title}
-                </h1>
-                <p
-                  className="projects-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {publicationsHeader["description"]}
-                </p>
+        {publications.data.length > 0 ? (
+          <div className="basic-projects">
+            <Fade bottom duration={2000} distance="40px">
+              <div className="publications-heading-div">
+                <div className="publications-heading-text-div">
+                  <h1
+                    className="publications-heading-text"
+                    style={{ color: theme.text }}
+                  >
+                    {publicationsHeader.title}
+                  </h1>
+                  <p
+                    className="projects-header-detail-text subTitle"
+                    style={{ color: theme.secondaryText }}
+                  >
+                    {publicationsHeader["description"]}
+                  </p>
+                </div>
               </div>
-            </div>
-          </Fade>
-        </div>
+            </Fade>
+          </div>
+        ) : null}
 
         <div className="repo-cards-div-main">
           {publications.data.map((pub) => {

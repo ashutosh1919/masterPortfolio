@@ -7,6 +7,7 @@ import Certifications from "../../containers/certifications/Certifications";
 import CompetitiveSites from "../../components/competitiveSites/CompetitiveSites";
 import EducationImg from "./EducationImg";
 import { competitiveSites } from "../../portfolio";
+import { certifications } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
 
@@ -38,7 +39,9 @@ class Education extends Component {
             </div>
           </Fade>
           <Educations theme={this.props.theme} />
-          <Certifications theme={this.props.theme} />
+          {certifications.certifications.length > 0 ? (
+            <Certifications theme={this.props.theme} />
+          ) : null}
         </div>
         <Footer theme={this.props.theme} />
         <TopButton theme={this.props.theme} />
