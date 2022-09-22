@@ -720,6 +720,7 @@ const contactPageData = {
     title: "Phone Number",
     subtitle: "+91 8320758513",
   },
+  isResumeDownloadable: false, // change it to true to show resume download button
 };
 
 export {
