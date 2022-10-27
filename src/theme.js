@@ -195,4 +195,4 @@ export const materialTealTheme = {
   splashBg: "#E1E2E1",
 };
 
-export const chosenTheme = materialLightTheme;
+export const chosenTheme = blueTheme;
