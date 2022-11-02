@@ -24,6 +24,10 @@ class ExperienceAccordion extends Component {
                       borderColor: `${theme.headerColor}`,
                       marginBottom: `3px`,
                       fontFamily: "Google Sans Regular",
+                      color: `${theme.text}`,
+                      ":hover": {
+                        color: `${theme.secondaryText}`,
+                      },
                     }),
                   },
                   Content: {
