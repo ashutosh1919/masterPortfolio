@@ -89,7 +89,9 @@
       "avatar_url": "https://avatars0.githubusercontent.com/u/40804626?v=4",
       "profile": "http://tamojit.wixsite.com/mrtamojit",
       "contributions": [
-        "doc"
+        "doc",
+        "code",
+        "design"
       ]
     },
     {
@@ -258,5 +260,6 @@
   "projectOwner": "ashutosh1919",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "angular"
 }
