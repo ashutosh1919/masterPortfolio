@@ -40,7 +40,7 @@
     "@iconify/icons-logos": "^1.0.9",
     "@iconify/react": "^1.1.1",
     "dotenv": "^6.2.0",
-    "husky": "^4.2.5",
+    "husky": "^4.3.8",
     "lint-staged": "^10.2.11",
     "prettier": "2.0.5"
   },
