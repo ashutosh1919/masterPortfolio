@@ -4,11 +4,51 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+// Github Credentials
 const openSource = {
   githubConvertedToken: process.env.GITHUB_TOKEN,
   githubUserName: process.env.GITHUB_USERNAME,
 };
 
+// Reading the old records
+let oldPulls, oldIssues, oldOrgs, lastPull, lastIssue;
+oldPulls = JSON.parse(fs.readFileSync("./src/shared/opensource/pull_requests.json"));
+oldIssues = JSON.parse(fs.readFileSync("./src/shared/opensource/issues.json"));
+oldOrgs = JSON.parse(fs.readFileSync("./src/shared/opensource/organizations.json"));
+
+lastPull = oldPulls["data"][0]["id"];
+lastIssue = oldIssues["data"][0]["id"];
+
+/**For initial run where we will clear the owners records and fetch our records
+ * Otherwise we append the new PRs, Issues and orgs to old records
+ * REASON: As we get only 100 records per fetch, we need to persist the old records as well.
+*/
+if (oldIssues["clear"] === "true") {
+  oldIssues = {
+    data: [],
+    open: 0,
+    closed: 0,
+    totalCount: 0,
+  };
+}
+
+if (lastPull["clear"] === "true") {
+  oldPulls = {
+    data: [],
+    open: 0,
+    closed: 0,
+    merged: 0,
+    totalCount: 0,
+  };
+}
+
+if(oldOrgs["clear"] === "true"){
+  oldOrgs = {
+    data: []
+  }
+}
+
+// Queries
 const query_pr = {
   query: `
 	query {
@@ -126,6 +166,7 @@ const query_pinned_projects = {
 	`,
 };
 
+// Requests
 const baseUrl = "https://api.github.com/graphql";
 
 const headers = {
@@ -144,24 +185,32 @@ fetch(baseUrl, {
     var cropped = { data: [] };
     cropped["data"] = data["data"]["user"]["pullRequests"]["nodes"];
 
+    let newPulls = [];
     var open = 0;
     var closed = 0;
     var merged = 0;
     for (var i = 0; i < cropped["data"].length; i++) {
-      if (cropped["data"][i]["state"] === "OPEN") open++;
-      else if (cropped["data"][i]["state"] === "MERGED") merged++;
-      else closed++;
+      if (cropped["data"][i]["id"] !== lastPull) {
+        newPulls.push(cropped["data"][i]);
+        if (cropped["data"][i]["state"] === "OPEN") open++;
+        else if (cropped["data"][i]["state"] === "MERGED") merged++;
+        else closed++;
+      } else {
+        break;
+      }
     }
 
-    cropped["open"] = open;
-    cropped["closed"] = closed;
-    cropped["merged"] = merged;
-    cropped["totalCount"] = cropped["data"].length;
+    oldPulls["data"] = newPulls.concat(oldPulls["data"]);
+
+    oldPulls["open"] = oldPulls["open"] + open;
+    oldPulls["closed"] = oldPulls["closed"] + closed;
+    oldPulls["merged"] = oldPulls["merged"] + merged;
+    oldPulls["totalCount"] = oldPulls["data"].length;
 
     console.log("Fetching the Pull Request Data.\n");
     fs.writeFile(
       "./src/shared/opensource/pull_requests.json",
-      JSON.stringify(cropped),
+      JSON.stringify(oldPulls),
       function (err) {
         if (err) {
           console.log(err);
@@ -182,21 +231,29 @@ fetch(baseUrl, {
     var cropped = { data: [] };
     cropped["data"] = data["data"]["user"]["issues"]["nodes"];
 
+    let newIssues = [];
     var open = 0;
     var closed = 0;
     for (var i = 0; i < cropped["data"].length; i++) {
-      if (cropped["data"][i]["closed"] === false) open++;
-      else closed++;
+      if (cropped["data"][i]["id"] !== lastIssue) {
+        newIssues.push(cropped["data"][i]);
+        if (cropped["data"][i]["closed"] === false) open++;
+        else closed++;
+      } else {
+        break;
+      }
     }
 
-    cropped["open"] = open;
-    cropped["closed"] = closed;
-    cropped["totalCount"] = cropped["data"].length;
+    oldIssues["data"] = newIssues.concat(oldIssues["data"]);
+
+    oldIssues["open"] = oldIssues["open"] + open;
+    oldIssues["closed"] = oldIssues["closed"] + closed;
+    oldIssues["totalCount"] = oldIssues["data"].length;
 
     console.log("Fetching the Issues Data.\n");
     fs.writeFile(
       "./src/shared/opensource/issues.json",
-      JSON.stringify(cropped),
+      JSON.stringify(oldIssues),
       function (err) {
         if (err) {
           console.log(err);
@@ -215,19 +272,18 @@ fetch(baseUrl, {
   .then((txt) => {
     const data = JSON.parse(txt);
     const orgs = data["data"]["user"]["repositoriesContributedTo"]["nodes"];
-    var newOrgs = { data: [] };
     for (var i = 0; i < orgs.length; i++) {
       var obj = orgs[i]["owner"];
       if (obj["__typename"] === "Organization") {
         var flag = 0;
-        for (var j = 0; j < newOrgs["data"].length; j++) {
-          if (JSON.stringify(obj) === JSON.stringify(newOrgs["data"][j])) {
+        for (var j = 0; j < oldOrgs["data"].length; j++) {
+          if (JSON.stringify(obj) === JSON.stringify(oldOrgs["data"][j])) {
             flag = 1;
             break;
           }
         }
         if (flag === 0) {
-          newOrgs["data"].push(obj);
+          oldOrgs["data"].unshift(obj);
         }
       }
     }
@@ -235,7 +291,7 @@ fetch(baseUrl, {
     console.log("Fetching the Contributed Organization Data.\n");
     fs.writeFile(
       "./src/shared/opensource/organizations.json",
-      JSON.stringify(newOrgs),
+      JSON.stringify(oldOrgs),
       function (err) {
         if (err) {
           console.log(err);
