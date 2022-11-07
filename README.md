@@ -115,7 +115,7 @@ Now, you need to run following command. (Make sure you executed `npm install` be
 **Warning:** Treat your tokens like passwords and keep them secret. When working with the API, use tokens as environment variables instead of hardcoding them into your programs.
 
 ```node
-node git_data_fetcher.mjs
+node git_data_fetcher.js
 ```
 
 This will fetch all the data from your github and it will automatically replace my data with yours.
