@@ -70,6 +70,22 @@ class DegreeCard extends Component {
                   </div>
                 </a>
               )}
+              {degree.website_link && (
+                <a
+                  href={degree.grade_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div
+                    className="visit-btn"
+                    style={{ backgroundColor: theme.headerColor }}
+                  >
+                    <p className="btn" style={{ color: theme.text }}>
+                      成績
+                    </p>
+                  </div>
+                </a>
+              )}
             </div>
           </div>
         </Fade>

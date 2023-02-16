@@ -386,10 +386,12 @@ const degrees = {
       alt_name: "Tokyo Tech",
       duration: "2019 - 2023",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        "⚡ 初年度に理工系の基礎科目を学び、2年次以降に情報工学の専門知識を学びました。",
+        "⚡ 情報工学分野では機械学習を中心に数理的な背景まで体系的な知識を会得しました。",
+        "⚡",
       ],
+      grade_link:
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRiy3mbWlCj8DMfjRQt29zHFCo6L8QizFcfGa16gZEyJh3fuZX0o-LW2R5pgF464Mb5BDjmfKb2fvTN/pubhtml",
       website_link: "https://www.nlp.c.titech.ac.jp/index.ja.html",
     },
     {

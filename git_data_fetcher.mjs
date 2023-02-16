@@ -8,7 +8,7 @@ const openSource = {
   githubConvertedToken: process.env.GITHUB_TOKEN,
   githubUserName: process.env.GITHUB_USERNAME,
 };
-
+console.log(openSource.githubUserName)
 const query_pr = {
   query: `
 	query {
