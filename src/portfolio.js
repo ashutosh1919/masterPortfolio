@@ -779,6 +779,145 @@ const publicationsHeader = {
     "I have worked on and published a few research papers and publications of my own.",
   avatar_image_path: "projects_image.svg",
 };
+const projects = {
+  certifications: [
+    {
+      title: "Grade2pdfonTitech",
+      subtitle:
+        "東工大の成績表を外部に公開しやすいよう、学籍番号、担当教員名を取り除き、整形します。",
+      logo_path: "grade2pdf.png",
+      certificate_link: "https://github.com/immisius/Grades2pdfonTitech",
+      // alt_name: "AtCoder",
+      color_code: "#FFFF70",
+    },
+    {
+      title: "PrivateOrPublic??",
+      subtitle:
+        "架空の大学に私立、国立、公立を割り当てられる機械学習Web Appです。国立大学に横文字を追加して私立大学にしたり、私立大学に国立っぽい地名を加えて国立大学にしたりできます。架空の大学を作ろう。",
+      logo_path: "PrivateOrPublic.png",
+      certificate_link: "https://github.com/immisius/PrivateOrPublic",
+      // alt_name: "Kgle",
+      color_code: "#0000FF",
+    },
+    {
+      title: "Signate",
+      //   subtitle: "- TOEIC",
+      logo_path: "signate.png",
+      certificate_link: "https://signate.jp/users/110232",
+      alt_name: "Signate",
+      color_code: "#FFFFFF",
+    },
+    {
+      title: "Nishika",
+      //   subtitle: "- TOEIC",
+      logo_path: "nishika.jpg",
+      certificate_link:
+        "https://competition.nishika.com/users/YZrBgeo5KRVjqJmx",
+      alt_name: "Nishika",
+      color_code: "#7F8DAA",
+    },
+    // {
+    //   title: "Deep Learning",
+    //   subtitle: "- Andrew Ng",
+    //   logo_path: "deeplearning_ai_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/specialization/H8CPSFXAJD2G",
+    //   alt_name: "deeplearning.ai",
+    //   color_code: "#00000099",
+    // },
+    // {
+    //   title: "ML on GCP",
+    //   subtitle: "- GCP Training",
+    //   logo_path: "google_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/specialization/EB4VJARK8647",
+    //   alt_name: "Google",
+    //   color_code: "#0C9D5899",
+    // },
+    // {
+    //   title: "Data Science",
+    //   subtitle: "- Alex Aklson",
+    //   logo_path: "ibm_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/specialization/PLEAPCSJBZT5",
+    //   alt_name: "IBM",
+    //   color_code: "#1F70C199",
+    // },
+    // {
+    //   title: "Big Data",
+    //   subtitle: "- Kim Akers",
+    //   logo_path: "microsoft_logo.png",
+    //   certificate_link:
+    //     "https://drive.google.com/file/d/164zKCFOsI4vGqokc-Qj-e_D00kLDHIrG/view",
+    //   alt_name: "Microsoft",
+    //   color_code: "#D83B0199",
+    // },
+    // {
+    //   title: "Advanced Data Science",
+    //   subtitle: "- Romeo Kienzler",
+    //   logo_path: "ibm_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/verify/BH2T9BRU87BH",
+    //   alt_name: "IBM",
+    //   color_code: "#1F70C199",
+    // },
+    // {
+    //   title: "Advanced ML on GCP",
+    //   subtitle: "- GCP Training",
+    //   logo_path: "google_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/verify/5JZZM7TNQ2AV",
+    //   alt_name: "Google",
+    //   color_code: "#0C9D5899",
+    // },
+    // {
+    //   title: "DL on Tensorflow",
+    //   subtitle: "- Laurence Moroney",
+    //   logo_path: "deeplearning_ai_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/verify/6T4DCUGNK8J8",
+    //   alt_name: "deeplearning.ai",
+    //   color_code: "#00000099",
+    // },
+    // {
+    //   title: "Fullstack Development",
+    //   subtitle: "- Jogesh Muppala",
+    //   logo_path: "coursera_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/certificate/NRANJA66Y2YA",
+    //   alt_name: "Coursera",
+    //   color_code: "#2A73CC",
+    // },
+    // {
+    //   title: "Kuberenetes on GCP",
+    //   subtitle: "- Qwiklabs",
+    //   logo_path: "gcp_logo.png",
+    //   certificate_link:
+    //     "https://google.qwiklabs.com/public_profiles/e4d5a92b-faf6-4679-a70b-a9047c0cd750",
+    //   alt_name: "GCP",
+    //   color_code: "#4285F499",
+    // },
+    // {
+    //   title: "Cryptography",
+    //   subtitle: "- Saurabh Mukhopadhyay",
+    //   logo_path: "nptel_logo.png",
+    //   certificate_link:
+    //     "https://drive.google.com/open?id=1z5ExD_QJVdU0slLkp8CBqSF3-C3g-ro_",
+    //   alt_name: "NPTEL",
+    //   color_code: "#FFBB0099",
+    // },
+    // {
+    //   title: "Cloud Architecture",
+    //   subtitle: "- Qwiklabs",
+    //   logo_path: "gcp_logo.png",
+    //   certificate_link:
+    //     "https://google.qwiklabs.com/public_profiles/5fab4b2d-be6f-408c-8dcb-6d3b58ecb4a2",
+    //   alt_name: "GCP",
+    //   color_code: "#4285F499",
+    // },
+  ],
+};
+
 const publications = {
   data: [
     // {
@@ -863,6 +1002,7 @@ export {
   competitions,
   experience,
   projectsHeader,
+  projects,
   publicationsHeader,
   publications,
   contactPageData,
