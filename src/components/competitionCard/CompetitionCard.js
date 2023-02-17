@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./CertificationCard.css";
 import { Fade } from "react-reveal";
-import Competitions from "../../containers/competitions/Competitions";
+// import Competitions from "../../containers/competitions/Competitions";
 
 class CompetitionCard extends Component {
   render() {

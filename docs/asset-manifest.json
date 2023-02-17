@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.919ac5b2.chunk.css",
-    "main.js": "/static/js/main.6e684f7f.chunk.js",
-    "main.js.map": "/static/js/main.6e684f7f.chunk.js.map",
+    "main.js": "/static/js/main.0fe6cc7b.chunk.js",
+    "main.js.map": "/static/js/main.0fe6cc7b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0403a33d.js",
     "runtime-main.js.map": "/static/js/runtime-main.0403a33d.js.map",
-    "static/js/2.6ef05e92.chunk.js": "/static/js/2.6ef05e92.chunk.js",
-    "static/js/2.6ef05e92.chunk.js.map": "/static/js/2.6ef05e92.chunk.js.map",
+    "static/js/2.14143e50.chunk.js": "/static/js/2.14143e50.chunk.js",
+    "static/js/2.14143e50.chunk.js.map": "/static/js/2.14143e50.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6b53983f9b2c0299fe42d63b83638747.js": "/precache-manifest.6b53983f9b2c0299fe42d63b83638747.js",
+    "precache-manifest.e17a91f989adce59f05568c3acc9c77d.js": "/precache-manifest.e17a91f989adce59f05568c3acc9c77d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.919ac5b2.chunk.css.map": "/static/css/main.919ac5b2.chunk.css.map",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/address_image.svg": "/static/media/address_image.16559172.svg",
     "static/media/animated_ashutosh.png": "/static/media/animated_ashutosh.eaf02c2d.png",
     "static/media/animated_logo.svg": "/static/media/animated_logo.dcd6dee2.svg",
+    "static/media/ardija.gif": "/static/media/ardija.d2e2ba6a.gif",
     "static/media/atcoder.png": "/static/media/atcoder.fb263b01.png",
     "static/media/blogs_image.svg": "/static/media/blogs_image.058eca4c.svg",
     "static/media/cloud_infrastructure.svg": "/static/media/cloud_infrastructure.cacbc42b.svg",
@@ -44,6 +45,7 @@
     "static/media/kateikyousi.svg": "/static/media/kateikyousi.19b89071.svg",
     "static/media/legato_logo.png": "/static/media/legato_logo.c597fbde.png",
     "static/media/manOnTable.svg": "/static/media/manOnTable.83ac24fb.svg",
+    "static/media/me.png": "/static/media/me.84350fcf.png",
     "static/media/muffito_logo.png": "/static/media/muffito_logo.069938a8.png",
     "static/media/nishika.jpg": "/static/media/nishika.ecc1709a.jpg",
     "static/media/nptel_logo.png": "/static/media/nptel_logo.95a12a2b.png",
@@ -58,12 +60,13 @@
     "static/media/tiktok_logo.png": "/static/media/tiktok_logo.0993e324.png",
     "static/media/toiec.png": "/static/media/toiec.2acce555.png",
     "static/media/toudai.jpg": "/static/media/toudai.a57d669c.jpg",
-    "static/media/ui_ux_design.svg": "/static/media/ui_ux_design.d6363089.svg"
+    "static/media/ui_ux_design.svg": "/static/media/ui_ux_design.d6363089.svg",
+    "static/media/wave.jpeg": "/static/media/wave.60eaf048.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.0403a33d.js",
-    "static/js/2.6ef05e92.chunk.js",
+    "static/js/2.14143e50.chunk.js",
     "static/css/main.919ac5b2.chunk.css",
-    "static/js/main.6e684f7f.chunk.js"
+    "static/js/main.0fe6cc7b.chunk.js"
   ]
 }

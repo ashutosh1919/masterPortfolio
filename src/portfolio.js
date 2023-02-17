@@ -831,23 +831,23 @@ const contactPageData = {
     profile_image_path: "me.png",
     description: "",
   },
-  blogSection: {
-    title: "Blogs",
-    subtitle:
-      "For individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
-    link: "https://blogs.ashutoshhathidara.com/",
-    avatar_image_path: "blogs_image.svg",
-  },
-  addressSection: {
-    title: "Address",
-    subtitle: "",
-    avatar_image_path: "address_image.svg",
-    location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76",
-  },
-  phoneSection: {
-    title: "",
-    subtitle: "",
-  },
+  //   blogSection: {
+  //     title: "Blogs",
+  //     subtitle:
+  //       "For individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
+  //     link: "https://blogs.ashutoshhathidara.com/",
+  //     avatar_image_path: "blogs_image.svg",
+  //   },
+  //   addressSection: {
+  //     title: "Address",
+  //     subtitle: "",
+  //     avatar_image_path: "address_image.svg",
+  //     location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76",
+  //   },
+  //   phoneSection: {
+  //     title: "",
+  //     subtitle: "",
+  //   },
 };
 
 export {
