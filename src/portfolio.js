@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "データサイエンスの力を用いて世界をよりよくすることに興味があります。人工知能、特にニューラルネットワークを用いた問題解決に注力しています。計算機との出会いは中学校の時に熱中したオンラインゲームです。E-sportsという言葉もなく、ゲーム配信の価値が模索されている中、ローエンドな計算機でオンラインゲーム、またそこでの仲間とのコミュニケーションを楽しみました。その経験から東京工業大学情報理工学院に入学し、計算機の理解を深めました。機械の「知能」を機械の「言葉」に感じ、自然言語処理を専門とする研究室に所属しています。言葉を理解して人の手伝いができるような機械に魅力を感じています。",
   resumeLink:
-    "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
+    "https://drive.google.com/file/d/1k0SYUjUUk-VWZHNg92YVFdFLeiZua1qz/view?usp=sharing",
   portfolio_repository: "https://github.com/immisius/masterPortfolio",
   githubProfile: "https://github.com/immisius",
 };
@@ -667,7 +667,7 @@ const competitions = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Job, Internship and Volunteership",
+  subtitle: "Job, Internship and Hobby",
   description: "",
   header_image_path: "experience.svg",
   sections: [
@@ -713,7 +713,7 @@ const experience = {
       title: "Internships",
       experiences: [
         {
-          title: "Wide range software engineer intern",
+          title: "Software Engineer intern",
           company: "IPDefine Ltd.",
           company_url: "https://ipdefine.com/",
           logo_path: "ipdefine.avif",
@@ -724,14 +724,52 @@ const experience = {
         },
       ],
     },
+    {
+      title: "Hobbies",
+      experiences: [
+        {
+          title: "サークル活動",
+          company: "WAVE",
+          company_url:
+            "https://twitter.com/wave_diving?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+          logo_path: "wave.jpeg",
+          duration: "2019/4 -  ",
+          location: "Meguro, Tokyo",
+          description:
+            "海好き、水族館好き、魚好きが高じて東工大入学とともにダイビングサークルに入りました。夏の肌は黒くなりがちです。",
+          color: "#338AFF",
+        },
+        {
+          title: "サッカー観戦",
+          company: "大宮アルディージャ",
+          company_url: "https://www.ardija.co.jp/",
+          logo_path: "ardija.gif",
+          duration: "1999/10 -  ",
+          location: "Omiya, Saitama",
+          description:
+            "サッカー観戦が好きです。特に大宮アルディージャを応援しています。シーズンチケットを持っています。#寝ても大宮",
+          color: "#e06c00",
+        },
+        {
+          title: "Formula 1 観戦",
+          company: "Formula 1",
+          company_url: "https://www.formula1.com/",
+          logo_path: "f1.png",
+          duration: "2021 -  ",
+          location: "The Earth",
+          description:
+            "F1が好きです。全ドライバー、マーシャル、ピットクルーの安全を願っています。いつか生で観戦したいです。",
+          color: "#FF0000",
+        },
+      ],
+    },
   ],
 };
 
 // Projects Page
 const projectsHeader = {
   title: "Projects",
-  description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+  description: "機械学習を用いたアプリ開発を行っています。",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -741,92 +779,48 @@ const publicationsHeader = {
     "I have worked on and published a few research papers and publications of my own.",
   avatar_image_path: "projects_image.svg",
 };
-const certifications_pub = {
-  data: [
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzi=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNze=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzt=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzb=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-  ],
-};
 const publications = {
   data: [
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzi=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNze=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzt=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzb=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzi=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNze=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzt=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzb=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
   ],
 };
 
@@ -834,9 +828,8 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_ashutosh.png",
-    description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+    profile_image_path: "me.png",
+    description: "",
   },
   blogSection: {
     title: "Blogs",
@@ -847,8 +840,7 @@ const contactPageData = {
   },
   addressSection: {
     title: "Address",
-    subtitle:
-      "Ambavadi vas, Kanodar, T.A.-Palanpur, Dist.-Banaskantha, Gujarat - 385520",
+    subtitle: "",
     avatar_image_path: "address_image.svg",
     location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76",
   },
@@ -867,7 +859,7 @@ export {
   competitiveSites,
   degrees,
   certifications,
-  certifications_pub,
+  //   certifications_pub,
   competitions,
   experience,
   projectsHeader,
