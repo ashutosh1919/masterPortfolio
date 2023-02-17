@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "569e442a30e04e89ac039952f6c39547",
+    "revision": "12ba61a073c4aaa8c7eaec74b3e6ab3b",
     "url": "/index.html"
   },
   {
-    "revision": "50a7e8552d336e3272df",
+    "revision": "d5490dd74d1ebaff8c88",
     "url": "/static/css/main.919ac5b2.chunk.css"
   },
   {
-    "revision": "655a7ec33f30ac56c783",
-    "url": "/static/js/2.6ef05e92.chunk.js"
+    "revision": "203faddd05ed23be5357",
+    "url": "/static/js/2.14143e50.chunk.js"
   },
   {
-    "revision": "50a7e8552d336e3272df",
-    "url": "/static/js/main.6e684f7f.chunk.js"
+    "revision": "d5490dd74d1ebaff8c88",
+    "url": "/static/js/main.043b3c37.chunk.js"
   },
   {
     "revision": "6138eaf4a6c67cbf898e",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "dcd6dee2bd7458a4a576dc131506fd83",
     "url": "/static/media/animated_logo.dcd6dee2.svg"
+  },
+  {
+    "revision": "d2e2ba6afbd90cd848ec28846984d40e",
+    "url": "/static/media/ardija.d2e2ba6a.gif"
   },
   {
     "revision": "fb263b01ea0ee2770c26c62ce812094b",
@@ -236,6 +240,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/manOnTable.83ac24fb.svg"
   },
   {
+    "revision": "84350fcfa64aa0e50d6181f0be81839a",
+    "url": "/static/media/me.84350fcf.png"
+  },
+  {
     "revision": "069938a84edd6ebf383c318e9feb5d4c",
     "url": "/static/media/muffito_logo.069938a8.png"
   },
@@ -294,5 +302,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d63630893eb8cb64af65f395d393c481",
     "url": "/static/media/ui_ux_design.d6363089.svg"
+  },
+  {
+    "revision": "60eaf04895e4001f8da27b49949d5e49",
+    "url": "/static/media/wave.60eaf048.jpeg"
   }
 ]);
