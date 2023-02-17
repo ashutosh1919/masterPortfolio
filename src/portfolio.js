@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "KosukeEndo",
   nickname: "immisius",
   subTitle:
-    "データサイエンスの力を用いて世界をよりよくすることに興味があります。人工知能、特にニューラルネットワークを用いた問題解決に注力しています.計算機との出会いは中学校の時に熱中したオンラインゲームです。E-sportsという言葉もなく、ゲーム配信の価値が模索されている中、ローエンドな計算機でオンラインゲーム、またそこでの仲間とのコミュニケーションを楽しみました。その経験から東京工業大学情報理工学院に入学し、計算機の理解を深めました。機械の「知能」を機械の「言葉」に感じ、自然言語処理を専門とする研究室に所属しています。言葉を理解して人の手伝いができるような機械に魅力を感じています。",
+    "データサイエンスの力を用いて世界をよりよくすることに興味があります。人工知能、特にニューラルネットワークを用いた問題解決に注力しています。計算機との出会いは中学校の時に熱中したオンラインゲームです。E-sportsという言葉もなく、ゲーム配信の価値が模索されている中、ローエンドな計算機でオンラインゲーム、またそこでの仲間とのコミュニケーションを楽しみました。その経験から東京工業大学情報理工学院に入学し、計算機の理解を深めました。機械の「知能」を機械の「言葉」に感じ、自然言語処理を専門とする研究室に所属しています。言葉を理解して人の手伝いができるような機械に魅力を感じています。",
   resumeLink:
     "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
   portfolio_repository: "https://github.com/immisius/masterPortfolio",
@@ -326,21 +326,21 @@ const skills = {
 // Education Page
 const competitiveSites = {
   competitiveSites: [
-    {
-      siteName: "LeetCode",
-      iconifyClassname: "simple-icons:leetcode",
-      style: {
-        color: "#F79F1B",
-      },
-      profileLink: "https://leetcode.com/immisius/",
-    },
     // {
-    //   siteName: "HackerRank",
+    //   siteName: "LeetCode",
+    //   iconifyClassname: "simple-icons:leetcode",
+    //   style: {
+    //     color: "#F79F1B",
+    //   },
+    //   profileLink: "https://leetcode.com/immisius/",
+    // },
+    // {
+    //   siteName: "AtCoder",
     //   iconifyClassname: "simple-icons:hackerrank",
     //   style: {
     //     color: "#2EC866",
     //   },
-    //   profileLink: "https://www.hackerrank.com/layman_brother",
+    //   profileLink: "https://atcoder.jp/users/immisius",
     // },
     // {
     //   siteName: "Codechef",
@@ -366,14 +366,14 @@ const competitiveSites = {
     //   },
     //   profileLink: "https://www.hackerearth.com/@ashutosh391",
     // },
-    {
-      siteName: "Kaggle",
-      iconifyClassname: "simple-icons:kaggle",
-      style: {
-        color: "#20BEFF",
-      },
-      profileLink: "https://www.kaggle.com/immisius",
-    },
+    // {
+    //   siteName: "Kaggle",
+    //   iconifyClassname: "simple-icons:kaggle",
+    //   style: {
+    //     color: "#20BEFF",
+    //   },
+    //   profileLink: "https://www.kaggle.com/immisius",
+    // },
   ],
 };
 
@@ -388,7 +388,7 @@ const degrees = {
       descriptions: [
         "⚡ 初年度に理工系の基礎科目を学び、2年次以降に情報工学の専門知識を学びました。",
         "⚡ 情報工学分野では機械学習を中心に数理的な背景まで体系的な知識を会得しました。",
-        "⚡",
+        "⚡ 自然言語処理を専門とする岡崎研究室に所属し、人工知能の研究をしました。",
       ],
       grade_link:
         "https://docs.google.com/spreadsheets/d/e/2PACX-1vRiy3mbWlCj8DMfjRQt29zHFCo6L8QizFcfGa16gZEyJh3fuZX0o-LW2R5pgF464Mb5BDjmfKb2fvTN/pubhtml",
@@ -400,11 +400,7 @@ const degrees = {
       logo_path: "tokyotech.jpeg",
       alt_name: "Tokyo Tech",
       duration: "2023 - 2025",
-      descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
-      ],
+      descriptions: ["⚡ 引き続き、岡崎研究室に所属する予定です。"],
       website_link: "https://www.nlp.c.titech.ac.jp/index.ja.html",
     },
   ],
@@ -413,159 +409,303 @@ const degrees = {
 const certifications = {
   certifications: [
     {
-      title: "Machine Learning",
-      subtitle: "- Andrew Ng",
-      logo_path: "stanford_logo.png",
+      title: "深層生成モデルサマースクール",
+      subtitle: "- 東大 松尾研究室",
+      logo_path: "toudai.jpg",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/22MTSSC5WDTM",
-      alt_name: "Stanford University",
-      color_code: "#8C151599",
+        "https://drive.google.com/file/d/1ZfGuu6fUwdssNaIcHoppKCz0mDe9_TQr/view?usp=sharing",
+      alt_name: "東大",
+      color_code: "#FFFFFF",
     },
     {
-      title: "Deep Learning",
-      subtitle: "- Andrew Ng",
-      logo_path: "deeplearning_ai_logo.png",
+      title: "TOEIC L&W 865",
+      subtitle: "- ETS",
+      logo_path: "toiec.png",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/H8CPSFXAJD2G",
-      alt_name: "deeplearning.ai",
-      color_code: "#00000099",
+        "https://drive.google.com/file/d/1IFyoVx6oR25LjdULoz9H1WqhcwiiQ49L/view?usp=sharing",
+      alt_name: "TOEIC",
+      color_code: "#FFFFFF",
     },
-    {
-      title: "ML on GCP",
-      subtitle: "- GCP Training",
-      logo_path: "google_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/EB4VJARK8647",
-      alt_name: "Google",
-      color_code: "#0C9D5899",
-    },
-    {
-      title: "Data Science",
-      subtitle: "- Alex Aklson",
-      logo_path: "ibm_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/PLEAPCSJBZT5",
-      alt_name: "IBM",
-      color_code: "#1F70C199",
-    },
-    {
-      title: "Big Data",
-      subtitle: "- Kim Akers",
-      logo_path: "microsoft_logo.png",
-      certificate_link:
-        "https://drive.google.com/file/d/164zKCFOsI4vGqokc-Qj-e_D00kLDHIrG/view",
-      alt_name: "Microsoft",
-      color_code: "#D83B0199",
-    },
-    {
-      title: "Advanced Data Science",
-      subtitle: "- Romeo Kienzler",
-      logo_path: "ibm_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/BH2T9BRU87BH",
-      alt_name: "IBM",
-      color_code: "#1F70C199",
-    },
-    {
-      title: "Advanced ML on GCP",
-      subtitle: "- GCP Training",
-      logo_path: "google_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/5JZZM7TNQ2AV",
-      alt_name: "Google",
-      color_code: "#0C9D5899",
-    },
-    {
-      title: "DL on Tensorflow",
-      subtitle: "- Laurence Moroney",
-      logo_path: "deeplearning_ai_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/6T4DCUGNK8J8",
-      alt_name: "deeplearning.ai",
-      color_code: "#00000099",
-    },
-    {
-      title: "Fullstack Development",
-      subtitle: "- Jogesh Muppala",
-      logo_path: "coursera_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/certificate/NRANJA66Y2YA",
-      alt_name: "Coursera",
-      color_code: "#2A73CC",
-    },
-    {
-      title: "Kuberenetes on GCP",
-      subtitle: "- Qwiklabs",
-      logo_path: "gcp_logo.png",
-      certificate_link:
-        "https://google.qwiklabs.com/public_profiles/e4d5a92b-faf6-4679-a70b-a9047c0cd750",
-      alt_name: "GCP",
-      color_code: "#4285F499",
-    },
-    {
-      title: "Cryptography",
-      subtitle: "- Saurabh Mukhopadhyay",
-      logo_path: "nptel_logo.png",
-      certificate_link:
-        "https://drive.google.com/open?id=1z5ExD_QJVdU0slLkp8CBqSF3-C3g-ro_",
-      alt_name: "NPTEL",
-      color_code: "#FFBB0099",
-    },
-    {
-      title: "Cloud Architecture",
-      subtitle: "- Qwiklabs",
-      logo_path: "gcp_logo.png",
-      certificate_link:
-        "https://google.qwiklabs.com/public_profiles/5fab4b2d-be6f-408c-8dcb-6d3b58ecb4a2",
-      alt_name: "GCP",
-      color_code: "#4285F499",
-    },
+
+    // {
+    //   title: "Deep Learning",
+    //   subtitle: "- Andrew Ng",
+    //   logo_path: "deeplearning_ai_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/specialization/H8CPSFXAJD2G",
+    //   alt_name: "deeplearning.ai",
+    //   color_code: "#00000099",
+    // },
+    // {
+    //   title: "ML on GCP",
+    //   subtitle: "- GCP Training",
+    //   logo_path: "google_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/specialization/EB4VJARK8647",
+    //   alt_name: "Google",
+    //   color_code: "#0C9D5899",
+    // },
+    // {
+    //   title: "Data Science",
+    //   subtitle: "- Alex Aklson",
+    //   logo_path: "ibm_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/specialization/PLEAPCSJBZT5",
+    //   alt_name: "IBM",
+    //   color_code: "#1F70C199",
+    // },
+    // {
+    //   title: "Big Data",
+    //   subtitle: "- Kim Akers",
+    //   logo_path: "microsoft_logo.png",
+    //   certificate_link:
+    //     "https://drive.google.com/file/d/164zKCFOsI4vGqokc-Qj-e_D00kLDHIrG/view",
+    //   alt_name: "Microsoft",
+    //   color_code: "#D83B0199",
+    // },
+    // {
+    //   title: "Advanced Data Science",
+    //   subtitle: "- Romeo Kienzler",
+    //   logo_path: "ibm_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/verify/BH2T9BRU87BH",
+    //   alt_name: "IBM",
+    //   color_code: "#1F70C199",
+    // },
+    // {
+    //   title: "Advanced ML on GCP",
+    //   subtitle: "- GCP Training",
+    //   logo_path: "google_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/verify/5JZZM7TNQ2AV",
+    //   alt_name: "Google",
+    //   color_code: "#0C9D5899",
+    // },
+    // {
+    //   title: "DL on Tensorflow",
+    //   subtitle: "- Laurence Moroney",
+    //   logo_path: "deeplearning_ai_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/verify/6T4DCUGNK8J8",
+    //   alt_name: "deeplearning.ai",
+    //   color_code: "#00000099",
+    // },
+    // {
+    //   title: "Fullstack Development",
+    //   subtitle: "- Jogesh Muppala",
+    //   logo_path: "coursera_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/certificate/NRANJA66Y2YA",
+    //   alt_name: "Coursera",
+    //   color_code: "#2A73CC",
+    // },
+    // {
+    //   title: "Kuberenetes on GCP",
+    //   subtitle: "- Qwiklabs",
+    //   logo_path: "gcp_logo.png",
+    //   certificate_link:
+    //     "https://google.qwiklabs.com/public_profiles/e4d5a92b-faf6-4679-a70b-a9047c0cd750",
+    //   alt_name: "GCP",
+    //   color_code: "#4285F499",
+    // },
+    // {
+    //   title: "Cryptography",
+    //   subtitle: "- Saurabh Mukhopadhyay",
+    //   logo_path: "nptel_logo.png",
+    //   certificate_link:
+    //     "https://drive.google.com/open?id=1z5ExD_QJVdU0slLkp8CBqSF3-C3g-ro_",
+    //   alt_name: "NPTEL",
+    //   color_code: "#FFBB0099",
+    // },
+    // {
+    //   title: "Cloud Architecture",
+    //   subtitle: "- Qwiklabs",
+    //   logo_path: "gcp_logo.png",
+    //   certificate_link:
+    //     "https://google.qwiklabs.com/public_profiles/5fab4b2d-be6f-408c-8dcb-6d3b58ecb4a2",
+    //   alt_name: "GCP",
+    //   color_code: "#4285F499",
+    // },
   ],
 };
-
+const competitions = {
+  certifications: [
+    {
+      title: "AtCoder",
+      // subtitle: "- 東大 松尾研究室",
+      logo_path: "atcoder.png",
+      certificate_link: "https://atcoder.jp/users/immisius",
+      alt_name: "AtCoder",
+      color_code: "#FFFFFF",
+    },
+    {
+      title: "Kaggle",
+      //   subtitle: "- TOEIC",
+      logo_path: "kaggle.svg",
+      certificate_link: "https://www.kaggle.com/immisius",
+      alt_name: "Kaggle",
+      color_code: "#0A2472",
+    },
+    {
+      title: "Signate",
+      //   subtitle: "- TOEIC",
+      logo_path: "signate.png",
+      certificate_link: "https://signate.jp/users/110232",
+      alt_name: "Signate",
+      color_code: "#FFFFFF",
+    },
+    {
+      title: "Nishika",
+      //   subtitle: "- TOEIC",
+      logo_path: "nishika.jpg",
+      certificate_link:
+        "https://competition.nishika.com/users/YZrBgeo5KRVjqJmx",
+      alt_name: "Nishika",
+      color_code: "#7F8DAA",
+    },
+    // {
+    //   title: "Deep Learning",
+    //   subtitle: "- Andrew Ng",
+    //   logo_path: "deeplearning_ai_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/specialization/H8CPSFXAJD2G",
+    //   alt_name: "deeplearning.ai",
+    //   color_code: "#00000099",
+    // },
+    // {
+    //   title: "ML on GCP",
+    //   subtitle: "- GCP Training",
+    //   logo_path: "google_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/specialization/EB4VJARK8647",
+    //   alt_name: "Google",
+    //   color_code: "#0C9D5899",
+    // },
+    // {
+    //   title: "Data Science",
+    //   subtitle: "- Alex Aklson",
+    //   logo_path: "ibm_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/specialization/PLEAPCSJBZT5",
+    //   alt_name: "IBM",
+    //   color_code: "#1F70C199",
+    // },
+    // {
+    //   title: "Big Data",
+    //   subtitle: "- Kim Akers",
+    //   logo_path: "microsoft_logo.png",
+    //   certificate_link:
+    //     "https://drive.google.com/file/d/164zKCFOsI4vGqokc-Qj-e_D00kLDHIrG/view",
+    //   alt_name: "Microsoft",
+    //   color_code: "#D83B0199",
+    // },
+    // {
+    //   title: "Advanced Data Science",
+    //   subtitle: "- Romeo Kienzler",
+    //   logo_path: "ibm_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/verify/BH2T9BRU87BH",
+    //   alt_name: "IBM",
+    //   color_code: "#1F70C199",
+    // },
+    // {
+    //   title: "Advanced ML on GCP",
+    //   subtitle: "- GCP Training",
+    //   logo_path: "google_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/verify/5JZZM7TNQ2AV",
+    //   alt_name: "Google",
+    //   color_code: "#0C9D5899",
+    // },
+    // {
+    //   title: "DL on Tensorflow",
+    //   subtitle: "- Laurence Moroney",
+    //   logo_path: "deeplearning_ai_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/verify/6T4DCUGNK8J8",
+    //   alt_name: "deeplearning.ai",
+    //   color_code: "#00000099",
+    // },
+    // {
+    //   title: "Fullstack Development",
+    //   subtitle: "- Jogesh Muppala",
+    //   logo_path: "coursera_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/certificate/NRANJA66Y2YA",
+    //   alt_name: "Coursera",
+    //   color_code: "#2A73CC",
+    // },
+    // {
+    //   title: "Kuberenetes on GCP",
+    //   subtitle: "- Qwiklabs",
+    //   logo_path: "gcp_logo.png",
+    //   certificate_link:
+    //     "https://google.qwiklabs.com/public_profiles/e4d5a92b-faf6-4679-a70b-a9047c0cd750",
+    //   alt_name: "GCP",
+    //   color_code: "#4285F499",
+    // },
+    // {
+    //   title: "Cryptography",
+    //   subtitle: "- Saurabh Mukhopadhyay",
+    //   logo_path: "nptel_logo.png",
+    //   certificate_link:
+    //     "https://drive.google.com/open?id=1z5ExD_QJVdU0slLkp8CBqSF3-C3g-ro_",
+    //   alt_name: "NPTEL",
+    //   color_code: "#FFBB0099",
+    // },
+    // {
+    //   title: "Cloud Architecture",
+    //   subtitle: "- Qwiklabs",
+    //   logo_path: "gcp_logo.png",
+    //   certificate_link:
+    //     "https://google.qwiklabs.com/public_profiles/5fab4b2d-be6f-408c-8dcb-6d3b58ecb4a2",
+    //   alt_name: "GCP",
+    //   color_code: "#4285F499",
+    // },
+  ],
+};
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
-  description:
-    "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
+  subtitle: "Job, Internship and Volunteership",
+  description: "",
   header_image_path: "experience.svg",
   sections: [
     {
-      title: "Work",
+      title: "Part time jobs",
       experiences: [
         {
-          title: "Associate AI Engineer",
-          company: "Legato Health Technology",
-          company_url: "https://legatohealthtech.com/",
-          logo_path: "legato_logo.png",
-          duration: "June 2020 - Aug 2021",
-          location: "Hyderabad, Telangana",
+          title: "家庭教師",
+          //   company: "Legato Health Technology",
+          //   company_url: "https://legatohealthtech.com/",
+          logo_path: "no-image.png",
+          duration: "2019/6 -  2019/12",
+          //   location: "Hyderabad, Telangana",
           description:
-            "I am working on automating healthcare products. The projects involve automation for process improvements and for significantly enhancing the profits. I am currently working on Cancer Survival and Reoccurence Prediction. Our goal is to make AI system which scales and removes doctor dependency as much as possible.",
+            "母の知り合いのご家庭で家庭教師をしました。中高一貫校に所属される高校1年生でした。数学、物理を担当しました。",
           color: "#0879bf",
         },
         {
-          title: "Android and ML Developer",
-          company: "Muffito Incorporation",
-          company_url: "https://www.linkedin.com/company/muffito-inc/about/",
-          logo_path: "muffito_logo.png",
-          duration: "May 2018 - Oct 2018",
-          location: "Pune, Maharashtra",
+          title: "塾講師",
+          company: "英才個別指導学院",
+          company_url: "https://www.eisai.org/",
+          logo_path: "eisai.jpg",
+          duration: "2020/12 - 2020/4",
+          //   location: "Pune, Maharashtra",
           description:
-            "I have created complete Android Application for locating Pub, Bar and beverage shops around you. I have also worked on implementation of algorithms for Face Detection, Text extraction from Image. I was involved in a team for creating complete software architecure of mobile and web application as well as admin panel for company.",
+            "主に理数系科目について中高生を相手に個別指導をしました。軌道に乗りつつあったところ、新型コロナウイルスの流行により退職せざるを得なくなりました。",
           color: "#9b1578",
         },
         {
-          title: "Android Developer",
-          company: "FreeCopy Pvt. Ltd.",
-          company_url: "https://www.linkedin.com/company/freecopy/about/",
-          logo_path: "freecopy_logo.png",
-          duration: "Nov 2017 - Dec 2017",
-          location: "Ahmedabad, Gujarat",
+          title: "塾講師",
+          company: "個別指導のトライ",
+          company_url: "https://www.trygroup.co.jp/",
+          logo_path: "kateikyousi.svg",
+          duration: "2020/4 - 2021/3",
+          // location: "Pune, Maharashtra",
           description:
-            "FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
-          color: "#fc1f20",
+            "主に理数系科目について中高生を相手に個別指導をしました。自宅の近くで働けたため、積極的に参加することができました。",
+          color: "#9b1578",
         },
       ],
     },
@@ -573,99 +713,14 @@ const experience = {
       title: "Internships",
       experiences: [
         {
-          title: "Machine Learning Intern",
-          company: "TikTok Inc.",
-          company_url: "https://www.tiktok.com/en/",
-          logo_path: "tiktok_logo.png",
-          duration: "May 2022 - Aug 2022",
-          location: "San Francisco, USA",
-          description:
-            "Building new features on the backend recommendation system, specifically ranking algorithms for Ads that touch hundreds of millions of people around the world. Improving online and offline content ranking algorithms by performing hard sample data replays for training steps.",
-          color: "#000000",
-        },
-        {
-          title: "Data Science Research Intern",
-          company: "Delhivery Pvt. Ltd.",
-          company_url: "https://www.delhivery.com/",
-          logo_path: "delhivery_logo.png",
-          duration: "May 2019 - Sept 2019",
-          location: "Gurgaon, Haryana",
-          description:
-            "I have worked on project of predicting freight rates based on previous data. There were two objectives: (1) To build a forecasting engine to predict daily freight rates. (2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations. I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
-          color: "#ee3c26",
-        },
-        {
-          title: "Data Science Intern",
-          company: "Intel Indexer LLC",
-          company_url:
-            "https://opencorporates.com/companies/us_dc/EXTUID_4170286",
-          logo_path: "intel_logo.jpg",
-          duration: "Nov 2018 - Dec 2018",
-          location: "Work From Home",
-          description:
-            "This is financial Solution Company. I have made Supervised Learning model for the company which can perform time series analysis on Stock price data for 32 companies. I have built LSTM Neural Networks Model and trained the data of 32 companies for last 2 years. This model is also used for forecasting.",
-          color: "#0071C5",
-        },
-      ],
-    },
-    {
-      title: "Volunteerships",
-      experiences: [
-        {
-          title: "Google Explore ML Facilitator",
-          company: "Google",
-          company_url: "https://about.google/",
-          logo_path: "google_logo.png",
-          duration: "June 2019 - April 2020",
-          location: "Hyderabad, Telangana",
-          description:
-            "Explore Machine Learning (ML) is a Google-sponsored program for university students to get started with Machine Learning. The curriculum offers 3 tracks of ML Content (Beginner, Intermediate, Advanced) and relies on university student facilitators to train other students on campus and to build opensource projects under this program.",
-          color: "#4285F4",
-        },
-        {
-          title: "Microsoft Student Partner",
-          company: "Microsoft",
-          company_url: "https://www.microsoft.com/",
-          logo_path: "microsoft_logo.png",
-          duration: "Aug 2019 - May 2020",
-          location: "Hyderabad, Telangana",
-          description:
-            "Microsoft Student Partner is a program for university students to lead the awareness and use of Cloud especially Azure tools in the development of their projects and startups. Under this program, I have organised hands on workshops and seminars to teach Cloud Computing concepts to students.",
-          color: "#D83B01",
-        },
-        {
-          title: "Mozilla Campus Captain",
-          company: "Mozilla",
-          company_url: "https://www.mozilla.org/",
-          logo_path: "mozilla_logo.png",
-          duration: "Oct 2019 - May 2020",
-          location: "Kurnool, Andhra Pradesh",
-          description:
-            "My responsibility for this program was to create opensource environment in college and in the city. We have organised multiple hackathons on the problems collected by ordinary people from Kurnool city. We have build opensource community of our own college. The community is available at dsc_iiitdmk on github.",
-          color: "#000000",
-        },
-        {
-          title: "Developer Students Club Member",
-          company: "DSC IIITDM Kurnool",
-          company_url:
-            "https://www.linkedin.com/company/developer-students-club-iiitdm-kurnool",
-          logo_path: "dsc_logo.png",
-          duration: "Jan 2018 - May 2020",
-          location: "Kurnool, Andhra Pradesh",
-          description:
-            "We have well established developer club in college which is directly associated with Google Developers. We have developed many interdisciplinary projects under the membership of this club. We have organised workshops and activities on Android Application Development, Flutter and React JS.",
-          color: "#0C9D58",
-        },
-        {
-          title: "Developer Program Member",
-          company: "Github",
-          company_url: "https://github.com/",
-          logo_path: "github_logo.png",
-          duration: "July 2019 - PRESENT",
-          location: "Work From Home",
-          description:
-            "I am actively contributing to many opensource projects. I have contributed to projects of organisations like Tensorflow, Uber, Facebook, Google, Scikit-learn, Kiwix, Sympy, Python, NVLabs, Fossasia, Netrack, Keras etc. These contributions include bug fixes, feature requests and formulating proper documentation for project.",
-          color: "#181717",
+          title: "Wide range software engineer intern",
+          company: "IPDefine Ltd.",
+          company_url: "https://ipdefine.com/",
+          logo_path: "ipdefine.avif",
+          duration: "2021/4 - ",
+          location: "Tokyo, Japan",
+          description: "",
+          color: "#F40078",
         },
       ],
     },
@@ -686,7 +741,50 @@ const publicationsHeader = {
     "I have worked on and published a few research papers and publications of my own.",
   avatar_image_path: "projects_image.svg",
 };
-
+const certifications_pub = {
+  data: [
+    {
+      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+      name: "Artificial Intelligence Paper",
+      createdAt: "2020-03-06T16:26:54Z",
+      description: "Paper Written on Artificial Intelligence published in xyz ",
+      url:
+        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    },
+    {
+      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzi=",
+      name: "Artificial Intelligence Paper",
+      createdAt: "2020-03-06T16:26:54Z",
+      description: "Paper Written on Artificial Intelligence published in xyz ",
+      url:
+        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    },
+    {
+      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNze=",
+      name: "Artificial Intelligence Paper",
+      createdAt: "2020-03-06T16:26:54Z",
+      description: "Paper Written on Artificial Intelligence published in xyz ",
+      url:
+        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    },
+    {
+      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzt=",
+      name: "Artificial Intelligence Paper",
+      createdAt: "2020-03-06T16:26:54Z",
+      description: "Paper Written on Artificial Intelligence published in xyz ",
+      url:
+        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    },
+    {
+      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzb=",
+      name: "Artificial Intelligence Paper",
+      createdAt: "2020-03-06T16:26:54Z",
+      description: "Paper Written on Artificial Intelligence published in xyz ",
+      url:
+        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    },
+  ],
+};
 const publications = {
   data: [
     {
@@ -769,6 +867,8 @@ export {
   competitiveSites,
   degrees,
   certifications,
+  certifications_pub,
+  competitions,
   experience,
   projectsHeader,
   publicationsHeader,
