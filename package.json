@@ -18,7 +18,7 @@
     "bootstrap": "^4.4.1",
     "chart.js": "^2.9.3",
     "fs": "0.0.1-security",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^2.2.0",
     "graphql": "^14.5.8",
     "node-fetch": "^2.6.0",
     "prettier-package-json": "^2.1.3",
