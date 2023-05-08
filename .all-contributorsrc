@@ -262,6 +262,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "dminkovski",
+      "name": "David Minkovski",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1609264?v=4",
+      "profile": "https://davidminkovski.com",
+      "contributions": [
+        "ideas",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
