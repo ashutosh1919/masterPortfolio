@@ -101,7 +101,7 @@ You can change the personal information, experience, education, social media, ce
 
 1. Add a valid image file into the `public/skills` folder
 2. Insert the image name into the `imageSrc` attribute of the particular softwareSkill
-3. Remove the `fontAwesomeClassName` Propterty or leave it empty because it takes precedent
+3. Remove the `fontAwesomeClassName` property or leave it empty because it takes precedence over `imageSrc`
 4. Add custom styling to the `img` using the `style` Property
 
 ### Github Information
