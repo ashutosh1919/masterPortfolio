@@ -21,3 +21,7 @@
 .software-skill-inline > i:hover {
   color: #645beb;
 }
+
+.skill-image {
+  height: 48px;
+}

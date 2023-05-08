@@ -97,6 +97,13 @@ You can change the personal information, experience, education, social media, ce
 4. Select the icon of your choice.
 5. Copy the text beside **Selected Icon** and replace it with `fontAwesomeClassName` of that particular softwareSkill.
 
+#### How to use custom images instead of Iconify Icons?
+
+1. Add a valid image file into the `public/skills` folder
+2. Insert the image name into the `imageSrc` attribute of the particular softwareSkill
+3. Remove the `fontAwesomeClassName` property or leave it empty because it takes precedence over `imageSrc`
+4. Add custom styling to the `img` using the `style` Property
+
 ### Github Information
 
 You will find `git_data_fetcher.mjs` file in the main directory of the repository. This file is used to fetch the data (Pull requests, Issues, Organizations, Pinned projects etc.) from your github.
