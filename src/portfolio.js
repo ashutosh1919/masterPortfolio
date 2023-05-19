@@ -7,27 +7,27 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Ashutosh's Portfolio",
+  title: "Prisha's Portfolio",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "A passionate girl always ready to take up challenges and move forward",
   og: {
-    title: "Ashutosh Hathidara Portfolio",
+    title: "Prisha's Portfolio",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "",
   },
 };
 
 //Home Page
 const greeting = {
-  title: "Ashutosh Hathidara",
-  logo_name: "AshutoshHathidara",
-  nickname: "layman_brother",
+  title: "Prisha",
+  logo_name: "Prisha",
+  nickname: "oops_moment",
   subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "A fiery and determined girl, fueled by passion and an insatiable thirst for knowledge .",
   resumeLink:
-    "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
-  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
-  githubProfile: "https://github.com/ashutosh1919",
+    "https://drive.google.com/file/d/17dMna0vQ8nhH-uC2KhvmEsjRnDYSgbIh/view?usp=sharing",
+  portfolio_repository: "https://github.com/oops-moment/masterPortfolio",
+  githubProfile: "https://github.com/oops-moment",
 };
 
 const socialMediaLinks = [
