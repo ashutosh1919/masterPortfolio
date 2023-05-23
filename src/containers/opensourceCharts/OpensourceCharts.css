@@ -1,0 +1,42 @@
+.os-charts-header {
+  font-size: 40px;
+  line-height: 1.1;
+  font-family: "Google Sans Regular";
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.os-charts-body-div {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  /* table-layout: fixed; */
+  width: 100%;
+}
+/* 
+.tb-item {
+    display: table-cell;
+} */
+
+/* To remove horizontal scroll */
+.main-div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1380px) {
+  .os-charts-header {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .os-charts-header {
+    font-size: 25px;
+  }
+
+  .os-charts-body-div {
+    flex-direction: column;
+  }
+}

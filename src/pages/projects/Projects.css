@@ -1,0 +1,117 @@
+.projects-main {
+  width: 100%;
+  text-align: center;
+}
+
+.basic-projects {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.projects-heading-div {
+  display: flex;
+}
+
+.projects-heading-div > * {
+  flex: 1;
+}
+
+.projects-heading-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-heading-text-div {
+  text-align: center;
+}
+
+.projects-heading-img-div > * {
+  max-width: 100%;
+  height: auto;
+}
+
+.projects-heading-text {
+  font-size: 56px;
+  font-weight: 400;
+  font-family: "Google Sans Medium";
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.projects-heading-sub-text {
+  font-size: 30px;
+  font-family: "Google Sans Regular";
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.projects-header-detail-text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Google Sans Medium";
+}
+.publications-heading-text-div {
+  text-align: center;
+  font-family: "Google Sans Regular";
+  margin-top: 70px;
+}
+
+.publications-heading-text {
+  font-size: 56px;
+  font-weight: 600;
+}
+.repo-cards-div-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem 1rem;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+
+@media (max-width: 1380px) {
+  .projects-heading-text {
+    font-size: 50px;
+    margin-top: 80px;
+  }
+  .projects-heading-sub-text {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-heading-text,
+  .publications-heading-text {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .projects-heading-sub-text {
+    font-size: 20px;
+  }
+
+  .projects-heading-div {
+    flex-direction: column;
+  }
+
+  .projects-header-detail-text {
+    font-size: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .repo-cards-div-main {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+}

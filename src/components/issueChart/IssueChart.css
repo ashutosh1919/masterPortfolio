@@ -1,0 +1,17 @@
+.issue-chart {
+  width: 100%;
+  text-align: center;
+}
+
+.issue-chart-header {
+  font-family: "Google Sans Regular";
+}
+
+@media (max-width: 1380px) {
+}
+
+@media (max-width: 768px) {
+  .issue-chart-header {
+    font-size: 20px;
+  }
+}

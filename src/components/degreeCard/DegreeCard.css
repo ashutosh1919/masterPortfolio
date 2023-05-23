@@ -1,0 +1,148 @@
+.degree-card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-family: "Google Sans Medium";
+  font-size: 23px;
+  /* color: #000000; */
+}
+
+.card-subtitle {
+  font-family: "Google Sans Medium";
+  font-size: 18px;
+  /* color: #000000; */
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.card-img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid #d9dbdf;
+  /* background-color: #6c63ff; */
+  /* background: transparent; */
+  box-shadow: 5px 5px 5px #d9dbdf;
+}
+
+.body-header {
+  max-width: inherit;
+  display: flex;
+  /* width: 100%; */
+  /* background-color:#6c63ff99; */
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+}
+
+.body-header-title {
+  align-items: flex-start;
+  width: 80%;
+}
+
+.body-header-duration {
+  width: 20%;
+}
+.duration {
+  font-family: "Google Sans Regular";
+  font-size: 16px;
+  /* color: #212121; */
+  padding-right: 10px;
+  float: right;
+}
+
+.body-content {
+  max-width: inherit;
+  /* width: 100%; */
+  border-radius: 0px 0px 7px 7px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 5px 5px 5px #d3d3d3; */
+}
+
+.content-list {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Google Sans Regular";
+}
+
+.card-body {
+  /* background-color: #00FF00; */
+  border-bottom: 1px solid #d9dbdf;
+  border-left: 1px solid #d9dbdf;
+  border-right: 1px solid #d9dbdf;
+  border-radius: 7px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px #d9dbdf;
+}
+
+.visit-btn {
+  /* background-color: #6c63ff99; */
+  display: inline-block;
+  margin: 0px 10px 10px 0px;
+  padding: 10px;
+  border-radius: 7px;
+  border: 0px;
+  float: right;
+}
+
+.visit-btn:hover {
+  /* background-color:#6c63ffcc; */
+}
+
+.btn {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Google Sans Regular";
+  /* color: #000000; */
+}
+
+@media (max-width: 1380px) {
+}
+
+@media (max-width: 768px) {
+  .degree-card {
+    flex-direction: column;
+  }
+
+  .body-header {
+    flex-direction: column;
+  }
+
+  .body-header-title {
+    width: 100%;
+  }
+
+  .body-header-duration {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .duration {
+    padding: 0px;
+    margin: 0px;
+    float: left;
+  }
+
+  .card-img {
+    width: 200px;
+  }
+
+  .card-body {
+    width: 100% !important;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-subtitle {
+    font-size: 16px;
+  }
+}

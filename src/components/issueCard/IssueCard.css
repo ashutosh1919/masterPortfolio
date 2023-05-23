@@ -1,0 +1,243 @@
+.issue-card {
+  width: 75%;
+  display: inline-block;
+  /* margin-left: 12.5%;
+    margin-right: 12.5%; */
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.issue-top {
+  display: flex;
+  width: 100%;
+}
+
+.files-changed-header {
+  width: 20%;
+  text-align: right;
+}
+
+.files-changed-text {
+  text-align: right;
+  margin-top: 0px;
+  display: inline-block;
+  margin-bottom: 0px;
+  font-size: 12px;
+  font-family: "Google Sans Regular";
+  padding: 2px;
+  color: #fff;
+  border-radius: 10%;
+}
+
+.files-changed-text-2 {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-family: "Google Sans Regular";
+}
+
+.issue-header {
+  width: 100%;
+  float: top-left;
+  text-align: left;
+}
+
+.issue-icons {
+  font-size: 18px;
+  width: 5%;
+  float: left;
+  text-align: left;
+}
+
+.issue-title-header {
+  width: 95%;
+  display: inline-block;
+  float: right;
+}
+
+.issue-subtitle {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 10px;
+  font-family: "Google Sans Regular";
+  color: #808080;
+}
+
+.issue-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-family: "Google Sans Regular";
+}
+
+.issue-title > a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.issue-title > a:hover {
+  color: #000;
+}
+
+.issue-title > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.issue-title > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.issue-down {
+  width: 95%;
+  display: flex;
+  margin-left: 5%;
+}
+
+.assignee-repo {
+  width: 90%;
+  margin-right: 0px;
+  display: inline-block;
+}
+
+.parent-repo {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Google Sans Regular";
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.parent-repo > a {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.assignee-info {
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+}
+
+.additions-files {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #28a745;
+  font-size: 14px;
+  font-family: "Google Sans Regular";
+}
+
+.deletions-files {
+  margin-left: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #d73a49;
+  font-size: 14px;
+  font-family: "Google Sans Regular";
+}
+
+.owner-img-div {
+  width: 10%;
+  display: inline-block;
+}
+
+.owner-img {
+  display: inline-block;
+  width: auto;
+  height: 40px;
+}
+
+.assigned-to-img {
+  display: inline-block;
+  margin-left: 10px;
+  height: 20px;
+  width: auto;
+}
+
+#tooltip-top > .tooltip-inner {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #062e56;
+}
+
+#tooltip-top > .tooltip-arrow {
+  border-top: 5px solid #062e56;
+}
+
+@media (max-width: 1380px) {
+}
+
+@media (max-width: 768px) {
+  .issue-card {
+    width: 85%;
+    /* margin-left: 5%;
+        margin-right: 5%; */
+  }
+
+  .issue-top {
+    flex-direction: column;
+  }
+
+  .assignee-repo {
+    width: 87%;
+  }
+
+  .files-changed-header {
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .issue-header {
+    width: 100%;
+  }
+
+  .issue-icons {
+    width: 7%;
+    font-size: 20px;
+  }
+
+  .issue-title-header {
+    width: 93%;
+  }
+
+  .issue-title {
+    white-space: normal;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  .pr-subtitile {
+    font-size: 12px;
+    margin-top: 3px;
+  }
+
+  .issue-down {
+    width: 93%;
+    margin-left: 7%;
+  }
+}
