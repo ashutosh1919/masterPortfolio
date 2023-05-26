@@ -531,6 +531,7 @@ const experience = {
   sections: [
     {
       title: "Work",
+      work: true,
       experiences: [
         {
           title: "Associate AI Engineer",
@@ -749,6 +750,11 @@ const contactPageData = {
     title: "Address",
     subtitle:
       "Ambavadi vas, Kanodar, T.A.-Palanpur, Dist.-Banaskantha, Gujarat - 385520",
+    locality: "Kanodar",
+    country: "IN",
+    region: "Gujarat",
+    postalCode: "385520",
+    streetAddress: "Ambavadi vas",
     avatar_image_path: "address_image.svg",
     location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76",
   },
