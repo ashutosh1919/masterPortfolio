@@ -282,6 +282,15 @@
         "ideas",
         "promotion"
       ]
+    },
+    {
+      "login": "Vyomrana02",
+      "name": "Vyom Rana",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87069619?v=4",
+      "profile": "https://github.com/Vyomrana02",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
