@@ -2,7 +2,7 @@
 
 // Website related settings
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: false, // Change this to false if you don't want Splash screen.
 };
 
 //SEO Related settings
@@ -735,7 +735,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_ashutosh.png",
+    profile_image_path: "robot.png",
     description:
       "I'm accessible across various social media platforms. Feel free to reach out, and I'll endeavor to respond within 24 hours. My areas of expertise include machine learning (ML), artificial intelligence (AI), React, Android development, cloud computing, and open-source development. Don't hesitate to message me if you require assistance in any of these domains.",
   },
