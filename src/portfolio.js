@@ -19,7 +19,7 @@ const seo = {
 
 //Home Page
 const greeting = {
-  title: "Darhit Kaklotar",
+  title: "Darshit Kaklotar",
   logo_name: "DarshitKaklotar",
   nickname: "D_K",
   subTitle:
