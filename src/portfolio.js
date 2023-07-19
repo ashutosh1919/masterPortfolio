@@ -24,7 +24,7 @@ const greeting = {
   nickname: "D_K",
   subTitle:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
-  resumeLink: "",
+  resumeLink: "https://drive.google.com/file/d/17QSohcysyy8FfddbQJbDndBvSPWQm3Bv/view?usp=drive_link",
   portfolio_repository: "",
   githubProfile: "",
 };
