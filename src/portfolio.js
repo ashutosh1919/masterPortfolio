@@ -780,7 +780,7 @@ const contactPageData = {
   addressSection: {
     title: "Address",
     subtitle: " Katargam , Surat , Gujrat -395004",
-    locality: "Kanodar",
+    locality: "SURAT",
     country: "IN",
     region: "Gujarat",
     postalCode: "395004",
