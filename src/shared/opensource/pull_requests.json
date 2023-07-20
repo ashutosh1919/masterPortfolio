@@ -1,6 +1,203 @@
 {
-  "closed": 1,
+  "closed": 3,
   "data": [
+    {
+      "id": "PR_kwDOAAnGFs5VtZ83",
+      "title": "Update pow function for improved efficiency and handling of negative …",
+      "url": "https://github.com/sympy/sympy/pull/25385",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2023-07-17T19:47:42Z",
+      "number": 25385,
+      "changedFiles": 1,
+      "additions": 8,
+      "deletions": 13,
+      "baseRepository": {
+        "name": "sympy",
+        "url": "https://github.com/sympy/sympy",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/260832?v=4",
+          "login": "sympy",
+          "url": "https://github.com/sympy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOJ62dys5VtWQ4",
+      "title": "Update pow function for improved efficiency and handling of negative powers",
+      "url": "https://github.com/mohammedouahman/sympy/pull/1",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2023-07-17T19:37:04Z",
+      "number": 1,
+      "changedFiles": 1,
+      "additions": 8,
+      "deletions": 13,
+      "baseRepository": {
+        "name": "sympy",
+        "url": "https://github.com/mohammedouahman/sympy",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/79179795?u=0ad9155815781d74011a2a378d87fca056844ac9&v=4",
+          "login": "mohammedouahman",
+          "url": "https://github.com/mohammedouahman"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOAA3dP85Vl37p",
+      "title": "Modifying the file for issue #24181",
+      "url": "https://github.com/numpy/numpy/pull/24190",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2023-07-15T17:18:44Z",
+      "number": 24190,
+      "changedFiles": 1,
+      "additions": 5,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "numpy",
+        "url": "https://github.com/numpy/numpy",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/288276?v=4",
+          "login": "numpy",
+          "url": "https://github.com/numpy"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOAA0YD85VjQxE",
+      "title": "Add ASCII art script",
+      "url": "https://github.com/pandas-dev/pandas/pull/54128",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2023-07-14T19:45:53Z",
+      "number": 54128,
+      "changedFiles": 1,
+      "additions": 17,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "pandas",
+        "url": "https://github.com/pandas-dev/pandas",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/21206976?v=4",
+          "login": "pandas-dev",
+          "url": "https://github.com/pandas-dev"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOJ62AeM5VjLKt",
+      "title": "Adding pandas ASCII art",
+      "url": "https://github.com/mohammedouahman/pandas/pull/1",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/79179795?u=0ad9155815781d74011a2a378d87fca056844ac9&v=4",
+        "url": "https://github.com/mohammedouahman",
+        "login": "mohammedouahman"
+      },
+      "createdAt": "2023-07-14T19:25:10Z",
+      "number": 1,
+      "changedFiles": 1,
+      "additions": 17,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "pandas",
+        "url": "https://github.com/mohammedouahman/pandas",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/79179795?u=0ad9155815781d74011a2a378d87fca056844ac9&v=4",
+          "login": "mohammedouahman",
+          "url": "https://github.com/mohammedouahman"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOAAzd1s5VVv8a",
+      "title": "add my name into it",
+      "url": "https://github.com/scikit-learn/scikit-learn/pull/26827",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2023-07-12T18:07:05Z",
+      "number": 26827,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "scikit-learn",
+        "url": "https://github.com/scikit-learn/scikit-learn",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/365630?v=4",
+          "login": "scikit-learn",
+          "url": "https://github.com/scikit-learn"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOArmXAs5VVWF8",
+      "title": "Fix tosa hardswish",
+      "url": "https://github.com/tensorflow/tensorflow/pull/61263",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2023-07-12T17:02:17Z",
+      "number": 61263,
+      "changedFiles": 6,
+      "additions": 137,
+      "deletions": 269,
+      "baseRepository": {
+        "name": "tensorflow",
+        "url": "https://github.com/tensorflow/tensorflow",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/15658638?v=4",
+          "login": "tensorflow",
+          "url": "https://github.com/tensorflow"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOJ3g_cs5VU7gV",
+      "title": "Complex reshape support",
+      "url": "https://github.com/mohammedouahman/tensorflow/pull/1",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/79179795?u=0ad9155815781d74011a2a378d87fca056844ac9&v=4",
+        "url": "https://github.com/mohammedouahman",
+        "login": "mohammedouahman"
+      },
+      "createdAt": "2023-07-12T15:47:14Z",
+      "number": 1,
+      "changedFiles": 5,
+      "additions": 136,
+      "deletions": 268,
+      "baseRepository": {
+        "name": "tensorflow",
+        "url": "https://github.com/mohammedouahman/tensorflow",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/79179795?u=0ad9155815781d74011a2a378d87fca056844ac9&v=4",
+          "login": "mohammedouahman",
+          "url": "https://github.com/mohammedouahman"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOArmXAs5VPpl8",
+      "title": "Complex reshape support",
+      "url": "https://github.com/tensorflow/tensorflow/pull/61248",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2023-07-11T20:47:39Z",
+      "number": 61248,
+      "changedFiles": 5,
+      "additions": 136,
+      "deletions": 268,
+      "baseRepository": {
+        "name": "tensorflow",
+        "url": "https://github.com/tensorflow/tensorflow",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/15658638?v=4",
+          "login": "tensorflow",
+          "url": "https://github.com/tensorflow"
+        }
+      }
+    },
     {
       "id": "MDExOlB1bGxSZXF1ZXN0NjY5MzQ3MjM4",
       "title": "Delete mediumhome.JPG",
@@ -23,7 +220,7 @@
       }
     }
   ],
-  "merged": 0,
-  "open": 0,
-  "totalCount": 1
+  "merged": 2,
+  "open": 5,
+  "totalCount": 10
 }
