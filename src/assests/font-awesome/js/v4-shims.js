@@ -36,7 +36,7 @@
   var NAMESPACE_IDENTIFIER = "___FONT_AWESOME___";
   var PRODUCTION = (function () {
     try {
-      return process.env.NODE_ENV === "production";
+      return import.meta.env.NODE_ENV === "production";
     } catch (e) {
       return false;
     }

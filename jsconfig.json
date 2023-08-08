@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@assests/*": [
+        "./src/assests/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "vite.config.js"
+  ],
+  "typeRoots": [
+    "node_modules/@types",
+    "node_modules"
+  ]
+}
