@@ -14,7 +14,7 @@ class ExperienceCard extends Component {
           <div className="experience-card-logo-div">
             <img
               className="experience-card-logo"
-              src={`../src/assests/images/${experience["logo_path"]}`}
+              src={import.meta.env.VITE_PUBLIC_URL + `/images/${experience["logo_path"]}`}
               alt=""
             />
           </div>

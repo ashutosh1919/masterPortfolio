@@ -17,7 +17,7 @@ class DegreeCard extends Component {
                   maxHeight: "100%",
                   transform: "scale(0.9)",
                 }}
-                src={`../src/assests/images/${degree.logo_path}`}
+                src={import.meta.env.VITE_PUBLIC_URL + `/images/${degree.logo_path}`}
                 alt={degree.alt_name}
               />
             </div>

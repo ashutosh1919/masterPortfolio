@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "checkJs": true,
     "paths": {
       "@assests/*": [
         "./src/assests/*"

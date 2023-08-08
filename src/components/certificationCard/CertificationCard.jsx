@@ -22,7 +22,7 @@ class CertificationCard extends Component {
               >
                 <img
                   className="logo_img"
-                  src={`../src/assests/images/${certificate.logo_path}`}
+                  src={import.meta.env.VITE_PUBLIC_URL + `/images/${certificate.logo_path}`}
                   alt={certificate.alt_name}
                 />
               </div>

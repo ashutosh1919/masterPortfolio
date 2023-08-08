@@ -5,7 +5,7 @@
   "homepage": ".",
   "scripts": {
     "build": "vite build",
-    "predeploy": "npm run build",
+    "predeploy": "vite build",
     "deploy": "gh-pages -b gh-pages -d build",
     "preview": "vite preview",
     "start": "vite"

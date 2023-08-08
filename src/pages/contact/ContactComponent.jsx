@@ -26,7 +26,7 @@ class Contact extends Component {
             <div className="contact-heading-div">
               <div className="contact-heading-img-div">
                 <img
-                  src={`../src/assests/images/${ContactData["profile_image_path"]}`}
+                  src={import.meta.env.VITE_PUBLIC_URL + `/images/${ContactData["profile_image_path"]}`}
                   alt=""
                 />
               </div>

@@ -8,19 +8,6 @@ export default defineConfig({
   root: resolve(__dirname, "./"),
   base: "./",
 
-  // Define process, global variables for project
-  /*define: {
-      process: {
-        ...process,
-        env: {
-          ...import.meta.env,
-          ...{ VITE_VITE_PUBLIC_URL: import.meta.env.VITE_VITE_VITE_PUBLIC_URL || '' },
-        },
-      },
-      global: 'window',
-    },*/
-  // -> Dùng define này không build được
-
   // Specify the alias for ../ statement
   resolve: {
     alias: [
@@ -59,7 +46,6 @@ export default defineConfig({
       },
     ],
   },
-  // Specify build mode
 
   // Specify the output directory for built files and build options
   build: {
@@ -95,12 +81,3 @@ export default defineConfig({
     open: true,
   },
 });
-
-// FANTAL ERROR: ran out of heap memmory
-// <Unix> export NODE_OPTIONS=--max-old-space-size=<size in MB>
-// export NODE_OPTIONS=--max_old_space_size=8192 -> OK
-// export NODE_OPTIONS=--max_old_space_size=6144 -> OK
-// export NODE_OPTIONS=--max_old_space_size=4096 -> OK
-// export NODE_OPTIONS=--max_old_space_size=3072 -> OK
-// export NODE_OPTIONS=--max_old_space_size=2048 -> Fail
-// <Win> set NODE_OPTIONS=--max-old-space-size=<size in MB>
