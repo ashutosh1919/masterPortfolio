@@ -21,7 +21,7 @@ const seo = {
 const greeting = {
   title: "Ahmad Syamil",
   logo_name: "Ahmad Syamil",
-  nickname: "layman_brother",
+  nickname: "syamil",
   subTitle:
     "IT specialist with two years' experience in both operations and software development who is driven and focused on the details.",
   resumeLink:
@@ -308,7 +308,7 @@ const experience = {
           duration: "Jan 2022 - Current",
           location: "Kuala Lumpur",
           description: [
-            "⚡ Actively contributes to the development, implementation, maintenance, and smooth operations of application systems and IT solutions, particularly focused on the M2U Biz App. <br> New Line ",
+            "⚡ Actively contributes to the development, implementation, maintenance, and smooth operations of application systems and IT solutions, particularly focused on the M2U Biz App.  \n ",
             "⚡ Demonstrates strong expertise in developing banking applications using Spring Boot, applying microservices architecture with a Backend for Frontend (BFF) design.  Utilizes JIRA and Confluence for streamlined development ticket racking. ",
             "⚡ Drives efficiency by automating Java package deployment to SIT/UAT servers through the use of GitHub Actions and Bash scripts.",
             "⚡ Ensures seamless user support during SIT/UAT and staging testing phases, promptly resolving any issues that arise, such as environmental challenges, connectivity hiccups, and code fixes.",

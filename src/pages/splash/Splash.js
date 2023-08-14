@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import "./Splash.css";
 import { Redirect } from "react-router-dom";
-import LoaderLogo from "../../components/Loader/LoaderLogo.js";
+import SplashScreen from "../../components/splashScreen/splashScreen.js";
 
 function AnimatedSplash(props) {
   return (
     <div className="logo_wrapper">
-      <div className="screen" style={{ backgroundColor: props.theme.splashBg }}>
-        <LoaderLogo id="logo" theme={props.theme} />
+      {/* <div className="screen" style={{ backgroundColor: props.theme.splashBg }}> */}
+      <div className="screen">
+        {/* <SplashScreen id="logo" theme={props.theme} /> */}
+        <SplashScreen />
       </div>
     </div>
   );
