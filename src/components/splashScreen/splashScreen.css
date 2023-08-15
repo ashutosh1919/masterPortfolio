@@ -26,6 +26,15 @@
   margin-top: 20px;
   opacity: 0;
   animation: pop-up 1s forwards;
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: transform 0.2s, color 0.2s; /* Add transition effects */
+  font-family: "Lobster", cursive; /* Apply the Lobster font */
+}
+
+.name-container:hover {
+  transform: scale(1.1);
+  color: #e74c3c;
+  font-family: "Inter", sans-serif; /* Apply the Inter font */
 }
 
 @keyframes spin {
