@@ -7,21 +7,20 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Ashutosh's Portfolio",
-  description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+  title: "Aditya Palaparthi",
+  description: "CS @ Princeton",
   og: {
-    title: "Ashutosh Hathidara Portfolio",
+    title: "Aditya Palaparthi",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "https://adityapalaparthi.com/",
   },
 };
 
 //Home Page
 const greeting = {
-  title: "Ashutosh Hathidara",
-  logo_name: "AshutoshHathidara",
-  nickname: "layman_brother",
+  title: "Aditya Palaparthi",
+  logo_name: "AdityaPalaparthi",
+  nickname: "",
   subTitle:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
@@ -52,36 +51,36 @@ const socialMediaLinks = [
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
-  {
-    name: "YouTube",
-    link: "https://youtube.com/c/DevSense19",
-    fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
-    backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
-  },
+  // {
+  //   name: "YouTube",
+  //   link: "https://youtube.com/c/DevSense19",
+  //   fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
+  //   backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
+  // },
   {
     name: "Gmail",
-    link: "mailto:ashutoshhathidara98@gmail.com",
+    link: "mailto:avpalaparthi@gmail.com",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
-  {
-    name: "Twitter",
-    link: "https://twitter.com/ashutosh_1919",
-    fontAwesomeIcon: "fa-twitter", // Reference https://fontawesome.com/icons/twitter?style=brands
-    backgroundColor: "#1DA1F2", // Reference https://simpleicons.org/?q=twitter
-  },
-  {
-    name: "Facebook",
-    link: "https://www.facebook.com/laymanbrother.19/",
-    fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
-    backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
-  },
-  {
-    name: "Instagram",
-    link: "https://www.instagram.com/layman_brother/",
-    fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
-    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
-  },
+  // {
+  //   name: "Twitter",
+  //   link: "https://twitter.com/ashutosh_1919",
+  //   fontAwesomeIcon: "fa-twitter", // Reference https://fontawesome.com/icons/twitter?style=brands
+  //   backgroundColor: "#1DA1F2", // Reference https://simpleicons.org/?q=twitter
+  // },
+  // {
+  //   name: "Facebook",
+  //   link: "https://www.facebook.com/laymanbrother.19/",
+  //   fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
+  //   backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
+  // },
+  // {
+  //   name: "Instagram",
+  //   link: "https://www.instagram.com/layman_brother/",
+  //   fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
+  //   backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
+  // },
 ];
 
 const skills = {
@@ -380,11 +379,12 @@ const competitiveSites = {
 const degrees = {
   degrees: [
     {
-      title: "Indian Institute of Information Technology Kurnool",
-      subtitle: "B.Tech. in Computer Engineering",
+      title: "Princeton University",
+      subtitle:
+        "Bachelor of Science in Computer Science with Minor in Statistics and Machine Learning",
       logo_path: "iiitk_logo.png",
       alt_name: "IIITDM Kurnool",
-      duration: "2016 - 2020",
+      duration: "2021 - Present",
       descriptions: [
         "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
         "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
@@ -681,54 +681,54 @@ const projectsHeader = {
 
 const publicationsHeader = {
   title: "Publications",
-  description:
-    "I have worked on and published a few research papers and publications of my own.",
+  description: "Coming Soon :)",
   avatar_image_path: "projects_image.svg",
 };
 
 const publications = {
-  data: [
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzi=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNze=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzt=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzb=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-  ],
+  data: [],
+  // data: [
+  //   {
+  //     id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+  //     name: "Artificial Intelligence Paper",
+  //     createdAt: "2020-03-06T16:26:54Z",
+  //     description: "Paper Written on Artificial Intelligence published in xyz ",
+  //     url:
+  //       "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+  //   },
+  //   {
+  //     id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzi=",
+  //     name: "Artificial Intelligence Paper",
+  //     createdAt: "2020-03-06T16:26:54Z",
+  //     description: "Paper Written on Artificial Intelligence published in xyz ",
+  //     url:
+  //       "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+  //   },
+  //   {
+  //     id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNze=",
+  //     name: "Artificial Intelligence Paper",
+  //     createdAt: "2020-03-06T16:26:54Z",
+  //     description: "Paper Written on Artificial Intelligence published in xyz ",
+  //     url:
+  //       "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+  //   },
+  //   {
+  //     id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzt=",
+  //     name: "Artificial Intelligence Paper",
+  //     createdAt: "2020-03-06T16:26:54Z",
+  //     description: "Paper Written on Artificial Intelligence published in xyz ",
+  //     url:
+  //       "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+  //   },
+  //   {
+  //     id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzb=",
+  //     name: "Artificial Intelligence Paper",
+  //     createdAt: "2020-03-06T16:26:54Z",
+  //     description: "Paper Written on Artificial Intelligence published in xyz ",
+  //     url:
+  //       "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+  //   },
+  // ],
 };
 
 // Contact Page
