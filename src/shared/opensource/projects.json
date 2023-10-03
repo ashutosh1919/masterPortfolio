@@ -25,6 +25,110 @@
           "iconifyClass": "simple-icons:docker"
         }
       ]
+    },
+    {
+      "id": "",
+      "name": "Bit String Design with GFlowNets",
+      "createdAt": "2020-03-06T16:26:54Z",
+      "url": "https://github.com/aabid-ism/ClubPrinceton",
+      "description": "Implemented a generative flow network (GFlowNet), a type of flow-based generative model, to sequentially construct target bit strings",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "Dockerfile",
+          "iconifyClass": "simple-icons:docker"
+        }
+      ]
+    },
+    {
+      "id": "",
+      "name": "AlphaZero Game AI Agents",
+      "createdAt": "2020-03-06T16:26:54Z",
+      "url": "https://github.com/aabid-ism/ClubPrinceton",
+      "description": "Implemented Google Deepmind's AlphaZero algorithm to intelligently play games, such as Tic-Tac-Toe, Connect4, and Chess.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "Dockerfile",
+          "iconifyClass": "simple-icons:docker"
+        }
+      ]
+    },
+    {
+      "id": "",
+      "name": "PennyExpressCAS",
+      "createdAt": "2020-03-06T16:26:54Z",
+      "url": "https://github.com/aabid-ism/ClubPrinceton",
+      "description": "Implemented a generative flow network (GFlowNet), a type of flow-based generative model, to sequentially construct target bit strings",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "Dockerfile",
+          "iconifyClass": "simple-icons:docker"
+        }
+      ]
+    },
+    {
+      "id": "",
+      "name": "PennyExpressCAS",
+      "createdAt": "2020-03-06T16:26:54Z",
+      "url": "https://github.com/aabid-ism/ClubPrinceton",
+      "description": "Implemented a generative flow network (GFlowNet), a type of flow-based generative model, to sequentially construct target bit strings",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "Dockerfile",
+          "iconifyClass": "simple-icons:docker"
+        }
+      ]
     }
   ]
 }
