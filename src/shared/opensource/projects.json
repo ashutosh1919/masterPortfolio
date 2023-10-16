@@ -3,9 +3,9 @@
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
       "name": "ClubPrinceton",
-      "createdAt": "2020-03-06T16:26:54Z",
+      "createdAt": "",
       "url": "https://github.com/aabid-ism/ClubPrinceton",
-      "description": "A social media application connecting Princeton organizations to Princeton students",
+      "description": "A MERN social media application connecting on-campus organizations to students at colleges and universities.",
       "isFork": false,
       "languages": [
         {
@@ -30,13 +30,13 @@
       "id": "",
       "name": "Bit String Design with GFlowNets",
       "createdAt": "2020-03-06T16:26:54Z",
-      "url": "https://github.com/aabid-ism/ClubPrinceton",
-      "description": "Implemented a generative flow network (GFlowNet), a type of flow-based generative model, to sequentially construct target bit strings",
+      "url": "https://github.com/palapav/bitstreams-gflownet",
+      "description": "Implemented a generative flow network (GFlowNet), a type of flow-based generative model, in PyTorch to sequentially construct target bit strings.",
       "isFork": false,
       "languages": [
         {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
+          "name": "Python",
+          "iconifyClass": ""
         },
         {
           "name": "CSS",
@@ -56,8 +56,18 @@
       "id": "",
       "name": "AlphaZero Game AI Agents",
       "createdAt": "2020-03-06T16:26:54Z",
-      "url": "https://github.com/aabid-ism/ClubPrinceton",
-      "description": "Implemented Google Deepmind's AlphaZero algorithm to intelligently play games, such as Tic-Tac-Toe, Connect4, and Chess.",
+      "isLinked": false,
+      "url": "",
+      "description": "Implemented Google Deepmind's AlphaZero algorithm in PyTorch to intelligently play games, such as Tic-Tac-Toe, Connect4, and Chess.",
+      "isFork": false,
+      "languages": []
+    },
+    {
+      "id": "",
+      "name": "Authenticated Channel",
+      "createdAt": "2020-03-06T16:26:54Z",
+      "url": "",
+      "description": "Built a secure client-server communication channel in Java. Implemented cryptographic methods, such as RSA, DHKE, and PRGs, from scratch.",
       "isFork": false,
       "languages": [
         {
@@ -80,10 +90,10 @@
     },
     {
       "id": "",
-      "name": "PennyExpressCAS",
-      "createdAt": "2020-03-06T16:26:54Z",
-      "url": "https://github.com/aabid-ism/ClubPrinceton",
-      "description": "Implemented a generative flow network (GFlowNet), a type of flow-based generative model, to sequentially construct target bit strings",
+      "name": "Princeton Course Offerings",
+      "createdAt": "",
+      "url": "",
+      "description": "A robust search engine (JQuery/Flask/SQL) for processing varied queries on 1500+ Princeton courses from the 2013-2014 school year.",
       "isFork": false,
       "languages": [
         {
@@ -106,10 +116,10 @@
     },
     {
       "id": "",
-      "name": "PennyExpressCAS",
-      "createdAt": "2020-03-06T16:26:54Z",
-      "url": "https://github.com/aabid-ism/ClubPrinceton",
-      "description": "Implemented a generative flow network (GFlowNet), a type of flow-based generative model, to sequentially construct target bit strings",
+      "name": "Object Relational Mapper",
+      "createdAt": "",
+      "url": "",
+      "description": "Built an object relational mapper (ORM) from scratch in Go that translates Go structs to and from a SQLite database.",
       "isFork": false,
       "languages": [
         {

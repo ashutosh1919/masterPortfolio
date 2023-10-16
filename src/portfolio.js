@@ -640,7 +640,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects span the areas of machine learning and full-stack software development. I love to work on ideas, end-to-end, that further enhance technological automation, streamlining existing processes. All code is available upon request.",
+    "My projects span the areas of machine learning, full-stack software development, systems, and security. I love to work on end-to-end ideas that further enhance technological automation, streamlining existing processes. All code is available upon request.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -710,7 +710,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "animated_ashutosh.png",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours.",
+      "I am available on LinkedIn and through email. You can message me, and I will reply within 24 hours.",
   },
   blogSection: {
     title: "Blogs",
