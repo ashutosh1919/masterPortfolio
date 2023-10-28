@@ -17,7 +17,7 @@ export default function Button({ text, className, href, newTab, theme }) {
   return (
     <div className={className}>
       <a
-        className="main-button"
+        class="main-button"
         href={href}
         target={newTab && "_blank"}
         style={{
