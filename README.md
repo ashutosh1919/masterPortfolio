@@ -126,7 +126,7 @@ node git_data_fetcher.mjs
 ```
 
 This will fetch all the data from your github and it will automatically replace my data with yours.
-Whenever you want to update the github related information on the website you need to run this command.
+Whenever you want to update the github related information on the website you need to run this command. The default limit is 100. This means only last 100 issues and pull requests will be shown (if available). But you can increase this by adding arguments. `--pr-limit(-pl)` for pull requests, `--issue-limit(-il)` for issues, `--org-limit(-ol)` for organizations and `--limit(-l)` for all. Example: `node git_data_fetcher.mjs -l 200` Keep in mind that adding a huge data may affect website perfomance.
 
 ### Splash Logo
 
