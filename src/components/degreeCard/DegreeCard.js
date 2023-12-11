@@ -46,6 +46,11 @@ class DegreeCard extends Component {
                 </h3>
               </div>
             </div>
+            <div className="body-header-gpa">
+              <h3 className="gpa" style={{ color: theme.text }}>
+                {gpa.gpa}
+              </h3>
+            </div>
             <div className="body-content">
               {degree.descriptions.map((sentence) => {
                 return (
