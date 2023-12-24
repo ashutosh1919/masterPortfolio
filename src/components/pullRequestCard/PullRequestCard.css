@@ -179,8 +179,8 @@
 }
 
 #tooltip-top > .tooltip-inner {
-  background-color: #000;
-  color: #fff;
+  color: white;
+  padding: 4px;
   border: 1px solid #062e56;
 }
 

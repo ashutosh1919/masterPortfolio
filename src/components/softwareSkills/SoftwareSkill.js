@@ -8,20 +8,17 @@ class SoftwareSkill extends React.Component {
       <div>
         <div className="software-skills-main-div">
           <ul className="dev-icons">
-            {/* {skillsSection.softwareSkills.map(skills => {
-            return (
-              <li className="software-skill-inline" name={skills.skillName}>
-                <i className={skills.fontAwesomeClassname}></i>
-              </li>
-            );
-          })} */}
             {this.props.logos.map((logo) => {
               return (
                 <OverlayTrigger
                   key={logo.skillName}
                   placement={"top"}
                   overlay={
-                    <Tooltip id={`tooltip-top`}>
+                    //tooltip hover
+                    <Tooltip
+                      id={`tooltip-top`}
+                      style={{ backgroundColor: logo.style.color ?? "black" }}
+                    >
                       <strong>{logo.skillName}</strong>
                     </Tooltip>
                   }
