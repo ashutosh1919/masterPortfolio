@@ -16,7 +16,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.padding-5 {
+  margin: 25px;
+}
 .App-link {
   color: #09d3ac;
 }
@@ -27,6 +29,7 @@
 
 .subTitle {
   color: #868e96;
+  font-size: 20px;
 }
 
 /* Animations */

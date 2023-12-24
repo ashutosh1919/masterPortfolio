@@ -1,5 +1,7 @@
 // theme.js
+// theme.js
 export const blueTheme = {
+  name: "blueTheme",
   body: "#EDF9FE",
   text: "#001C55",
   expTxtColor: "#000a12",
@@ -14,6 +16,7 @@ export const blueTheme = {
 };
 
 export const brownTheme = {
+  name: "brownTheme",
   body: "#FFFEFD",
   text: "#5D2A42",
   expTxtColor: "#000a12",
@@ -27,7 +30,10 @@ export const brownTheme = {
   splashBg: "#5D2A42",
 };
 
+// Repeat the process for other themes...
+
 export const purpleTheme = {
+  name: "purpleTheme",
   body: "#F8EFF4",
   text: "#231942",
   expTxtColor: "#000a12",
@@ -42,6 +48,7 @@ export const purpleTheme = {
 };
 
 export const greenTheme = {
+  name: "greenTheme",
   body: "#FFFFEB",
   text: "#003F2F",
   expTxtColor: "#000a12",
@@ -56,6 +63,7 @@ export const greenTheme = {
 };
 
 export const redTheme = {
+  name: "redTheme",
   body: "#FFF8E6",
   text: "#6a040f",
   expTxtColor: "#000a12",
@@ -70,6 +78,7 @@ export const redTheme = {
 };
 
 export const blackTheme = {
+  name: "blackTheme",
   body: "#E5E5E5",
   text: "#14213d",
   expTxtColor: "#000a12",
@@ -84,6 +93,7 @@ export const blackTheme = {
 };
 
 export const pinkTheme = {
+  name: "pinkTheme",
   body: "#FEE9F2",
   text: "#620E34",
   expTxtColor: "#000a12",
@@ -98,6 +108,7 @@ export const pinkTheme = {
 };
 
 export const violetTheme = {
+  name: "violetTheme",
   body: "#F4EEFC",
   text: "#430A58",
   expTxtColor: "#000a12",
@@ -112,6 +123,7 @@ export const violetTheme = {
 };
 
 export const tealTheme = {
+  name: "tealTheme",
   body: "#E6FAF5",
   text: "#084c61",
   expTxtColor: "#000a12",
@@ -126,6 +138,7 @@ export const tealTheme = {
 };
 
 export const orangeTheme = {
+  name: "orangeTheme",
   body: "#FFF0EA",
   text: "#99401F",
   expTxtColor: "#000a12",
@@ -140,6 +153,7 @@ export const orangeTheme = {
 };
 
 export const yellowTheme = {
+  name: "yellowTheme",
   body: "#FFD95D",
   text: "#5f4339",
   expTxtColor: "#000a12",
@@ -154,6 +168,7 @@ export const yellowTheme = {
 };
 
 export const materialDarkTheme = {
+  name: "materialDarkTheme",
   body: "#263238",
   text: "#aeaeae",
   expTxtColor: "#000a12",
@@ -168,6 +183,7 @@ export const materialDarkTheme = {
 };
 
 export const materialLightTheme = {
+  name: "materialLightTheme",
   body: "#ffffff",
   text: "#4c2b91",
   expTxtColor: "#000000",
@@ -181,18 +197,15 @@ export const materialLightTheme = {
   splashBg: "#7d56c2",
 };
 
-export const materialTealTheme = {
-  body: "#ffffff",
-  text: "#05505E",
-  expTxtColor: "#000000",
-  highlight: "#a1dded",
-  dark: "#07292c",
-  secondaryText: "#05505E",
-  imageHighlight: "#0a343c",
-  compImgHighlight: "#E1E2E1",
-  jacketColor: "#E1E2E1",
-  headerColor: "#E1E2E1",
-  splashBg: "#05505E",
+export const frozenDreams = {
+  name: "frozenDreams",
+  body: "linear-gradient(to right, #EDF9FE, #FEFAF9)",
+  text: "#001C55",
+  highlight: "#A6E1FA",
+  dark: "#00072D",
+  secondaryText: "#7F8DAA",
+  imageHighlight: "#0E6BA8",
+  compImgHighlight: "#E6E6E6",
+  jacketColor: "#0A2472",
+  headerColor: "#0E6BA877",
 };
-
-export const chosenTheme = blueTheme;

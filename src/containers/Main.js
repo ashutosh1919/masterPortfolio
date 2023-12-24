@@ -22,7 +22,11 @@ export default class Main extends Component {
               settings.isSplash ? (
                 <Splash {...props} theme={this.props.theme} />
               ) : (
-                <Home {...props} theme={this.props.theme} />
+                <Home
+                  {...props}
+                  theme={this.props.theme}
+                  changeColor={this.props.changeColor}
+                />
               )
             }
           />

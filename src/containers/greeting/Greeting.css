@@ -1,24 +1,25 @@
 .main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 4rem;
 }
 .greet-main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 2rem;
 }
 
 .gretting-main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .greeting-main {
   display: flex;
+  align-items: center;
 }
 
 .greeting-main > * {
@@ -34,20 +35,27 @@
   margin-top: 80px;
   font-size: 70px;
   line-height: 1.1;
-  font-family: "Google Sans Bold";
+  font-family: "Google Sans Bold", sans-serif;
 }
 
 .greeting-nickname {
   font-size: 30px;
-  line-height: 0px;
-  font-family: "Google Sans Bold Italic";
+  line-height: 0;
+  font-family: "Google Sans Bold Italic", sans-serif;
 }
 
+.logo-name {
+  font-family: "Consolas", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  padding: 0 10px;
+  /* color: #55198b; */
+}
 .greeting-text-p {
-  font-size: 40px;
+  font-size: 30px;
   line-height: 40px;
   margin-right: 40px;
-  font-family: "Google Sans Medium";
+  font-family: "Google Sans Medium", serif;
 }
 
 .greeting-image-div > * {
@@ -58,10 +66,10 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: 50px;
+    font-size: 3em; /* or another unit like rem, %, etc. */
   }
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 1.2em; /* or another unit like rem, %, etc. */
   }
 }
 @media (max-width: 768px) {
@@ -70,7 +78,7 @@
   }
   .greeting-text {
     font-size: 30px;
-    margin-top: 0px;
+    margin-top: 0;
     text-align: center;
   }
   .greeting-nickname {
@@ -79,7 +87,7 @@
   }
   .greeting-text-p {
     font-size: 16px;
-    margin-right: 0px;
+    margin-right: 0;
     line-height: normal;
     text-align: center;
   }
