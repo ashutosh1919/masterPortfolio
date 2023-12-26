@@ -44,30 +44,14 @@ const socialMediaLinks = [
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
-  // {
-  //   name: "YouTube",
-  //   link: "https://youtube.com/c/DevSense19",
-  //   fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
-  //   backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
-  // },
+
   {
     name: "Gmail",
     link: "mailto:pinidevpro@gmail.com",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
-  // {
-  //   name: "X-Twitter",
-  //   link: "https://twitter.com/ashutosh_1919",
-  //   fontAwesomeIcon: "fa-x-twitter", // Reference https://fontawesome.com/icons/x-twitter?f=brands&s=solid
-  //   backgroundColor: "#000000", // Reference https://simpleicons.org/?q=x
-  // },
-  // {
-  //   name: "Facebook",
-  //   link: "https://www.facebook.com/laymanbrother.19/",
-  //   fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
-  //   backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
-  // },
+
   {
     name: "Instagram",
     link: "https://www.instagram.com/layman_brother/",
@@ -203,7 +187,7 @@ const skills = {
 const competitiveSites = {
   competitiveSites: [
     {
-      siteName: "LeetCode",
+      siteName: "Afpa",
       iconifyClassname: "simple-icons:leetcode",
       style: {
         color: "#F79F1B",
@@ -211,44 +195,20 @@ const competitiveSites = {
       profileLink: "https://leetcode.com/layman_brother/",
     },
     {
-      siteName: "HackerRank",
-      iconifyClassname: "simple-icons:hackerrank",
+      siteName: "Udemy",
+      iconifyClassname: "logos:udemy-icon",
       style: {
         color: "#2EC866",
       },
-      profileLink: "https://www.hackerrank.com/layman_brother",
+      profileLink: "https://www.udemy.com/",
     },
     {
-      siteName: "Codechef",
-      iconifyClassname: "simple-icons:codechef",
+      siteName: "Packt",
+      iconifyClassname: "simple-icons:packt",
       style: {
-        color: "#5B4638",
+        color: "#F46F22",
       },
-      profileLink: "https://www.codechef.com/users/ashutosh_1919",
-    },
-    {
-      siteName: "Codeforces",
-      iconifyClassname: "simple-icons:codeforces",
-      style: {
-        color: "#1F8ACB",
-      },
-      profileLink: "http://codeforces.com/profile/layman_brother",
-    },
-    {
-      siteName: "Hackerearth",
-      iconifyClassname: "simple-icons:hackerearth",
-      style: {
-        color: "#323754",
-      },
-      profileLink: "https://www.hackerearth.com/@ashutosh391",
-    },
-    {
-      siteName: "Kaggle",
-      iconifyClassname: "simple-icons:kaggle",
-      style: {
-        color: "#20BEFF",
-      },
-      profileLink: "https://www.kaggle.com/laymanbrother",
+      profileLink: "https://www.packtpub.com/",
     },
   ],
 };
@@ -256,143 +216,211 @@ const competitiveSites = {
 const degrees = {
   degrees: [
     {
-      title: "Indian Institute of Information Technology Kurnool",
+      title: "application designer and developer",
       subtitle: "B.Tech. in Computer Engineering",
-      logo_path: "iiitk_logo.png",
-      alt_name: "IIITDM Kurnool",
-      duration: "2016 - 2020",
+      logo_path: "logo-afpa.png",
+      alt_name: "Afpa",
+      duration: "2020 - 2021",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        "⚡ Developed proficiency in writing algorithms and programs",
+        "⚡ Mastered the design and implementation of layered software architecture, including database design and development of SQL and NoSQL data access components.",
+        "⚡ Learned the process of analyzing requirements and creating application prototypes.",
+        "⚡ Acquired hands-on experience in creating desktop and web applications for businesses and contributing to web projects with both front-end and back-end development.",
       ],
-      website_link: "http://iiitk.ac.in",
-    },
-    {
-      title: "Indiana University Bloomington",
-      subtitle: "M.S. in Computer Science",
-      logo_path: "iu_logo.png",
-      alt_name: "Indiana University Bloomington",
-      duration: "2021 - 2023",
-      descriptions: [
-        "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Graph Machine Learning, Computer Vision etc.",
-        "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
-        "⚡ During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
-      ],
-      website_link: "https://www.indiana.edu/",
+      website_link:
+        "https://www.afpa.fr/formation-qualifiante/concepteur-developpeur-d-applications",
     },
   ],
 };
 
 const certifications = {
-  certifications: [
+  courses: [
     {
-      title: "Machine Learning",
-      subtitle: "- Andrew Ng",
-      logo_path: "stanford_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/22MTSSC5WDTM",
-      alt_name: "Stanford University",
-      color_code: "#8C151599",
+      Platform: "Packt",
+      Title: "Learn Angular 2 Development By Building 12 Apps",
+      MainSubject: "Angular",
     },
     {
-      title: "Deep Learning",
-      subtitle: "- Andrew Ng",
-      logo_path: "deeplearning_ai_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/H8CPSFXAJD2G",
-      alt_name: "deeplearning.ai",
-      color_code: "#00000099",
+      Platform: "Packt",
+      Title: "Data Scraping And Data Mining From Beginner To Pro With...",
+      MainSubject: "Scraping",
     },
     {
-      title: "ML on GCP",
-      subtitle: "- GCP Training",
-      logo_path: "google_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/EB4VJARK8647",
-      alt_name: "Google",
-      color_code: "#0C9D5899",
+      Platform: "Packt",
+      Title: "Angular For Enterprise-Ready Web Applications - Second ...",
+      MainSubject: "Angular",
     },
     {
-      title: "Data Science",
-      subtitle: "- Alex Aklson",
-      logo_path: "ibm_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/PLEAPCSJBZT5",
-      alt_name: "IBM",
-      color_code: "#1F70C199",
+      Platform: "Packt",
+      Title: "Git And Github Crash Course",
+      MainSubject: "Git",
     },
     {
-      title: "Big Data",
-      subtitle: "- Kim Akers",
-      logo_path: "microsoft_logo.png",
-      certificate_link:
-        "https://drive.google.com/file/d/164zKCFOsI4vGqokc-Qj-e_D00kLDHIrG/view",
-      alt_name: "Microsoft",
-      color_code: "#D83B0199",
+      Platform: "Packt",
+      Title: "Full-Stack React Projects - Second Edition",
+      MainSubject: "React",
     },
     {
-      title: "Advanced Data Science",
-      subtitle: "- Romeo Kienzler",
-      logo_path: "ibm_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/BH2T9BRU87BH",
-      alt_name: "IBM",
-      color_code: "#1F70C199",
+      Platform: "Packt",
+      Title: "Modern Api Development With Spring And Spring Boot",
+      MainSubject: "API",
     },
     {
-      title: "Advanced ML on GCP",
-      subtitle: "- GCP Training",
-      logo_path: "google_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/5JZZM7TNQ2AV",
-      alt_name: "Google",
-      color_code: "#0C9D5899",
+      Platform: "Packt",
+      Title: "Learn Python Programming - Third Edition",
+      MainSubject: "Python",
     },
     {
-      title: "DL on Tensorflow",
-      subtitle: "- Laurence Moroney",
-      logo_path: "deeplearning_ai_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/6T4DCUGNK8J8",
-      alt_name: "deeplearning.ai",
-      color_code: "#00000099",
+      Platform: "Packt",
+      Title: "React Js Masterclass - Go From Zero To Job Ready",
+      MainSubject: "React",
     },
     {
-      title: "Fullstack Development",
-      subtitle: "- Jogesh Muppala",
-      logo_path: "coursera_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/certificate/NRANJA66Y2YA",
-      alt_name: "Coursera",
-      color_code: "#2A73CC",
+      Platform: "Packt",
+      Title: "Spring Boot Fundamentals",
+      MainSubject: "Spring",
     },
     {
-      title: "Kuberenetes on GCP",
-      subtitle: "- Qwiklabs",
-      logo_path: "gcp_logo.png",
-      certificate_link:
-        "https://google.qwiklabs.com/public_profiles/e4d5a92b-faf6-4679-a70b-a9047c0cd750",
-      alt_name: "GCP",
-      color_code: "#4285F499",
+      Platform: "Packt",
+      Title: "Understanding Apis And Restful Apis Crash Course",
+      MainSubject: "API",
     },
     {
-      title: "Cryptography",
-      subtitle: "- Saurabh Mukhopadhyay",
-      logo_path: "nptel_logo.png",
-      certificate_link:
-        "https://drive.google.com/open?id=1z5ExD_QJVdU0slLkp8CBqSF3-C3g-ro_",
-      alt_name: "NPTEL",
-      color_code: "#FFBB0099",
+      Platform: "Packt",
+      Title: "React Projects - Second Edition",
+      MainSubject: "React",
     },
     {
-      title: "Cloud Architecture",
-      subtitle: "- Qwiklabs",
-      logo_path: "gcp_logo.png",
-      certificate_link:
-        "https://google.qwiklabs.com/public_profiles/5fab4b2d-be6f-408c-8dcb-6d3b58ecb4a2",
-      alt_name: "GCP",
-      color_code: "#4285F499",
+      Platform: "Packt",
+      Title: "Hands-On Web Scraping With Python",
+      MainSubject: "Python",
+    },
+    {
+      Platform: "Packt",
+      Title: "Angular Projects - Second Edition",
+      MainSubject: "Angular",
+    },
+    {
+      Platform: "Packt",
+      Title: "React - The Complete Guide (Includes Hooks, React Route...",
+      MainSubject: "React",
+    },
+    { Platform: "Packt", Title: "Docker deep dive", MainSubject: "Docker" },
+    {
+      Platform: "Packt",
+      Title: "Reactive Patterns With Rxjs For Angular",
+      MainSubject: "Angular",
+    },
+    {
+      Platform: "Packt",
+      Title: "Automating Workflows With Github Actions",
+      MainSubject: "Git",
+    },
+    {
+      Platform: "Packt",
+      Title: "The Complete Python Course",
+      MainSubject: "Python",
+    },
+    {
+      Platform: "Packt",
+      Title: "Git Essentials: Become A Git And Github Ninja",
+      MainSubject: "Git",
+    },
+    {
+      Platform: "Packt",
+      Title: "Build Full-Stack Projects With Farm Stack",
+      MainSubject: "Farm Stack",
+    },
+    {
+      Platform: "Packt",
+      Title: "Angular Design Patterns",
+      MainSubject: "Angular",
+    },
+    {
+      Platform: "Packt",
+      Title: "Github Essentials - Second Edition",
+      MainSubject: "Git",
+    },
+    {
+      Platform: "Packt",
+      Title: "Java 9 Regular Expressions",
+      MainSubject: "Regex",
+    },
+    {
+      Platform: "Packt",
+      Title: "Spring Boot Essentials",
+      MainSubject: "Spring",
+    },
+    {
+      Platform: "Packt",
+      Title: "Complete Git Guide: Understand And Master Git And Githu...",
+      MainSubject: "Git",
+    },
+    {
+      Platform: "Packt",
+      Title: "50 Projects In 50 Days - Html, Css, And Javascript",
+      MainSubject: "Css",
+    },
+    {
+      Platform: "Udemy",
+      Title: "Full Stack: Angular And Java Spring Boot E-Commerce Website",
+      MainSubject: "Full Stack",
+    },
+    {
+      Platform: "Udemy",
+      Title: "Spring Boot Unit Testing With Junit, Mockito And Mockmvc",
+      MainSubject: "Springboot",
+    },
+    {
+      Platform: "Udemy",
+      Title: "Java Programming Masterclass Updated To Java 17",
+      MainSubject: "Java",
+    },
+    {
+      Platform: "Udemy",
+      Title: "Build Responsive Real-World Websites With Html And Css",
+      MainSubject: "Css",
+    },
+    {
+      Platform: "Udemy",
+      Title: "Advanced Css And Sass: Flexbox, Grid, Animations And More!",
+      MainSubject: "Css",
+    },
+    {
+      Platform: "Udemy",
+      Title: "Complete Web Design: From Figma To Webflow To Freelancing",
+      MainSubject: "Webflow",
+    },
+    {
+      Platform: "Udemy",
+      Title: "100 Days Of Code: The Complete Python Pro Bootcamp For 2023",
+      MainSubject: "Python",
+    },
+    {
+      Platform: "Udemy",
+      Title: "The Complete Javascript Course 2023: From Zero To Expert",
+      MainSubject: "Javascript",
+    },
+    {
+      Platform: "Udemy",
+      Title: "Angular - The Complete Guide (2023 Edition)",
+      MainSubject: "Angular",
+    },
+    {
+      Platform: "Udemy",
+      Title: "- Node.Js, Express, Mongodb & More: The Complete Bootcamp 2023",
+      MainSubject: "Node,Js",
+    },
+    {
+      Platform: "Packt",
+      Title: "Learning Github Actions For Devops",
+      MainSubject: "Github",
+    },
+    {
+      Platform: "Packt",
+      Title:
+        "Javascript Masterclass - Zero To Job-Ready With Hands-On Projects",
+      MainSubject: "JavaScript",
     },
   ],
 };

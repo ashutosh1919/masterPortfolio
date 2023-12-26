@@ -28,13 +28,11 @@ function SeoHeader() {
     ?.experiences?.at(0);
 
   let credentials = [];
-  certifications.certifications.forEach((certification) => {
+  certifications.courses.forEach((certification) => {
     credentials.push({
       "@context": "https://schema.org",
       "@type": "EducationalOccupationalCredential",
-      url: certification.certificate_link,
-      name: certification.title,
-      description: certification.subtitle,
+      name: certification.Title,
     });
   });
   const data = {
