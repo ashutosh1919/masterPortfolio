@@ -109,6 +109,13 @@ const skills = {
           },
         },
         {
+          skillName: "API",
+          fontAwesomeClassname: "tabler:api",
+          style: {
+            color: "#DE102D",
+          },
+        },
+        {
           skillName: "JavaScript",
           fontAwesomeClassname: "simple-icons:javascript",
           style: {
@@ -138,9 +145,9 @@ const skills = {
         },
         {
           skillName: "Git",
-          fontAwesomeClassname: "logos:git",
+          fontAwesomeClassname: "devicon:git",
           style: {
-            color: "black",
+            color: "#F34F29",
           },
         },
         {
@@ -169,6 +176,21 @@ const skills = {
           fontAwesomeClassname: "devicon:java",
           style: {
             color: "black",
+          },
+        },
+        {
+          skillName: "Docker",
+          fontAwesomeClassname: "logos:docker-icon",
+          style: {
+            color: "#2296ED",
+          },
+        },
+
+        {
+          skillName: "Webflow",
+          fontAwesomeClassname: "skill-icons:webflow",
+          style: {
+            color: "#4353FF",
           },
         },
         {
@@ -216,8 +238,9 @@ const competitiveSites = {
 const degrees = {
   degrees: [
     {
-      title: "application designer and developer",
-      subtitle: "B.Tech. in Computer Engineering",
+      title: "Software Developer",
+      subtitle:
+        "Professional qualification at level 6 (equivalent to a bachelor's degree +3/+4).",
       logo_path: "logo-afpa.png",
       alt_name: "Afpa",
       duration: "2020 - 2021",
@@ -237,185 +260,157 @@ const certifications = {
   courses: [
     {
       Platform: "Packt",
-      Title: "Learn Angular 2 Development By Building 12 Apps",
-      MainSubject: "Angular",
+      Title: "Data Scraping And Data Mining From Beginner To Pro",
+      MainSubject: "Python",
+      Link: "https://example.com/course1",
     },
     {
       Platform: "Packt",
-      Title: "Data Scraping And Data Mining From Beginner To Pro With...",
-      MainSubject: "Scraping",
-    },
-    {
-      Platform: "Packt",
-      Title: "Angular For Enterprise-Ready Web Applications - Second ...",
+      Title: "Angular For Enterprise-Ready Web Applications",
       MainSubject: "Angular",
+      Link: "https://example.com/course2",
     },
     {
       Platform: "Packt",
       Title: "Git And Github Crash Course",
       MainSubject: "Git",
+      Link: "https://example.com/course3",
     },
     {
       Platform: "Packt",
       Title: "Full-Stack React Projects - Second Edition",
-      MainSubject: "React",
-    },
-    {
-      Platform: "Packt",
-      Title: "Modern Api Development With Spring And Spring Boot",
-      MainSubject: "API",
-    },
-    {
-      Platform: "Packt",
-      Title: "Learn Python Programming - Third Edition",
-      MainSubject: "Python",
+      MainSubject: "ReactJS",
+      Link: "https://example.com/course4",
     },
     {
       Platform: "Packt",
       Title: "React Js Masterclass - Go From Zero To Job Ready",
-      MainSubject: "React",
+      MainSubject: "ReactJS",
+      Link: "https://example.com/course5",
     },
     {
       Platform: "Packt",
       Title: "Spring Boot Fundamentals",
       MainSubject: "Spring",
+      Link: "https://example.com/course6",
     },
     {
       Platform: "Packt",
       Title: "Understanding Apis And Restful Apis Crash Course",
       MainSubject: "API",
+      Link: "https://example.com/course7",
     },
     {
       Platform: "Packt",
       Title: "React Projects - Second Edition",
-      MainSubject: "React",
+      MainSubject: "ReactJS",
+      Link: "https://example.com/course8",
     },
     {
       Platform: "Packt",
       Title: "Hands-On Web Scraping With Python",
       MainSubject: "Python",
+      Link: "https://example.com/course9",
     },
     {
       Platform: "Packt",
-      Title: "Angular Projects - Second Edition",
+      Title: "Angular Projects",
       MainSubject: "Angular",
+      Link: "https://example.com/course10",
     },
     {
       Platform: "Packt",
-      Title: "React - The Complete Guide (Includes Hooks, React Route...",
-      MainSubject: "React",
+      Title: "React - The Complete Guide (Includes Hooks, React Router...)",
+      MainSubject: "ReactJS",
+      Link: "https://example.com/course11",
     },
-    { Platform: "Packt", Title: "Docker deep dive", MainSubject: "Docker" },
     {
       Platform: "Packt",
-      Title: "Reactive Patterns With Rxjs For Angular",
-      MainSubject: "Angular",
+      Title: "Docker deep dive",
+      MainSubject: "Docker",
+      Link: "https://example.com/course12",
     },
     {
       Platform: "Packt",
       Title: "Automating Workflows With Github Actions",
       MainSubject: "Git",
-    },
-    {
-      Platform: "Packt",
-      Title: "The Complete Python Course",
-      MainSubject: "Python",
+      Link: "https://example.com/course13",
     },
     {
       Platform: "Packt",
       Title: "Git Essentials: Become A Git And Github Ninja",
       MainSubject: "Git",
-    },
-    {
-      Platform: "Packt",
-      Title: "Build Full-Stack Projects With Farm Stack",
-      MainSubject: "Farm Stack",
-    },
-    {
-      Platform: "Packt",
-      Title: "Angular Design Patterns",
-      MainSubject: "Angular",
-    },
-    {
-      Platform: "Packt",
-      Title: "Github Essentials - Second Edition",
-      MainSubject: "Git",
-    },
-    {
-      Platform: "Packt",
-      Title: "Java 9 Regular Expressions",
-      MainSubject: "Regex",
+      Link: "https://example.com/course14",
     },
     {
       Platform: "Packt",
       Title: "Spring Boot Essentials",
       MainSubject: "Spring",
+      Link: "https://example.com/course15",
     },
     {
       Platform: "Packt",
-      Title: "Complete Git Guide: Understand And Master Git And Githu...",
+      Title: "Complete Git Guide: Understand And Master Git And GitHub",
       MainSubject: "Git",
+      Link: "https://example.com/course16",
     },
     {
       Platform: "Packt",
       Title: "50 Projects In 50 Days - Html, Css, And Javascript",
-      MainSubject: "Css",
+      MainSubject: "CSS3",
+      Link:
+        "https://www.packtpub.com/product/50-projects-in-50-days-html-css-and-javascript-video/9781801079976",
     },
     {
       Platform: "Udemy",
       Title: "Full Stack: Angular And Java Spring Boot E-Commerce Website",
-      MainSubject: "Full Stack",
+      MainSubject: "Spring",
+      Link: "https://example.com/course18",
     },
     {
       Platform: "Udemy",
       Title: "Spring Boot Unit Testing With Junit, Mockito And Mockmvc",
-      MainSubject: "Springboot",
-    },
-    {
-      Platform: "Udemy",
-      Title: "Java Programming Masterclass Updated To Java 17",
-      MainSubject: "Java",
+      MainSubject: "Spring",
+      Link: "https://example.com/course19",
     },
     {
       Platform: "Udemy",
       Title: "Build Responsive Real-World Websites With Html And Css",
-      MainSubject: "Css",
+      MainSubject: "CSS3",
+      Link: "https://example.com/course20",
     },
     {
       Platform: "Udemy",
       Title: "Advanced Css And Sass: Flexbox, Grid, Animations And More!",
-      MainSubject: "Css",
+      MainSubject: "CSS3",
+      Link: "https://example.com/course21",
     },
     {
       Platform: "Udemy",
       Title: "Complete Web Design: From Figma To Webflow To Freelancing",
       MainSubject: "Webflow",
+      Link:
+        "https://www.udemy.com/course/freelance-web-design-from-design-to-development-to-making-money/",
     },
     {
       Platform: "Udemy",
       Title: "100 Days Of Code: The Complete Python Pro Bootcamp For 2023",
       MainSubject: "Python",
+      Link: "https://www.udemy.com/course/100-days-of-code/",
     },
     {
       Platform: "Udemy",
       Title: "The Complete Javascript Course 2023: From Zero To Expert",
-      MainSubject: "Javascript",
+      MainSubject: "JavaScript",
+      Link: "https://www.udemy.com/course/the-complete-javascript-course/",
     },
     {
       Platform: "Udemy",
-      Title: "Angular - The Complete Guide (2023 Edition)",
+      Title: "Angular - The Complete Guide",
       MainSubject: "Angular",
+      Link: "https://www.udemy.com/course/the-complete-guide-to-angular-2/",
     },
-    {
-      Platform: "Udemy",
-      Title: "- Node.Js, Express, Mongodb & More: The Complete Bootcamp 2023",
-      MainSubject: "Node,Js",
-    },
-    {
-      Platform: "Packt",
-      Title: "Learning Github Actions For Devops",
-      MainSubject: "Github",
-    },
+
     {
       Platform: "Packt",
       Title:

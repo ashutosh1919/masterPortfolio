@@ -12,6 +12,7 @@ export default class EducationImg extends Component {
         width="795.39431"
         height="574.03802"
         viewBox="0 0 795.39431 574.03802"
+        // style={{width:'55%', height:'auto'}}
       >
         <defs>
           <linearGradient

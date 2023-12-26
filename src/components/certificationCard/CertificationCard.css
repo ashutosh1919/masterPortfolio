@@ -1,19 +1,18 @@
 .cert-card {
   width: 30%;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  display: flex;
+  align-content: center;
   border: 1px solid #d9dbdf;
+  justify-content: center;
   border-radius: 5px;
   box-shadow: 5px 5px 5px #d9dbdf;
   margin-bottom: 30px;
-  flex: 0 0 30%;
+  /*flex: 0 0 30%;*/
 }
 
 .cert-header {
-  margin: 0px;
-  border-radius: 5px 5px 0px 0px;
+  margin: 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .logo_img {
@@ -23,17 +22,19 @@
 }
 
 .cert-body {
-  margin: 0px;
+  margin: 0;
+  flex: 0 0 70%; /* Set flex-grow to 0, flex-shrink to 0, and flex-basis to 30% */
 }
 
 .cert-body-title {
-  font-family: "Google Sans Regular";
+  text-align: left;
+  font-family: "Google Sans Regular", sans-serif;
   font-size: 20px;
   margin: 10px;
 }
 
 .cert-body-subtitle {
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif;
   font-size: 18px;
   color: #808080;
   margin: 10px;
@@ -74,8 +75,6 @@
   top: 50%;
   left: 50%;
   opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
@@ -91,17 +90,30 @@
 .content-details h3 {
   color: #fff;
   font-weight: 500;
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif;
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
   text-transform: uppercase;
 }
+.bigger {
+  font-size: 4em;
+}
+/* CertificationCard.css */
+
+.icon {
+  padding-top: 1em;
+  flex: 0 0 30%; /* Set flex-grow to 0, flex-shrink to 0, and flex-basis to 30% */
+  text-align: center;
+  margin-right: 16px;
+}
+
+.iconify {
+  width: 100%;
+  height: auto;
+}
 
 .fadeIn-top {
   top: 20%;
-}
-
-@media (max-width: 1380px) {
 }
 
 @media (max-width: 768px) {

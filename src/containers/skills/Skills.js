@@ -2,6 +2,8 @@ import React from "react";
 import "./Skills.css";
 import SkillSection from "./SkillSection";
 import { Fade } from "react-reveal";
+import { skills } from "../../portfolio";
+import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 
 export default function Skills(props) {
   const theme = props.theme;
@@ -10,8 +12,15 @@ export default function Skills(props) {
       <div className="skills-header-div">
         <Fade bottom duration={2000} distance="20px">
           <h1 className="skills-header" style={{ color: theme.text }}>
-            What I Do?
+            What I Do? Full Stack Development
           </h1>
+
+          {skills.data.map((skill) => (
+            <SoftwareSkill
+              logos={skill.softwareSkills}
+              key={skill.softwareSkills.skillName}
+            />
+          ))}
         </Fade>
       </div>
       <SkillSection theme={theme} />

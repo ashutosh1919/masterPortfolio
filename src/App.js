@@ -57,7 +57,7 @@ function App() {
   useEffect(() => {
     console.log("use effect");
     setTheme(themeMap[storedThemeName] || defaultTheme);
-  }, [theme]);
+  }, [storedThemeName]);
 
   // Function to change the theme
   function changeColor(color) {

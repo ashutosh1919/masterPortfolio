@@ -1,7 +1,7 @@
 import React from "react";
 import "./SoftwareSkill.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-
+// a compoent that display logos of skills and stack
 class SoftwareSkill extends React.Component {
   render() {
     return (
@@ -23,7 +23,7 @@ class SoftwareSkill extends React.Component {
                     </Tooltip>
                   }
                 >
-                  <li className="software-skill-inline" name={logo.skillName}>
+                  <li className="software-skill-inline">
                     {logo.fontAwesomeClassname && (
                       <span
                         className="iconify"

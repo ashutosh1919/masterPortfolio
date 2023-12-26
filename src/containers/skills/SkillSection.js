@@ -20,14 +20,23 @@ function GetSkillSvg(props) {
   return <DesignImg theme={props.theme} />;
 }
 
+function hashCode(s) {
+  let hash = 0;
+  for (let i = 0; i < s.length; i++) {
+    const char = s.charCodeAt(i);
+    hash = (hash << 5) - hash + char;
+  }
+  return hash;
+}
+
 class SkillSection extends Component {
   render() {
     const theme = this.props.theme;
     return (
       <div>
-        {skills.data.map((skill, i) => {
+        {skills.data.map((skill) => {
           return (
-            <div key={i} className="skills-main-div">
+            <div key={skill.title} className="skills-main-div">
               {/*Main Image*/}
 
               <Fade left duration={2000}>
@@ -41,9 +50,10 @@ class SkillSection extends Component {
                 {/*the title*/}
 
                 <Fade right duration={1000}>
-                  <h1 className="skills-heading" style={{ color: theme.text }}>
-                    {skill.title}
-                  </h1>
+                  <h1
+                    className="skills-heading"
+                    style={{ color: theme.text }}
+                  ></h1>
                 </Fade>
                 {/****/}
 
@@ -55,11 +65,11 @@ class SkillSection extends Component {
                 {/*list of skills */}
                 <Fade right duration={2000}>
                   <div>
-                    {skill.skills.map((skillSentence, i) => {
+                    {skill.skills.map((skillSentence) => {
                       if (skillSentence.includes(":")) {
                         return (
                           <h1
-                            key={i}
+                            key={hashCode(skillSentence)}
                             className="subTitle skills-text"
                             style={{ color: theme.secondaryText }}
                           >
@@ -69,7 +79,7 @@ class SkillSection extends Component {
                       } else {
                         return (
                           <p
-                            key={i}
+                            key={hashCode(skillSentence)}
                             className="subTitle skills-text"
                             style={{ color: theme.secondaryText }}
                           >
