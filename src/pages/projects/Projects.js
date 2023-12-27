@@ -18,6 +18,15 @@ import ProjectsImg from "./ProjectsImg";
 
 class Projects extends Component {
   render() {
+    // Group projects by type
+    const projectsByType = ProjectsData.data.reduce((acc, project) => {
+      const { type } = project;
+      if (!acc[type]) {
+        acc[type] = [];
+      }
+      acc[type].push(project);
+      return acc;
+    }, {});
     const theme = this.props.theme;
     return (
       <div className="projects-main">
@@ -26,10 +35,6 @@ class Projects extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
-                {/* <img
-											src={require(`../../assests/images/${projectsHeader["avatar_image_path"]}`)}
-											alt=""
-										/> */}
                 <ProjectsImg theme={theme} />
               </div>
               <div className="projects-heading-text-div">
@@ -50,9 +55,18 @@ class Projects extends Component {
           </Fade>
         </div>
         <div className="repo-cards-div-main">
-          {ProjectsData.data.map((repo) => {
-            return <GithubRepoCard repo={repo} theme={theme} />;
-          })}
+          <div className="projects-by-type">
+            {Object.entries(projectsByType).map(([type, projects]) => (
+              <div key={type} className="project-type-section">
+                <h2>{type.toLocaleUpperCase()}</h2>
+                <div className="repo-cards-div-main">
+                  {projects.map((repo) => (
+                    <GithubRepoCard key={repo.id} repo={repo} theme={theme} />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
         <Button
           text={"More Projects"}

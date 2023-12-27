@@ -1,3 +1,13 @@
+/* CSS for projects-by-type */
+.projects-by-type {
+  padding: 20px;
+}
+
+.project-type-section h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
 .projects-main {
   width: 100%;
   text-align: center;
@@ -34,7 +44,7 @@
 .projects-heading-text {
   font-size: 56px;
   font-weight: 400;
-  font-family: "Google Sans Medium";
+  font-family: "Google Sans Medium", sans-serif;
   line-height: 1.1;
   text-align: center;
   margin-top: 80px;
@@ -42,7 +52,7 @@
 
 .projects-heading-sub-text {
   font-size: 30px;
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -50,14 +60,14 @@
 .projects-header-detail-text {
   font-size: 20px;
   line-height: 30px;
-  margin-top: 0px;
+  margin-top: 0;
   margin-left: 20px;
   margin-right: 20px;
-  font-family: "Google Sans Medium";
+  font-family: "Google Sans Medium", sans-serif;
 }
 .publications-heading-text-div {
   text-align: center;
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif;
   margin-top: 70px;
 }
 
@@ -102,8 +112,8 @@
 
   .projects-header-detail-text {
     font-size: 16px;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 0;
+    margin-left: 0;
     line-height: normal;
     text-align: center;
   }

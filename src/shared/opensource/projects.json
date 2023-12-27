@@ -2,10 +2,11 @@
   "data": [
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "type": "professional",
+      "type": "enterprise",
       "name": "Tumorotek",
       "url": "https://github.com/TumoroteK/TumoroteK",
-      "description": "A comprehensive web application utilized by hospitals across France for the sophisticated management of biological samples originating from various sources such as blood and more. This intricate application enables users to oversee patient information, sample data, byproducts, and the associated cryogenic storage units. It facilitates tracking the location of each sample within the storage units, and provides an administrative panel for enhanced control and monitoring.",
+      "description": "Web application that manage of biological samples utilized by hospitals across France.",
+      "subtitle": "This intricate application enables users to oversee patient information, sample data, byproducts, and the associated cryogenic storage units. It facilitates tracking the location of each sample within the storage units, and provides an administrative panel for enhanced control and monitoring.",
       "logo": "",
       "languages": [
         {
@@ -13,31 +14,45 @@
           "iconifyClass": "devicon:java"
         },
         {
-          "name": "Dockerfile",
-          "iconifyClass": "simple-icons:docker"
+          "name": "Spring",
+          "iconifyClass": "devicon:spring"
         }
       ]
     },
     {
       "id": "R_kgDOG_vYHA",
-      "name": "explainable-cnn",
-      "createdAt": "2022-03-13T20:41:33Z",
-      "url": "https://github.com/ashutosh1919/explainable-cnn",
-      "description": "📦 PyTorch based visualization package for generating layer-wise explanations for CNNs.",
+      "type": "enterprise",
+      "name": "Biomedicine Agency",
+      "url": null,
+      "description": "Web application that manages bone marrow donors and recipients, ensuring seamless coordination in the donation process.",
+      "subtitle": "This application ensures efficient management of bone marrow donors and recipients, promoting seamless coordination throughout the donation process. Utilizing Java, Spring, TypeScript, and Angular, it offers a robust solution for the biomedical domain.",
       "isFork": false,
       "languages": [
         {
-          "name": "Python",
+          "name": "Java",
           "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Spring",
+          "iconifyClass": "devicon:spring"
+        },
+        {
+          "name": "TypeScript",
+          "iconifyClass": "skill-icons:typescript"
+        },
+        {
+          "name": "Angular",
+          "iconifyClass": "devicon:angularjs"
         }
       ]
     },
     {
       "id": "R_kgDOG0_8uQ",
-      "name": "react-awesome-shapes",
-      "createdAt": "2022-02-11T14:50:20Z",
+      "type": "desktop",
+      "name": "BranchIt",
       "url": "https://github.com/ashutosh1919/react-awesome-shapes",
-      "description": "🌀 Insert Awesome Shapes into Your React Site with Ease.",
+      "description": "Manage tickets for development, designed to enhance and reduce development time",
+      "subtitle": "Creates a detailed Markdown file for each ticket, summarizing key details and analysis\nand automatically creates a version control branch with the name of the ticket",
       "isFork": false,
       "languages": [
         {
@@ -49,58 +64,142 @@
           "iconifyClass": "logos-css-3"
         },
         {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
-        },
-        {
           "name": "JavaScript",
           "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "Electron",
+          "iconifyClass": "skill-icons:electron"
         }
       ]
     },
     {
       "id": "R_kgDOGcPKSQ",
-      "name": "neuro-symbolic-sudoku-solver",
-      "createdAt": "2021-11-26T17:56:07Z",
+      "name": "Graduation Project",
+      "type": "entreprise",
       "url": "https://github.com/ashutosh1919/neuro-symbolic-sudoku-solver",
-      "description": "⚙️ Solving sudoku using Deep Reinforcement learning in combination with powerful symbolic representations.",
+      "description": "E-Commerce website inspired by Amazon, utilizing Angular Material to achieve a sleek and modern design",
       "isFork": false,
       "languages": [
         {
-          "name": "Python",
+          "name": "Java",
           "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Spring",
+          "iconifyClass": "devicon:spring"
+        },
+        {
+          "name": "TypeScript",
+          "iconifyClass": "skill-icons:typescript"
+        },
+        {
+          "name": "Angular",
+          "iconifyClass": "devicon:angularjs"
         }
       ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkzMjcyMjI5Njk=",
-      "name": "react-awesome-loaders",
-      "createdAt": "2021-01-06T06:36:41Z",
-      "url": "https://github.com/ashutosh1919/react-awesome-loaders",
-      "description": "🚀  High quality, super responsive and completely customisable Loading Animations to insert into your website with single line of code.",
+      "name": "Job Mate",
+      "type": "automation",
+      "description": "An automated job-search application that significantly streamlines and simplifies the job-seeking process, enhancing efficiency and reducing the time spent on searching for relevant opportunities.",
       "isFork": false,
       "languages": [
         {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
+          "name": "Python",
+          "iconifyClass": "logos:python"
         }
       ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
-      "name": "react-liquidswipe",
-      "createdAt": "2021-01-01T08:31:51Z",
+      "name": "Search Inside Files",
+      "type": "Desktop Application",
       "url": "https://github.com/ashutosh1919/react-liquidswipe",
-      "description": "🚀 Smooth Liquid Swipe Animation to transition between different components.",
+      "description": "Performs a comprehensive search within a specified folder, scanning through all files to locate and identify occurrences of a specific string.",
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
+      "name": "Dev Buddy",
+      "type": "AI",
+      "url": "https://github.com/ashutosh1919/react-liquidswipe",
+      "description": "Analyzes functions, proposes fixes, suggests improvements, and generate documentation with one click",
       "isFork": false,
       "languages": [
         {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
+          "name": "Python",
+          "iconifyClass": "logos:python"
         },
         {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
+          "name": "Flask",
+          "iconifyClass": "devicon:flask"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlffddzaXRvcnkzODE5NDMxMjE=",
+      "name": "FuncDocGen",
+      "type": "AI",
+      "url": "https://github.com/yourusername/func-doc-gen",
+      "description": "AI-powered application that generates, improves, and documents functions with Python and Flask.",
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "Flask",
+          "iconifyClass": "devicon:flask"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkzh5ggffxMjE=",
+      "name": "OutlookReplayAI",
+      "type": "AI",
+      "url": "https://github.com/yourusername/outlook-replay-ai",
+      "description": "AI-driven application for automated and intelligent email replies using Outlook integration.",
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnk43434NDMxMjE=",
+      "name": "PPTGenAI",
+      "type": "AI",
+      "url": "https://github.com/yourusername/ppt-gen-ai",
+      "description": "AI-powered application for automatic PowerPoint generation with Python and Flask.",
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "Flask",
+          "iconifyClass": "devicon:flask"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaX3434DE5NDMxMjE=",
+      "name": "SpeechRecAI",
+      "type": "AI",
+      "url": "https://github.com/yourusername/speech-rec-ai",
+      "description": "AI-powered application for speech recognition and analysis.",
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
         }
       ]
     }

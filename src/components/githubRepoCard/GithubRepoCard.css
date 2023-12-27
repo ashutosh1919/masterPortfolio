@@ -1,12 +1,14 @@
 .repo-card-div {
   color: rgb(88, 96, 105);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 10px 30px -15px;
   padding: 2rem;
   cursor: pointer;
   flex: 1 1 25%;
+  border-radius: 20px;
+  height: 40vh;
 }
 .repo-card-div:hover {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 20px 30px -10px;
 }
 
 .repo-stats {
@@ -41,6 +43,7 @@
 .repo-name-div {
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Align items to the opposite ends */
 }
 
 .repo-svg {
@@ -51,14 +54,13 @@
 .repo-name {
   text-align: left;
   color: rgb(36, 41, 46);
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif;
   margin-bottom: 0.75rem;
   font-size: 25px;
   font-weight: 700;
   letter-spacing: -0.5px;
   overflow: hidden;
   line-height: 1.2;
-  margin: 0px;
 }
 
 .repo-star-svg {
@@ -69,7 +71,7 @@
   overflow: hidden;
   text-align: left;
   display: -webkit-box;
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   margin-top: 0.8rem;
@@ -80,17 +82,9 @@
   flex-direction: row;
 }
 
-.repo-creation-date {
-  margin: 0;
-  font-family: "Google Sans Regular";
-  font-weight: 400;
-  margin-left: 0px;
-  margin-right: auto;
-}
-
 .repo-languages {
   margin-left: auto;
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 @media (max-width: 1200px) {
