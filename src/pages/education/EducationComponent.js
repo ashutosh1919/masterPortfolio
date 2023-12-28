@@ -43,6 +43,7 @@ class Education extends Component {
               </div>
             </div>
           </Fade>
+          {/*the bac+4 section*/}
           <Educations theme={this.props.theme} />
           {certifications.courses.length > 0 ? (
             <Certifications theme={this.props.theme} />

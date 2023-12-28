@@ -6,6 +6,8 @@ import {
   tealTheme,
   materialDarkTheme,
   materialLightTheme,
+  setChosenTheme,
+  getChosenTheme,
 } from "../../theme";
 import "./colorPicker.css";
 const Square = ({ color, onClick }) => {
@@ -24,11 +26,9 @@ const Square = ({ color, onClick }) => {
 
 class ColorPicker extends Component {
   render() {
-    const changeColor = this.props.changeColor;
-
     const handleColorClick = (selectedTheme) => {
-      console.log("inside color picker " + selectedTheme.name);
-      // changeColor(selectedTheme);
+      setChosenTheme(selectedTheme);
+      console.log("chosen" + getChosenTheme().name);
     };
 
     return (
@@ -37,10 +37,7 @@ class ColorPicker extends Component {
           color={blueTheme.secondaryText}
           onClick={() => handleColorClick(blueTheme)}
         />
-        {/*<Square color={brownTheme.jacketColor} onClick={() => handleColorClick(brownTheme)} />*/}
-        {/*<Square color={purpleTheme.jacketColor} onClick={() => handleColorClick(purpleTheme)} />*/}
-        {/*<Square color={greenTheme.jacketColor} onClick={() => handleColorClick(greenTheme)} />*/}
-        {/*<Square color={redTheme.jacketColor} onClick={() => handleColorClick(redTheme)} />*/}
+
         <Square
           color={blackTheme.secondaryText}
           onClick={() => handleColorClick(blackTheme)}

@@ -7,9 +7,11 @@ import TopButton from "../../components/topButton/TopButton";
 
 class Home extends Component {
   render() {
+    console.log("inside Home", this.props);
+
     return (
       <div>
-        <Header theme={this.props.theme} changeColor={this.props.changeColor} />
+        <Header theme={this.props.theme} />
         <Greeting theme={this.props.theme} />
         <Skills theme={this.props.theme} />
         <Footer theme={this.props.theme} />

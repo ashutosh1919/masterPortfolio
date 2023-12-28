@@ -67,51 +67,53 @@ const skills = {
       fileName: "FullStackImg",
       skills: [
         {
-          skill: "HTML5 and CSS3 for building structured and styled web pages.",
+          skill:
+            "🌐 HTML5 and CSS3 for building structured and styled web pages.",
           tools: ["HTML5", "CSS3"],
         },
         {
           skill:
-            "Angular & TypeScript for creating dynamic and responsive web applications.",
+            "🅰️ Angular & TypeScript for creating dynamic and responsive web applications.",
           tools: ["Angular", "TypeScript"],
         },
         {
-          skill: "ReactJS for building interactive user interfaces.",
+          skill: "⚛️ ReactJS for building interactive user interfaces.",
           tools: ["ReactJS"],
         },
         {
           skill:
-            "Flask for building lightweight and modular web applications in Python.",
+            "🌶️ Flask for building lightweight and modular web applications in Python.",
           tools: ["Flask", "Python"],
         },
         {
           skill:
-            "Java and Spring for building enterprise-level, scalable, and robust applications.",
+            "☕ Java and Spring for building enterprise-level, scalable, and robust applications.",
           tools: ["Java", "Spring"],
         },
         {
           skill:
-            "Python for general-purpose programming, including scripting and automation.",
+            "🐍 Python for general-purpose programming, including scripting and automation.",
           tools: ["Python"],
         },
         {
-          skill: "NPM for managing and installing JavaScript packages.",
+          skill: "📦 NPM for managing and installing JavaScript packages.",
           tools: ["NPM"],
         },
         {
-          skill: "Maven for managing Java-based project dependencies.",
+          skill: "📦 Maven for managing Java-based project dependencies.",
           tools: ["Maven"],
         },
         {
-          skill: "Git for version control, collaboration, and code management.",
+          skill:
+            "🐙 Git for version control, collaboration, and code management.",
           tools: ["Git"],
         },
         {
-          skill: "MySQL for relational database management.",
+          skill: "🐬 MySQL for relational database management.",
           tools: ["MySQL"],
         },
         {
-          skill: "MongoDB for NoSQL database management.",
+          skill: "🍃 MongoDB for NoSQL database management.",
           tools: ["MongoDB"],
         },
       ],
@@ -127,7 +129,7 @@ const skills = {
         },
         {
           skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
+          fontAwesomeClassname: "vscode-icons:file-type-css",
           style: {
             color: "#1572B6",
           },
@@ -148,7 +150,7 @@ const skills = {
         },
         {
           skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
+          fontAwesomeClassname: "skill-icons:javascript",
           style: {
             color: "#F7DF1E",
           },
@@ -162,7 +164,7 @@ const skills = {
         },
         {
           skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
+          fontAwesomeClassname: "devicon:react",
           style: {
             color: "#61DAFB",
           },
@@ -277,16 +279,16 @@ const degrees = {
   introduction:
     "Certified as a Java developer, " +
     "I swiftly moved beyond basics in pursuit of broader expertise. " +
-    "External courses became my compass for staying ahead in the dynamic " +
+    "Online courses became my compass for staying ahead in the dynamic " +
     "tech landscape. The journey, initiated with Java, expanded to encompass " +
-    "diverse technologies such as Angular, React, Python, Git, and CD/CI. " +
-    "Each step reflects a dedication to staying current and thriving in the ever-evolving tech landscape.",
+    "diverse technologies such as Angular, React, Python, Git, CD/CI etc... " +
+    "Each step reflects a dedication to staying up to date in the ever-evolving tech landscape.",
 
   degrees: [
     {
       title: "Software Developer",
       subtitle:
-        "Professional qualification at level 6 (equivalent to a bachelor's degree +3/+4).",
+        "Professional qualification at level 6 (equivalent to a BAC +4).",
       logo_path: "logo-afpa.png",
       alt_name: "Afpa",
       duration: "2020 - 2021",
@@ -317,15 +319,15 @@ const certifications = {
       Link:
         "https://www.packtpub.com/product/data-scraping-and-data-mining-from-beginner-to-pro-with-python-video/9781801818483",
     },
-    {
-      Platform: "Packt",
-      Title: "Angular For Enterprise-Ready Web Applications",
-      Description:
-        "Master Angular for building enterprise-level web applications, covering advanced features and best practices for scalable development.",
-      MainSubject: "Angular",
-      Link:
-        "https://www.packtpub.com/product/angular-for-enterprise-ready-web-applications-second-edition/9781838648800",
-    },
+    // {
+    //   Platform: "Packt",
+    //   Title: "Angular For Enterprise-Ready Web Applications",
+    //   Description:
+    //     "Master Angular for building enterprise-level web applications, covering advanced features and best practices for scalable development.",
+    //   MainSubject: "Angular",
+    //   Link:
+    //     "https://www.packtpub.com/product/angular-for-enterprise-ready-web-applications-second-edition/9781838648800",
+    // },
     {
       Platform: "Packt",
       Title: "Git And Github Crash Course",
@@ -371,15 +373,15 @@ const certifications = {
       Link:
         "https://www.packtpub.com/product/data-scraping-and-data-mining-from-beginner-to-pro-with-python-video/9781801818483",
     },
-    {
-      Platform: "Packt",
-      Title: "Angular Projects",
-      Description:
-        "Take your Angular skills to the next level with practical projects, reinforcing your knowledge and proficiency in building web applications.",
-      MainSubject: "Angular",
-      Link:
-        "https://www.packtpub.com/product/angular-projects-third-edition/9781803239118",
-    },
+    // {
+    //   Platform: "Packt",
+    //   Title: "Angular Projects",
+    //   Description:
+    //     "Take your Angular skills to the next level with practical projects, reinforcing your knowledge and proficiency in building web applications.",
+    //   MainSubject: "Angular",
+    //   Link:
+    //     "https://www.packtpub.com/product/angular-projects-third-edition/9781803239118",
+    // },
     {
       Platform: "Packt",
       Title: "Docker deep dive",
@@ -418,7 +420,7 @@ const certifications = {
     },
     {
       Platform: "Udemy",
-      Title: "Full Stack: Angular And Java Spring Boot E-Commerce Website",
+      Title: "Full Stack: Angular And Java Spring Boot",
       Description:
         "Build a full-stack e-commerce website using Angular and Java Spring Boot, gaining practical experience in end-to-end web development.",
       MainSubject: "Angular",
@@ -427,7 +429,7 @@ const certifications = {
     },
     {
       Platform: "Udemy",
-      Title: "Spring Boot Unit Testing With Junit, Mockito And Mockmvc",
+      Title: "Spring Boot Unit Testing",
       Description:
         "Master the art of unit testing in Spring Boot applications using JUnit, Mockito, and MockMvc, ensuring the reliability of your code.",
       MainSubject: "Spring",
@@ -643,19 +645,16 @@ const projectsHeader = {
     {
       title: "Enterprise Application Projects:",
       desc:
-        "Drawing on my deep understanding of Java acquired through enterprise-level applications, I've contributed to the development " +
-        "of robust and scalable solutions. This hands-on experience has allowed me to navigate complex systems, ensuring the seamless" +
-        " integration of Java technologies in an enterprise environment.",
+        "Through my journey with Java in real-world applications, I've had the chance to dive into some pretty big projects." +
+        " I've been involved in constructing robust and adaptable solutions tailored for hospitals, where adherence to best practices, " +
+        "rigorous unit testing, and meticulous attention to detail of utmost importance.",
     },
     {
       title: "Personal Projects:",
       desc:
-        "My passion for continuous learning and hands-on application of acquired knowledge is" +
-        " evident in my personal projects. By leveraging the diverse skills gained from my " +
-        "learning journey, I've crafted innovative solutions, integrating Python, Angular, " +
-        "Git, Docker, and more. These projects showcase my ability to translate theoretical " +
-        "knowledge into practical, real-world applications, demonstrating my readiness for " +
-        "diverse challenges in software development.",
+        "I love learning and putting what I've learned into action, especially through personal projects. " +
+        "These projects aren't just for show; they're my way of proving I can turn what I've learned into real-world solutions." +
+        " Ready to tackle any software development challenge!",
     },
   ],
 

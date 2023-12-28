@@ -7,14 +7,13 @@
 
 .card-title {
   font-family: "Google Sans Medium";
-  font-size: 23px;
+  font-size: 3.1rem;
   /* color: #000000; */
 }
 
 .card-subtitle {
-  font-family: "Google Sans Medium";
-  font-size: 18px;
-  /* color: #000000; */
+  font-family: "Google Sans Medium", sans-serif;
+  font-size: 2rem;
   margin-top: 7px;
   margin-bottom: 5px;
 }
@@ -33,6 +32,8 @@
 .body-header {
   max-width: inherit;
   display: flex;
+  flex-direction: column;
+
   /* width: 100%; */
   /* background-color:#6c63ff99; */
   border-radius: 7px 7px 0px 0px;
@@ -68,7 +69,9 @@
 .content-list {
   padding-left: 10px;
   padding-right: 10px;
-  font-family: "Google Sans Regular";
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  font-family: "Google Sans Regular", sans-serif;
 }
 
 .card-body {

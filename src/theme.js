@@ -209,3 +209,14 @@ export const frozenDreams = {
   jacketColor: "#0A2472",
   headerColor: "#0E6BA877",
 };
+
+export let chosenTheme = blueTheme;
+
+export const getChosenTheme = () => {
+  return chosenTheme;
+};
+
+export const setChosenTheme = (newTheme) => {
+  chosenTheme = newTheme;
+  console.log(getChosenTheme());
+};

@@ -29,22 +29,28 @@ class DegreeCard extends Component {
             style={{ width: degree.logo_path ? "90%" : "100%" }}
           >
             <div
-              className="body-header"
+              className="body-header center-horizontal"
               style={{ backgroundColor: theme.headerColor }}
             >
-              <div className="body-header-title">
+              <div className="flex-column">
                 <h2 className="card-title" style={{ color: theme.text }}>
                   {degree.title}
                 </h2>
-                <h3 className="card-subtitle" style={{ color: theme.text }}>
+              </div>
+              <div>
+                <h3
+                  className="card-subtitle"
+                  style={{ color: theme.expTxtColor }}
+                >
                   {degree.subtitle}
                 </h3>
               </div>
-              <div className="body-header-duration">
-                <h3 className="duration" style={{ color: theme.text }}>
-                  {degree.duration}
-                </h3>
-              </div>
+
+              {/*<div className="body-header-duration">*/}
+              {/*  <h3 className="duration" style={{ color: theme.text }}>*/}
+              {/*    {degree.duration}*/}
+              {/*  </h3>*/}
+              {/*</div>*/}
             </div>
             <div className="body-content">
               {degree.descriptions.map((sentence) => {

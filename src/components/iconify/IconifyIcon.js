@@ -8,15 +8,14 @@ import React from "react";
  * @param {string} props.size - The font size for the icon.
  * @returns {JSX.Element} - The React element representing the IconifyIcon component.
  */
-const IconifyIcon = ({ icon, size }) => {
-  const fontSizeStyle = size ? { fontSize: size } : {};
-
+const IconifyIcon = ({ fontAwesomeClassname, size }) => {
+  console.log(fontAwesomeClassname);
   return (
     <span
       className="iconify bigger"
-      data-icon={icon.fontAwesomeClassname}
-      style={{ ...icon.style, ...fontSizeStyle }}
+      data-icon={fontAwesomeClassname}
       data-inline="false"
+      style={{ maxWidth: size }}
     ></span>
   );
 };

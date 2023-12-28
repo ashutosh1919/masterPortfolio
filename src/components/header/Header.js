@@ -18,12 +18,14 @@ const onMouseOut = (event) => {
 class Header extends Component {
   render() {
     const theme = this.props.theme;
+    console.log(this.props.updateApp);
+
     return (
       <Fade top duration={1000} distance="20px">
         <SeoHeader />
         <div>
           <header className="header">
-            <ColorPicker changeColor={this.props.changeColor} />
+            <ColorPicker />
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
               <span className="navicon"></span>

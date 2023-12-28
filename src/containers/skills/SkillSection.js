@@ -66,17 +66,16 @@ const SkillSection = ({ theme }) => {
 
               {/*list of skills and tools */}
               <Fade right duration={2000}>
-                <ul style={{ fontSize: "1.7rem" }}>
+                <ul style={{ fontSize: "1.7rem", lineHeight: "2rem" }}>
                   {skill.skills.map((skillObject) => {
                     const sentence = skillObject.skill;
                     return (
-                      <li key={sentence}>
-                        <HighlightedSentence
-                          sentence={sentence}
-                          allTools={allTools}
-                          theme={theme}
-                        />
-                      </li>
+                      <HighlightedSentence
+                        key={sentence}
+                        sentence={sentence}
+                        allTools={allTools}
+                        theme={theme}
+                      />
                     );
                   })}
                 </ul>

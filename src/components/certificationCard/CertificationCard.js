@@ -19,17 +19,20 @@ class CertificationCard extends Component {
           {/*for the padding*/}
           <div style={{ padding: "5px", width: "95%" }}>
             {/*div for the title: flex*/}
-            <div className="flexlayout">
-              {/*icon left*/}
-              <li className="software-skill-inline">
-                {currentSkill.fontAwesomeClassname && (
-                  <IconifyIcon icon={currentSkill} />
-                )}
-              </li>
+            <div className="flexlayout between">
               {/*title on the right*/}
               <h2 className="cert-body-title" style={{ color: theme.text }}>
                 {certificate.Title}
               </h2>
+              {/*icon right*/}
+              {currentSkill.fontAwesomeClassname && (
+                <div className="cert-body-title">
+                  <IconifyIcon
+                    fontAwesomeClassname={currentSkill.fontAwesomeClassname}
+                    size="5rem"
+                  />
+                </div>
+              )}
             </div>
 
             {/*div for the subtitle*/}

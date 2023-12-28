@@ -6,7 +6,6 @@ export const HighlightedSentence = ({ sentence, allTools, theme }) => {
     return words.map((word, index) => {
       const isTool = allTools.includes(word);
       const color = getTechColor(word);
-      console.log(color);
 
       return (
         <span

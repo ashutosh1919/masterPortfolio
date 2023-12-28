@@ -30,8 +30,9 @@
 .cert-body-title {
   text-align: left;
   font-family: "Google Sans Regular", sans-serif;
-  font-size: 20px;
+  font-size: 1.5rem;
   margin: 10px;
+  line-height: 2.5rem;
 }
 
 .cert-body-subtitle {
