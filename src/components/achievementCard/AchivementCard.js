@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AchivementCard({ cardInfo }) {
   function openUrlInNewTab(url) {
-    var win = window.open(url, "_blank");
+    const win = window.open(url, "_blank");
     win.focus();
   }
 
@@ -16,8 +16,12 @@ export default function AchivementCard({ cardInfo }) {
         <p className="card-subtitle">{cardInfo.description}</p>
       </div>
       <div className="certificate-card-footer">
-        {cardInfo.footer.map((v, i) => {
-          return <p onClick={() => openUrlInNewTab(v.url)}>{v.name}</p>;
+        {cardInfo.footer.map((v) => {
+          return (
+            <p key={v} onClick={() => openUrlInNewTab(v.url)}>
+              {v.name}
+            </p>
+          );
         })}
       </div>
     </div>

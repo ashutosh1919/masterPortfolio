@@ -2,8 +2,8 @@
   padding-left: 0;
   list-style: none;
   font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
   text-align: center;
 }
 
@@ -11,7 +11,7 @@
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif;
 }
 
 .competitive-sites-inline > i {
