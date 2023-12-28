@@ -7,6 +7,7 @@
   border-radius: 5px;
   box-shadow: 5px 5px 5px #d9dbdf;
   margin-bottom: 30px;
+  align-items: center;
   /*flex: 0 0 30%;*/
 }
 

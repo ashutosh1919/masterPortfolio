@@ -23,9 +23,8 @@ const greeting = {
   logo_name: "pini  zrouya",
   nickname: "",
   subTitle:
-    "As a seasoned Full Stack Developer, I specialize in crafting robust backend solutions and designing dynamic " +
-    "frontend interfaces. My expertise spans the entire technology stack, showcasing a commitment to delivering " +
-    "high-quality code and a passion for staying at the forefront of innovative development practices.",
+    "Hey there! 👋 I'm your go-to Full Stack Developer with a knack for making tech work seamlessly. I specialize in crafting slick user interfaces and automating tasks like a pro. Forget the dusty old practices – I'm all about clean, efficient, and future-ready solutions." +
+    "I stay on top of the latest tech trends, incorporating them into my work to ensure your projects are not just up to date but cutting-edge. Check out my portfolio for a spin through projects that showcase turning challenges into user-friendly experiences. It's not just about writing code; it's about creating digital awesomeness. Let's chat tech, innovation, and everything in between! 🚀",
   resumeLink:
     "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
   githubProfile: "https://github.com/2snufkin",
@@ -67,22 +66,54 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "Front-End Development:",
-        "HTML5 and CSS3 for building structured and styled web pages.",
-        "Angular & TypeScript for creating dynamic and responsive web applications.",
-        "ReactJS with  for building interactive user interfaces.",
-        "Back-End Development:",
-        "Flask for building lightweight and modular web applications in Python.",
-        "Java and Spring for building enterprise-level, scalable, and robust applications.",
-        "Python for general-purpose programming, including scripting and automation.",
-        "Package Management and Tools:",
-        "NPM for managing and installing JavaScript packages.",
-        "Maven for managing Java-based project dependencies.",
-        "Version Control:",
-        "Git for version control, collaboration, and code management.",
-        "Database Management:",
-        "MySQL for relational database management.",
-        "MongoDB for NoSQL database management.",
+        {
+          skill: "HTML5 and CSS3 for building structured and styled web pages.",
+          tools: ["HTML5", "CSS3"],
+        },
+        {
+          skill:
+            "Angular & TypeScript for creating dynamic and responsive web applications.",
+          tools: ["Angular", "TypeScript"],
+        },
+        {
+          skill: "ReactJS for building interactive user interfaces.",
+          tools: ["ReactJS"],
+        },
+        {
+          skill:
+            "Flask for building lightweight and modular web applications in Python.",
+          tools: ["Flask", "Python"],
+        },
+        {
+          skill:
+            "Java and Spring for building enterprise-level, scalable, and robust applications.",
+          tools: ["Java", "Spring"],
+        },
+        {
+          skill:
+            "Python for general-purpose programming, including scripting and automation.",
+          tools: ["Python"],
+        },
+        {
+          skill: "NPM for managing and installing JavaScript packages.",
+          tools: ["NPM"],
+        },
+        {
+          skill: "Maven for managing Java-based project dependencies.",
+          tools: ["Maven"],
+        },
+        {
+          skill: "Git for version control, collaboration, and code management.",
+          tools: ["Git"],
+        },
+        {
+          skill: "MySQL for relational database management.",
+          tools: ["MySQL"],
+        },
+        {
+          skill: "MongoDB for NoSQL database management.",
+          tools: ["MongoDB"],
+        },
       ],
 
       softwareSkills: [
@@ -194,6 +225,13 @@ const skills = {
           },
         },
         {
+          skillName: "Tool",
+          fontAwesomeClassname: "stabler:tool",
+          style: {
+            color: "#4353FF",
+          },
+        },
+        {
           skillName: "Spring",
           fontAwesomeClassname: "devicon:spring",
           style: {
@@ -236,6 +274,14 @@ const competitiveSites = {
 };
 
 const degrees = {
+  introduction:
+    "Certified as a Java developer, " +
+    "I swiftly moved beyond basics in pursuit of broader expertise. " +
+    "External courses became my compass for staying ahead in the dynamic " +
+    "tech landscape. The journey, initiated with Java, expanded to encompass " +
+    "diverse technologies such as Angular, React, Python, Git, and CD/CI. " +
+    "Each step reflects a dedication to staying current and thriving in the ever-evolving tech landscape.",
+
   degrees: [
     {
       title: "Software Developer",
@@ -257,106 +303,115 @@ const degrees = {
 };
 
 const certifications = {
+  description:
+    "I've been on a learning journey, diving into a variety of courses to boost my skills." +
+    " These experiences have not only solidified my foundation but have also given me a practical edge for solving everyday " +
+    "challenges in software development, making me ready to take on exciting projects in the field.",
   courses: [
     {
       Platform: "Packt",
       Title: "Data Scraping And Data Mining From Beginner To Pro",
+      Description:
+        "Learn the fundamentals of data scraping and mining using Python, gaining valuable skills for extracting insights from various sources.",
       MainSubject: "Python",
-      Link: "https://example.com/course1",
+      Link:
+        "https://www.packtpub.com/product/data-scraping-and-data-mining-from-beginner-to-pro-with-python-video/9781801818483",
     },
     {
       Platform: "Packt",
       Title: "Angular For Enterprise-Ready Web Applications",
+      Description:
+        "Master Angular for building enterprise-level web applications, covering advanced features and best practices for scalable development.",
       MainSubject: "Angular",
-      Link: "https://example.com/course2",
+      Link:
+        "https://www.packtpub.com/product/angular-for-enterprise-ready-web-applications-second-edition/9781838648800",
     },
     {
       Platform: "Packt",
       Title: "Git And Github Crash Course",
+      Description:
+        "Gain a comprehensive understanding of Git and GitHub with this crash course, covering essential concepts and practical usage.",
       MainSubject: "Git",
-      Link: "https://example.com/course3",
+      Link:
+        "https://www.packtpub.com/product/git-and-github-crash-course-video/9781801813709",
     },
     {
       Platform: "Packt",
-      Title: "Full-Stack React Projects - Second Edition",
+      Title: "React Js Masterclass: Go From Zero To Job Ready",
+      Description:
+        "Explore ReactJS in-depth and become job-ready by mastering the concepts and techniques required for building modern web applications.",
       MainSubject: "ReactJS",
-      Link: "https://example.com/course4",
-    },
-    {
-      Platform: "Packt",
-      Title: "React Js Masterclass - Go From Zero To Job Ready",
-      MainSubject: "ReactJS",
-      Link: "https://example.com/course5",
+      Link:
+        "https://www.packtpub.com/product/react-js-masterclass-go-from-zero-to-job-ready-video/9781805125549",
     },
     {
       Platform: "Packt",
       Title: "Spring Boot Fundamentals",
+      Description:
+        "Learn the fundamentals of Spring Boot, a powerful framework for building Java-based enterprise applications with ease.",
       MainSubject: "Spring",
-      Link: "https://example.com/course6",
+      Link:
+        "https://www.packtpub.com/product/spring-boot-fundamentals-video/9781800203686",
     },
     {
       Platform: "Packt",
       Title: "Understanding Apis And Restful Apis Crash Course",
+      Description:
+        "Dive into the world of APIs and RESTful APIs with this crash course, covering key concepts and practical insights.",
       MainSubject: "API",
-      Link: "https://example.com/course7",
+      Link:
+        "https://www.packtpub.com/product/understanding-apis-and-restful-apis-crash-course-video/9781800564121",
     },
     {
       Platform: "Packt",
-      Title: "React Projects - Second Edition",
-      MainSubject: "ReactJS",
-      Link: "https://example.com/course8",
-    },
-    {
-      Platform: "Packt",
-      Title: "Hands-On Web Scraping With Python",
+      Title: "Data Scraping and Data Mining from Beginner to Pro with Python",
+      Description:
+        "Enhance your Python skills by learning data scraping and mining techniques, equipping yourself to extract valuable insights.",
       MainSubject: "Python",
-      Link: "https://example.com/course9",
+      Link:
+        "https://www.packtpub.com/product/data-scraping-and-data-mining-from-beginner-to-pro-with-python-video/9781801818483",
     },
     {
       Platform: "Packt",
       Title: "Angular Projects",
+      Description:
+        "Take your Angular skills to the next level with practical projects, reinforcing your knowledge and proficiency in building web applications.",
       MainSubject: "Angular",
-      Link: "https://example.com/course10",
-    },
-    {
-      Platform: "Packt",
-      Title: "React - The Complete Guide (Includes Hooks, React Router...)",
-      MainSubject: "ReactJS",
-      Link: "https://example.com/course11",
+      Link:
+        "https://www.packtpub.com/product/angular-projects-third-edition/9781803239118",
     },
     {
       Platform: "Packt",
       Title: "Docker deep dive",
+      Description:
+        "Deepen your understanding of Docker with an in-depth exploration, covering advanced topics and practical insights for containerization.",
       MainSubject: "Docker",
-      Link: "https://example.com/course12",
+      Link:
+        "https://www.packtpub.com/product/docker-deep-dive-second-edition/9781835081709",
     },
     {
       Platform: "Packt",
-      Title: "Automating Workflows With Github Actions",
+      Title: "Learning GitHub Actions for DevOps CI/CD",
+      Description:
+        "Master GitHub Actions for effective DevOps practices, ensuring seamless integration and continuous delivery in your development workflow.",
       MainSubject: "Git",
-      Link: "https://example.com/course13",
+      Link:
+        "https://www.packtpub.com/product/learning-github-actions-for-devops-cicd-video/9781837639137",
     },
     {
       Platform: "Packt",
       Title: "Git Essentials: Become A Git And Github Ninja",
+      Description:
+        "Become a Git and GitHub ninja by mastering essential commands and workflows, enabling efficient version control in your projects.",
       MainSubject: "Git",
-      Link: "https://example.com/course14",
-    },
-    {
-      Platform: "Packt",
-      Title: "Spring Boot Essentials",
-      MainSubject: "Spring",
-      Link: "https://example.com/course15",
-    },
-    {
-      Platform: "Packt",
-      Title: "Complete Git Guide: Understand And Master Git And GitHub",
-      MainSubject: "Git",
-      Link: "https://example.com/course16",
+      Link:
+        "https://www.packtpub.com/product/git-essentials-become-a-git-and-github-ninja-video/9781800565630",
     },
     {
       Platform: "Packt",
       Title: "50 Projects In 50 Days - Html, Css, And Javascript",
+      Description:
+        "Undertake a hands-on journey with 50 projects in HTML, CSS, and JavaScript, enhancing your front-end development skills.",
       MainSubject: "CSS3",
       Link:
         "https://www.packtpub.com/product/50-projects-in-50-days-html-css-and-javascript-video/9781801079976",
@@ -364,30 +419,42 @@ const certifications = {
     {
       Platform: "Udemy",
       Title: "Full Stack: Angular And Java Spring Boot E-Commerce Website",
-      MainSubject: "Spring",
-      Link: "https://example.com/course18",
+      Description:
+        "Build a full-stack e-commerce website using Angular and Java Spring Boot, gaining practical experience in end-to-end web development.",
+      MainSubject: "Angular",
+      Link:
+        "https://www.udemy.com/course/full-stack-angular-spring-boot-tutorial/",
     },
     {
       Platform: "Udemy",
       Title: "Spring Boot Unit Testing With Junit, Mockito And Mockmvc",
+      Description:
+        "Master the art of unit testing in Spring Boot applications using JUnit, Mockito, and MockMvc, ensuring the reliability of your code.",
       MainSubject: "Spring",
       Link: "https://example.com/course19",
     },
     {
       Platform: "Udemy",
       Title: "Build Responsive Real-World Websites With Html And Css",
+      Description:
+        "Learn to build responsive and real-world websites using HTML and CSS, acquiring the skills to create visually appealing and functional web pages.",
       MainSubject: "CSS3",
-      Link: "https://example.com/course20",
+      Link:
+        "https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/",
     },
     {
       Platform: "Udemy",
       Title: "Advanced Css And Sass: Flexbox, Grid, Animations And More!",
+      Description:
+        "Explore advanced CSS and Sass concepts, including Flexbox, Grid, animations, and more, to create modern and dynamic web designs.",
       MainSubject: "CSS3",
-      Link: "https://example.com/course21",
+      Link: "https://www.udemy.com/course/advanced-css-and-sas",
     },
     {
       Platform: "Udemy",
       Title: "Complete Web Design: From Figma To Webflow To Freelancing",
+      Description:
+        "Comprehensive course covering web design from Figma to Webflow, equipping you with the skills to design and develop websites for freelancing.",
       MainSubject: "Webflow",
       Link:
         "https://www.udemy.com/course/freelance-web-design-from-design-to-development-to-making-money/",
@@ -395,27 +462,26 @@ const certifications = {
     {
       Platform: "Udemy",
       Title: "100 Days Of Code: The Complete Python Pro Bootcamp For 2023",
+      Description:
+        "Embark on a 100-day coding journey with this Python Pro Bootcamp, covering a comprehensive curriculum to enhance your Python programming skills.",
       MainSubject: "Python",
       Link: "https://www.udemy.com/course/100-days-of-code/",
     },
     {
       Platform: "Udemy",
       Title: "The Complete Javascript Course 2023: From Zero To Expert",
+      Description:
+        "Master JavaScript from zero to expert with this comprehensive course, covering key concepts and advanced techniques for web development.",
       MainSubject: "JavaScript",
       Link: "https://www.udemy.com/course/the-complete-javascript-course/",
     },
     {
       Platform: "Udemy",
       Title: "Angular - The Complete Guide",
+      Description:
+        "Comprehensive guide to Angular, covering everything from basics to advanced topics, ensuring a solid understanding of this popular web framework.",
       MainSubject: "Angular",
       Link: "https://www.udemy.com/course/the-complete-guide-to-angular-2/",
-    },
-
-    {
-      Platform: "Packt",
-      Title:
-        "Javascript Masterclass - Zero To Job-Ready With Hands-On Projects",
-      MainSubject: "JavaScript",
     },
   ],
 };
@@ -573,8 +639,26 @@ const experience = {
 // Projects Page
 const projectsHeader = {
   title: "Projects",
-  description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+  description: [
+    {
+      title: "Enterprise Application Projects:",
+      desc:
+        "Drawing on my deep understanding of Java acquired through enterprise-level applications, I've contributed to the development " +
+        "of robust and scalable solutions. This hands-on experience has allowed me to navigate complex systems, ensuring the seamless" +
+        " integration of Java technologies in an enterprise environment.",
+    },
+    {
+      title: "Personal Projects:",
+      desc:
+        "My passion for continuous learning and hands-on application of acquired knowledge is" +
+        " evident in my personal projects. By leveraging the diverse skills gained from my " +
+        "learning journey, I've crafted innovative solutions, integrating Python, Angular, " +
+        "Git, Docker, and more. These projects showcase my ability to translate theoretical " +
+        "knowledge into practical, real-world applications, demonstrating my readiness for " +
+        "diverse challenges in software development.",
+    },
+  ],
+
   avatar_image_path: "projects_image.svg",
 };
 

@@ -6,17 +6,30 @@
 .skills-header {
   font-size: 60px;
   line-height: normal;
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif;
   text-align: center;
 }
-
+.software-skill-inline {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-family: "Google Sans Regular", sans-serif;
+}
 .skills-text {
   font-size: 20px;
+}
+ul {
+  padding: 0; /* Remove default padding or margin */
+  list-style-type: none; /* Remove default list styling */
+}
+
+ul li {
+  padding: 0.5rem; /* Adjust the padding as needed */
 }
 
 .skills-text-div {
   margin-left: 50px;
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif;
 }
 
 .skills-main-div > * {
@@ -27,13 +40,12 @@
 .skills-image-div > * {
   max-width: 100%;
   height: auto;
-  margin-top: 250px;
 }
 
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif;
   line-height: normal;
 }
 
@@ -65,7 +77,6 @@
     flex-direction: column;
   }
   .skills-text-div {
-    margin-left: 0px;
     margin: 20px;
   }
   .skills-text {
@@ -80,6 +91,6 @@
     order: 2;
   }
   .skills-image-div > * {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }

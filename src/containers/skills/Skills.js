@@ -12,13 +12,13 @@ export default function Skills(props) {
       <div className="skills-header-div">
         <Fade bottom duration={2000} distance="20px">
           <h1 className="skills-header" style={{ color: theme.text }}>
-            What I Do? Full Stack Development
+            My Tools:
           </h1>
 
           {skills.data.map((skill) => (
             <SoftwareSkill
               logos={skill.softwareSkills}
-              key={skill.softwareSkills.skillName}
+              key={skill.softwareSkills}
             />
           ))}
         </Fade>

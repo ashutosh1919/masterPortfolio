@@ -4,11 +4,11 @@ import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import Educations from "../../containers/education/Educations";
 import Certifications from "../../containers/certifications/Certifications";
-import CompetitiveSites from "../../components/competitiveSites/CompetitiveSites";
 import EducationImg from "./EducationImg";
-import { competitiveSites, certifications } from "../../portfolio";
+import { degrees, certifications } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
+
 // The Education Compoenent
 class Education extends Component {
   render() {
@@ -34,7 +34,12 @@ class Education extends Component {
                   Certifcations & Courses
                 </h3>
                 {/*the icons of the instetutions where i studied*/}
-                <CompetitiveSites logos={competitiveSites.competitiveSites} />
+                <p
+                  className="section-description"
+                  style={{ color: theme.secondaryText }}
+                >
+                  {degrees.introduction}
+                </p>
               </div>
             </div>
           </Fade>

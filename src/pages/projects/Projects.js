@@ -2,16 +2,10 @@ import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
-import PublicationCard from "../../components/publicationsCard/PublicationCard";
 import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
-import {
-  greeting,
-  projectsHeader,
-  publicationsHeader,
-  publications,
-} from "../../portfolio.js";
+import { greeting, projectsHeader } from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
@@ -19,24 +13,28 @@ import ProjectsImg from "./ProjectsImg";
 class Projects extends Component {
   render() {
     // Group projects by type
-    const projectsByType = ProjectsData.data.reduce((acc, project) => {
-      const { type } = project;
-      if (!acc[type]) {
-        acc[type] = [];
+    const projectsByType = ProjectsData.data.personal.reduce((acc, project) => {
+      const { subtype } = project;
+      if (!acc[subtype]) {
+        acc[subtype] = [];
       }
-      acc[type].push(project);
+      acc[subtype].push(project);
       return acc;
     }, {});
     const theme = this.props.theme;
     return (
       <div className="projects-main">
+        {/*Header - useless repetition*/}
         <Header theme={theme} />
+        {/*image on the left*/}
         <div className="basic-projects">
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
                 <ProjectsImg theme={theme} />
               </div>
+
+              {/*projects title*/}
               <div className="projects-heading-text-div">
                 <h1
                   className="projects-heading-text"
@@ -44,18 +42,68 @@ class Projects extends Component {
                 >
                   {projectsHeader.title}
                 </h1>
-                <p
-                  className="projects-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {projectsHeader["description"]}
-                </p>
+
+                {/*projects section subtitle for entrprise and personal projects*/}
+                {projectsHeader.description.map((element) => (
+                  <div key={element.title}>
+                    <h2>{element.title}</h2>
+                    <p
+                      className="section-description"
+                      style={{ color: theme.secondaryText }}
+                    >
+                      {element.desc}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           </Fade>
         </div>
+
+        {/*project demonstraiton section*/}
         <div className="repo-cards-div-main">
           <div className="projects-by-type">
+            {/*display entrperise projects*/}
+            <div style={{ width: "90%", margin: "0 auto" }}>
+              <h2
+                style={{
+                  color: theme.highlight,
+                  padding: "1.5rem",
+                  backgroundColor: theme.imageHighlight,
+                  borderRadius: "2rem",
+                  maxWidth: "100%",
+                }}
+              >
+                Enterprise Projects
+              </h2>
+            </div>
+
+            <div className="repo-cards-div-main">
+              {ProjectsData.data.enterprise.map((project) => {
+                return (
+                  <GithubRepoCard
+                    key={project.id}
+                    repo={project}
+                    theme={theme}
+                  />
+                );
+              })}
+            </div>
+            {/*display personal projects*/}
+            <div style={{ width: "90%", margin: "0 auto" }}>
+              <h2
+                style={{
+                  color: theme.highlight,
+                  padding: "1.5rem",
+                  backgroundColor: theme.imageHighlight,
+                  borderRadius: "2rem",
+                  maxWidth: "100%",
+                  marginTop: "3rem",
+                }}
+              >
+                Personal Projects
+              </h2>
+            </div>
             {Object.entries(projectsByType).map(([type, projects]) => (
               <div key={type} className="project-type-section">
                 <h2>{type.toLocaleUpperCase()}</h2>
@@ -75,36 +123,6 @@ class Projects extends Component {
           newTab={true}
           theme={theme}
         />
-
-        {/* Publications  */}
-        {publications.data.length > 0 ? (
-          <div className="basic-projects">
-            <Fade bottom duration={2000} distance="40px">
-              <div className="publications-heading-div">
-                <div className="publications-heading-text-div">
-                  <h1
-                    className="publications-heading-text"
-                    style={{ color: theme.text }}
-                  >
-                    {publicationsHeader.title}
-                  </h1>
-                  <p
-                    className="projects-header-detail-text subTitle"
-                    style={{ color: theme.secondaryText }}
-                  >
-                    {publicationsHeader["description"]}
-                  </p>
-                </div>
-              </div>
-            </Fade>
-          </div>
-        ) : null}
-
-        <div className="repo-cards-div-main">
-          {publications.data.map((pub) => {
-            return <PublicationCard pub={pub} theme={theme} />;
-          })}
-        </div>
 
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />
