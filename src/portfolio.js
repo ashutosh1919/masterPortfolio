@@ -28,7 +28,8 @@ const greeting = {
     "Check out my portfolio to learn more about my projects that convert daily needs into user-friendly applications, online courses I took to enlarge my tech horizon and contact me without hesitation 🚀",
 
   resumeLink:
-    "https://drive.google.com/file/d/14WEVFeJc3kmqJB6O27VS7LBC37JgR1jx/view?usp=sharing",
+    "https://drive.google.com/file/d/17bOCVBq-4gNijzuFClIs_8_kozHtOvEJ/view?usp=sharing",
+
   githubProfile: "https://github.com/2snufkin",
 };
 
