@@ -47,7 +47,7 @@ const SkillSection = ({ theme }) => {
             {/*Main Image*/}
 
             <Fade left duration={2000}>
-              <div className="skills-image-div">
+              <div className="skills-image-div" style={{ paddingTop: "2rem" }}>
                 <GetSkillSvg fileName={skill.fileName} theme={theme} />
               </div>
             </Fade>
@@ -66,7 +66,7 @@ const SkillSection = ({ theme }) => {
 
               {/*list of skills and tools */}
               <Fade right duration={2000}>
-                <ul style={{ fontSize: "1.7rem", lineHeight: "2rem" }}>
+                <ul style={{ fontSize: "1.7rem", lineHeight: "2.3rem" }}>
                   {skill.skills.map((skillObject) => {
                     const sentence = skillObject.skill;
                     return (

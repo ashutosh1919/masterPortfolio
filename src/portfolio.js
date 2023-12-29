@@ -20,11 +20,13 @@ const seo = {
 //Home Page
 const greeting = {
   title: "Pini ZROUYA",
-  logo_name: "pini  zrouya",
+  logo_name: "< Pini  zrouya />",
   nickname: "",
-  subTitle:
-    "Hey there! 👋 I'm your go-to Full Stack Developer with a knack for making tech work seamlessly. I specialize in crafting slick user interfaces and automating tasks like a pro. Forget the dusty old practices – I'm all about clean, efficient, and future-ready solutions." +
-    "I stay on top of the latest tech trends, incorporating them into my work to ensure your projects are not just up to date but cutting-edge. Check out my portfolio for a spin through projects that showcase turning challenges into user-friendly experiences. It's not just about writing code; it's about creating digital awesomeness. Let's chat tech, innovation, and everything in between! 🚀",
+  desc:
+    "Hey there! 👋 I'm al full-stack developer who thrive to make the complex sound simple. I'm all about adapting to the latest tech technologies and problem-solving is my playground.",
+  call_to_action:
+    "Check out my portfolio to learn more about my projects that convert daily needs into user-friendly applications, online courses I took to enlarge my tech horizon and contact me without hesitation 🚀",
+
   resumeLink:
     "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
   githubProfile: "https://github.com/2snufkin",
@@ -277,26 +279,23 @@ const competitiveSites = {
 
 const degrees = {
   introduction:
-    "Certified as a Java developer, " +
-    "I swiftly moved beyond basics in pursuit of broader expertise. " +
-    "Online courses became my compass for staying ahead in the dynamic " +
-    "tech landscape. The journey, initiated with Java, expanded to encompass " +
-    "diverse technologies such as Angular, React, Python, Git, CD/CI etc... " +
-    "Each step reflects a dedication to staying up to date in the ever-evolving tech landscape.",
+    "Obtaining the Java certification was just the beginning of the journey! The next step was diving headfirst into the tech sea, " +
+    "using online courses as my diving guide. In the way I encountered Angular, React, Python, Git, CD/CI, you name it! " +
+    "Every dive reflected a dedication to staying up to date in the ever-evolving tech landscape.",
 
   degrees: [
     {
       title: "Software Developer",
-      subtitle:
-        "Professional qualification at level 6 (equivalent to a BAC +4).",
+      subtitle: "Level 6 RNCP certification (equivalent to a BAC +4).",
       logo_path: "logo-afpa.png",
-      alt_name: "Afpa",
+      where: "Afpa",
       duration: "2020 - 2021",
       descriptions: [
-        "⚡ Developed proficiency in writing algorithms and programs",
-        "⚡ Mastered the design and implementation of layered software architecture, including database design and development of SQL and NoSQL data access components.",
-        "⚡ Learned the process of analyzing requirements and creating application prototypes.",
-        "⚡ Acquired hands-on experience in creating desktop and web applications for businesses and contributing to web projects with both front-end and back-end development.",
+        "🚀 Attained expertise in crafting algorithms and programming solutions.",
+        "🚀 Comprehensive understanding of both front-end and back-end development, with a focus on Java and JavaScript.",
+        "🚀 Mastered the design and implementation of layered software architecture, including database design.",
+        "🚀 Learned the process of analyzing requirements and creating application prototypes.",
+        "🚀 Acquired hands-on experience in creating desktop and web applications for businesses.",
       ],
       website_link:
         "https://www.afpa.fr/formation-qualifiante/concepteur-developpeur-d-applications",
@@ -643,18 +642,18 @@ const projectsHeader = {
   title: "Projects",
   description: [
     {
-      title: "Enterprise Application Projects:",
+      title: "Big-League Projects:",
       desc:
-        "Through my journey with Java in real-world applications, I've had the chance to dive into some pretty big projects." +
-        " I've been involved in constructing robust and adaptable solutions tailored for hospitals, where adherence to best practices, " +
-        "rigorous unit testing, and meticulous attention to detail of utmost importance.",
+        "I've had the chance to be part of some pretty big projects." +
+        " I've been involved in constructing, improving and debugging robust and adaptable solutions tailored for hospitals, where adherence to best practices, " +
+        "rigorous unit testing, and attention to detail are of utmost importance.",
     },
     {
       title: "Personal Projects:",
       desc:
-        "I love learning and putting what I've learned into action, especially through personal projects. " +
-        "These projects aren't just for show; they're my way of proving I can turn what I've learned into real-world solutions." +
-        " Ready to tackle any software development challenge!",
+        "Learning isn't just a hobby for me; it's a full-on adventure, especially with my personal projects. These aren't just" +
+        " eye candy; they're my playground for turning knowledge into real-world solutions. " +
+        "Bring on any software development challenge — I'm geared up and ready to roll! 🚀",
     },
   ],
 

@@ -5,8 +5,7 @@
         "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
         "name": "Tumorotek",
         "url": "https://github.com/TumoroteK/TumoroteK",
-        "description": "Web application that manages biological samples utilized by hospitals across France.",
-        "subtitle": "This intricate application enables users to oversee patient information, sample data, byproducts, and the associated cryogenic storage units. It facilitates tracking the location of each sample within the storage units, and provides an administrative panel for enhanced control and monitoring.",
+        "description": "A complex web application written in Java and ZK, that helps hospitals manage  and keep track on biological samples ,patient info, stocking location etc...",
         "logo": "",
         "languages": [
           {
@@ -23,8 +22,7 @@
         "id": "R_kgDOG_vYHA",
         "name": "Biomedicine Agency",
         "url": null,
-        "description": "Web application that manages bone marrow donors and recipients, ensuring seamless coordination in the donation process.",
-        "subtitle": "This application ensures efficient management of bone marrow donors and recipients, promoting seamless coordination throughout the donation process. Utilizing Java, Spring, TypeScript, and Angular, it offers a robust solution for the biomedical domain.",
+        "description": "Re-writing of a 20-years-old Oracle Forms mess into an Angular web app. The app manages bone marrow donors and recipients, ensuring seamless coordination in the donation process.",
         "isFork": false,
         "languages": [
           {
@@ -49,7 +47,7 @@
         "id": "R_kgDOG_vYHA",
         "name": "Gatsbi",
         "url": null,
-        "subtitle": "Gatsby introduces a contextual dimension to Tumorotek, allowing for the definition and utilization of specific contexts within Tumorotek",
+        "description": "A web app that was written in 2020 with Quarkus and Angular. Gatsby allows for the definition and utilization of specific contexts within Tumorotek",
         "isFork": false,
         "languages": [
           {
@@ -78,9 +76,7 @@
         "type": "personal",
         "subtype": "desktop",
         "url": "https://github.com/ashutosh1919/react-awesome-shapes",
-        "description": "Manage tickets for development, designed to enhance and reduce development time",
-        "subtitle": "Creates a detailed Markdown file for each ticket, summarizing key details and analysis, and automatically creates a version control branch with the name of the ticket",
-        "isFork": false,
+        "description": "I use this app I built with Electron on daily basis at work. The app help me to better analyse a bug before touching the code, it generates Markdown file and creates dedicated git branch.",
         "languages": [
           {
             "name": "HTML",
@@ -102,11 +98,11 @@
       },
       {
         "id": "R_kgDOGcPKSQ",
-        "name": "Graduation Project",
+        "name": "E-Commerce",
         "type": "personal",
         "subtype": "web application",
         "url": "https://github.com/ashutosh1919/neuro-symbolic-sudoku-solver",
-        "description": "E-Commerce website inspired by Amazon, utilizing Angular Material to achieve a sleek and modern design",
+        "description": "I acquired proficiency in Angular through my graduation project, which not only earned me certification but also deepened my understanding of the framework. The incorporation of Angular Material showcases my dedication to elegant and clean design.",
         "languages": [
           {
             "name": "Java",
@@ -132,7 +128,7 @@
         "type": "personal",
         "subtype": "web application",
         "url": "https://househunter.web.app/all",
-        "description": "Web application to facilitate the apartment buying process",
+        "description": "House Hunter simplifies the home-buying process by centralizing all favorite assets from various websites in one place. I used Firestore for the database and Firebase Authentication.",
         "languages": [
           {
             "name": "TypeScript",
@@ -149,7 +145,7 @@
         "name": "Job Mate",
         "type": "personal",
         "subtype": "desktop",
-        "description": "An automated job-search application that significantly streamlines and simplifies the job-seeking process, enhancing efficiency and reducing the time spent on searching for relevant opportunities.",
+        "description": "An automated job-search application that significantly reduces the job searching time.",
         "languages": [
           {
             "name": "Python",
@@ -163,7 +159,7 @@
         "type": "personal",
         "subtype": "desktop",
         "url": "https://github.com/ashutosh1919/react-liquidswipe",
-        "description": "Performs a comprehensive search within a specified folder, scanning through all files to locate and identify occurrences of a specific string.",
+        "description": "I built this app in order to save time for a repeated task. The app scan through folders and sub-folders in a search of a given string providing a comprehensive list of all files containing it.",
         "languages": [
           {
             "name": "Python",
@@ -176,7 +172,7 @@
         "name": "Dev Buddy",
         "subtype": "AI",
         "url": "https://github.com/ashutosh1919/react-liquidswipe",
-        "description": "Analyzes functions, proposes fixes, suggests improvements, and generates documentation with one click",
+        "description": "It's like having a coding mentor in your pocket. Using Flask and OpenAI API the app analyzes functions for potential bugs, suggests improvements, and generates documentation.",
         "languages": [
           {
             "name": "Python",
@@ -185,36 +181,27 @@
           {
             "name": "Flask",
             "iconifyClass": "devicon:flask"
-          }
-        ]
-      },
-      {
-        "id": "MDEwOlJlffddzaXRvcnkzODE5NDMxMjE=",
-        "name": "FuncDocGen",
-        "subtype": "AI",
-        "url": "https://github.com/yourusername/func-doc-gen",
-        "description": "AI-powered application that generates, improves, and documents functions with Python and Flask.",
-        "languages": [
-          {
-            "name": "Python",
-            "iconifyClass": "logos:python"
           },
           {
-            "name": "Flask",
-            "iconifyClass": "devicon:flask"
+            "name": "OpenAI",
+            "iconifyClass": "logos:openai-icon"
           }
         ]
       },
       {
         "id": "MDEwOlJlcG9zaXRvcnkzh5ggffxMjE=",
-        "name": "OutlookReplayAI",
+        "name": "OutlookReplAI",
         "subtype": "AI",
         "url": "https://github.com/yourusername/outlook-replay-ai",
-        "description": "AI-driven application for automated and intelligent email replies using Outlook integration.",
+        "description": "Ever wish your emails could reply on their own? OutlookReplAI to the rescue! AI-driven application for automated and intelligent email replies using Outlook integration.",
         "languages": [
           {
             "name": "Python",
             "iconifyClass": "logos:python"
+          },
+          {
+            "name": "OpenAI",
+            "iconifyClass": "logos:openai-icon"
           }
         ]
       },
@@ -223,7 +210,7 @@
         "name": "PPTGenAI",
         "subtype": "AI",
         "url": "https://github.com/yourusername/ppt-gen-ai",
-        "description": "AI-powered application for automatic PowerPoint generation with Python and Flask.",
+        "description": " PowerPoint presentations, but make it automatic. AI-powered application for automatic PowerPoint generation with Python and Flask.",
         "languages": [
           {
             "name": "Python",
@@ -232,6 +219,10 @@
           {
             "name": "Flask",
             "iconifyClass": "devicon:flask"
+          },
+          {
+            "name": "OpenAI",
+            "iconifyClass": "logos:openai-icon"
           }
         ]
       },
@@ -240,11 +231,15 @@
         "name": "SpeechRecAI",
         "subtype": "AI",
         "url": "https://github.com/yourusername/speech-rec-ai",
-        "description": "AI-powered application for speech recognition and analysis.",
+        "description": "Talking to your computer? SpeechRecAI listens, understands, and takes action. AI-powered application for speech recognition and analysis.",
         "languages": [
           {
             "name": "Python",
             "iconifyClass": "logos:python"
+          },
+          {
+            "name": "OpenAI",
+            "iconifyClass": "logos:openai-icon"
           }
         ]
       }

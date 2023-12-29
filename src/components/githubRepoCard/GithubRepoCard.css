@@ -5,7 +5,7 @@
   cursor: pointer;
   flex: 1 1 25%;
   border-radius: 20px;
-  height: 25vh;
+  height: 35vh;
 }
 .repo-card-div:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0 20px 30px -10px;
@@ -67,14 +67,13 @@
   margin-right: 0.3rem;
 }
 
-.repo-description {
-  overflow: hidden;
+.text-inside-card {
+  padding-top: 1rem;
+  line-height: 2.5rem;
   text-align: left;
-  display: -webkit-box;
   font-family: "Google Sans Regular", sans-serif;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   margin-top: 0.8rem;
+  font-size: 1.3rem;
 }
 
 .repo-details {
@@ -90,6 +89,14 @@
 @media (max-width: 1200px) {
   .repo-card-div {
     flex: 1 1 40%;
+  }
+}
+@media screen and (max-width: 2200px) {
+  .text-inside-card {
+    font-size: 1rem; /* Adjust the value based on your design for smaller screens */
+  }
+  .repo-cards-div-main {
+    flex-direction: column;
   }
 }
 

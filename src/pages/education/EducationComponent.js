@@ -31,9 +31,8 @@ class Education extends Component {
                   Education
                 </h1>
                 <h3 className="heading-sub-text" style={{ color: theme.text }}>
-                  Certifcations & Courses
+                  Certifcations and Courses
                 </h3>
-                {/*the icons of the instetutions where i studied*/}
                 <p
                   className="section-description"
                   style={{ color: theme.secondaryText }}

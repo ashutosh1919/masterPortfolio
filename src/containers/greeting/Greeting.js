@@ -13,11 +13,9 @@ export default function Greeting(props) {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <span style={{ color: theme.text }}> &lt;</span>
               <span className="logo-name" style={{ color: theme.text }}>
                 {greeting.logo_name}
               </span>
-              <span style={{ color: theme.text }}>/&gt;</span>
               {greeting.nickname && (
                 <h2 className="greeting-nickname" style={{ color: theme.text }}>
                   ( {greeting.nickname} )
@@ -27,7 +25,13 @@ export default function Greeting(props) {
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
               >
-                {greeting.subTitle}
+                {greeting.desc}
+              </p>
+              <p
+                className="greeting-text-p subTitle"
+                style={{ color: theme.secondaryText }}
+              >
+                {greeting.call_to_action}
               </p>
               <SocialMedia theme={theme} />
 

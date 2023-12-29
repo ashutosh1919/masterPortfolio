@@ -8,21 +8,6 @@ class DegreeCard extends Component {
     const theme = this.props.theme;
     return (
       <div className="degree-card">
-        {degree.logo_path && (
-          <Flip left duration={2000}>
-            <div className="card-img">
-              <img
-                style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  transform: "scale(0.9)",
-                }}
-                src={require(`../../assests/images/${degree.logo_path}`)}
-                alt={degree.alt_name}
-              />
-            </div>
-          </Flip>
-        )}
         <Fade right duration={2000} distance="40px">
           <div
             className="card-body"
@@ -37,13 +22,22 @@ class DegreeCard extends Component {
                   {degree.title}
                 </h2>
               </div>
-              <div>
-                <h3
-                  className="card-subtitle"
-                  style={{ color: theme.expTxtColor }}
-                >
-                  {degree.subtitle}
-                </h3>
+              <div className="certs-body-div card-subtitle">
+                <h3 style={{ color: theme.text }}>{degree.subtitle}</h3>
+                <p>{degree.where}</p>
+                <Flip left duration={2000}>
+                  <div className="card-img">
+                    <img
+                      style={{
+                        maxWidth: "100%",
+                        maxHeight: "100%",
+                        transform: "scale(0.9)",
+                      }}
+                      src={require(`../../assests/images/${degree.logo_path}`)}
+                      alt={degree.alt_name}
+                    />
+                  </div>
+                </Flip>
               </div>
 
               {/*<div className="body-header-duration">*/}

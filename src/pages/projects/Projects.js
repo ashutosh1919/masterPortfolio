@@ -9,6 +9,7 @@ import { greeting, projectsHeader } from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
+import ProjectsList from "../../components/projects/ProjectsList";
 
 class Projects extends Component {
   render() {
@@ -64,56 +65,17 @@ class Projects extends Component {
         <div className="repo-cards-div-main">
           <div className="projects-by-type">
             {/*display entrperise projects*/}
-            <div style={{ width: "90%", margin: "0 auto" }}>
-              <h2
-                style={{
-                  color: theme.highlight,
-                  padding: "1.5rem",
-                  backgroundColor: theme.imageHighlight,
-                  borderRadius: "2rem",
-                  maxWidth: "100%",
-                }}
-              >
-                Enterprise Projects
-              </h2>
-            </div>
-
-            <div className="repo-cards-div-main">
-              {ProjectsData.data.enterprise.map((project) => {
-                return (
-                  <GithubRepoCard
-                    key={project.id}
-                    repo={project}
-                    theme={theme}
-                  />
-                );
-              })}
-            </div>
+            <ProjectsList
+              theme={theme}
+              title="Entreprise"
+              projects={ProjectsData.data.enterprise}
+            />
             {/*display personal projects*/}
-            <div style={{ width: "90%", margin: "0 auto" }}>
-              <h2
-                style={{
-                  color: theme.highlight,
-                  padding: "1.5rem",
-                  backgroundColor: theme.imageHighlight,
-                  borderRadius: "2rem",
-                  maxWidth: "100%",
-                  marginTop: "3rem",
-                }}
-              >
-                Personal Projects
-              </h2>
-            </div>
-            {Object.entries(projectsByType).map(([type, projects]) => (
-              <div key={type} className="project-type-section">
-                <h2>{type.toLocaleUpperCase()}</h2>
-                <div className="repo-cards-div-main">
-                  {projects.map((repo) => (
-                    <GithubRepoCard key={repo.id} repo={repo} theme={theme} />
-                  ))}
-                </div>
-              </div>
-            ))}
+            <ProjectsList
+              theme={theme}
+              title="Personal"
+              projects={ProjectsData.data.personal}
+            />
           </div>
         </div>
         <Button
