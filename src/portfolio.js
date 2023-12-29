@@ -23,12 +23,12 @@ const greeting = {
   logo_name: "< Pini  zrouya />",
   nickname: "",
   desc:
-    "Hey there! 👋 I'm al full-stack developer who thrive to make the complex sound simple. I'm all about adapting to the latest tech technologies and problem-solving is my playground.",
+    "Hey there! 👋 I'm al full-stack developer eager to bring innovative ideas to life. I'm all about adapting to the latest tech technologies and problem-solving is my playground.",
   call_to_action:
     "Check out my portfolio to learn more about my projects that convert daily needs into user-friendly applications, online courses I took to enlarge my tech horizon and contact me without hesitation 🚀",
 
   resumeLink:
-    "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
+    "https://drive.google.com/file/d/14WEVFeJc3kmqJB6O27VS7LBC37JgR1jx/view?usp=sharing",
   githubProfile: "https://github.com/2snufkin",
 };
 
@@ -714,11 +714,12 @@ const publications = {
 
 // Contact Page
 const contactPageData = {
+  email: "pinidevpro@gmail.com",
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_ashutosh.png",
+    profile_image_path: "logo_face.png",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+      "Feel free to reach out for collaboration, inquiries, or just a friendly chat — I'm a passionate full-stack developer eager to connect and bring innovative ideas to life!",
   },
   blogSection: {
     title: "Blogs",
