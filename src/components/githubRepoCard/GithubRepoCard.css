@@ -69,7 +69,7 @@
 
 .text-inside-card {
   padding-top: 1rem;
-  line-height: 2.5rem;
+  line-height: 2rem;
   text-align: left;
   font-family: "Google Sans Regular", sans-serif;
   margin-top: 0.8rem;
@@ -103,6 +103,13 @@
 @media (max-width: 768px) {
   .repo-card-div {
     flex: 1 1 100%;
+    height: 50vh;
+  }
+  .text-inside-card {
+    line-height: 1.5rem;
+    margin: 0;
+    padding-top: 1rem;
+    text-align: center;
   }
 
   .repo-name {

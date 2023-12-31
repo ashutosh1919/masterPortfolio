@@ -101,3 +101,20 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 480px) and (orientation: landscape) {
+  .logo-name {
+    font-size: 2em;
+    padding: 0;
+  }
+  .gretting-main {
+    flex-direction: column;
+  }
+  .greeting-image-div {
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  /* Styles for mobile devices in portrait mode */
+}

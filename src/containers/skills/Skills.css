@@ -94,3 +94,8 @@ ul li {
     margin-top: 0;
   }
 }
+@media screen and (max-width: 480px) {
+  .smaller {
+    font-size: 1.5em;
+  }
+}

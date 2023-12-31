@@ -32,7 +32,7 @@ class ColorPicker extends Component {
     };
 
     return (
-      <div className="flexlayout">
+      <div className="flexlayout invisible">
         <Square
           color={blueTheme.secondaryText}
           onClick={() => handleColorClick(blueTheme)}

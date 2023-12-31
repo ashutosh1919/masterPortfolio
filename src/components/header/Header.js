@@ -23,9 +23,10 @@ class Header extends Component {
     return (
       <Fade top duration={1000} distance="20px">
         <SeoHeader />
-        <div>
+        <div className="flexlayout end">
+          {/*<ColorPicker />*/}
+
           <header className="header">
-            <ColorPicker />
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
               <span className="navicon"></span>

@@ -57,7 +57,7 @@ const Contact = ({ theme, onToggle }) => {
                 {ContactData["title"]}
               </h1>
               <p
-                className="contact-header-detail-text subTitle"
+                className="section-description"
                 style={{ color: theme.secondaryText }}
               >
                 {ContactData["description"]}

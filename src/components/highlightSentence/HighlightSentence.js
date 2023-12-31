@@ -1,5 +1,7 @@
 import React from "react";
 import { getTechColor } from "../../shared/tools";
+import "../../containers/skills/Skills.css";
+
 export const HighlightedSentence = ({ sentence, allTools, theme }) => {
   const highlightWords = (sentence, allTools) => {
     const words = sentence.split(" ");
@@ -23,7 +25,7 @@ export const HighlightedSentence = ({ sentence, allTools, theme }) => {
   };
 
   return (
-    <li style={{ color: theme.secondaryText }}>
+    <li style={{ color: theme.secondaryText }} className="smaller">
       {highlightWords(sentence, allTools)}
     </li>
   );

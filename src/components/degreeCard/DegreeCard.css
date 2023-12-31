@@ -7,15 +7,13 @@
 
 .card-title {
   font-family: "Google Sans Medium";
-  font-size: 3.1rem;
+  font-size: 2.8rem;
   /* color: #000000; */
 }
 
 .card-subtitle {
   font-family: "Google Sans Medium", sans-serif;
-  font-size: 2rem;
-  margin-top: 7px;
-  margin-bottom: 5px;
+  font-size: 1.5rem;
 }
 
 .card-img {
@@ -146,6 +144,6 @@
   }
 
   .card-subtitle {
-    font-size: 16px;
+    font-size: 0.9rem;
   }
 }
