@@ -24,9 +24,5 @@ export const HighlightedSentence = ({ sentence, allTools, theme }) => {
     });
   };
 
-  return (
-    <li style={{ color: theme.secondaryText }} className="smaller">
-      {highlightWords(sentence, allTools)}
-    </li>
-  );
+  return <li className="text">{highlightWords(sentence, allTools)}</li>;
 };

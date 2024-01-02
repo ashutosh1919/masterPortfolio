@@ -52,8 +52,8 @@
   /* color: #55198b; */
 }
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
   margin-right: 40px;
   font-family: "Google Sans Medium", serif;
 }

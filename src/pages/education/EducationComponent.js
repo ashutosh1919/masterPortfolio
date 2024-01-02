@@ -34,7 +34,7 @@ class Education extends Component {
                   Certifcations and Courses
                 </h3>
                 <p
-                  className="section-description"
+                  className="greeting-text-p subTitle"
                   style={{ color: theme.secondaryText }}
                 >
                   {degrees.introduction}

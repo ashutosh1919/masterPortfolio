@@ -2,7 +2,10 @@
   display: flex;
   overflow: hidden;
 }
-
+.text {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
 .skills-header {
   font-size: 60px;
   line-height: normal;

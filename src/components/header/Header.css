@@ -1,10 +1,13 @@
 /* header */
 
 .header {
-  display: block;
   max-width: 90%;
   padding: 20px 10px;
   margin: 0 auto;
+}
+.flexend {
+  display: flex;
+  justify-content: end;
 }
 
 .header ul {

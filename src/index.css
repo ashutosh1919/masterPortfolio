@@ -21,6 +21,11 @@
     url("./assests/fonts/GoogleSans-BoldItalic.ttf") format("woff");
 }
 @font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("./assests/fonts/Roboto-Regular.ttf") format("woff");
+}
+
+@font-face {
   font-family: "Google Sans Italic";
   src: local("Google Sans Italic"),
     url("./assests/fonts/GoogleSans-Italic.ttf") format("woff");
@@ -51,7 +56,8 @@ body {
 }
 body {
   margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+  font-size: 1em;
+  font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -59,7 +65,7 @@ body {
 @media (max-width: 1380px) {
   html,
   body {
-    font-size: 16px;
+    font-size: 12px;
     line-height: normal;
   }
 }

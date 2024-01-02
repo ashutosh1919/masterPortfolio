@@ -48,7 +48,7 @@ const SkillSection = ({ theme }) => {
 
             <Fade left duration={2000}>
               <div className="skills-image-div" style={{ paddingTop: "2rem" }}>
-                <GetSkillSvg fileName={skill.fileName} theme={theme} />
+                <GetSkillSvg fileName="CloudInfraImg" theme={theme} />
               </div>
             </Fade>
             {/*****/}
