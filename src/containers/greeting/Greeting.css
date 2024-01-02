@@ -102,9 +102,9 @@
   }
 }
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (max-width: 768px) {
   .logo-name {
-    font-size: 2em;
+    font-size: 2.3em;
     padding: 0;
   }
   .gretting-main {
@@ -115,6 +115,11 @@
   }
 }
 
-@media screen and (max-width: 480px) and (orientation: portrait) {
-  /* Styles for mobile devices in portrait mode */
+@media screen and (max-width: 480px) and (orientation: landscape) {
+  .center-text {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Optional: Set height for vertical centering */
+  }
 }

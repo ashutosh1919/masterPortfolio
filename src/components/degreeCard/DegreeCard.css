@@ -7,12 +7,12 @@
 
 .card-title {
   font-family: "Google Sans Medium";
-  font-size: 2.8rem;
+  font-size: 2rem;
   /* color: #000000; */
 }
 
 .card-subtitle {
-  font-family: "Google Sans Medium", sans-serif;
+  font-family: "Google Sans Regular", sans-serif;
   font-size: 1.5rem;
 }
 
@@ -31,11 +31,10 @@
   max-width: inherit;
   display: flex;
   flex-direction: column;
+  text-align: center;
 
-  /* width: 100%; */
-  /* background-color:#6c63ff99; */
   border-radius: 7px 7px 0px 0px;
-  padding: 1.5rem;
+  padding-left: 3.5rem;
 }
 
 .body-header-title {
@@ -144,6 +143,6 @@
   }
 
   .card-subtitle {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
 }

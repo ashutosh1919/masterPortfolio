@@ -12,7 +12,7 @@ export default function Greeting(props) {
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
-            <div>
+            <div className="center-text">
               <span className="logo-name" style={{ color: theme.text }}>
                 {greeting.logo_name}
               </span>

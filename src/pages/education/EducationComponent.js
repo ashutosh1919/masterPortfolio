@@ -8,6 +8,7 @@ import EducationImg from "./EducationImg";
 import { degrees, certifications } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
+import Certification from "../../components/certification/Certification";
 
 // The Education Compoenent
 class Education extends Component {
@@ -44,6 +45,7 @@ class Education extends Component {
           </Fade>
           {/*the bac+4 section*/}
           <Educations theme={this.props.theme} />
+          {/*<Certification title="Full Stack" organization='Afpa'  icon="src/assests/images/developerActivity.svg" topics={degrees.degrees.descriptions} />*/}
           {certifications.courses.length > 0 ? (
             <Certifications theme={this.props.theme} />
           ) : null}

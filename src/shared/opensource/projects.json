@@ -207,22 +207,14 @@
       },
       {
         "id": "MDEwOlJlcG9zaXRvcnk43434NDMxMjE=",
-        "name": "PPTGenAI",
+        "name": "Password manager",
         "subtype": "AI",
         "url": "https://github.com/yourusername/ppt-gen-ai",
-        "description": " PowerPoint presentations, but make it automatic. AI-powered application for automatic PowerPoint generation with Python and Flask.",
+        "description": "An Angular web app that let me access my passwords from anywhere integrated with a NoSQL Firestore Database, enriched with robust authentication mechanism.",
         "languages": [
           {
-            "name": "Python",
+            "name": "Angular",
             "iconifyClass": "logos:python"
-          },
-          {
-            "name": "Flask",
-            "iconifyClass": "devicon:flask"
-          },
-          {
-            "name": "OpenAI",
-            "iconifyClass": "logos:openai-icon"
           }
         ]
       },
