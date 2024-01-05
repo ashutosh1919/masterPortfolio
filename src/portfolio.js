@@ -643,18 +643,15 @@ const projectsHeader = {
   title: "Projects",
   description: [
     {
-      title: "Big-League Projects:",
+      title: "Enterprise Projects:",
       desc:
-        "I've had the chance to be part of some pretty big projects." +
-        " I've been involved in constructing, improving and debugging robust and adaptable solutions tailored for hospitals, where adherence to best practices, " +
+        "I've been involved in constructing, improving and debugging robust and adaptable solutions tailored for hospitals, where adherence to best practices, " +
         "rigorous unit testing, and attention to detail are of utmost importance.",
     },
     {
       title: "Personal Projects:",
       desc:
-        "Learning isn't just a hobby for me; it's a full-on adventure, especially with my personal projects. These aren't just" +
-        " eye candy; they're my playground for turning knowledge into real-world solutions. " +
-        "Bring on any software development challenge — I'm geared up and ready to roll! 🚀",
+        "Learning isn't just a hobby for me - it's a full-on adventure. My personal projects are my playground for turning knowledge into real-world solutions. ",
     },
   ],
 
