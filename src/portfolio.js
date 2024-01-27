@@ -28,6 +28,7 @@ const greeting = {
     "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
   portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
   githubProfile: "https://github.com/ashutosh1919",
+  showStarMebutton: true, // change it to true/false to show/hide Star Me On Github button
 };
 
 const socialMediaLinks = [
@@ -762,6 +763,7 @@ const contactPageData = {
     title: "",
     subtitle: "",
   },
+  isResumeDownloadable: true, // change it to true/false to show/hide resume download button
 };
 
 export {
