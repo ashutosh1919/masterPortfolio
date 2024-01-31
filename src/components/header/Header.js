@@ -20,7 +20,7 @@ class Header extends Component {
     const theme = this.props.theme;
     const link = settings.isSplash ? "/splash" : "home";
     return (
-      <Fade top duration={1000} distance="20px">
+      <Fade top duration={1500} distance="200px">
         <SeoHeader />
         <div>
           <header className="header">
@@ -82,18 +82,6 @@ class Header extends Component {
                   onMouseOut={(event) => onMouseOut(event)}
                 >
                   Projects
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/opensource"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Open Source
                 </NavLink>
               </li>
               <li>
