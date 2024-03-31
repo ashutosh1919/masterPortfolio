@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
-    "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
+    "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
   portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
   githubProfile: "https://github.com/ashutosh1919",
 };
@@ -178,7 +178,7 @@ const skills = {
         },
         {
           skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
+          fontAwesomeClassname: "devicon-plain:nodejs-wordmark",
           style: {
             color: "#339933",
           },
@@ -739,15 +739,14 @@ const contactPageData = {
   },
   addressSection: {
     title: "Address",
-    subtitle:
-      "Ambavadi vas, Kanodar, T.A.-Palanpur, Dist.-Banaskantha, Gujarat - 385520",
-    locality: "Kanodar",
-    country: "IN",
-    region: "Gujarat",
-    postalCode: "385520",
-    streetAddress: "Ambavadi vas",
+    subtitle: "Saratoga Ave, San Jose, CA, USA 95129",
+    locality: "San Jose",
+    country: "USA",
+    region: "California",
+    postalCode: "95129",
+    streetAddress: "Saratoga Avenue",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76",
+    location_map_link: "https://maps.app.goo.gl/NvYZqa34Wye4tpS17",
   },
   phoneSection: {
     title: "",
