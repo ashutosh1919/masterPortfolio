@@ -1,13 +1,33 @@
 {
-  "closed": 47,
+  "closed": 51,
   "data": [
     {
-      "id": "I_kwDOAffHH85M2vjV",
+      "id": "I_kwDOJPVIV85h7zXb",
+      "closed": true,
+      "title": "Gradio demo for context-cluster",
+      "createdAt": "2023-03-28T01:43:37Z",
+      "url": "https://github.com/ashutosh1919/context-cluster-pytorch/issues/1",
+      "number": 1,
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "context-cluster-pytorch",
+        "url": "https://github.com/ashutosh1919/context-cluster-pytorch",
+        "owner": {
+          "login": "ashutosh1919",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/20843596?u=6deb5872cde2e3ab5bf5d48ece503bc8b5b0bcf6&v=4",
+          "url": "https://github.com/ashutosh1919"
+        }
+      }
+    },
+    {
+      "id": "I_kwDOKO8qTs5xzjRf",
       "closed": false,
       "title": "Class-Balanced Loss based on Effectivene number of examples",
       "createdAt": "2022-06-30T00:02:58Z",
-      "url": "https://github.com/keras-team/keras/issues/16735",
-      "number": 16735,
+      "url": "https://github.com/keras-team/tf-keras/issues/538",
+      "number": 538,
       "assignees": {
         "nodes": [
           {
@@ -17,14 +37,14 @@
           },
           {
             "avatarUrl": "https://avatars.githubusercontent.com/u/78194266?u=1270684640732eaea36ac2d1725160fec0747089&v=4",
-            "name": "divyasreepat",
+            "name": "Divyashree Sreepathihalli",
             "url": "https://github.com/divyashreepathihalli"
           }
         ]
       },
       "repository": {
-        "name": "keras",
-        "url": "https://github.com/keras-team/keras",
+        "name": "tf-keras",
+        "url": "https://github.com/keras-team/tf-keras",
         "owner": {
           "login": "keras-team",
           "avatarUrl": "https://avatars.githubusercontent.com/u/34455048?v=4",
@@ -54,7 +74,7 @@
     },
     {
       "id": "I_kwDOCX3y2s5Mx1Ch",
-      "closed": false,
+      "closed": true,
       "title": "Class-Balanced Loss Based on Effective Number of Samples",
       "createdAt": "2022-06-29T03:39:00Z",
       "url": "https://github.com/tensorflow/addons/issues/2732",
@@ -133,7 +153,7 @@
       "assignees": {
         "nodes": [
           {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/59080942?u=8d4b1d68ae9b8ceb7ba7d2ac3b1e4f533b852746&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/59080942?u=4b2f4f8a2ba229445c92d5bcccda64c7a887df74&v=4",
             "name": "Sachin Chaurasiya",
             "url": "https://github.com/Sachin-chaurasiya"
           }
@@ -693,12 +713,12 @@
       "assignees": {
         "nodes": [
           {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/323199?u=dd45e7615e210711761056afbfc44c8679d87a87&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/323199?u=3606bf51cc6bc14acbb068eb4ae4eacc96083bed&v=4",
             "name": "Mihai Maruseac",
             "url": "https://github.com/mihaimaruseac"
           },
           {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/42785357?u=8de0ad6ebb979a4ecd4fa0e1c455bf4f3d70d92a&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/42785357?u=c4fe495e25d054662eadf0964f652122b81e5aff&v=4",
             "name": "Yasir Modak",
             "url": "https://github.com/ymodak"
           }
@@ -724,7 +744,7 @@
       "assignees": {
         "nodes": [
           {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/42785357?u=8de0ad6ebb979a4ecd4fa0e1c455bf4f3d70d92a&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/42785357?u=c4fe495e25d054662eadf0964f652122b81e5aff&v=4",
             "name": "Yasir Modak",
             "url": "https://github.com/ymodak"
           }
@@ -765,18 +785,18 @@
       "closed": true,
       "title": "Pretrained models not available",
       "createdAt": "2020-09-02T12:15:36Z",
-      "url": "https://github.com/lordmartian/deep_avsr/issues/8",
+      "url": "https://github.com/smeetrs/deep_avsr/issues/8",
       "number": 8,
       "assignees": {
         "nodes": []
       },
       "repository": {
         "name": "deep_avsr",
-        "url": "https://github.com/lordmartian/deep_avsr",
+        "url": "https://github.com/smeetrs/deep_avsr",
         "owner": {
-          "login": "lordmartian",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/29375430?u=ac19cef18259e07f6e5c325dde3013dc15b83c00&v=4",
-          "url": "https://github.com/lordmartian"
+          "login": "smeetrs",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/29375430?v=4",
+          "url": "https://github.com/smeetrs"
         }
       }
     },
@@ -802,13 +822,19 @@
     },
     {
       "id": "MDU6SXNzdWU2NzMyOTg0MDk=",
-      "closed": false,
+      "closed": true,
       "title": "Need modification in experience cards.",
       "createdAt": "2020-08-05T06:49:09Z",
       "url": "https://github.com/ashutosh1919/masterPortfolio/issues/58",
       "number": 58,
       "assignees": {
-        "nodes": []
+        "nodes": [
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/87069619?u=b5a468eb6b520b71f6cdc0f0d94f2f1f1a33123f&v=4",
+            "name": "Vyom Rana",
+            "url": "https://github.com/Vyomrana02"
+          }
+        ]
       },
       "repository": {
         "name": "masterPortfolio",
@@ -1000,7 +1026,7 @@
     },
     {
       "id": "MDU6SXNzdWU1OTgyNTg0MTQ=",
-      "closed": false,
+      "closed": true,
       "title": "Need of flexible loss function GeneralLoss which can change behavior based on params",
       "createdAt": "2020-04-11T12:41:54Z",
       "url": "https://github.com/tensorflow/addons/issues/1646",
@@ -1303,6 +1329,6 @@
       }
     }
   ],
-  "open": 11,
-  "totalCount": 58
+  "open": 8,
+  "totalCount": 59
 }
