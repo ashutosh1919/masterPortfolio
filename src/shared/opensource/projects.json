@@ -1,6 +1,42 @@
 {
   "data": [
     {
+      "id": "R_kgDOJWL0-g",
+      "name": "mdp-diffusion",
+      "createdAt": "2023-04-13T04:18:19Z",
+      "url": "https://github.com/ashutosh1919/mdp-diffusion",
+      "description": "Text-guided image editing by manipulating diffusion path without any training.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Shell",
+          "iconifyClass": "simple-icons:shell"
+        },
+        {
+          "name": "Jupyter Notebook",
+          "iconifyClass": "logos-jupyter"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOG_vYHA",
+      "name": "explainable-cnn",
+      "createdAt": "2022-03-13T20:41:33Z",
+      "url": "https://github.com/ashutosh1919/explainable-cnn",
+      "description": "📦 PyTorch based visualization package for generating layer-wise explanations for CNNs.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        }
+      ]
+    },
+    {
       "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
       "name": "masterPortfolio",
       "createdAt": "2020-03-06T16:26:54Z",
@@ -23,20 +59,6 @@
         {
           "name": "Dockerfile",
           "iconifyClass": "simple-icons:docker"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOG_vYHA",
-      "name": "explainable-cnn",
-      "createdAt": "2022-03-13T20:41:33Z",
-      "url": "https://github.com/ashutosh1919/explainable-cnn",
-      "description": "📦 PyTorch based visualization package for generating layer-wise explanations for CNNs.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
         }
       ]
     },
@@ -77,20 +99,6 @@
         {
           "name": "Python",
           "iconifyClass": "logos-python"
-        }
-      ]
-    },
-    {
-      "id": "MDEwOlJlcG9zaXRvcnkzMjcyMjI5Njk=",
-      "name": "react-awesome-loaders",
-      "createdAt": "2021-01-06T06:36:41Z",
-      "url": "https://github.com/ashutosh1919/react-awesome-loaders",
-      "description": "🚀  High quality, super responsive and completely customisable Loading Animations to insert into your website with single line of code.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
         }
       ]
     },

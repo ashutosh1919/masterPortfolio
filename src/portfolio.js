@@ -534,6 +534,17 @@ const experience = {
       work: true,
       experiences: [
         {
+          title: "Machine Learning Engineer",
+          company: "TikTok Inc.",
+          company_url: "https://www.tiktok.com/en/",
+          logo_path: "tiktok_logo.png",
+          duration: "June 2023 - Present",
+          location: "San Jose, CA, USA",
+          description:
+            "Improving ads ranking models on the core TikTok product. Experience working on modeling two-tower architectures like DeepFM, Wide & deep learning, etc. Working on Large Language Models (LLM) pretraining and Large Multi-modal Model (LMM) finetuning strategies.",
+          color: "#000000",
+        },
+        {
           title: "Associate AI Engineer",
           company: "Legato Health Technology",
           company_url: "https://legatohealthtech.com/",
@@ -681,52 +692,32 @@ const projectsHeader = {
 
 const publicationsHeader = {
   title: "Publications",
-  description:
-    "I have worked on and published a few research papers and publications of my own.",
+  description: "Some of my published Articles, Blogs and Research.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publications = {
   data: [
     {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+      id: "neuro-symbolic-sudoku-solver",
+      name: "Neuro-Symbolic Sudoku Solver",
+      createdAt: "2023-07-02T00:00:00Z",
+      description: "Paper published in KDD KiML 2023",
+      url: "https://arxiv.org/abs/2307.00653",
     },
     {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzi=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+      id: "mdp-diffusion",
+      name: "MDP-Diffusion",
+      createdAt: "2023-09-19T00:00:00Z",
+      description: "Blog published in Paperspace",
+      url: "https://blog.paperspace.com/mdp-diffusion/",
     },
     {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNze=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzt=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzb=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+      id: "consistency-models",
+      name: "Consistency Models",
+      createdAt: "2023-10-12T00:00:00Z",
+      description: "Blog published in Paperspace",
+      url: "https://blog.paperspace.com/consistency-models/",
     },
   ],
 };
