@@ -136,7 +136,8 @@
 }
 
 .experience-card-logo {
-  width: 70px;
+  width: 100px;
+  height: 100px;
   -webkit-box-shadow: 4px 3px 20px -2px grey;
   -moz-box-shadow: 4px 3px 20px -2px grey;
   box-shadow: 4px 3px 20px -2px grey;
