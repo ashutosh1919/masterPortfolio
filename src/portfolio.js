@@ -2,16 +2,16 @@
 
 // Website related settings
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: false, // Change this to false if you don't want Splash screen.
 };
 
 //SEO Related settings
 const seo = {
-  title: "Ashutosh's Portfolio",
+  title: "Areeba's Portfolio",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "As a cybersecurity enthusiast, I am deeply committed to the protection of digital assets and the safeguarding of sensitive information. With a passion for all things technology and a strong understanding of cybersecurity concepts, I am developing a strong foundation in the field and have a desire to pursue a career in this exciting and constantly evolving industry..",
   og: {
-    title: "Ashutosh Hathidara Portfolio",
+    title: "Areeba Batool Portfolio",
     type: "website",
     url: "http://ashutoshhathidara.com/",
   },
@@ -19,22 +19,22 @@ const seo = {
 
 //Home Page
 const greeting = {
-  title: "Ashutosh Hathidara",
+  title: "Areeba Batool",
   logo_name: "AshutoshHathidara",
-  nickname: "layman_brother",
+  nickname: "-Reebabe-",
   subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "As a cybersecurity enthusiast, I am deeply committed to the protection of digital assets and the safeguarding of sensitive information. With a passion for all things technology and a strong understanding of cybersecurity concepts, I am developing a strong foundation in the field and have a desire to pursue a career in this exciting and constantly evolving industry..",
   resumeLink:
     "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
-  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
-  githubProfile: "https://github.com/ashutosh1919",
+  portfolio_repository: "https://github.com/areebafff",
+  githubProfile: "https://github.com/areebafff",
 };
 
 const socialMediaLinks = [
   /* Your Social Media Link */
-  // github: "https://github.com/ashutosh1919",
-  // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-  // gmail: "ashutoshhathidara98@gmail.com",
+  // github: "https://github.com/areebafff",
+  // linkedin: "https://www.linkedin.com/in/areeba-batool-a492a2220",
+  // gmail: "areebabatool193@gmail.com",
   // gitlab: "https://gitlab.com/ashutoshhathidara98",
   // facebook: "https://www.facebook.com/laymanbrother.19/",
   // twitter: "https://twitter.com/ashutosh_1919",
@@ -380,24 +380,23 @@ const competitiveSites = {
 const degrees = {
   degrees: [
     {
-      title: "Indian Institute of Information Technology Kurnool",
-      subtitle: "B.Tech. in Computer Engineering",
-      logo_path: "iiitk_logo.png",
+      title: "Fast NUCES Karachi",
+      subtitle: "Bs in Cyber Security",
+      logo_path: "fast.png",
       alt_name: "IIITDM Kurnool",
-      duration: "2016 - 2020",
+      duration: "2020 - 2024",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        "⚡ I have studied basic Cyber Security with computer science subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
+        "⚡ Apart from this, I have done courses on Penetration testing, Vulnerability Assessment, Cloud Computing and Full Stack Development.",
+        "⚡ I was selected for Cyber Security Champion's Scholarship which is given to top 500 of students accross globe. ",
       ],
       website_link: "http://iiitk.ac.in",
     },
     {
-      title: "Indiana University Bloomington",
-      subtitle: "M.S. in Computer Science",
-      logo_path: "iu_logo.png",
+      title: "Pre engineering",
+      logo_path: "aghakhan.jpg",
       alt_name: "Indiana University Bloomington",
-      duration: "2021 - 2023",
+      duration: "2019 - 2020",
       descriptions: [
         "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Graph Machine Learning, Computer Vision etc.",
         "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
@@ -526,7 +525,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
+    "I have worked with many firm to establish secure solutions, Designer and Secure Software Architect. I have also worked with some well established companies mostly as Risk Departments. I love organising events and that is why I am also involved with many opensource communities as a representative.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -726,7 +725,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_ashutosh.png",
+    profile_image_path: "animated_ashutosh.jpg",
     description:
       "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
   },
