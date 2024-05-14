@@ -477,7 +477,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects and Dev Work",
   description:
-    "Created an exhilarating portfolio platform on AWS, powered by dynamic project deployment through Docker Compose. Seamlessly scalable, it adapts to user engagement, ensuring optimal resource usage and limitless project hosting with simple storage expansion. Integrated AWS services like S3, SNS, Route53, and Nginx guarantee unparalleled performance, fortified by IAM and CloudWatch for top-notch security and monitoring.",
+    "Created an exciting portfolio platform on AWS, powered by dynamic project deployment through Docker Compose. Seamlessly scalable, it adapts to user engagement, ensuring optimal resource usage and limitless project hosting with simple storage expansion. Integrated AWS services like S3, SNS, Route53, and Nginx guarantee unparalleled performance, fortified by IAM and CloudWatch for top-notch security and monitoring.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -556,28 +556,6 @@ const contactPageData = {
     profile_image_path: "profile.jpg",
     description:
       "I have a strong enthusiasm for creating scalable and easily maintainable applications using the latest technologies. Currently, I am actively seeking opportunities in the fields of Software Development and DevOps. If you are aware of any open positions, have inquiries, or simply want to connect and say hello, please don't hesitate to get in touch with me!",
-  },
-  blogSection: {
-    title: "Blogs",
-    subtitle:
-      "I like to document some of my experiences in professional career journey as well as some technical knowledge sharing.",
-    link: "https://blogs.ashutoshhathidara.com/",
-    avatar_image_path: "blogs_image.svg",
-  },
-  addressSection: {
-    title: "Address",
-    subtitle: "Saratoga Ave, San Jose, CA, USA 95129",
-    locality: "San Jose",
-    country: "USA",
-    region: "California",
-    postalCode: "95129",
-    streetAddress: "Saratoga Avenue",
-    avatar_image_path: "address_image.svg",
-    location_map_link: "https://maps.app.goo.gl/NvYZqa34Wye4tpS17",
-  },
-  phoneSection: {
-    title: "",
-    subtitle: "",
   },
 };
 
