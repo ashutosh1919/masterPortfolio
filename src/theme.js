@@ -195,4 +195,115 @@ export const materialTealTheme = {
   splashBg: "#05505E",
 };
 
-export const chosenTheme = blueTheme;
+export const oceanDreamTheme = {
+  body: "#EAF6FF",
+  text: "#0A3359",
+  expTxtColor: "#00101A",
+  highlight: "#6FD9FF",
+  dark: "#001529",
+  secondaryText: "#607D99",
+  imageHighlight: "#147ABE",
+  compImgHighlight: "#E5E5E5",
+  jacketColor: "#0E4D7B",
+  headerColor: "#147ABE77",
+  splashBg: "#0A3359",
+};
+
+export const sunsetSerenityTheme = {
+  body: "#FFF3E6",
+  text: "#4D2600",
+  expTxtColor: "#1A0F00",
+  highlight: "#FFD9B3",
+  dark: "#331A00",
+  secondaryText: "#996D4D",
+  imageHighlight: "#FF8533",
+  compImgHighlight: "#F2F2F2",
+  jacketColor: "#663300",
+  headerColor: "#FF853377",
+  splashBg: "#4D2600",
+};
+
+export const mysticForestTheme = {
+  body: "#E6F2E6",
+  text: "#003311",
+  expTxtColor: "#001A0D",
+  highlight: "#9EDB9E",
+  dark: "#00220D",
+  secondaryText: "#668066",
+  imageHighlight: "#1AA366",
+  compImgHighlight: "#E0E0E0",
+  jacketColor: "#004D26",
+  headerColor: "#1AA36677",
+  splashBg: "#003311",
+};
+
+export const midnightAura = {
+  body: "#121212",
+  text: "#FFFFFF",
+  expTxtColor: "#CCCCCC",
+  highlight: "#1E88E5",
+  dark: "#000000",
+  secondaryText: "#757575",
+  imageHighlight: "#64B5F6",
+  compImgHighlight: "#424242",
+  jacketColor: "#0D47A1",
+  headerColor: "#1976D277",
+  splashBg: "#0D47A1",
+};
+
+export const cosmicTwilight = {
+  body: "#0D0D0D",
+  text: "#CCCCCC",
+  expTxtColor: "#999999",
+  highlight: "#FF4081",
+  dark: "#000000",
+  secondaryText: "#757575",
+  imageHighlight: "#F06292",
+  compImgHighlight: "#424242",
+  jacketColor: "#311B92",
+  headerColor: "#E91E6377",
+  splashBg: "#311B92",
+};
+
+export const shadowedForest = {
+  body: "#1B1B1B",
+  text: "#E0E0E0",
+  expTxtColor: "#CCCCCC",
+  highlight: "#4CAF50",
+  dark: "#000000",
+  secondaryText: "#9E9E9E",
+  imageHighlight: "#66BB6A",
+  compImgHighlight: "#424242",
+  jacketColor: "#1B5E20",
+  headerColor: "#388E3C77",
+  splashBg: "#1B5E20",
+};
+
+export const lightishRedTheme = {
+  body: "#F9EBEA",
+  text: "#8E44AD",
+  expTxtColor: "#6C3483",
+  highlight: "#F1948A",
+  dark: "#641E16",
+  secondaryText: "#A93226",
+  imageHighlight: "#D98880",
+  compImgHighlight: "#E6B0AA",
+  jacketColor: "#922B21",
+  headerColor: "#E74C3C77",
+  splashBg: "#8E44AD",
+};
+export const blackAndRedTheme = {
+  body: "#000000",
+  text: "#FF0000",
+  expTxtColor: "#990000",
+  highlight: "#FF5733",
+  dark: "#330000",
+  secondaryText: "#CCCCCC",
+  imageHighlight: "#FF6666",
+  compImgHighlight: "#666666",
+  jacketColor: "#660000",
+  headerColor: "#FF573377",
+  splashBg: "#FF0000",
+};
+
+export const chosenTheme = oceanDreamTheme;

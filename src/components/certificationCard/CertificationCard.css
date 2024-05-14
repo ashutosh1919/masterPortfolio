@@ -5,10 +5,20 @@
   align-items: center;
   text-align: center;
   border: 1px solid #d9dbdf;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 5px 5px 5px #d9dbdf;
   margin-bottom: 30px;
   flex: 0 0 30%;
+}
+.lead-ul {
+  font-family: Arial, sans-serif;
+}
+
+.lead-li {
+  padding: 10px;
+  text-align: justify;
+  font-weight: bold;
+  /* font-size: 16px; */
 }
 
 .cert-header {

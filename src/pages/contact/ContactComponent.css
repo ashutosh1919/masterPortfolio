@@ -1,10 +1,12 @@
 .contact-main {
   width: 100%;
+  min-height: 100vh;
 }
 
 .basic-contact {
   margin-left: 5%;
   margin-right: 5%;
+  min-height: 80vh;
 }
 
 .contact-heading-div {

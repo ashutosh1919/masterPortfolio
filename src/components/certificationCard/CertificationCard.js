@@ -43,6 +43,12 @@ class CertificationCard extends Component {
             >
               {certificate.subtitle}
             </h3>
+            <ul className="lead-ul">
+              {certificate.body &&
+                certificate.body.map((row) => {
+                  return <li className="lead-li">{row}</li>;
+                })}
+            </ul>
           </div>
         </div>
       </Fade>
