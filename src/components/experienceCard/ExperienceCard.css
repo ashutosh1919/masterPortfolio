@@ -314,24 +314,6 @@
     margin-right: auto;
   }
 
-  .experience-card-title {
-    /* text-align: center; */
-  }
-
-  .experience-card-company {
-    /* text-align: center; */
-  }
-
-  .experience-card-duration {
-    /* margin-top: 2px; */
-    /* text-align: center; */
-  }
-
-  .experience-card-location {
-    /* text-align: left; */
-    /* text-align: center; */
-  }
-
   .experience-card-header-div {
     flex-direction: column;
   }

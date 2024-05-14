@@ -6,7 +6,6 @@ import axios from "axios";
 import CustomModal from "../../utils/CustomModal";
 import CustomDangerousModal from "../../utils/CustomDangerousModal";
 import { projectCredentials } from "../../portfolio";
-import { Fade } from "react-reveal";
 import "./ProjectCard.css";
 
 const ProjectCard = ({ key, id, theme, value, hostedURL, deployURL }) => {
@@ -44,7 +43,7 @@ const ProjectCard = ({ key, id, theme, value, hostedURL, deployURL }) => {
 
   const buildProject = async () => {
     try {
-      const resp = await axios.post(deployURL, {
+      await axios.post(deployURL, {
         project: name,
         params: ["setupProject", name, svn_url, default_branch, "false"],
       });
@@ -71,7 +70,7 @@ const ProjectCard = ({ key, id, theme, value, hostedURL, deployURL }) => {
       <div style={{}} className="d-grid gap-2 d-md-block">
         <a
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           href={svn_url}
           className="btn btn-outline-secondary mx-2"
         >
@@ -233,6 +232,7 @@ const CardFooter = ({ star_count, repo_url, pushed_at }) => {
       <a
         href={repo_url + "/stargazers"}
         target="_blank"
+        rel="noopener noreferrer"
         className="text-dark text-decoration-none"
       >
         <span className="text-dark card-link mr-4">

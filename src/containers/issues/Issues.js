@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Issues.css";
 import { Fade } from "react-reveal";
 import IssueCard from "../../components/issueCard/IssueCard";

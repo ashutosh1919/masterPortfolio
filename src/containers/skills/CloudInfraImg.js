@@ -21,8 +21,8 @@ export default class CloudInfraImg extends Component {
             gradientTransform="translate(2123.00846 -1324.89228) scale(1.5625)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#114a8b" />
-            <stop offset="1" stop-color="#0669bc" />
+            <stop offset="0" stopColor="#114a8b" />
+            <stop offset="1" stopColor="#0669bc" />
           </linearGradient>
           <linearGradient
             id="uuid-2da8b4cb-046d-4115-aa61-a56819df46ae-457"
@@ -33,11 +33,11 @@ export default class CloudInfraImg extends Component {
             gradientTransform="translate(2123.00846 -1324.89228) scale(1.5625)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#000" stop-opacity=".3" />
-            <stop offset=".071" stop-color="#000" stop-opacity=".2" />
-            <stop offset=".321" stop-color="#000" stop-opacity=".1" />
-            <stop offset=".623" stop-color="#000" stop-opacity=".05" />
-            <stop offset="1" stop-color="#000" stop-opacity="0" />
+            <stop offset="0" stopColor="#000" stopOpacity=".3" />
+            <stop offset=".071" stopColor="#000" stopOpacity=".2" />
+            <stop offset=".321" stopColor="#000" stopOpacity=".1" />
+            <stop offset=".623" stopColor="#000" stopOpacity=".05" />
+            <stop offset="1" stopColor="#000" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="uuid-b4e7c5f5-65fb-4e53-973e-8c028050d1e4-458"
@@ -48,8 +48,8 @@ export default class CloudInfraImg extends Component {
             gradientTransform="translate(2123.00846 -1324.89228) scale(1.5625)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#3ccbf4" />
-            <stop offset="1" stop-color="#2892df" />
+            <stop offset="0" stopColor="#3ccbf4" />
+            <stop offset="1" stopColor="#2892df" />
           </linearGradient>
         </defs>
         <g>
@@ -136,12 +136,12 @@ export default class CloudInfraImg extends Component {
               <path
                 d="M162.9857,338.47818c-13.78894,10.18454-33.82274,15.59116-51.04844,15.59116-24.14113,0-45.8933-8.92719-62.32268-23.76392-1.29926-1.17352-.12574-2.76617,1.425-1.84412,17.77056,10.31027,39.69037,16.55511,62.3646,16.55511,15.29777,0,32.10435-3.1853,47.56979-9.72351,2.30515-1.04779,4.27498,1.50882,2.01176,3.1853l-.00003-.00003Z"
                 fill="#f90"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
               <path
                 d="M168.72762,331.93997c-1.7603-2.26324-11.65144-1.08969-16.136-.54486-1.34117,.16766-1.55074-1.00589-.3353-1.88602,7.87939-5.53235,20.83011-3.9397,22.33893-2.09558,1.50882,1.88602-.41911,14.83673-7.79558,21.03967-1.13162,.96396-2.22131,.46103-1.71838-.79633,1.67647-4.14926,5.40662-13.49557,3.64632-15.71689h.00002Z"
                 fill="#f90"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
             </g>
           </g>

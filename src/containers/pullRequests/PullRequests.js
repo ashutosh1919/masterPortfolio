@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import "./PullRequests.css";
 import { Fade } from "react-reveal";
 import PullRequestCard from "../../components/pullRequestCard/PullRequestCard";
-import pullRequestsData from "../../shared/opensource/pull_requests.json";
 
 const PullRequests = ({ statsData, theme }) => {
   return (

@@ -1,7 +1,5 @@
-import ProgressBar from "react-bootstrap/ProgressBar";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import { Badge } from "react-bootstrap";
 import React from "react";
 import Countdown from "react-countdown";
 
