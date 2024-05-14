@@ -1,5 +1,6 @@
 import React from "react";
-import { Modal } from "react-bootstrap";
+import { Modal, Button, ModalHeader } from "react-bootstrap";
+import "./ResumeModal.css";
 
 const ResumeModal = ({ show, setShow, resumeLink }) => {
   return (
@@ -12,9 +13,46 @@ const ResumeModal = ({ show, setShow, resumeLink }) => {
         backdrop="static"
         size="xl"
       >
-        <Modal.Header closeButton>
-          <Modal.Title>Sharan's Resume</Modal.Title>
-        </Modal.Header>
+        <ModalHeader>
+          <div
+            style={{
+              boxSizing: "border-box",
+              display: "flex",
+              justifyContent: "space-between",
+              width: "100%",
+              padding: "2%",
+              fontSize: "1.4rem",
+            }}
+          >
+            <b>Sharan's Resume</b>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-evenly",
+                width: "100px",
+                fontSize: "1.4rem",
+              }}
+            >
+              <i
+                className="fa fa-download"
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/SharanSaiReddy_Konda.pdf";
+                  link.download = "SharanSaiReddy_Konda_Resume.pdf";
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+              />
+              <i
+                className="fa fa-close"
+                onClick={() => {
+                  setShow(false);
+                }}
+              />
+            </div>
+          </div>
+        </ModalHeader>
         <Modal.Body>
           <iframe
             src={resumeLink}
