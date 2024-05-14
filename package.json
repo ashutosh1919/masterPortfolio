@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "masterPortfolio",
-  "version": "0.1.0",
-  "homepage": ".",
+  "name": "developers-portfolio",
+  "description": "A portfolio built to showcase my recent projects.",
+  "homepage": "https://www.sharankonda.com",
   "scripts": {
     "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",

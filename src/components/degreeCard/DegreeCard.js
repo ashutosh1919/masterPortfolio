@@ -51,7 +51,8 @@ class DegreeCard extends Component {
               {degree.descriptions.map((sentence) => {
                 return (
                   <p className="content-list" style={{ color: theme.text }}>
-                    {sentence}
+                    <b>{sentence.split(":")[0]}: </b>
+                    {sentence.split(":")[1]}
                   </p>
                 );
               })}
@@ -65,8 +66,11 @@ class DegreeCard extends Component {
                     className="visit-btn"
                     style={{ backgroundColor: theme.headerColor }}
                   >
-                    <p className="btn" style={{ color: theme.text }}>
-                      Visit Website
+                    <p
+                      className="btn"
+                      style={{ color: theme.text, width: "100px" }}
+                    >
+                      Visit Site
                     </p>
                   </div>
                 </a>

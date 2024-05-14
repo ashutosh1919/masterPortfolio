@@ -6,7 +6,10 @@ class SoftwareSkill extends React.Component {
   render() {
     return (
       <div>
-        <div className="software-skills-main-div">
+        <div
+          className="software-skills-main-div"
+          style={{ paddingLeft: "30px" }}
+        >
           <ul className="dev-icons">
             {/* {skillsSection.softwareSkills.map(skills => {
             return (

@@ -2,7 +2,7 @@
 
 // Website related settings
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: false, // Change this to false if you don't want Splash screen.
 };
 
 // Base URLs
@@ -35,15 +35,6 @@ const greeting = {
 };
 
 const socialMediaLinks = [
-  /* Your Social Media Link */
-  // github: "https://github.com/ashutosh1919",
-  // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-  // gmail: "ashutoshhathidara98@gmail.com",
-  // gitlab: "https://gitlab.com/ashutoshhathidara98",
-  // facebook: "https://www.facebook.com/laymanbrother.19/",
-  // twitter: "https://twitter.com/ashutosh_1919",
-  // instagram: "https://www.instagram.com/layman_brother/"
-
   {
     name: "Github",
     link: "https://github.com/sharanreddy99",
@@ -358,9 +349,11 @@ const degrees = {
       alt_name: "UFL",
       duration: "2022 - 2024",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        "⚡ Database Management System: Mastered Oracle SQL to perform intricate trend queries on complex datasets, particularly focusing on Airlines and Passenger data, enabling insightful analysis and visualization.",
+        "⚡ Analysis of Algorithms: Investigated and implemented various algorithmic approaches, with a focus on dynamic programming and greedy methods, rigorously evaluating their correctness and efficiency through comparison.",
+        "⚡ Advanced Data Structures: Delved into a comprehensive array of advanced data structures, applying theoretical knowledge to real-world scenarios, exemplified through the efficient implementation of the GatorTaxi project using Red-Black Trees and MinHeap.",
+        "⚡ Computer Networks: Explored advanced concepts in networking, including peer-to-peer architectures, routing protocols, and network security, culminating in the development of a semester-long peer-to-peer data transfer system.",
+        "⚡ Computer and Network Security: Engaged in an in-depth study of security measures, including cryptographic techniques and network intrusion detection systems, contributing to cutting-edge research on visual exploit chains for CVE databases, highlighting the intersection of security and data visualization.",
       ],
       website_link: "https://www.ufl.edu/",
     },
@@ -372,9 +365,11 @@ const degrees = {
       alt_name: "VMEG",
       duration: "2017 - 2021",
       descriptions: [
-        "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Graph Machine Learning, Computer Vision etc.",
-        "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
-        "⚡ During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
+        "⚡ Foundation in Computer Science: Acquired a comprehensive understanding of programming, operating systems, web development, computer networks, databases, and design patterns, laying the groundwork for expertise in various domains.",
+        "⚡ Application Development: Developed numerous applications addressing real-world challenges, refining them into production-ready solutions and continuously optimizing them, fostering a deep understanding of coding best practices and software optimization from the undergraduate level.",
+        "⚡ University Web Application: Spearheaded the development of a web application for the Computer Engineers Technical Association, streamlining the organization of technical events, management of student scorecards, leaderboards, and attendance, showcasing proficiency in web development and project management.",
+        "⚡ Programming Proficiency: Mastered multiple programming languages including Java, Python, and C, alongside proficiency in web application frameworks like React and Angular, culminating in the creation of major projects such as Housemate and Secure Chat.",
+        "⚡ Achievements and Recognition: Demonstrated excellence in academic and extracurricular pursuits, securing victories in numerous quizzes and coding contests, including a first-place finish in a coding competition by Codersbit, and achieving top 1% standing in the Programming Data Structures and Algorithms using Python course organized by NPTEL.",
       ],
       website_link: "https://vardhaman.org//",
     },
@@ -444,12 +439,12 @@ const experience = {
           company: "Sureify Labs",
           company_url: "https://www.sureify.com/",
           logo_path: "sureify.jpg",
-          duration: "March 2022 - December 2022",
+          duration: "April 2022 - December 2022",
           location: "",
           description: ` <ul className="lead-ul">
-      <li >Engineered and deployed a Python script to facilitate seamless data transfer and environment synchronization across multiple stages, enhancing operational efficiency and data integrity of a system supporting 300k active users.</li>
-      <li >Spearheaded development of a React web-app for an API wrapper microservice, employing drag-and-drop functionality to connect data mappings in a graph-like structure. Delivered a 60% reduction in configuration overhead.</li>
-      <li >Enhanced Docker scripts to integrate an automated documentation micro-service, enabling real-time retrieval and serving of the latest documentation generated by backend services, thereby improving content accessibility and system responsiveness.</li>
+      <li style="margin-bottom: 10px; text-align: justify; ">Engineered and deployed a Python script to facilitate seamless data transfer and environment synchronization across multiple stages, enhancing operational efficiency and data integrity of a system supporting 300k active users.</li>
+      <li style="margin-bottom: 10px; text-align: justify; ">Spearheaded development of a React web-app for an API wrapper microservice, employing drag-and-drop functionality to connect data mappings in a graph-like structure. Delivered a 60% reduction in configuration overhead.</li>
+      <li style="margin-bottom: 10px; text-align: justify; ">Enhanced Docker scripts to integrate an automated documentation micro-service, enabling real-time retrieval and serving of the latest documentation generated by backend services, thereby improving content accessibility and system responsiveness.</li>
       </ul>`,
           color: "#000000",
         },
@@ -461,11 +456,11 @@ const experience = {
           duration: "December 2020 - March 2022",
           location: "",
           description: ` <ul className="lead-ul">
-      <li >Optimized SQL database queries for high-volume email transaction system, reducing cron job processing times by 40% and enhancing reliability for 150k  scheduled emails daily.</li>
-      <li >Improved session validation procedures using JWT Tokens and Redis, cutting down response times by 45% without impacting backward compatibility for 100k+ users.</li>
-      <li >Revamped the API Wrapper Microservice, transitioning from synchronous to asynchronous API calls using Worker Pools for parallel response processing to mitigate high latency issues, achieving a 75% reduction in response times for 850K API requests daily.</li>
-      <li >Refined data mappings and API integration for a dynamic, database-driven UI, ensuring efficient and accurate data utilization for customer interfaces.</li>
-      <li >Configured debugging tools for Dockerized microservices, reducing diagnostic time by 30% and increasing development efficiency.</li>
+      <li style="margin-bottom: 10px; text-align: justify; ">Optimized SQL database queries for high-volume email transaction system, reducing cron job processing times by 40% and enhancing reliability for 150k  scheduled emails daily.</li>
+      <li style="margin-bottom: 10px; text-align: justify; ">Improved session validation procedures using JWT Tokens and Redis, cutting down response times by 45% without impacting backward compatibility for 100k+ users.</li>
+      <li style="margin-bottom: 10px; text-align: justify; ">Revamped the API Wrapper Microservice, transitioning from synchronous to asynchronous API calls using Worker Pools for parallel response processing to mitigate high latency issues, achieving a 75% reduction in response times for 850K API requests daily.</li>
+      <li style="margin-bottom: 10px; text-align: justify; ">Refined data mappings and API integration for a dynamic, database-driven UI, ensuring efficient and accurate data utilization for customer interfaces.</li>
+      <li style="margin-bottom: 10px; text-align: justify; ">Configured debugging tools for Dockerized microservices, reducing diagnostic time by 30% and increasing development efficiency.</li>
       </ul>`,
           color: "#000000",
         },
