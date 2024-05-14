@@ -81,7 +81,7 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Proficient in a variety of programming languages including Golang, Python, Java]",
+        "⚡ Proficient in a variety of programming languages including Golang, Python, Java",
         "⚡ Extensive experience with database management systems such as Oracle SQL, MySQL, and MongoDB, ensuring efficient data handling and storage solutions for applications.",
         "⚡ Skilled in utilizing various technologies and frameworks including React, Angular, Node, Beego, Material UI, Generative AI, and Langchain to develop dynamic and user-friendly web applications.",
         "⚡ Ability to design and develop full-stack applications from concept to deployment, with a keen understanding of both frontend and backend development principles.",
@@ -484,7 +484,7 @@ const projectsHeader = {
 const repos = {
   show: true,
   repoURL: `${backendBaseURL}/v1/github/getReposList/`,
-  langugagesURL: `${backendBaseURL}/v1/github/getLanguagesList/`,
+  languagesURL: `${backendBaseURL}/v1/github/getLanguagesList/`,
   deployURL: `${backendBaseURL}/v1/aws/publishSNS`,
   hostedURL: hostedURL,
   heading: "Projects",
@@ -594,4 +594,5 @@ export {
   projectsHeader,
   contactPageData,
   repos,
+  projectCredentials,
 };

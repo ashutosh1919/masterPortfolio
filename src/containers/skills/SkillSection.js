@@ -52,7 +52,10 @@ class SkillSection extends Component {
                         <p
                           key={i}
                           className="subTitle skills-text"
-                          style={{ color: theme.secondaryText }}
+                          style={{
+                            color: theme.secondaryText,
+                            fontWeight: "bold",
+                          }}
                         >
                           {skillSentence}
                         </p>
