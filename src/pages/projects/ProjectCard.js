@@ -67,34 +67,37 @@ const ProjectCard = ({ key, id, theme, value, hostedURL, deployURL }) => {
 
   const CardButtons = () => {
     return (
-      <div style={{}} className="d-grid gap-2 d-md-block">
+      <div className=" gap-2 d-block mt-2">
         <a
           target="_blank"
           rel="noopener noreferrer"
           href={svn_url}
-          className="btn btn-outline-secondary mx-2"
+          className="btn btn-outline-secondary mx-2 custombutton"
         >
-          <i className="fab fa-github" /> Source Code
+          <i className="fab fa-github" /> <b>Source Code</b>
         </a>
-        <button onClick={buildProject} className="btn btn-outline-danger mx-2">
-          <i className="fas fa-wrench" /> Deploy
+        <button
+          onClick={buildProject}
+          className="btn btn-outline-danger mx-2 custombutton"
+        >
+          <i className="fas fa-wrench" /> <b>Deploy</b>
         </button>
 
         <button
-          className="btn btn-outline-success mx-2 customdisabledhover"
+          className="btn btn-outline-success mx-2 customdisabledhover custombutton"
           onClick={() => {
             window.open(hostedURL, "_blank");
           }}
           disabled={!is_active}
         >
-          <i className="far fa-eye" /> View App
+          <i className="far fa-eye" /> <b> View Code</b>
         </button>
 
         <button
-          className="btn btn-outline-dark mx-2 customdisabledhover"
+          className="btn btn-outline-dark mx-2 customdisabledhover custombutton"
           onClick={showCreds}
         >
-          <i className="fa fa-user-secret" /> Creds
+          <i className="fa fa-user-secret" /> <b>Creds</b>
         </button>
       </div>
     );
@@ -134,6 +137,7 @@ const ProjectCard = ({ key, id, theme, value, hostedURL, deployURL }) => {
             style={{
               height: "150px",
               display: "block",
+              textAlign: "justify",
             }}
           >
             {!description ? "" : description || <Skeleton count={3} />}{" "}

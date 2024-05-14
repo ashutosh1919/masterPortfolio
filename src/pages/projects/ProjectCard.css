@@ -2,3 +2,42 @@
   width: 20%;
   padding: 1%;
 }
+
+.custombutton {
+  width: 90% !important;
+  margin-top: 5px;
+}
+
+@media (min-width: 576px) {
+  .custombutton {
+    width: 90% !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .custombutton {
+    width: 40% !important;
+  }
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .custombutton {
+    width: 40% !important;
+  }
+}
+
+/*  X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .custombutton {
+    width: 23% !important;
+  }
+}
+
+/*  XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .custombutton {
+    width: 23% !important;
+  }
+}

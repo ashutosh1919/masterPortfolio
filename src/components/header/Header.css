@@ -3,6 +3,7 @@
 .header {
   display: block;
   max-width: 90%;
+  width: 100vw;
   padding: 20px 10px;
   margin: 0px auto;
 }
