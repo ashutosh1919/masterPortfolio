@@ -153,7 +153,7 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
 - You can define your own favicon in `public/icons` directory. If you don't have a favicon, you can generate favicons from [Favicon Generator](https://www.favicon-generator.org/) and [Favicon IO](https://favicon.io/)
 - You can also edit your website preview (known as description image). Run your site locally, take a screenshot and replace with `public/icons/desc.png`. Note that your screenshot should be 1280x640 for better preview.
 
-# Choose Theme 🌈
+# Choose Theme 🌈j
 
 - You can take a look at `src/theme.js` file where all available themes are mentioned with their respective color codes
 - At the bottom of this file you will see the below code:
