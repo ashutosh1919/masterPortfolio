@@ -1,3 +1,56 @@
+# Interactive Portfolio
+
+Welcome to my interactive portfolio! This project showcases my work, skills, and experiences through a dynamic and engaging web application.
+
+## Built With
+
+- **JavaScript**
+- **React**
+- **npm**
+- **Love**
+
+## Features
+
+- **Responsive Design**: Works seamlessly on desktops, tablets, and mobile devices.
+- **Interactive UI**: Smooth animations and transitions for an engaging user experience.
+- **Project Showcase**: Detailed view of my projects with images, descriptions, and links.
+- **About Me**: Information about my background, skills, and interests.
+- **Contact Form**: Easy way for visitors to get in touch with me.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/interactive-portfolio.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd interactive-portfolio
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+
+## Usage
+
+- Visit `http://localhost:3000` in your web browser to view the portfolio.
+- Navigate through different sections to explore my work and learn more about me.
+- Use the contact form to send me a message directly.
+
+## Acknowledgements
+
+- Thanks to the React community for providing excellent resources and support.
+- Special thanks to all the designers and developers whose work inspired parts of this portfolio.
+
+---
+
+Crafted with ❤️ by [Gabriel Cseh](https://master-portfolio-csehg.vercel.app)
+
 <p align="center"> 
     <img src="images/masterportfolio-banner-light.png" align="center" height="150"></img>
 </p>
@@ -41,8 +94,6 @@
 ✔️ Blogs\
 ✔️ Education\
 ✔️ Contact me
-
-To view a live example, **[click here](https://ashutosh1919.github.io/)**
 
 # Clone and Use 📋
 
