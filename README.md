@@ -21,7 +21,7 @@ Welcome to my interactive portfolio! This project showcases my work, skills, and
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/interactive-portfolio.git
+   git clone https://github.com/csehg0312/master-portfolio-csehg.git
    ```
 2. Navigate to the project directory:
    ```bash
