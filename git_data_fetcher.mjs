@@ -99,6 +99,21 @@ const query_org = {
 	}`,
 };
 
+// const query_repo_num = {
+//   query: `
+//   query {
+//     viewer {
+//       name
+//        repositories(last: $number_of_repos) {
+//         nodes {
+//           name
+//         }
+//        }
+//     }
+//   }  
+//   `
+// }
+
 const query_pinned_projects = {
   query: `
 	query { 
@@ -129,8 +144,8 @@ const query_pinned_projects = {
 const baseUrl = "https://api.github.com/graphql";
 
 const headers = {
-  "Content-Type": "application/json",
-  Authorization: "bearer " + openSource.githubConvertedToken,
+  'Authorization': `Bearer ${openSource.githubConvertedToken}`,
+  'Content-Type': 'application/json'
 };
 
 fetch(baseUrl, {

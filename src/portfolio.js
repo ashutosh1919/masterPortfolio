@@ -7,27 +7,27 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Ashutosh's Portfolio",
+  title: "Gabriel's Portfolio",
   description:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   og: {
-    title: "Ashutosh Hathidara Portfolio",
+    title: "Gabriel Cseh Portfolio",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "http://master-portfolio-csehg.vercel.app/",
   },
 };
 
 //Home Page
 const greeting = {
-  title: "Ashutosh Hathidara",
-  logo_name: "AshutoshHathidara",
-  nickname: "layman_brother",
+  title: "Gabriel Cseh",
+  logo_name: "Gabriel",
+  nickname: "csehg0312",
   subTitle:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
     "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
-  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
-  githubProfile: "https://github.com/ashutosh1919",
+  portfolio_repository: "https://github.com/csehg0312/master-portfolio-csehg",
+  githubProfile: "https://github.com/csehg0312",
 };
 
 const socialMediaLinks = [
@@ -42,7 +42,7 @@ const socialMediaLinks = [
 
   {
     name: "Github",
-    link: "https://github.com/ashutosh1919",
+    link: "https://github.com/csehg0312",
     fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
     backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
   },
@@ -170,6 +170,13 @@ const skills = {
           },
         },
         {
+          skillName: "Vue.js",
+          fontAwesomeClassname: "logos:vue",
+          style: {
+            color: "#4FC08D",
+          },
+        },
+        {
           skillName: "ReactJS",
           fontAwesomeClassname: "simple-icons:react",
           style: {
@@ -195,6 +202,13 @@ const skills = {
           fontAwesomeClassname: "simple-icons:yarn",
           style: {
             color: "#2C8EBB",
+          },
+        },
+        {
+          skillName: "PNPM",
+          fontAwesomeClassname: "simple-icons:pnpm",
+          style: {
+            color: "#CB3837",
           },
         },
         {
@@ -380,30 +394,30 @@ const competitiveSites = {
 const degrees = {
   degrees: [
     {
-      title: "Indian Institute of Information Technology Kurnool",
-      subtitle: "B.Tech. in Computer Engineering",
-      logo_path: "iiitk_logo.png",
-      alt_name: "IIITDM Kurnool",
-      duration: "2016 - 2020",
+      title: "University of J. Selye, Faculty of Economics and Informatics",
+      subtitle: "Bachelors in Applied Informatics",
+      logo_path: "sje-logo-220x220.png",
+      alt_name: "J. Selye Logo",
+      duration: "2019 - 2023",
       descriptions: [
         "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
         "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
         "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
       ],
-      website_link: "http://iiitk.ac.in",
+      website_link: "http://ww.ujs.sk",
     },
     {
-      title: "Indiana University Bloomington",
-      subtitle: "M.S. in Computer Science",
-      logo_path: "iu_logo.png",
-      alt_name: "Indiana University Bloomington",
-      duration: "2021 - 2023",
+      title: "University of J. Selye, Faculty of Economics and Informatics",
+      subtitle: "M.S. in Applied Informatics",
+      logo_path: "sje-logo-220x220.png",
+      alt_name: "University of J. Selye",
+      duration: "2023 - 2025",
       descriptions: [
         "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Graph Machine Learning, Computer Vision etc.",
         "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
         "⚡ During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
       ],
-      website_link: "https://www.indiana.edu/",
+      website_link: "https://www.ujs.sk",
     },
   ],
 };
