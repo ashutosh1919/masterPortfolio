@@ -7,9 +7,9 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Ashutosh's Portfolio",
+  title: "Andrei Cozlac",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "Is a dedicated and accomplished ballet teacher with over two decades of experience in dance and education. Trained at the prestigious Dance Academy Zürich, Andrei performed with several renowned ballet companies, including Opera House Zürich and the Grand Theatre Geneva, before transitioning into teaching. In present, he is finishing his Master's degree in Teaching and Coaching Dance Professionals at the University of Arts in Zürich.",
   og: {
     title: "Ashutosh Hathidara Portfolio",
     type: "website",
@@ -19,11 +19,11 @@ const seo = {
 
 //Home Page
 const greeting = {
-  title: "Ashutosh Hathidara",
-  logo_name: "AshutoshHathidara",
-  nickname: "layman_brother",
+  title: "Andrei Cozlac",
+  logo_name: "AndreiCozlac",
+  nickname: "",
   subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "Is a dedicated and accomplished ballet teacher with over two decades of experience in dance and education. Trained at the prestigious Dance Academy Zürich, Andrei performed with several renowned ballet companies, including Opera House Zürich and the Grand Theatre Geneva, before transitioning into teaching. In present, he is finishing his Master's degree in Teaching and Coaching Dance Professionals at the University of Arts in Zürich.",
   resumeLink:
     "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
   portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
@@ -43,6 +43,7 @@ const socialMediaLinks = [
   {
     name: "Github",
     link: "https://github.com/ashutosh1919",
+    imageUrl: "/https://www.tanzwerk101.ch/themes/custom/design/logo.png",
     fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
     backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
   },
