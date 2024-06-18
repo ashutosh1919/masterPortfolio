@@ -31,11 +31,14 @@
 .address-heading-div > * {
   flex: 1;
 }
-
+/*change style of image at /contact*/
 .contact-heading-img-div {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 20px; /* Add some padding */
+  border-radius: 10px; /* Rounded corners */
 }
 
 .blog-heading-img-div {
