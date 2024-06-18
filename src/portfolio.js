@@ -79,13 +79,9 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Data Science & AI",
+      title: "Vinyasa Yoga",
       fileName: "DataScienceImg",
-      skills: [
-        "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-        "⚡ Experience of working with Computer Vision and NLP projects",
-        "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
-      ],
+      skills: ["⚡ text", "⚡ text", "⚡ text"],
       softwareSkills: [
         {
           skillName: "Tensorflow",
@@ -124,13 +120,9 @@ const skills = {
       ],
     },
     {
-      title: "Full Stack Development",
+      title: "Hatha Yoga",
       fileName: "FullStackImg",
-      skills: [
-        "⚡ Building responsive website front end using React-Redux",
-        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
-        "⚡ Creating application backend in Node, Express & Flask",
-      ],
+      skills: ["⚡ text", "⚡ text", "⚡ text"],
       softwareSkills: [
         {
           skillName: "HTML5",
@@ -206,14 +198,9 @@ const skills = {
       ],
     },
     {
-      title: "Cloud Infra-Architecture",
+      title: "Yin Yoga",
       fileName: "CloudInfraImg",
-      skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
-      ],
+      skills: ["⚡ text", "⚡ text", "⚡ text", "⚡ text"],
       softwareSkills: [
         {
           skillName: "GCP",
@@ -274,13 +261,9 @@ const skills = {
       ],
     },
     {
-      title: "UI/UX Design",
+      title: "Ashtanga Yoga",
       fileName: "DesignImg",
-      skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
-      ],
+      skills: ["⚡ text", "⚡ text", "⚡ text"],
       softwareSkills: [
         {
           skillName: "Adobe XD",
