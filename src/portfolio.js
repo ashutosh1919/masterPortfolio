@@ -80,7 +80,7 @@ const skills = {
   data: [
     {
       title: "Vinyasa Yoga",
-      fileName: "DataScienceImg",
+      fileName: "VinyasaYogaImg",
       skills: ["⚡ text", "⚡ text", "⚡ text"],
       softwareSkills: [
         {
