@@ -1,0 +1,33 @@
+
+    {
+      "id": "R_kgDOGcPKSQ",
+      "name": "neuro-symbolic-sudoku-solver",
+      "createdAt": "2021-11-26T17:56:07Z",
+      "url": "https://github.com/ashutosh1919/neuro-symbolic-sudoku-solver",
+      "description": "⚙️ Solving sudoku using Deep Reinforcement learning in combination with powerful symbolic representations.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
+      "name": "react-liquidswipe",
+      "createdAt": "2021-01-01T08:31:51Z",
+      "url": "https://github.com/ashutosh1919/react-liquidswipe",
+      "description": "🚀 Smooth Liquid Swipe Animation to transition between different components.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        }
+      ]
+    }
