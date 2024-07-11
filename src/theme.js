@@ -155,7 +155,7 @@ export const yellowTheme = {
 
 export const materialDarkTheme = {
   body: "#263238",
-  text: "#aeaeae",
+  text: "#FFFFFF",
   expTxtColor: "#000a12",
   highlight: "#4f5b62",
   dark: "#000a12",
@@ -195,4 +195,4 @@ export const materialTealTheme = {
   splashBg: "#05505E",
 };
 
-export const chosenTheme = blueTheme;
+export const chosenTheme = materialDarkTheme;
