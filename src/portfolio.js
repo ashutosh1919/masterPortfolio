@@ -26,7 +26,7 @@ const greeting = {
     "I am passionate about creating end-to-end solutions that drive sustainable and scalable social and technical systems. My goal is to develop impactful projects that integrate innovation for positive societal and environmental impact.",
   resumeLink:
     "https://docs.google.com/document/d/1zhp6mpTssS3vCQAVhmab9aH7uOdBsvF-IqhfaEnjNck/view?usp=sharing",
-  portfolio_repository: "https://loicemary.github.io/",
+  portfolio_repository: "https://github.com/Loicemary/loicemary.github.io",
   githubProfile: "https://github.com/Loicemary",
 };
 
