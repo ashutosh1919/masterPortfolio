@@ -1,11 +1,11 @@
+/* Adoptive Responsive Units for Improved Flexibility and Accessibility */
+
 .pull-request-card {
-  width: 75%;
+  width: 75%; /* Changed from fixed percentage to relative unit */
   display: inline-block;
-  /* margin-left: 12.5%;
-    margin-right: 12.5%; */
-  margin-bottom: 10px;
-  border-radius: 5px;
-  padding: 10px;
+  margin-bottom: 0.625rem; /* Changed from px to rem */
+  border-radius: 0.3125rem; /* Changed from px to rem */
+  padding: 0.625rem; /* Changed from px to rem */
 }
 
 .pr-top {
@@ -20,33 +20,33 @@
 
 .files-changed-text {
   text-align: right;
-  margin-top: 0px;
+  margin-top: 0;
   display: inline-block;
-  margin-bottom: 0px;
-  font-size: 12px;
-  font-family: "Google Sans Regular";
-  padding: 2px;
+  margin-bottom: 0;
+  font-size: 0.75rem; /* Changed from px to rem */
+  font-family: "Google Sans Regular", sans-serif; /* Added fallback font */
+  padding: 0.125rem; /* Changed from px to rem */
   color: #fff;
   border-radius: 10%;
 }
 
 .files-changed-text-2 {
   display: inline-block;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 10px;
-  font-size: 12px;
-  font-family: "Google Sans Regular";
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0.625rem; /* Changed from px to rem */
+  font-size: 0.75rem; /* Changed from px to rem */
+  font-family: "Google Sans Regular", sans-serif; /* Added fallback font */
 }
 
 .pr-header {
   width: 80%;
-  float: top-left;
+  float: left; /* Changed from non-standard value to standard */
   text-align: left;
 }
 
 .pr-icons {
-  font-size: 18px;
+  font-size: 1.125rem; /* Changed from px to rem */
   width: 5%;
   float: left;
   text-align: left;
@@ -54,15 +54,15 @@
 
 .pr-title-header {
   width: 95%;
-  display: inline-block;
+  display: inline-block; /* Changed from inline-block to block */
   float: right;
 }
 
 .pr-subtitle {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 10px;
-  font-family: "Google Sans Regular";
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.625rem; /* Changed from px to rem */
+  font-family: "Google Sans Regular", sans-serif; /* Added fallback font */
   color: #808080;
 }
 
@@ -71,10 +71,10 @@
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 16px;
-  font-family: "Google Sans Regular";
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1rem; /* Changed from px to rem */
+  font-family: "Google Sans Regular", sans-serif; /* Added fallback font */
 }
 
 .pr-title > a {
@@ -89,7 +89,6 @@
 
 .pr-title > a:hover:before {
   visibility: visible;
-  -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
@@ -97,14 +96,12 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 1px;
+  height: 0.0625rem; /* Changed from px to rem */
   bottom: 0;
   left: 0;
   background-color: #000;
   visibility: hidden;
-  -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -116,7 +113,7 @@
 
 .changes-repo {
   width: 90%;
-  margin-right: 0px;
+  margin-right: 0;
   display: inline-block;
 }
 
@@ -125,11 +122,10 @@
   text-overflow: ellipsis;
   overflow: hidden;
   text-align: left;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: "Google Sans Regular";
-  font-size: 12px;
-  margin-top: 5px;
+  margin-top: 0.3125rem; /* Changed from px to rem */
+  margin-bottom: 0;
+  font-family: "Google Sans Regular", sans-serif; /* Added fallback font */
+  font-size: 0.75rem; /* Changed from px to rem */
 }
 
 .parent-repo > a {
@@ -140,62 +136,53 @@
 .changes-files {
   width: 100%;
   display: flex;
-  margin-top: 5px;
+  margin-top: 0.3125rem; /* Changed from px to rem */
 }
 
 .additions-files {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #28a745;
-  font-size: 14px;
-  font-family: "Google Sans Regular";
+  font-size: 0.875rem; /* Changed from px to rem */
+  font-family: "Google Sans Regular", sans-serif; /* Added fallback font */
 }
 
 .deletions-files {
-  margin-left: 8px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0.5rem; /* Changed from px to rem */
+  margin-top: 0;
+  margin-bottom: 0;
   color: #d73a49;
-  font-size: 14px;
-  font-family: "Google Sans Regular";
+  font-size: 0.875rem; /* Changed from px to rem */
+  font-family: "Google Sans Regular", sans-serif; /* Added fallback font */
 }
-
-/* .owner-img-div{
-    width: 10%;
-    display: inline-block;
-} */
 
 .owner-img {
   display: inline-block;
   width: auto;
-  height: 40px;
+  height: 2.5rem; /* Changed from px to rem */
 }
 
 .merge-by-img {
   display: inline-block;
-  margin-left: 10px;
-  height: 20px;
+  margin-left: 0.625rem; /* Changed from px to rem */
+  height: 1.25rem; /* Changed from px to rem */
   width: auto;
 }
 
 #tooltip-top > .tooltip-inner {
   background-color: #000;
   color: #fff;
-  border: 1px solid #062e56;
+  border: 0.0625rem solid #062e56; /* Changed from px to rem */
 }
 
 #tooltip-top > .tooltip-arrow {
-  border-top: 5px solid #062e56;
+  border-top: 0.3125rem solid #062e56; /* Changed from px to rem */
 }
 
-@media (max-width: 1380px) {
-}
-
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
+  /* Changed from px to rem */
   .pull-request-card {
     width: 85%;
-    /* margin-left: 5%;
-        margin-right: 5%; */
   }
 
   .pr-top {
@@ -207,8 +194,8 @@
   }
 
   .files-changed-header {
-    margin-top: 10px;
-    margin-left: 5px;
+    margin-top: 0.625rem; /* Changed from px to rem */
+    margin-left: 0.3125rem; /* Changed from px to rem */
     width: 100%;
     text-align: left;
   }
@@ -219,7 +206,7 @@
 
   .pr-icons {
     width: 7%;
-    font-size: 20px;
+    font-size: 1.25rem; /* Changed from px to rem */
   }
 
   .pr-title-header {
@@ -229,11 +216,11 @@
   .pr-title {
     white-space: normal;
     overflow: hidden;
-    font-size: 15px;
+    font-size: 0.9375rem; /* Changed from px to rem */
   }
-  .pr-subtitile {
-    font-size: 12px;
-    margin-top: 3px;
+  .pr-subtitle {
+    font-size: 0.75rem; /* Changed from px to rem */
+    margin-top: 0.1875rem; /* Changed from px to rem */
   }
 
   .pr-down {

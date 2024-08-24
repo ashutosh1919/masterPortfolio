@@ -1,17 +1,44 @@
+/* Issue Chart Container */
 .issue-chart {
   width: 100%;
   text-align: center;
 }
 
+/* Issue Chart Header */
 .issue-chart-header {
   font-family: "Google Sans Regular";
+  /* Changed from fixed font-size to responsive unit */
+  font-size: 1.5rem; /* Base size, adjust as needed */
 }
 
+/* Media Queries for Responsive Design */
 @media (max-width: 1380px) {
+  /* Added styles for larger screens */
+  .issue-chart-header {
+    font-size: 1.3rem; /* Slightly smaller on medium screens */
+  }
 }
 
 @media (max-width: 768px) {
   .issue-chart-header {
-    font-size: 20px;
+    /* Changed from fixed 20px to responsive unit */
+    font-size: 1.1rem; /* Smaller on mobile devices */
+  }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  /* Added styles for users who prefer reduced motion */
+  .issue-chart {
+    transition: none;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  /* Added styles for high contrast mode */
+  .issue-chart-header {
+    color: #000000;
+    background-color: #ffffff;
   }
 }

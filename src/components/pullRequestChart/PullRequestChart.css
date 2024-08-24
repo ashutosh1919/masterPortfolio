@@ -1,18 +1,32 @@
+/* PR Chart Container */
 .pr-chart {
   width: 100%;
   text-align: center;
 }
 
+/* Canvas Styling */
 canvas {
   margin: 0 auto;
+  max-width: 100%; /* Added for responsiveness */
 }
 
+/* PR Chart Header */
 .pr-chart-header {
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif; /* Added fallback font */
+  font-size: 1.5rem; /* Changed to relative unit */
 }
 
+/* Media Query for Smaller Screens */
 @media (max-width: 768px) {
   .pr-chart-header {
-    font-size: 20px;
+    font-size: 1.25rem; /* Changed to relative unit */
   }
 }
+
+/* 
+Changes made:
+1. Added max-width: 100% to canvas for better responsiveness
+2. Added sans-serif fallback font to .pr-chart-header
+3. Changed font-size in .pr-chart-header from px to rem
+4. Changed font-size in media query from px to rem
+*/

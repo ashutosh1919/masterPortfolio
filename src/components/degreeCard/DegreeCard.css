@@ -1,3 +1,4 @@
+/* Degree Card Styles */
 .degree-card {
   display: flex;
   width: 100%;
@@ -6,28 +7,28 @@
 }
 
 .card-title {
-  font-family: "Google Sans Medium";
-  font-size: 23px;
+  font-family: "Google Sans Medium", sans-serif;
+  font-size: 1.4375rem; /* Changed from 23px to rem */
   /* color: #000000; */
 }
 
 .card-subtitle {
-  font-family: "Google Sans Medium";
-  font-size: 18px;
+  font-family: "Google Sans Medium", sans-serif;
+  font-size: 1.125rem; /* Changed from 18px to rem */
   /* color: #000000; */
-  margin-top: 7px;
-  margin-bottom: 5px;
+  margin-top: 0.4375rem; /* Changed from 7px to rem */
+  margin-bottom: 0.3125rem; /* Changed from 5px to rem */
 }
 
 .card-img {
-  width: 200px;
+  width: 12.5rem; /* Changed from 200px to rem */
   height: auto;
   border-radius: 50%;
-  padding: 10px;
-  border: 1px solid #d9dbdf;
+  padding: 0.625rem; /* Changed from 10px to rem */
+  border: 0.0625rem solid #d9dbdf; /* Changed from 1px to rem */
   /* background-color: #6c63ff; */
   /* background: transparent; */
-  box-shadow: 5px 5px 5px #d9dbdf;
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem #d9dbdf; /* Changed from 5px to rem */
 }
 
 .body-header {
@@ -35,8 +36,8 @@
   display: flex;
   /* width: 100%; */
   /* background-color:#6c63ff99; */
-  border-radius: 7px 7px 0px 0px;
-  padding: 10px;
+  border-radius: 0.4375rem 0.4375rem 0 0; /* Changed from 7px to rem */
+  padding: 0.625rem; /* Changed from 10px to rem */
 }
 
 .body-header-title {
@@ -47,47 +48,48 @@
 .body-header-duration {
   width: 20%;
 }
+
 .duration {
-  font-family: "Google Sans Regular";
-  font-size: 16px;
+  font-family: "Google Sans Regular", sans-serif;
+  font-size: 1rem; /* Changed from 16px to rem */
   /* color: #212121; */
-  padding-right: 10px;
+  padding-right: 0.625rem; /* Changed from 10px to rem */
   float: right;
 }
 
 .body-content {
   max-width: inherit;
   /* width: 100%; */
-  border-radius: 0px 0px 7px 7px;
-  padding: 10px;
+  border-radius: 0 0 0.4375rem 0.4375rem; /* Changed from 7px to rem */
+  padding: 0.625rem; /* Changed from 10px to rem */
   justify-content: center;
   align-items: center;
   /* box-shadow: 5px 5px 5px #d3d3d3; */
 }
 
 .content-list {
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: "Google Sans Regular";
+  padding-left: 0.625rem; /* Changed from 10px to rem */
+  padding-right: 0.625rem; /* Changed from 10px to rem */
+  font-family: "Google Sans Regular", sans-serif;
 }
 
 .card-body {
   /* background-color: #00FF00; */
-  border-bottom: 1px solid #d9dbdf;
-  border-left: 1px solid #d9dbdf;
-  border-right: 1px solid #d9dbdf;
-  border-radius: 7px;
-  margin: 10px;
-  box-shadow: 5px 5px 5px #d9dbdf;
+  border-bottom: 0.0625rem solid #d9dbdf; /* Changed from 1px to rem */
+  border-left: 0.0625rem solid #d9dbdf; /* Changed from 1px to rem */
+  border-right: 0.0625rem solid #d9dbdf; /* Changed from 1px to rem */
+  border-radius: 0.4375rem; /* Changed from 7px to rem */
+  margin: 0.625rem; /* Changed from 10px to rem */
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem #d9dbdf; /* Changed from 5px to rem */
 }
 
 .visit-btn {
   /* background-color: #6c63ff99; */
   display: inline-block;
-  margin: 0px 10px 10px 0px;
-  padding: 10px;
-  border-radius: 7px;
-  border: 0px;
+  margin: 0 0.625rem 0.625rem 0; /* Changed from px to rem */
+  padding: 0.625rem; /* Changed from 10px to rem */
+  border-radius: 0.4375rem; /* Changed from 7px to rem */
+  border: 0;
   float: right;
 }
 
@@ -96,16 +98,18 @@
 }
 
 .btn {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Google Sans Regular";
+  margin: 0;
+  padding: 0;
+  font-family: "Google Sans Regular", sans-serif;
   /* color: #000000; */
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 86.25em) {
+  /* Changed from 1380px to em */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
+  /* Changed from 768px to em */
   .degree-card {
     flex-direction: column;
   }
@@ -125,13 +129,13 @@
   }
 
   .duration {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     float: left;
   }
 
   .card-img {
-    width: 200px;
+    width: 12.5rem; /* Changed from 200px to rem */
   }
 
   .card-body {
@@ -139,10 +143,10 @@
   }
 
   .card-title {
-    font-size: 20px;
+    font-size: 1.25rem; /* Changed from 20px to rem */
   }
 
   .card-subtitle {
-    font-size: 16px;
+    font-size: 1rem; /* Changed from 16px to rem */
   }
 }

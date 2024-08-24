@@ -1,4 +1,5 @@
+/* Updated to use relative units for improved flexibility and accessibility */
 .raw_logo {
-  height: 305;
-  width: 440;
+  height: 19.0625rem; /* Changed from 305px to rem */
+  width: 27.5rem; /* Changed from 440px to rem */
 }

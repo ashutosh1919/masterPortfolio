@@ -1,43 +1,53 @@
+/* Adopting responsive units for improved flexibility and accessibility */
+
 .main-button {
   background-color: #55198b;
-  border: solid 1px #55198b;
+  border: solid 0.0625rem #55198b; /* Changed from 1px to 0.0625rem for better scaling */
   color: white;
   font-weight: 500;
   line-height: 1.1;
   width: max-content;
-  padding: 13px 22px;
-  margin-right: 0px;
+  padding: 0.8125rem 1.375rem; /* Changed from 13px 22px to 0.8125rem 1.375rem for responsive padding */
+  margin-right: 0;
   /* text-transform: uppercase; */
-  border-radius: 6px;
+  border-radius: 0.375rem; /* Changed from 6px to 0.375rem for consistent scaling */
   text-align: center;
   text-decoration: none;
   font-family: "Google Sans Regular";
   display: block;
-  margin-top: 20px;
-  font-size: 18px;
+
+  margin-top: 1.25rem; /* Changed from 20px to 1.25rem for responsive margin */
+  font-size: 1.125rem; /* Changed from 18px to 1.125rem for scalable font size */
   cursor: pointer;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem; /* Changed from 2px to 0.125rem for consistent spacing */
 }
+
 .main-button:hover {
   /* background-color: #ffffff; */
   /* color: black; */
   transition: ease-in 0.3s;
 }
+
 .project-button {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 1.25rem; /* Changed from 20px to 1.25rem for responsive margin */
 }
+
 /* Media Query */
-@media (max-width: 768px) {
+
+@media (max-width: 48rem) {
+  /* Changed from 768px to 48rem for responsive breakpoint */
   .main-button {
-    font-size: 15px;
-    padding: 12px 18px;
-    margin-right: 0px;
+    font-size: 0.9375rem; /* Changed from 15px to 0.9375rem for scalable font size */
+    padding: 0.75rem 1.125rem; /* Changed from 12px 18px to 0.75rem 1.125rem for responsive padding */
+    margin-right: 0;
   }
 }
-@media (max-width: 320px) {
+
+@media (max-width: 20rem) {
+  /* Changed from 320px to 20rem for responsive breakpoint */
   .main-button {
-    font-size: 12px;
+    font-size: 0.75rem; /* Changed from 12px to 0.75rem for scalable font size */
   }
 }

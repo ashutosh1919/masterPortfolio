@@ -1,11 +1,21 @@
+/* Updated CSS with Adoptive Responsive Units */
 #topButton {
   visibility: hidden;
   position: fixed;
-  bottom: 1.2rem;
-  right: 1.5rem;
+
+  bottom: 1.2rem; /* Kept rem unit for bottom */
+  right: 1.5rem; /* Kept rem unit for right */
   cursor: pointer;
-  padding: 15px;
+  padding: 0.9375em; /* Changed from 15px to em */
   outline: none;
-  border-radius: 2rem;
-  font-size: 1.5rem;
+
+  border-radius: 2em; /* Changed from 2rem to em */
+  font-size: 1.5rem; /* Kept rem unit for font-size */
 }
+
+/* Changes made:
+1. Changed padding from 15px to 0.9375em for better scalability
+2. Changed border-radius from 2rem to 2em to maintain consistency with padding
+3. Kept rem units for positioning and font-size as they work well for these properties
+4. Added explanatory comment at the top of the CSS block
+*/

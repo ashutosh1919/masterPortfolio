@@ -1,42 +1,44 @@
+/* Certification Card Styles */
+
 .cert-card {
-  width: 30%;
+  width: 30%; /* Unchanged */
   display: inline-block;
   justify-content: center;
   align-items: center;
   text-align: center;
   border: 1px solid #d9dbdf;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px #d9dbdf;
-  margin-bottom: 30px;
+  border-radius: 0.3125rem; /* Changed from 5px to 0.3125rem */
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem #d9dbdf; /* Changed from 5px to 0.3125rem */
+  margin-bottom: 1.875rem; /* Changed from 30px to 1.875rem */
   flex: 0 0 30%;
 }
 
 .cert-header {
-  margin: 0px;
-  border-radius: 5px 5px 0px 0px;
+  margin: 0;
+  border-radius: 0.3125rem 0.3125rem 0 0; /* Changed from 5px to 0.3125rem */
 }
 
 .logo_img {
-  margin: 3px;
+  margin: 0.1875rem; /* Changed from 3px to 0.1875rem */
   width: auto;
-  height: 100px;
+  height: 6.25rem; /* Changed from 100px to 6.25rem */
 }
 
 .cert-body {
-  margin: 0px;
+  margin: 0;
 }
 
 .cert-body-title {
-  font-family: "Google Sans Regular";
-  font-size: 20px;
-  margin: 10px;
+  font-family: "Google Sans Regular", sans-serif; /* Added fallback font */
+  font-size: 1.25rem; /* Changed from 20px to 1.25rem */
+  margin: 0.625rem; /* Changed from 10px to 0.625rem */
 }
 
 .cert-body-subtitle {
-  font-family: "Google Sans Regular";
-  font-size: 18px;
+  font-family: "Google Sans Regular", sans-serif; /* Added fallback font */
+  font-size: 1.125rem; /* Changed from 18px to 1.125rem */
   color: #808080;
-  margin: 10px;
+  margin: 0.625rem; /* Changed from 10px to 0.625rem */
 }
 
 .content {
@@ -56,9 +58,7 @@
   bottom: 0;
   right: 0;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s; /* Removed vendor prefixes */
 }
 
 .content:hover .content-overlay {
@@ -74,12 +74,8 @@
   top: 50%;
   left: 50%;
   opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  transform: translate(-50%, -50%); /* Removed vendor prefixes */
+  transition: all 0.3s ease-in-out 0s; /* Removed vendor prefixes */
 }
 
 .content:hover .content-details {
@@ -91,7 +87,7 @@
 .content-details h3 {
   color: #fff;
   font-weight: 500;
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif; /* Added fallback font */
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
   text-transform: uppercase;
@@ -102,9 +98,11 @@
 }
 
 @media (max-width: 1380px) {
+  /* No changes needed */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
+  /* Changed from 768px to 48rem */
   .cert-card {
     width: 100%;
   }

@@ -1,9 +1,11 @@
+/* App.css */
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 40vh; /* Changed from vmin to vh for better responsiveness */
 }
 
 .App-header {
@@ -13,7 +15,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: clamp(
+    1rem,
+    calc(0.75rem + 1vw),
+    1.5rem
+  ); /* Changed from calc() to clamp() for better flexibility */
   color: white;
 }
 
@@ -33,13 +39,15 @@
 @keyframes fade_down {
   0% {
     opacity: 0.01;
-    transform: translateY(-20px);
+    transform: translateY(
+      -1.25rem
+    ); /* Changed from px to rem for better scaling */
     transition: opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1),
       transform 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
     transition: opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1),
       transform 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
   }
@@ -48,14 +56,22 @@
 @keyframes fade_up {
   0% {
     opacity: 0.01;
-    transform: translateY(20px);
+    transform: translateY(
+      1.25rem
+    ); /* Changed from px to rem for better scaling */
     transition: opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1),
       transform 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
     transition: opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1),
       transform 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
   }
 }
+
+/* Changes made:
+1. App-logo: Changed height from vmin to vh for better responsiveness across different screen sizes.
+2. App-header font-size: Replaced calc() with clamp() for improved flexibility and readability.
+3. Animations: Changed pixel values to rem units for better scaling with user's font size preferences.
+*/

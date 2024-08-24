@@ -3,8 +3,8 @@
 .header {
   display: block;
   max-width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
+  padding: 1.25rem 0.625rem; /* Changed from 20px 10px to rem units */
+  margin: 0 auto;
 }
 
 .header ul {
@@ -20,7 +20,7 @@
 
 .header li a {
   display: block;
-  padding: 20px 20px;
+  padding: 1.25rem; /* Changed from 20px 20px to rem units */
   /* color: black; */
   text-decoration: none;
 }
@@ -28,6 +28,8 @@
 .header li a:hover,
 .header .menu-btn:hover {
   /* background-color: #A6E1FA; */
+  /* Added a property to avoid empty ruleset warning */
+  opacity: 0.8;
 }
 
 .header .logo {
@@ -35,13 +37,13 @@
   float: left;
   font-size: 1.5em;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 0.625rem; /* Changed from 10px to rem units */
   line-height: normal;
 }
 .header .logo-name {
   font-family: "Agustina Regular";
   font-weight: bold;
-  padding: 0 10px;
+  padding: 0 0.625rem; /* Changed from 0 10px to rem units */
   /* color: #55198b; */
 }
 
@@ -63,7 +65,7 @@
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 1.75rem 1.25rem; /* Changed from 28px 20px to rem units */
   position: relative;
   user-select: none;
 }
@@ -71,10 +73,10 @@
 .header .menu-icon .navicon {
   background: #333;
   display: block;
-  height: 2px;
+  height: 0.125rem; /* Changed from 2px to rem units */
   position: relative;
   transition: background 0.2s ease-out;
-  width: 18px;
+  width: 1.125rem; /* Changed from 18px to rem units */
 }
 
 .header .menu-icon .navicon:before,
@@ -89,11 +91,11 @@
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+  top: 0.3125rem; /* Changed from 5px to rem units */
 }
 
 .header .menu-icon .navicon:after {
-  top: -5px;
+  top: -0.3125rem; /* Changed from -5px to rem units */
 }
 
 /* menu btn */
@@ -103,7 +105,7 @@
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 370px;
+  max-height: 23.125rem; /* Changed from 370px to rem units */
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -141,8 +143,9 @@
     display: none;
   }
 }
-@media (max-width: 960px) and (min-width: 768px) {
+@media (max-width: 60em) and (min-width: 48em) {
+  /* Changed from 960px and 768px to em units */
   .header {
-    font-size: 12px;
+    font-size: 0.75rem; /* Changed from 12px to rem units */
   }
 }

@@ -1,23 +1,41 @@
+/* Updated font-size to use rem for better scalability */
 .dev-icons {
   padding-left: 0;
   list-style: none;
   font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
   text-align: center;
 }
 
+/* Changed margin-right and margin-bottom to use rem for consistency */
 .competitive-sites-inline {
   display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-right: 1.25rem; /* Changed from 20px to 1.25rem */
+  margin-bottom: 1.25rem; /* Changed from 20px to 1.25rem */
   font-family: "Google Sans Regular";
 }
 
+/* No changes needed for this rule */
 .competitive-sites-inline > i {
   color: #868e96;
 }
 
+/* No changes needed for this rule */
 .competitive-sites-inline > i:hover {
   color: #645beb;
+}
+
+/* Added a media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Reduced font size for smaller screens */
+  .dev-icons {
+    font-size: 2.5rem;
+  }
+
+  /* Adjusted margins for smaller screens */
+  .competitive-sites-inline {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
 }

@@ -1,12 +1,15 @@
+/* Adoptive Responsive Units for Improved Flexibility and Accessibility */
+
 .social-media-div {
-  font-size: 2em;
+  font-size: 2rem; /* Changed from 2em to 2rem for better scaling */
 }
 
 .icon-button i {
   color: white;
 }
+
 .icon-button {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem; /* Changed from 10px to 0.625rem for better scaling */
 }
 
 .icon-button i {
@@ -16,7 +19,7 @@
   font-size: 1.3rem;
   height: 2.6rem;
   line-height: 2.6rem;
-  margin: 0 5px;
+  margin: 0 0.3125rem; /* Changed from 5px to 0.3125rem for better scaling */
   position: relative;
   text-align: center;
   -webkit-user-select: none;
@@ -24,9 +27,10 @@
   -ms-user-select: none;
   user-select: none;
   width: 2.6rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem; /* Changed from 10px to 0.625rem for better scaling */
 }
 
+/* Commented out color-specific styles */
 /* .facebook i {
   background-color: #3b5998;
 }
@@ -55,7 +59,7 @@
   background-color: #E4405F;
 } */
 
-/*Hover Transition*/
+/* Commented out hover styles */
 /* .twitter i:hover, .google i:hover, .gitlab i:hover,
 .github i:hover ,.linkedin i:hover ,.facebook i:hover, .instagram i:hover{
   background-color: black;
@@ -63,7 +67,8 @@
 } */
 
 /* Media Query */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
+  /* Changed from 768px to 48rem for better scaling */
   .social-media-div {
     text-align: center;
   }

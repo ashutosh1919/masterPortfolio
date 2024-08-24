@@ -1,16 +1,20 @@
+/* Updated CSS with Adaptive Responsive Units */
+
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
+
+  font-size: 3rem; /* Kept as is for consistency */
+  margin-bottom: 0;
+  margin-top: 0;
   text-align: center;
 }
 
 .software-skill-inline {
   display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+
+  margin-right: 1.25em; /* Changed from 20px to 1.25em for better scalability */
+  margin-bottom: 1.25em; /* Changed from 20px to 1.25em for better scalability */
   font-family: "Google Sans Regular";
 }
 
@@ -23,5 +27,10 @@
 }
 
 .skill-image {
-  height: 48px;
+  height: 3rem; /* Changed from 48px to 3rem for consistency with font-size and better scalability */
 }
+
+/* Changes made:
+1. Margins in .software-skill-inline changed from px to em for better scalability
+2. Height of .skill-image changed from px to rem for consistency with font-size and better scalability
+*/

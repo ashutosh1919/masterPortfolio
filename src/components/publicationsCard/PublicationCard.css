@@ -1,3 +1,5 @@
+/* Publication Card Styles */
+
 .publication-card-div {
   color: rgb(88, 96, 105);
   background-color: rgb(255, 255, 255);
@@ -6,6 +8,7 @@
   cursor: pointer;
   flex: 1 1 25%;
 }
+
 .publication-card-div:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
 }
@@ -18,22 +21,23 @@
 .publication-name {
   text-align: left;
   color: rgb(36, 41, 46);
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif; /* Added fallback font */
   margin-bottom: 0.75rem;
-  font-size: 25px;
+  font-size: 1.5625rem; /* Changed from 25px to rem */
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.03125rem; /* Changed from -0.5px to rem */
   overflow: hidden;
   line-height: 1.2;
-  margin: 0px;
+  margin: 0;
 }
 
 .publication-description {
   overflow: hidden;
   text-align: left;
   display: -webkit-box;
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif; /* Added fallback font */
   -webkit-line-clamp: 2;
+  line-clamp: 2; /* Added standard property for compatibility */
   -webkit-box-orient: vertical;
   margin-top: 0.8rem;
 }
@@ -45,29 +49,33 @@
 
 .publication-creation-date {
   margin: 0;
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif; /* Added fallback font */
   font-weight: 400;
-  margin-left: 0px;
+  margin-left: 0;
   margin-right: auto;
 }
 
-@media (max-width: 1200px) {
+/* Media Queries */
+
+@media (max-width: 75rem) {
+  /* Changed from 1200px to rem */
   .publication-card-div {
     flex: 1 1 40%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
+  /* Changed from 768px to rem */
   .publication-card-div {
     flex: 1 1 100%;
   }
 
   .publication-name {
-    font-size: 16px;
+    font-size: 1rem; /* Changed from 16px to rem */
   }
 
   .publication-description {
-    font-size: 14px;
+    font-size: 0.875rem; /* Changed from 14px to rem */
   }
 
   .publication-details {
@@ -75,6 +83,14 @@
   }
 
   .publication-creation-date {
-    font-size: 14px;
+    font-size: 0.875rem; /* Changed from 14px to rem */
   }
 }
+
+/* Changes made:
+1. Added fallback fonts for better accessibility
+2. Converted pixel units to rem for improved scalability
+3. Added standard 'line-clamp' property for better compatibility
+4. Adjusted media query breakpoints to use rem units
+5. Removed unnecessary 'px' units from 0 values
+*/

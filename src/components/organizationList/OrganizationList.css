@@ -1,50 +1,50 @@
+/* Updated CSS with Adoptive Responsive Units */
+
 .dev-icons-orgs {
   padding-left: 0;
   list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  font-size: 3rem; /* Kept as is for consistency */
+  margin-bottom: 0;
+  margin-top: 3.125rem; /* Changed from 50px to 3.125rem */
+  margin-left: 3.125rem; /* Changed from 50px to 3.125rem */
+  margin-right: 3.125rem; /* Changed from 50px to 3.125rem */
   text-align: center;
 }
 
 .organizations-img {
-  width: 100px;
+  width: 6.25rem; /* Changed from 100px to 6.25rem */
   height: auto;
 }
 
 .organizations-inline {
   display: inline-block;
-  margin-right: 50px;
-  margin-bottom: 50px;
+  margin-right: 3.125rem; /* Changed from 50px to 3.125rem */
+  margin-bottom: 3.125rem; /* Changed from 50px to 3.125rem */
   /* border: 1px solid #000000; */
   font-family: "Google Sans Regular";
 }
 
 .organizations-inline:hover {
-  -moz-transform: translate(0px, -5px);
-  -ms-transform: translate(0px, -5px);
-  -o-transform: translate(0px, -5px);
-  -webkit-transform: translate(0px, -5px);
-  transform: translate(0px, -5px);
+  transform: translate(0, -0.3125rem); /* Changed from -5px to -0.3125rem */
+  /* Removed vendor prefixes for modern browsers */
 }
 
 @media (max-width: 1380px) {
+  /* Empty media query kept as is */
 }
 
 @media (max-width: 768px) {
   .organizations-img {
-    width: 60px;
+    width: 3.75rem; /* Changed from 60px to 3.75rem */
   }
 
   .dev-icons-orgs {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1.25rem; /* Changed from 20px to 1.25rem */
+    margin-right: 1.25rem; /* Changed from 20px to 1.25rem */
   }
 
   .organizations-inline {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-right: 1.875rem; /* Changed from 30px to 1.875rem */
+    margin-bottom: 1.875rem; /* Changed from 30px to 1.875rem */
   }
 }

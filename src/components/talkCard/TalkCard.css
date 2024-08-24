@@ -1,3 +1,4 @@
+/* Container */
 .container {
   display: flex;
   justify-content: center;
@@ -5,64 +6,76 @@
 
 /* Rectangle Card Layout */
 .rectangle {
-  background: url(..\..\assests\images\talksCardBack.svg);
-  width: 380px;
-  height: 300px;
-  border-radius: 4px;
-  box-shadow: 0px 20px 50px #d9dbdf;
+  background: url(..\..\assets\images\talksCardBack.svg);
+
+  width: 23.75rem; /* Changed from 380px to 23.75rem */
+  height: 18.75rem; /* Changed from 300px to 18.75rem */
+  border-radius: 0.25rem; /* Changed from 4px to 0.25rem */
+  box-shadow: 0 1.25rem 3.125rem #d9dbdf; /* Changed from 0px 20px 50px to 0 1.25rem 3.125rem */
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  margin-top: 50px;
+  margin-top: 3.125rem; /* Changed from 50px to 3.125rem */
 }
 .rectangle:hover {
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.08); /* Changed from 0 20px 40px to 0 1.25rem 2.5rem */
 }
 
 .mask {
-  clip: rect(0px, 460px, 220px, 0px);
-  border-radius: 4px;
+  clip: rect(
+    0,
+    28.75rem,
+    13.75rem,
+    0
+  ); /* Changed from 0px, 460px, 220px, 0px to 0, 28.75rem, 13.75rem, 0 */
+  border-radius: 0.25rem; /* Changed from 4px to 0.25rem */
   position: absolute;
 }
 
-/* Card  Styling */
+/* Card Styling */
 .talk-card-title {
   color: white;
   margin: auto;
   text-align: left;
-  margin-top: 25px;
-  padding: 0px 0px 40px 30px;
-  font-size: 30px;
+
+  margin-top: 1.5625rem; /* Changed from 25px to 1.5625rem */
+  padding: 0 0 2.5rem 1.875rem; /* Changed from 0px 0px 40px 30px to 0 0 2.5rem 1.875rem */
+  font-size: 1.875rem; /* Changed from 30px to 1.875rem */
   line-height: normal;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2; /* Added standard property for compatibility */
   -webkit-box-orient: vertical;
 }
 .talk-card-subtitle {
-  margin-top: 35px;
+  margin-top: 2.1875rem; /* Changed from 35px to 2.1875rem */
   text-align: justify;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 16px;
+
+  padding-left: 1.875rem; /* Changed from 30px to 1.875rem */
+  padding-right: 1.875rem; /* Changed from 30px to 1.875rem */
+  font-size: 1rem; /* Changed from 16px to 1rem */
   color: #7f8287;
-  line-height: 18px;
+  line-height: 1.125rem; /* Changed from 18px to 1.125rem */
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2; /* Added standard property for compatibility */
   -webkit-box-orient: vertical;
 }
 .talk-button {
   background-color: #a066fb;
   color: white;
-  width: 90px;
-  padding: 10px 18px;
-  border-radius: 3px;
+
+  width: 5.625rem; /* Changed from 90px to 5.625rem */
+  padding: 0.625rem 1.125rem; /* Changed from 10px 18px to 0.625rem 1.125rem */
+  border-radius: 0.1875rem; /* Changed from 3px to 0.1875rem */
   text-align: center;
   text-decoration: none;
   display: block;
-  margin-top: 20px;
-  font-size: 14px;
+
+  margin-top: 1.25rem; /* Changed from 20px to 1.25rem */
+  font-size: 0.875rem; /* Changed from 14px to 0.875rem */
   cursor: pointer;
 }
 .card-footer-button-div {
@@ -71,18 +84,20 @@
 }
 
 /* Media Query */
-@media (max-width: 1380px) {
+@media (max-width: 86.25rem) {
+  /* Changed from 1380px to 86.25rem */
   .card-title {
-    font-size: 25px;
+    font-size: 1.5625rem; /* Changed from 25px to 1.5625rem */
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
+  /* Changed from 768px to 48rem */
   .mask {
     clip-path: none;
     position: relative;
   }
   .talk-card-title {
-    margin-top: 30px;
+    margin-top: 1.875rem; /* Changed from 30px to 1.875rem */
   }
   .talk-card-image {
     width: 100%;
@@ -91,6 +106,6 @@
   .square {
     width: 100%;
     height: auto;
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem; /* Changed from 30px to 1.875rem */
   }
 }

@@ -1,22 +1,31 @@
+/* Updated CSS with adaptive responsive units for improved flexibility and accessibility */
+
 .dev-icons-languages {
   padding-left: 0;
   list-style: none;
-  font-size: 2rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  font-size: 2rem; /* Kept as is for consistency */
+  margin-bottom: 0;
+  margin-top: 0;
   text-align: right;
 }
 
 .software-skill-inline-languages {
   display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 0px;
+  margin-right: 1.25em; /* Changed from 20px to 1.25em for better scalability */
+  margin-bottom: 0;
   font-family: "Google Sans Regular";
 }
 
 @media (max-width: 768px) {
   .software-skill-inline-languages {
-    margin-right: 10px;
-    margin-bottom: 0px;
+    margin-right: 0.625em; /* Changed from 10px to 0.625em for better scalability */
+    margin-bottom: 0;
   }
 }
+
+/* Changes made:
+1. Removed 'px' from margin-bottom and margin-top in .dev-icons-languages
+2. Changed margin-right from 20px to 1.25em in .software-skill-inline-languages
+3. Changed margin-right from 10px to 0.625em in the media query
+4. Removed 'px' from margin-bottom in both .software-skill-inline-languages rules
+*/
