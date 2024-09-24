@@ -363,15 +363,15 @@ const degrees = {
 
 const certifications = {
   certifications: [
-    {
-      title: "Cryptography",
-      subtitle: "- Saurabh Mukhopadhyay",
-      logo_path: "nptel_logo.png",
-      certificate_link:
-        "https://drive.google.com/open?id=1z5ExD_QJVdU0slLkp8CBqSF3-C3g-ro_",
-      alt_name: "NPTEL",
-      color_code: "#FFBB0099",
-    },
+    // {
+    //   title: "Cryptography",
+    //   subtitle: "- Saurabh Mukhopadhyay",
+    //   logo_path: "nptel_logo.png",
+    //   certificate_link:
+    //     "https://drive.google.com/open?id=1z5ExD_QJVdU0slLkp8CBqSF3-C3g-ro_",
+    //   alt_name: "NPTEL",
+    //   color_code: "#FFBB0099",
+    // },
     {
       title: "Cloud Architecture",
       subtitle: "- Qwiklabs",
