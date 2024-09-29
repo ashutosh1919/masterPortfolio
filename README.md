@@ -13,11 +13,6 @@
   <a href="http://badges.mit-license.org/"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
   <a href="http://badges.mit-license.org/"><img alt="Website" src="https://img.shields.io/badge/website-up-yellow?style=flat-square" /></a>
 </p>
-
-<p align="center"> 
-    <img src="images/masterPortfolioThemes.png"></img>
-  </a>
-</p>
 # Sections 📚
 
 ✔️ Summary and About me\
