@@ -134,6 +134,7 @@ const skills = {
     {
       title: "Full Stack Development",
       fileName: "FullStackImg",
+      // fileName: "FullStackImgTwo", //use this for different svg
       skills: [
         "⚡ Building responsive website front end using React-Redux",
         "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
@@ -216,6 +217,7 @@ const skills = {
     {
       title: "Cloud Infra-Architecture",
       fileName: "CloudInfraImg",
+      // fileName: "CloudInfraImgTwo", //use this for another svg
       skills: [
         "⚡ Experience working on multiple cloud platforms",
         "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
