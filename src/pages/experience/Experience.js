@@ -8,6 +8,8 @@ import { experience } from "../../portfolio.js";
 import { Fade } from "react-reveal";
 import ExperienceImg from "./ExperienceImg";
 
+import ExperienceImgTwo from "./ExperienceImgTwo";
+
 // const experience = {
 // 	title: "Experience",
 // 	subtitle: "Work, Internship and Volunteership",
@@ -159,6 +161,8 @@ class Experience extends Component {
 									alt=""
 								/> */}
                 <ExperienceImg theme={theme} />
+                {/* //use this for another svg */}
+                {/* <ExperienceImgTwo theme={theme} /> */}
               </div>
               <div className="experience-heading-text-div">
                 <h1
