@@ -115,3 +115,46 @@
     margin-top: 30px;
   }
 }
+
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+.standard-card {
+  height: 280px; /* Set desired height */
+  width: 350px; /* Set desired width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Makes sure content spreads evenly */
+  padding: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
