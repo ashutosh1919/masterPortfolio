@@ -13,7 +13,7 @@ const seo = {
   og: {
     title: "Ashutosh Hathidara Portfolio",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "https://villa45jorge.github.io/villa45ramos.github.io/",
   },
 };
 
