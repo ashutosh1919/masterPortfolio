@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
-    "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
+    "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
   portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
   githubProfile: "https://github.com/ashutosh1919",
 };
@@ -178,7 +178,7 @@ const skills = {
         },
         {
           skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
+          fontAwesomeClassname: "devicon-plain:nodejs-wordmark",
           style: {
             color: "#339933",
           },
@@ -534,6 +534,17 @@ const experience = {
       work: true,
       experiences: [
         {
+          title: "Machine Learning Engineer",
+          company: "TikTok Inc.",
+          company_url: "https://www.tiktok.com/en/",
+          logo_path: "tiktok_logo.png",
+          duration: "June 2023 - Present",
+          location: "San Jose, CA, USA",
+          description:
+            "Improving ads ranking models on the core TikTok product. Experience working on modeling two-tower architectures like DeepFM, Wide & deep learning, etc. Working on Large Language Models (LLM) pretraining and Large Multi-modal Model (LMM) finetuning strategies.",
+          color: "#000000",
+        },
+        {
           title: "Associate AI Engineer",
           company: "Legato Health Technology",
           company_url: "https://legatohealthtech.com/",
@@ -681,52 +692,32 @@ const projectsHeader = {
 
 const publicationsHeader = {
   title: "Publications",
-  description:
-    "I have worked on and published a few research papers and publications of my own.",
+  description: "Some of my published Articles, Blogs and Research.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publications = {
   data: [
     {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+      id: "neuro-symbolic-sudoku-solver",
+      name: "Neuro-Symbolic Sudoku Solver",
+      createdAt: "2023-07-02T00:00:00Z",
+      description: "Paper published in KDD KiML 2023",
+      url: "https://arxiv.org/abs/2307.00653",
     },
     {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzi=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+      id: "mdp-diffusion",
+      name: "MDP-Diffusion",
+      createdAt: "2023-09-19T00:00:00Z",
+      description: "Blog published in Paperspace",
+      url: "https://blog.paperspace.com/mdp-diffusion/",
     },
     {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNze=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzt=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzb=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+      id: "consistency-models",
+      name: "Consistency Models",
+      createdAt: "2023-10-12T00:00:00Z",
+      description: "Blog published in Paperspace",
+      url: "https://blog.paperspace.com/consistency-models/",
     },
   ],
 };
@@ -742,21 +733,20 @@ const contactPageData = {
   blogSection: {
     title: "Blogs",
     subtitle:
-      "For individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
+      "I like to document some of my experiences in professional career journey as well as some technical knowledge sharing.",
     link: "https://blogs.ashutoshhathidara.com/",
     avatar_image_path: "blogs_image.svg",
   },
   addressSection: {
     title: "Address",
-    subtitle:
-      "Ambavadi vas, Kanodar, T.A.-Palanpur, Dist.-Banaskantha, Gujarat - 385520",
-    locality: "Kanodar",
-    country: "IN",
-    region: "Gujarat",
-    postalCode: "385520",
-    streetAddress: "Ambavadi vas",
+    subtitle: "Saratoga Ave, San Jose, CA, USA 95129",
+    locality: "San Jose",
+    country: "USA",
+    region: "California",
+    postalCode: "95129",
+    streetAddress: "Saratoga Avenue",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76",
+    location_map_link: "https://maps.app.goo.gl/NvYZqa34Wye4tpS17",
   },
   phoneSection: {
     title: "",

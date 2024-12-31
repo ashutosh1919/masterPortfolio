@@ -155,7 +155,7 @@ class Experience extends Component {
             <div className="experience-heading-div">
               <div className="experience-heading-img-div">
                 {/* <img
-									src={require(`../../assests/images/${experience["header_image_path"]}`)}
+									src={require(`../../assets/images/${experience["header_image_path"]}`)}
 									alt=""
 								/> */}
                 <ExperienceImg theme={theme} />
