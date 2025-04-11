@@ -31,9 +31,9 @@ export default function Greeting(props) {
               <SocialMedia theme={theme} />
               <div className="portfolio-repo-btn-div">
                 <Button
-                  text="⭐ See My Resume"
+                  text="Schedule call"
                   newTab={true}
-                  href={greeting.resumeLink}
+                  href={greeting.topmate}
                   theme={theme}
                   className="portfolio-repo-btn"
                 />

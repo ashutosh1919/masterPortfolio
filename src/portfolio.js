@@ -26,7 +26,7 @@ const greeting = {
     "I’m a results-driven Senior Software Engineer with 5+ years of experience building scalable, distributed impactful solutions. I have been part of Network Security, HealthTech, Loyalty & Reward industries in past. I thrive in fast-paced environments and enjoy collaborating across teams to turn ideas into reality. Always learning, always building!!!",
   resumeLink:
     "https://drive.google.com/file/d/1AZHbn4Q_SoIg0Yhr1mnNB3NW4VcaABWH/view?usp=drive_link",
-  portfolio_repository: "https://github.com/Thesohan/",
+  topmate: "https://topmate.io/sohan_kathait",
   githubProfile: "https://github.com/Thesohan",
 };
 
@@ -339,6 +339,14 @@ const competitiveSites = {
         color: "#323754",
       },
       profileLink: "https://stackoverflow.com/users/9141726/thesohan",
+    },
+    {
+      siteName: "Medium",
+      iconifyClassname: "simple-icons:medium",
+      style: {
+        color: "#323754",
+      },
+      profileLink: "https://medium.com/@sohankathait",
     },
   ],
 };
