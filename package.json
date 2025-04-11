@@ -2,7 +2,7 @@
   "private": true,
   "name": "Sohan's Portfolio",
   "version": "0.1.0",
-  "homepage": "https://Thesohan.github.io",
+  "homepage": "https://Thesohan.github.io/",
   "scripts": {
     "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",
