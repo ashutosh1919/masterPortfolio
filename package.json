@@ -3,14 +3,6 @@
   "name": "dle2022-portfolio",
   "version": "0.1.0",
   "homepage": "https://dle2022.github.io/duongportfolio",
-  "scripts": {
-    "build": "react-scripts --openssl-legacy-provider build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build",
-    "eject": "react-scripts eject",
-    "start": "react-scripts --openssl-legacy-provider start",
-    "test": "react-scripts test"
-  },
   "dependencies": {
     "apollo-boost": "^0.4.4",
     "baseui": "^9.65.3",
@@ -37,8 +29,16 @@
     "prettier": "2.0.5"
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"

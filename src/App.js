@@ -5,20 +5,21 @@ import { ThemeProvider } from "styled-components";
 import { chosenTheme } from "./theme";
 import { GlobalStyles } from "./global";
 import { BrowserRouter } from "react-router-dom";
-<BrowserRouter basename="/duongportfolio/">
-  {/* routes */}
-</BrowserRouter>
+
 function App() {
+  // local dev = "/", GitHub Pages = "/duongportfolio-1"
+  const basename =
+    process.env.NODE_ENV === "production" ? "/duongportfolio-1" : "/";
+
   return (
     <ThemeProvider theme={chosenTheme}>
       <>
         <GlobalStyles />
-        <div>
+        <BrowserRouter basename={basename}>
           <Main theme={chosenTheme} />
-        </div>
+        </BrowserRouter>
       </>
     </ThemeProvider>
   );
 }
-
 export default App;
