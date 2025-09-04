@@ -2,7 +2,7 @@
   "private": true,
   "name": "dle2022-portfolio",
   "version": "0.1.0",
-  "homepage": "https://dle2022.github.io/duongporfolio",
+  "homepage": "https://dle2022.github.io/duongportfolio",
   "scripts": {
     "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",
