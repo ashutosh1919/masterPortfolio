@@ -1,4 +1,4 @@
-/* ====== Personal Portfolio Configuration (tailored for Duong Le) ====== */
+/* ====== Personal Portfolio Configuration (tailored for Duong Le ) ====== */
 
 /** 
  * TIP: Put screenshots in /public/images and keep these names, or 
