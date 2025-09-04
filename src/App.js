@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { chosenTheme } from "./theme";
 import { GlobalStyles } from "./global";
 import { BrowserRouter } from "react-router-dom";
-<BrowserRouter basename="/duongportfolio">
+<BrowserRouter basename="/duongportfolio/">
   {/* routes */}
 </BrowserRouter>
 function App() {
