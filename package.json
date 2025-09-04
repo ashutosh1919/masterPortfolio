@@ -1,13 +1,20 @@
 {
   "private": true,
-  "name": "dle2022-portfolio",
+  "name": "duongportfolio",
   "version": "0.1.0",
   "homepage": "https://dle2022.github.io/duongportfolio",
+  "scripts": {
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b gh-pages -d build",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
+  },
   "dependencies": {
     "apollo-boost": "^0.4.4",
     "baseui": "^9.65.3",
     "chart.js": "^2.9.3",
-    "gh-pages": "^2.1.1",
     "node-fetch": "^2.6.0",
     "prettier-package-json": "^2.1.3",
     "react": "^16.10.2",
@@ -17,13 +24,14 @@
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "^3.2.0",
     "styled-components": "^5.1.1",
     "styletron-engine-atomic": "^1.4.6",
     "styletron-react": "^5.2.7"
   },
   "devDependencies": {
     "dotenv": "^6.2.0",
+    "gh-pages": "^6.3.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "2.0.5"
