@@ -1,11 +1,14 @@
 name: Build and Deploy to GitHub Pages
+
 on:
   push:
-    branches: [ main ]   # change if your default branch is different
+    branches: [ master ]   # <- your default branch is master in the screenshot
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -17,18 +20,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Use Node
+      # Use Node 16 for react-scripts 3.x era
+      - name: Use Node 16
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 16
 
+      # Install (fall back to npm install if package-lock isn't v2)
       - name: Install deps
-        run: npm ci
+        run: |
+          npm ci || npm install
 
+      # Build; the template already adds --openssl-legacy-provider in scripts
       - name: Build
         run: npm run build
 
-      - name: Upload artifact (./build)
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./build
@@ -41,5 +48,3 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
