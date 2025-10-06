@@ -104,6 +104,21 @@ You can change the personal information, experience, education, social media, ce
 3. Remove the `fontAwesomeClassName` property or leave it empty because it takes precedence over `imageSrc`
 4. Add custom styling to the `img` using the `style` Property
 
+### How to Change the Icons on Education page under Basic Qualification and Certifications?
+
+1. The icons for this section are pulled from the `competitiveSites` array in the `portfolio.js` file.
+2. Visit the [Simple Icons website](https://simpleicons.org/).
+3. Search for the competitive site you want to add an icon for.
+4. Select the icon you want to use.
+5. Copy the text beside Selected Icon and replace it with iconifyClassname of that particular competitive site.
+
+### How to Use Custom Images Instead of Simple Icons for Competitive Sites
+
+1. Place the custom image file in the `public/skills` folder.
+2. Update the `imageSrc` attribute of the corresponding competitive site with the name of your custom image (e.g., `imageSrc: "customImage.png"`).
+3. Remove the `iconifyClassname` property or leave it empty, as the `imageSrc` property takes precedence over `iconifyClassname`.
+4. Optionally, add custom styling to the `<img>` tag using the `style` property to adjust size, positioning, etc.
+
 ### Github Information
 
 You will find `git_data_fetcher.mjs` file in the main directory of the repository. This file is used to fetch the data (Pull requests, Issues, Organizations, Pinned projects etc.) from your github.
