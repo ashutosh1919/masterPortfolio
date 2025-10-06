@@ -110,8 +110,7 @@ You can change the personal information, experience, education, social media, ce
 2. Visit the [Simple Icons website](https://simpleicons.org/).
 3. Search for the competitive site you want to add an icon for.
 4. Select the icon you want to use.
-5. Copy the text beside **Selected Icon** and replace it with `iconifyClassname`of that particular competitiveSites.
-
+5. Copy the text beside Selected Icon and replace it with iconifyClassname of that particular competitive site.
 
 ### How to Use Custom Images Instead of Simple Icons for Competitive Sites
 
