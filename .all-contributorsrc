@@ -364,6 +364,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "saksham-joshi",
+      "name": "SAKSHAM JOSHI",
+      "avatar_url": "https://avatars.githubusercontent.com/u/109752898?v=4",
+      "profile": "https://sakshamjoshi.vercel.app/",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
