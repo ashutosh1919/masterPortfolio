@@ -1,0 +1,76 @@
+.resume-main {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.resume-view {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5% 40px 5%;
+}
+
+.resume-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* Target the react-pdf container */
+.resume-page .react-pdf__Document {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  line-height: 0;
+}
+
+.resume-page .react-pdf__Page {
+  max-width: 100%;
+  display: block;
+  margin: 0;
+  line-height: 0;
+}
+
+.resume-page .react-pdf__Page__canvas {
+  max-width: 100% !important;
+  height: auto !important;
+  width: 100% !important;
+  display: block;
+  margin: 0;
+}
+
+/* Remove extra spacing from text layer */
+.resume-page .react-pdf__Page__textContent {
+  display: none;
+}
+
+.resume-page .react-pdf__Page__annotations {
+  display: none;
+}
+
+.download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .resume-view {
+    padding: 0 2% 30px 2%;
+  }
+}
+
+/* Desktop styles - increase width */
+@media screen and (min-width: 769px) {
+  .resume-view {
+    max-width: 1400px;
+    padding: 0 3% 50px 3%;
+  }
+}
