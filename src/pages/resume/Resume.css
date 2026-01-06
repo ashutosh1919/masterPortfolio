@@ -1,0 +1,232 @@
+.resume-main {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.resume-view {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5% 40px 5%;
+}
+
+.resume-page {
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* Target the react-pdf container */
+.resume-page .react-pdf__Document {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  line-height: 0;
+}
+
+.resume-page .react-pdf__Page {
+  max-width: 100%;
+  display: block;
+  margin: 0;
+  line-height: 0;
+}
+
+.resume-page .react-pdf__Page__canvas {
+  max-width: 100% !important;
+  height: auto !important;
+  width: 100% !important;
+  display: block;
+  margin: 0;
+}
+
+/* Remove extra spacing from text layer */
+.resume-page .react-pdf__Page__textContent {
+  display: none;
+}
+
+.resume-page .react-pdf__Page__annotations {
+  display: none;
+}
+
+.download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .resume-view {
+    padding: 0 2% 30px 2%;
+  }
+}
+
+/* Desktop styles - increase width */
+@media screen and (min-width: 769px) {
+  .resume-view {
+    max-width: 1400px;
+    padding: 0 3% 50px 3%;
+  }
+}
+
+/* Add these styles to your existing Resume.css */
+
+/* Loading State */
+.resume-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  min-height: 400px;
+}
+
+.resume-loading p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.page-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error State */
+.resume-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  min-height: 400px;
+  text-align: center;
+}
+
+.resume-error .error-icon {
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+.resume-error p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 24px;
+  max-width: 400px;
+}
+
+.retry-btn {
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #e74c3c;
+  background-color: white;
+  color: #e74c3c;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.retry-btn:hover {
+  background-color: #e74c3c;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+/* Pagination Controls */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.pagination-btn {
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #3498db;
+  background-color: white;
+  color: #3498db;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: #3498db;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border-color: #ccc;
+  color: #ccc;
+}
+
+.page-info {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  min-width: 120px;
+  text-align: center;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .pagination-controls {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .pagination-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .page-info {
+    order: -1;
+    margin-bottom: 8px;
+  }
+
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+  }
+
+  .resume-loading,
+  .resume-error {
+    min-height: 300px;
+    padding: 40px 20px;
+  }
+}
