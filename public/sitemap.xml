@@ -7,13 +7,13 @@
   </url>
   <url>
     <loc>https://ashutoshhathidara.com/home</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://ashutoshhathidara.com/experience</loc>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://ashutoshhathidara.com/education</loc>
@@ -23,7 +23,7 @@
   <url>
     <loc>https://ashutoshhathidara.com/contact</loc>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.65</priority>
   </url>
   <url>
     <loc>https://ashutoshhathidara.com/projects</loc>
@@ -33,11 +33,11 @@
   <url>
     <loc>https://ashutoshhathidara.com/opensource</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://ashutoshhathidara.com/resume</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>
