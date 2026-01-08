@@ -3,11 +3,10 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
 import PublicationCard from "../../components/publicationsCard/PublicationCard";
-import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
+import ProjectModal from "./ProjectModal";
 import { Fade } from "react-reveal";
 import {
-  greeting,
   projectsHeader,
   publicationsHeader,
   publications,
@@ -17,8 +16,26 @@ import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 
 class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedRepo: null,
+      isModalOpen: false,
+    };
+  }
+
+  openModal = (repo) => {
+    this.setState({ selectedRepo: repo, isModalOpen: true });
+  };
+
+  closeModal = () => {
+    this.setState({ selectedRepo: null, isModalOpen: false });
+  };
+
   render() {
-    const theme = this.props.theme;
+    const { theme } = this.props;
+    const { selectedRepo, isModalOpen } = this.state;
+
     return (
       <div className="projects-main">
         <Header theme={theme} />
@@ -26,10 +43,6 @@ class Projects extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
-                {/* <img
-											src={require(`../../assets/images/${projectsHeader["avatar_image_path"]}`)}
-											alt=""
-										/> */}
                 <ProjectsImg theme={theme} />
               </div>
               <div className="projects-heading-text-div">
@@ -49,18 +62,15 @@ class Projects extends Component {
             </div>
           </Fade>
         </div>
-        <div className="repo-cards-div-main">
-          {ProjectsData.data.map((repo) => {
-            return <GithubRepoCard repo={repo} theme={theme} />;
-          })}
+
+        {/* Projects Grid Layout */}
+        <div className="max-w-screen-lg mx-auto p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {ProjectsData.data.map((repo) => (
+            <div onClick={() => this.openModal(repo)} key={repo.id} className="standard-card">
+              <GithubRepoCard repo={repo} theme={theme} />
+            </div>
+          ))}
         </div>
-        <Button
-          text={"More Projects"}
-          className="project-button"
-          href={greeting.githubProfile}
-          newTab={true}
-          theme={theme}
-        />
 
         {/* Publications  */}
         {publications.data.length > 0 ? (
@@ -74,6 +84,7 @@ class Projects extends Component {
                   >
                     {publicationsHeader.title}
                   </h1>
+                  <br/>
                   <p
                     className="projects-header-detail-text subTitle"
                     style={{ color: theme.secondaryText }}
@@ -92,8 +103,18 @@ class Projects extends Component {
           })}
         </div>
 
-        <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
-        <TopButton theme={this.props.theme} />
+        <Footer theme={theme} onToggle={this.props.onToggle} />
+        <TopButton theme={theme} />
+
+        {/* Render the modal */}
+        {selectedRepo && (
+          <ProjectModal
+            repo={selectedRepo}
+            isOpen={isModalOpen}
+            onClose={this.closeModal}
+            theme={theme}
+          />
+        )}
       </div>
     );
   }
