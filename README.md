@@ -40,7 +40,8 @@
 ✔️ Certifications 🏆\
 ✔️ Blogs\
 ✔️ Education\
-✔️ Contact me
+✔️ Contact me\
+✔️ Resume Viewer
 
 To view a live example, **[click here](https://ashutosh1919.github.io/)**
 
@@ -188,6 +189,19 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
   - You can define new theme similarly as other themes and you can assign name of that new defined theme to `chosenTheme`
 - That's it. You just need to change the theme name and the code will take care of everything else
 - Run `npm start` to check if everything is ok.
+
+# Resume 📃
+
+- If you want to display your resume, go to the <a href="/src/assets/docs/">/src/assets/docs/</a> directory.
+- Paste your resume there and copy your resume's file name.
+- Also, keep in mind that your resume must be in A4 size.
+- Now, go to <a href="/src/pages/resume/Resume.js">/src/pages/resume/Resume.js</a>.
+- In the import section, find:
+```
+import myResumePdf from "../../assets/docs/Ashutosh_Hathidara_Resume_ML.pdf"
+```
+- and replace **"Ashutosh_Hathidara_Resume_ML.pdf"** with your resume file name.
+- Launch the project and go to the route `/resume` to view your resume.
 
 # Deployment 📦
 
