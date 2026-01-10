@@ -63,3 +63,8 @@ body {
     line-height: normal;
   }
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0E6BA8 transparent;
+}
