@@ -13,6 +13,7 @@ import ResumePage from "../pages/resume/Resume.js";
 
 export default class Main extends Component {
   render() {
+    document.documentElement.style.setProperty("--scrollbar-color", this.props.theme.imageHighlight);
     return (
       <BrowserRouter basename="/">
         <Switch>
