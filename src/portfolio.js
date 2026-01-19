@@ -377,6 +377,13 @@ const competitiveSites = {
   ],
 };
 
+const gpa = {
+  gpa: 3.98,
+};
+
+const coursework = {
+  coursework: [{}],
+};
 const degrees = {
   degrees: [
     {
@@ -676,6 +683,21 @@ const experience = {
           description:
             "I am actively contributing to many opensource projects. I have contributed to projects of organisations like Tensorflow, Uber, Facebook, Google, Scikit-learn, Kiwix, Sympy, Python, NVLabs, Fossasia, Netrack, Keras etc. These contributions include bug fixes, feature requests and formulating proper documentation for project.",
           color: "#181717",
+        },
+      ],
+    },
+    {
+      title: "Research",
+      experiences: [
+        {
+          title: "Machine Learning Researcher",
+          company: "Johns Hopkins Applied Physics Laboratory (APL)",
+          company_url: "https://www.jhuapl.edu/",
+          logo_path: "google_logo.png",
+          duration: "June 2019 - April 2020",
+          location: "Fulton, Maryland",
+          description: "Researching for APL in machine learning.",
+          color: "#4285F4",
         },
       ],
     },
