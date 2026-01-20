@@ -63,3 +63,11 @@ body {
     line-height: normal;
   }
 }
+
+:root {
+  --scrollbar-color: white; /* it will change when the page loads*/
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-color) transparent;
+}
