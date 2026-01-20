@@ -12,8 +12,25 @@ import Error404 from "../pages/errors/error404/Error";
 import ResumePage from "../pages/resume/Resume.js";
 
 export default class Main extends Component {
+  componentDidMount() {
+    document.documentElement.style.setProperty(
+      "--scrollbar-color",
+      this.props.theme.imageHighlight
+    );
+  }
+  componentDidUpdate(prevProps) {
+    if (
+      prevProps.theme &&
+      this.props.theme &&
+      prevProps.theme.imageHighlight !== this.props.theme.imageHighlight
+    ) {
+      document.documentElement.style.setProperty(
+        "--scrollbar-color",
+        this.props.theme.imageHighlight
+      );
+    }
+  }
   render() {
-    document.documentElement.style.setProperty("--scrollbar-color", this.props.theme.imageHighlight);
     return (
       <BrowserRouter basename="/">
         <Switch>
