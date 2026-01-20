@@ -64,7 +64,7 @@ body {
   }
 }
 
-:root{
+:root {
   --scrollbar-color: white; /* it will change when the page loads*/
 }
 * {
