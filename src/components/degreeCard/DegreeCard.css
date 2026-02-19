@@ -47,6 +47,11 @@
 .body-header-duration {
   width: 20%;
 }
+
+.body-header-gpa {
+  width: 20%;
+}
+
 .duration {
   font-family: "Google Sans Regular";
   font-size: 16px;
@@ -119,6 +124,12 @@
   }
 
   .body-header-duration {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .body-header-gpa {
     padding: 0;
     margin: 0;
     width: 100%;

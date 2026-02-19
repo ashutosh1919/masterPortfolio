@@ -3,6 +3,7 @@ import "./Educations.css";
 import DegreeCard from "../../components/degreeCard/DegreeCard.js";
 import { degrees } from "../../portfolio";
 import { Fade } from "react-reveal";
+import { gpa } from "../../portfolio";
 
 class Educations extends Component {
   render() {
@@ -16,9 +17,10 @@ class Educations extends Component {
             </h1>
           </Fade>
         </div>
+
         <div className="educations-body-div">
           {degrees.degrees.map((degree) => {
-            return <DegreeCard degree={degree} theme={theme} />;
+            return <DegreeCard degree={degree} gpa={gpa} theme={theme} />;
           })}
         </div>
       </div>
