@@ -123,9 +123,9 @@
   top: 0;
 }
 
-/* 48em = 768px */
+/* 69em = 1104px */
 
-@media (min-width: 48em) {
+@media (min-width: 69em) {
   .header li {
     float: left;
   }
@@ -139,10 +139,5 @@
   }
   .header .menu-icon {
     display: none;
-  }
-}
-@media (max-width: 960px) and (min-width: 768px) {
-  .header {
-    font-size: 12px;
   }
 }
