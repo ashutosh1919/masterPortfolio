@@ -31,11 +31,23 @@ class Header extends Component {
               </span>
               <span style={{ color: theme.text }}>/&gt;</span>
             </NavLink>
-            <input className="menu-btn" type="checkbox" id="menu-btn" />
-            <label className="menu-icon" htmlFor="menu-btn">
+            <input
+              className="menu-btn"
+              type="checkbox"
+              id="menu-btn"
+              aria-label="Toggle navigation menu"
+              aria-controls="nav-menu"
+            />
+            <label className="menu-icon" htmlFor="menu-btn" aria-hidden="true">
               <span className="navicon"></span>
             </label>
-            <ul className="menu" style={{ backgroundColor: theme.body }}>
+            <ul
+              className="menu"
+              id="nav-menu"
+              role="navigation"
+              aria-label="Main navigation"
+              style={{ backgroundColor: theme.body }}
+            >
               <li>
                 <NavLink
                   to="/home"
