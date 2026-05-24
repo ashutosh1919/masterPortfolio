@@ -1,5 +1,5 @@
 .education-main {
-  width: 100vw;
+  width: 100%;
 }
 
 .basic-education {
@@ -16,6 +16,7 @@
 }
 
 .heading-img-div {
+  display: flex;
   align-items: center;
   justify-content: center;
 }

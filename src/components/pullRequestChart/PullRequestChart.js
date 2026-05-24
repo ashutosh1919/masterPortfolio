@@ -22,7 +22,7 @@ class PullRequestChart extends Component {
     };
 
     return (
-      <div class="pr-chart">
+      <div className="pr-chart">
         <Fade bottom duration={2000} distance="20px">
           <h2 className="pr-chart-header">Pull Request Distribution</h2>
         </Fade>

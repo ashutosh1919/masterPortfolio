@@ -18,7 +18,7 @@ class IssueChart extends Component {
     };
 
     return (
-      <div class="issue-chart">
+      <div className="issue-chart">
         <Fade bottom duration={2000} distance="20px">
           <h2 className="issue-chart-header">Issue Distribution</h2>
         </Fade>
