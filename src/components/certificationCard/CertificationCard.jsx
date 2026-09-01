@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./CertificationCard.css";
 import { Fade } from "react-reveal";
+import { getImage } from "../../utils/imageAssets";
 
 class CertificationCard extends Component {
   render() {
@@ -22,7 +23,7 @@ class CertificationCard extends Component {
               >
                 <img
                   className="logo_img"
-                  src={require(`../../assets/images/${certificate.logo_path}`)}
+                  src={getImage(certificate.logo_path)}
                   alt={certificate.alt_name}
                 />
               </div>

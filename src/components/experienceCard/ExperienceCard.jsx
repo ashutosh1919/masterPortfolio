@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./ExperienceCard.css";
 import { Fade } from "react-reveal";
+import { getImage } from "../../utils/imageAssets";
 
 class ExperienceCard extends Component {
   render() {
@@ -17,7 +18,7 @@ class ExperienceCard extends Component {
           <div className="experience-card-logo-div">
             <img
               className="experience-card-logo"
-              src={require(`../../assets/images/${experience["logo_path"]}`)}
+              src={getImage(experience["logo_path"])}
               alt=""
             />
           </div>

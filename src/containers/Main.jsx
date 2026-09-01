@@ -9,7 +9,7 @@ import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
 import { settings } from "../portfolio.js";
 import Error404 from "../pages/errors/error404/Error";
-import ResumePage from "../pages/resume/Resume.js";
+import ResumePage from "../pages/resume/Resume.jsx";
 
 export default class Main extends Component {
   componentDidMount() {

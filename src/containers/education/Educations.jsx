@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Educations.css";
-import DegreeCard from "../../components/degreeCard/DegreeCard.js";
+import DegreeCard from "../../components/degreeCard/DegreeCard.jsx";
 import { degrees } from "../../portfolio";
 import { Fade } from "react-reveal";
 

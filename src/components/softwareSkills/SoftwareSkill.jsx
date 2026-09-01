@@ -39,7 +39,7 @@ class SoftwareSkill extends React.Component {
                       <img
                         className="skill-image"
                         style={logo.style}
-                        src={`${process.env.PUBLIC_URL}/skills/${logo.imageSrc}`}
+                        src={`/skills/${logo.imageSrc}`}
                         alt={logo.skillName}
                       />
                     )}

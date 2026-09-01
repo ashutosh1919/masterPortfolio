@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Splash.css";
 import { Redirect } from "react-router-dom";
-import LoaderLogo from "../../components/Loader/LoaderLogo.js";
+import LoaderLogo from "../../components/Loader/LoaderLogo.jsx";
 
 function AnimatedSplash(props) {
   return (
