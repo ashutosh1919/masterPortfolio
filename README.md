@@ -46,15 +46,16 @@
 To view a live example, **[click here](https://ashutosh1919.github.io/)**
 
 # Table of Contents
- - [Clone and Use](#clone-and-use)
- - [Customizing](#customize-it-to-make-your-own-portfolio)
- - [Choose Theme](#choose-theme)
- - [Deployment](#deployment)
- - [Technologies Used](#technologies-used)
- - [Illustrations](#illustrations)
- - [License](#license)
- - [Contributors](#contributors)
- - [References](#references)
+
+- [Clone and Use](#clone-and-use)
+- [Customizing](#customize-it-to-make-your-own-portfolio)
+- [Choose Theme](#choose-theme)
+- [Deployment](#deployment)
+- [Technologies Used](#technologies-used)
+- [Illustrations](#illustrations)
+- [License](#license)
+- [Contributors](#contributors)
+- [References](#references)
 
 # Clone and Use 📋
 
@@ -197,9 +198,11 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
 - Also, keep in mind that your resume must be in A4 size.
 - Now, go to <a href="/src/pages/resume/Resume.js">/src/pages/resume/Resume.js</a>.
 - In the import section, find:
+
 ```
 import myResumePdf from "../../assets/docs/Ashutosh_Hathidara_Resume_ML.pdf"
 ```
+
 - and replace **"Ashutosh_Hathidara_Resume_ML.pdf"** with your resume file name.
 - Launch the project and go to the route `/resume` to view your resume.
 
@@ -229,6 +232,12 @@ If you are stuck somewhere and want to observe the deployment process in depth, 
     <img src="http://img.youtube.com/vi/IwBS39TOmpA/0.jpg"></img>
   </a>
 </p>
+
+**Deploy on Wasmer Edge:**
+
+- `npm run build` outputs the static site to the `build` folder. To host it on Wasmer Edge instead, import your own copy of this repository so the deployed site includes your customizations.
+
+[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=ashutosh1919%2FmasterPortfolio)
 
 # Technologies used 🛠️
 
