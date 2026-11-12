@@ -3,18 +3,18 @@ import "./PublicationCard.css";
 import { Fade } from "react-reveal";
 
 export default function PublicationCard({ pub, theme }) {
-  function openPubinNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
-
   return (
     <div
       className="publication-card-div"
       style={{ backgroundColor: theme.highlight }}
     >
       <Fade bottom duration={2000} distance="40px">
-        <div key={pub.id} onClick={() => openPubinNewTab(pub.url)}>
+        <a
+          className="publication-card-link"
+          href={pub.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="publication-name-div">
             <p className="publication-name" style={{ color: theme.text }}>
               {pub.name}
@@ -57,7 +57,7 @@ export default function PublicationCard({ pub, theme }) {
             <p>{repo.node.diskUsage} KB</p>
           </div>
         </div> */}
-        </div>
+        </a>
       </Fade>
     </div>
   );

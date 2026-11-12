@@ -22,11 +22,15 @@ export default function socialMedia(props) {
             key={i}
             href={media.link}
             className={`icon-button`}
+            aria-label={media.name || media.link}
             target="_blank"
             rel="noopener noreferrer"
           >
             <IconWrapper {...media} {...props}>
-              <i className={`fab ${media.fontAwesomeIcon}`}></i>
+              <i
+                aria-hidden="true"
+                className={`fab ${media.fontAwesomeIcon}`}
+              ></i>
             </IconWrapper>
             {/* <span></span> */}
           </a>

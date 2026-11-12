@@ -9,11 +9,16 @@ const openSource = {
   githubUserName: process.env.GITHUB_USERNAME,
 };
 
+if (!openSource.githubConvertedToken || !openSource.githubUserName) {
+  console.error("Set GITHUB_TOKEN and GITHUB_USERNAME in .env (see env.example).");
+  process.exit(1);
+}
+
 const query_pr = {
   query: `
-	query {
-	  user(login: "${openSource.githubUserName}"){
-	    pullRequests(last: 100, orderBy: {field: CREATED_AT, direction: DESC}){
+	query($login: String!) {
+	  user(login: $login){
+	    pullRequests(first: 100, orderBy: {field: CREATED_AT, direction: DESC}){
       totalCount
       nodes{
         id
@@ -31,6 +36,7 @@ const query_pr = {
 	      additions
 	      deletions
         baseRepository {
+              isPrivate
 	          name
 	          url
 	          owner {
@@ -47,10 +53,10 @@ const query_pr = {
 };
 
 const query_issue = {
-  query: `query{
+  query: `query($login: String!) {
 
-		user(login: "${openSource.githubUserName}") {
-    issues(last: 100, orderBy: {field:CREATED_AT, direction: DESC}){
+		user(login: $login) {
+    issues(first: 100, orderBy: {field:CREATED_AT, direction: DESC}){
       totalCount
       nodes{
       	id
@@ -67,6 +73,7 @@ const query_issue = {
           }
         }
         repository{
+          isPrivate
           name
           url
           owner{
@@ -83,9 +90,9 @@ const query_issue = {
 };
 
 const query_org = {
-  query: `query{
-	user(login: "${openSource.githubUserName}") {
-	    repositoriesContributedTo(last: 100){
+  query: `query($login: String!) {
+	user(login: $login) {
+	    repositoriesContributedTo(last: 100, privacy: PUBLIC){
 	      totalCount
 	      nodes{
 	        owner{
@@ -101,13 +108,14 @@ const query_org = {
 
 const query_pinned_projects = {
   query: `
-	query { 
-	  user(login: "${openSource.githubUserName}") { 
+	query($login: String!) {
+	  user(login: $login) {
 	    pinnedItems(first: 6, types: REPOSITORY) {
 	      totalCount
 	      nodes{
 	        ... on Repository{
 	          id
+              isPrivate
 		          name
 		          createdAt,
 		          url,
@@ -133,16 +141,74 @@ const headers = {
   Authorization: "bearer " + openSource.githubConvertedToken,
 };
 
-fetch(baseUrl, {
-  method: "POST",
-  headers: headers,
-  body: JSON.stringify(query_pr),
-})
-  .then((response) => response.text())
-  .then((txt) => {
-    const data = JSON.parse(txt);
+async function fetchGitHubData(query) {
+  let response;
+  try {
+    response = await fetch(baseUrl, {
+      method: "POST",
+      headers,
+      body: JSON.stringify({
+        ...query,
+        variables: { login: openSource.githubUserName },
+      }),
+    });
+  } catch (error) {
+    const code =
+      error && typeof error.code === "string" && /^[A-Z0-9_]+$/.test(error.code)
+        ? ` (${error.code})`
+        : "";
+    throw new Error(`Could not contact GitHub${code}. Check network and TLS settings.`);
+  }
+
+  if (!response.ok) {
+    throw new Error(
+      `GitHub returned HTTP ${response.status}. Check the token and rate limits.`
+    );
+  }
+
+  let result;
+  try {
+    result = await response.json();
+  } catch (_error) {
+    throw new Error("GitHub returned an invalid JSON response.");
+  }
+  if (result && Array.isArray(result.errors) && result.errors.length > 0) {
+    throw new Error(
+      "GitHub returned a GraphQL error. Check the username, token permissions, and rate limits."
+    );
+  }
+  if (!result || !result.data || !result.data.user) {
+    throw new Error("GitHub user not found or inaccessible. Check GITHUB_USERNAME.");
+  }
+  return result;
+}
+
+function reportFetchFailure(label, error) {
+  // Do not print credentials even if an unexpected error includes one.
+  const message = String(error && error.message ? error.message : "Unknown error")
+    .split(openSource.githubConvertedToken)
+    .join("[REDACTED]");
+  console.error(`Could not fetch ${label}: ${message}`);
+  process.exitCode = 1;
+}
+
+function writeData(filename, value) {
+  fs.writeFile(filename, JSON.stringify(value), (error) => {
+    if (error) {
+      console.error(`Could not write ${filename}. Check the output directory and its permissions.`);
+      process.exitCode = 1;
+    }
+  });
+}
+
+fetchGitHubData(query_pr)
+  .then((data) => {
     var cropped = { data: [] };
-    cropped["data"] = data["data"]["user"]["pullRequests"]["nodes"];
+    // A broad token can see private and internal repositories. Only publish
+    // records whose base repository is explicitly public.
+    cropped["data"] = data["data"]["user"]["pullRequests"]["nodes"].filter(
+      (pullRequest) => pullRequest?.baseRepository?.isPrivate === false
+    );
 
     var open = 0;
     var closed = 0;
@@ -159,28 +225,16 @@ fetch(baseUrl, {
     cropped["totalCount"] = cropped["data"].length;
 
     console.log("Fetching the Pull Request Data.\n");
-    fs.writeFile(
-      "./src/shared/opensource/pull_requests.json",
-      JSON.stringify(cropped),
-      function (err) {
-        if (err) {
-          console.log(err);
-        }
-      }
-    );
+    writeData("./src/shared/opensource/pull_requests.json", cropped);
   })
-  .catch((error) => console.log(JSON.stringify(error)));
+  .catch((error) => reportFetchFailure("pull requests", error));
 
-fetch(baseUrl, {
-  method: "POST",
-  headers: headers,
-  body: JSON.stringify(query_issue),
-})
-  .then((response) => response.text())
-  .then((txt) => {
-    const data = JSON.parse(txt);
+fetchGitHubData(query_issue)
+  .then((data) => {
     var cropped = { data: [] };
-    cropped["data"] = data["data"]["user"]["issues"]["nodes"];
+    cropped["data"] = data["data"]["user"]["issues"]["nodes"].filter(
+      (issue) => issue?.repository?.isPrivate === false
+    );
 
     var open = 0;
     var closed = 0;
@@ -194,26 +248,12 @@ fetch(baseUrl, {
     cropped["totalCount"] = cropped["data"].length;
 
     console.log("Fetching the Issues Data.\n");
-    fs.writeFile(
-      "./src/shared/opensource/issues.json",
-      JSON.stringify(cropped),
-      function (err) {
-        if (err) {
-          console.log(err);
-        }
-      }
-    );
+    writeData("./src/shared/opensource/issues.json", cropped);
   })
-  .catch((error) => console.log(JSON.stringify(error)));
+  .catch((error) => reportFetchFailure("issues", error));
 
-fetch(baseUrl, {
-  method: "POST",
-  headers: headers,
-  body: JSON.stringify(query_org),
-})
-  .then((response) => response.text())
-  .then((txt) => {
-    const data = JSON.parse(txt);
+fetchGitHubData(query_org)
+  .then((data) => {
     const orgs = data["data"]["user"]["repositoriesContributedTo"]["nodes"];
     var newOrgs = { data: [] };
     for (var i = 0; i < orgs.length; i++) {
@@ -233,17 +273,9 @@ fetch(baseUrl, {
     }
 
     console.log("Fetching the Contributed Organization Data.\n");
-    fs.writeFile(
-      "./src/shared/opensource/organizations.json",
-      JSON.stringify(newOrgs),
-      function (err) {
-        if (err) {
-          console.log(err);
-        }
-      }
-    );
+    writeData("./src/shared/opensource/organizations.json", newOrgs);
   })
-  .catch((error) => console.log(JSON.stringify(error)));
+  .catch((error) => reportFetchFailure("organizations", error));
 
 const languages_icons = {
   Python: "logos-python",
@@ -260,16 +292,11 @@ const languages_icons = {
   Rust: "logos-rust",
 };
 
-fetch(baseUrl, {
-  method: "POST",
-  headers: headers,
-  body: JSON.stringify(query_pinned_projects),
-})
-  .then((response) => response.text())
-  .then((txt) => {
-    const data = JSON.parse(txt);
-    // console.log(txt);
-    const projects = data["data"]["user"]["pinnedItems"]["nodes"];
+fetchGitHubData(query_pinned_projects)
+  .then((data) => {
+    const projects = data["data"]["user"]["pinnedItems"]["nodes"].filter(
+      (project) => project?.isPrivate === false
+    );
     var newProjects = { data: [] };
     for (var i = 0; i < projects.length; i++) {
       var obj = projects[i];
@@ -288,19 +315,6 @@ fetch(baseUrl, {
     }
 
     console.log("Fetching the Pinned Projects Data.\n");
-    fs.writeFile(
-      "./src/shared/opensource/projects.json",
-      JSON.stringify(newProjects),
-      function (err) {
-        if (err) {
-          console.log(
-            "Error occured in pinned projects 1",
-            JSON.stringify(err)
-          );
-        }
-      }
-    );
+    writeData("./src/shared/opensource/projects.json", newProjects);
   })
-  .catch((error) =>
-    console.log("Error occured in pinned projects 2", JSON.stringify(error))
-  );
+  .catch((error) => reportFetchFailure("pinned projects", error));

@@ -10,33 +10,32 @@ import {
 } from "../../portfolio.js";
 
 function SeoHeader() {
-  let sameAs = [];
-  socialMediaLinks
+  const links = Array.isArray(socialMediaLinks)
+    ? socialMediaLinks.filter((media) => media && typeof media.link === "string")
+    : [];
+  const sameAs = links
     .filter(
       (media) =>
-        !(media.link.startsWith("tel") || media.link.startsWith("mailto"))
+        !(media.link.startsWith("tel:") || media.link.startsWith("mailto:"))
     )
-    .forEach((media) => {
-      sameAs.push(media.link);
-    });
+    .map((media) => media.link);
+  const mailLink = links.find((media) => media.link.startsWith("mailto:"));
+  const mail = mailLink ? mailLink.link.substring("mailto:".length) : undefined;
 
-  let mail = socialMediaLinks
-    .find((media) => media.link.startsWith("mailto"))
-    .link.substring("mailto:".length);
-  let job = experience.sections
-    ?.find((section) => section.work)
-    ?.experiences?.at(0);
+  const sections = Array.isArray(experience?.sections) ? experience.sections : [];
+  const work = sections.find((section) => section && section.work);
+  const job = Array.isArray(work?.experiences) ? work.experiences[0] : undefined;
 
-  let credentials = [];
-  certifications.certifications.forEach((certification) => {
-    credentials.push({
-      "@context": "https://schema.org",
-      "@type": "EducationalOccupationalCredential",
-      url: certification.certificate_link,
-      name: certification.title,
-      description: certification.subtitle,
-    });
-  });
+  const certificates = Array.isArray(certifications?.certifications)
+    ? certifications.certifications
+    : [];
+  const credentials = certificates.filter(Boolean).map((certification) => ({
+    "@context": "https://schema.org",
+    "@type": "EducationalOccupationalCredential",
+    url: certification.certificate_link,
+    name: certification.title,
+    description: certification.subtitle,
+  }));
   const data = {
     "@context": "https://schema.org/",
     "@type": "Person",
@@ -45,11 +44,10 @@ function SeoHeader() {
     email: mail,
     telephone: contactPageData.phoneSection?.subtitle,
     sameAs: sameAs,
-    jobTitle: job.title,
-    worksFor: {
-      "@type": "Organization",
-      name: job.company,
-    },
+    jobTitle: job?.title,
+    worksFor: job?.company
+      ? { "@type": "Organization", name: job.company }
+      : undefined,
     address: {
       "@type": "PostalAddress",
       addressLocality: contactPageData.addressSection?.locality,
