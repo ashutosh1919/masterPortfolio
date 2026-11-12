@@ -18,7 +18,7 @@ class PullRequests extends Component {
         </div>
         <div className="pull-request-body-div">
           {pullRequestsData["data"].map((pullRequest) => {
-            return <PullRequestCard pullRequest={pullRequest} />;
+            return <PullRequestCard key={pullRequest.id} pullRequest={pullRequest} />;
           })}
         </div>
       </div>

@@ -9,6 +9,12 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
 }
 
+.repo-card-link {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
 .repo-stats {
   display: flex;
   -webkit-box-pack: justify;

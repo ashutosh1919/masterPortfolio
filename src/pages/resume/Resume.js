@@ -11,6 +11,10 @@ import TopButton from "../../components/topButton/TopButton";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
+// Mitigate GHSA-wgrm-67xf-hhpq until react-pdf and PDF.js can be upgraded.
+// Keep this object stable so re-renders do not restart the PDF load.
+const resumePdfOptions = { isEvalSupported: false };
+
 export default class ResumePage extends Component {
   constructor(props) {
     super(props);
@@ -137,6 +141,7 @@ export default class ResumePage extends Component {
                 <div className="resume-page">
                   <Document
                     file={myResumePdf}
+                    options={resumePdfOptions}
                     onLoadSuccess={this.onDocumentLoadSuccess}
                     onLoadError={this.onDocumentLoadError}
                     loading={

@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="http://hits.dwyl.com/ashutosh1919/masterPortfolio"><img alt="HitCounts" src="http://hits.dwyl.com/ashutosh1919/masterPortfolio.svg" /></a>
-  <a href="https://nodejs.org/en/blog/release/v20.11.1"><img alt="NodeJS" src="https://img.shields.io/badge/node-20.11.1-important?style=flat-square" /></a>
+  <a href="https://nodejs.org/en/about/previous-releases"><img alt="NodeJS" src="https://img.shields.io/badge/node-22.x-important?style=flat-square" /></a>
   <a href="https://www.npmjs.com/package/npm/v/10.2.4"><img alt="NPM" src="https://img.shields.io/badge/npm-10.2.4-blueviolet?style=flat-square" /></a>
   <a href="https://reactjs.org/"><img alt="Made With React" src="https://img.shields.io/badge/made%20with-react-61DAFB?style=flat-square" /></a>
   <a href="https://join.slack.com/t/masterportfolio/shared_invite/zt-g772n1fo-Ns4usanURF8jVb8wk2lRAA"><img alt="Join Slack Channel For Support" src="https://img.shields.io/badge/slack-masterPortfolio-yellow.svg?logo=slack?style=flat-square" /></a>
@@ -45,8 +45,11 @@
 
 To view a live example, **[click here](https://ashutosh1919.github.io/)**
 
+See [SECURITY_AUDIT.md](SECURITY_AUDIT.md) for the security review and outstanding improvements.
+
 # Table of Contents
  - [Clone and Use](#clone-and-use)
+ - [Continuous Integration](#continuous-integration)
  - [Customizing](#customize-it-to-make-your-own-portfolio)
  - [Choose Theme](#choose-theme)
  - [Deployment](#deployment)
@@ -59,19 +62,30 @@ To view a live example, **[click here](https://ashutosh1919.github.io/)**
 # Clone and Use 📋
 
 - The website is completely built on `react-js` library of `javascript` and that's why we need `nodejs` and `npm` installed
-- While installing `nodejs` and `npm`, try to install versions which are equal or greater than the versions mentioned in badges above
+- Use a supported Node.js LTS release. Node.js 22 was used to validate the current lockfile.
 - In case you want to help developing it or simply saving it, you can fork the repository just by clicking the button on the top-right corner of this page
 - After the successful installation of `nodejs` and `npm`, clone the repository into your local system using below command:
   ```bash
-   git clone https://github.com/ashutosh1919/masterPortfolio.git
+  git clone https://github.com/ashutosh1919/masterPortfolio.git
+  cd masterPortfolio
   ```
-  This will clone the whole repository in your system.
-- To download required dependencies to your system, navigate to the directory where the cloned repository resides and execute following command:
-  ```node
-  npm install
+  This clones the repository and changes into its directory.
+- To install the locked dependencies, navigate to the cloned repository and run:
+  ```bash
+  npm ci
   ```
 - Now the project is ready to use
 - You can check it using `npm start`, it will open the website locally on your browser.
+
+# Continuous Integration
+
+The Node.js workflow runs on pushes to any branch and on pull requests targeting `master` or `releases/*`. It installs the lockfile with lifecycle scripts disabled, then builds and runs the tests. To reproduce it locally with Node.js 22:
+
+```bash
+npm ci --ignore-scripts
+CI=true npm run build --if-present
+CI=true npm test -- --watchAll=false --runInBand
+```
 
 # Customize it to make your own portfolio ✏️
 
@@ -135,25 +149,26 @@ You can change the personal information, experience, education, social media, ce
 
 You will find `git_data_fetcher.mjs` file in the main directory of the repository. This file is used to fetch the data (Pull requests, Issues, Organizations, Pinned projects etc.) from your github.
 
-In the project you will see a `env.example` file, create a new file named `.env` and copy contents of `env.example` into it. In that file, you will see the following environment variables
+Copy `env.example` to a new file named `.env`, then set these values (without quotes or trailing semicolons):
 
-```javascript
-GITHUB_TOKEN = your_token;
-GITHUB_USERNAME = your_username;
+```dotenv
+GITHUB_TOKEN=your_token
+GITHUB_USERNAME=your_username
 ```
 
-You can get a github token as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Give all permissions while generating token. Add your github username and the token generated in `GITHUB_USERNAME` and `GITHUB_TOKEN` variables in the .env file.
+Create a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with an expiration and the **minimum permissions** needed. For public data, start with a fine-grained token limited to public repositories and no additional permissions; add read-only access only if a specific query requires it. Do not grant all permissions. If you previously created an unnecessarily broad token, revoke it and create a restricted replacement.
 
-Now, you need to run following command. (Make sure you executed `npm install` before this)
+Treat tokens like passwords. Never commit `.env`, place a token in `src/portfolio.js`, or put it in a `REACT_APP_` variable: Create React App embeds those variables in the public browser bundle. The `.gitignore` and `.dockerignore` rules help protect local environment files, but do not remove secrets from files, Git history, existing images, or bind mounts. Revoke any exposed token.
 
-**Warning:** Treat your tokens like passwords and keep them secret. When working with the API, use tokens as environment variables instead of hardcoding them into your programs.
+The fetcher restricts newly fetched records to public repositories, even if the token can access private or internal ones. Still review all JSON in `src/shared/opensource/` before committing or publishing: older files, prior commits, or files left unchanged after a partial failure may contain information that should not be public.
+
+Now, run the following command after installing dependencies:
 
 ```node
 node git_data_fetcher.mjs
 ```
 
-This will fetch all the data from your github and it will automatically replace my data with yours.
-Whenever you want to update the github related information on the website you need to run this command.
+The fetcher replaces the bundled example data with up to the 100 newest pull requests and issues, organizations from up to 100 contributed repositories, and up to six pinned repositories. The limits are applied before private or internal records are filtered out, so fewer public items may appear. The displayed counts describe the fetched subset, not necessarily all activity. Run it again when you want to refresh the data. A failed request or write makes the command exit unsuccessfully, but other files may already have changed, and a failed write may leave an incomplete file; review all output before committing.
 
 ### Splash Logo
 

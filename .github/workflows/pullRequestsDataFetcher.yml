@@ -2,50 +2,66 @@ name: Pull Request Creation
 
 on:
   push:
+    # Preserve the existing trigger: this is the literal branch named "all".
     branches:
       - all
+
+permissions:
+  contents: read
 
 jobs:
   pullRequestRelease:
     runs-on: ubuntu-latest
     steps:
-      - uses: octokit/graphql-action@v2.x
+      - uses: octokit/graphql-action@ddde8ebb2493e79f390e6449c725c21663a67505 # v3.0.2
         id: get_pull_requests
         with:
           query: |
-            query user(login: "ashutosh1919") {
-              pullRequests(last: 100, orderBy: {field: CREATED_AT, direction: DESC}) {
-                totalCount
-                nodes {
-                  title
-                  url
-                  state
-                  mergedBy {
-                    avatarUrl
+            query PullRequests($login: String!) {
+              user(login: $login) {
+                pullRequests(first: 100, orderBy: {field: CREATED_AT, direction: DESC}) {
+                  totalCount
+                  nodes {
+                    title
                     url
-                    login
-                  }
-                  createdAt
-                  number
-                  changedFiles
-                  additions
-                  deletions
-                  baseRepository {
-                    name
-                    url
-                    owner {
+                    state
+                    mergedBy {
                       avatarUrl
-                      login
                       url
+                      login
+                    }
+                    createdAt
+                    number
+                    changedFiles
+                    additions
+                    deletions
+                    baseRepository {
+                      name
+                      url
+                      owner {
+                        avatarUrl
+                        login
+                        url
+                      }
                     }
                   }
-                }
-                pageInfo {
-                  hasNextPage
-                  endCursor
+                  pageInfo {
+                    hasNextPage
+                    endCursor
+                  }
                 }
               }
             }
+          variables: |
+            login: ${{ github.repository_owner }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: "echo 'Pull Requests Data: ${{ steps.get_latest_release.outputs.data }}'"
+      - name: Summarize pull requests
+        env:
+          PULL_REQUESTS_DATA: ${{ steps.get_pull_requests.outputs.data }}
+        run: |
+          if [[ "$(jq -r '.user == null' <<< "$PULL_REQUESTS_DATA")" == "true" ]]; then
+            echo '::error::The repository owner is not a GitHub user or could not be queried.'
+            exit 1
+          fi
+          jq -r '"Fetched \(.user.pullRequests.nodes | length) of \(.user.pullRequests.totalCount) pull requests."' <<< "$PULL_REQUESTS_DATA"
