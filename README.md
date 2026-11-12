@@ -87,8 +87,6 @@ CI=true npm run build --if-present
 CI=true npm test -- --watchAll=false --runInBand
 ```
 
-Datadog Synthetic tests are optional. When both Datadog secrets are unavailable, the workflow reports that those tests were skipped. If only one is configured, the workflow fails with a configuration error; when both are available, real Datadog test failures remain failures. GitHub normally withholds repository secrets from pull requests originating in forks.
-
 # Customize it to make your own portfolio ✏️
 
 In this project, there are basically 4 things that you need to change to customize this to anyone else's portfolio: **package.json**, **Personal Information**, **Github Information** and **Splash Logo**.
