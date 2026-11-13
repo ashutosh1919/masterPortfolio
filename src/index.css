@@ -2,56 +2,179 @@
   font-family: "Agustina Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Agustina Regular"),
+  src:
+    local("Agustina Regular"),
     url("./assets/fonts/Agustina.woff") format("woff");
 }
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"),
+  src:
+    local("Montserrat"),
     url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
 }
 @font-face {
   font-family: "Google Sans Bold";
-  src: local("Google Sans Bold"),
+  src:
+    local("Google Sans Bold"),
     url("./assets/fonts/GoogleSans-Bold.ttf") format("woff");
 }
 @font-face {
   font-family: "Google Sans Bold Italic";
-  src: local("Google Sans Bold Italic"),
+  src:
+    local("Google Sans Bold Italic"),
     url("./assets/fonts/GoogleSans-BoldItalic.ttf") format("woff");
 }
 @font-face {
   font-family: "Google Sans Italic";
-  src: local("Google Sans Italic"),
+  src:
+    local("Google Sans Italic"),
     url("./assets/fonts/GoogleSans-Italic.ttf") format("woff");
 }
 @font-face {
   font-family: "Google Sans Medium";
-  src: local("Google Sans Medium"),
+  src:
+    local("Google Sans Medium"),
     url("./assets/fonts/GoogleSans-Medium.ttf") format("woff");
 }
 @font-face {
   font-family: "Google Sans Medium Italic";
-  src: local("Google Sans Medium Italic"),
+  src:
+    local("Google Sans Medium Italic"),
     url("./assets/fonts/GoogleSans-MediumItalic.ttf") format("woff");
 }
 @font-face {
   font-family: "Google Sans Regular";
-  src: local("Google Sans Regular"),
+  src:
+    local("Google Sans Regular"),
     url("./assets/fonts/GoogleSans-Regular.ttf") format("woff");
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 html,
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body {
+    scroll-behavior: auto;
+  }
+}
+
+#root {
+  width: 100%;
+  min-width: 0;
+}
+
+/* React Bootstrap portals tooltips into the flex body. Keep them out of flow
+   even before Popper has measured and positioned them. */
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1070;
+  pointer-events: none;
+  max-width: min(240px, calc(100vw - 16px));
+  font:
+    14px / 1.3 "Google Sans Regular",
+    sans-serif;
+}
+
+.tooltip:not([data-popper-placement]) {
+  visibility: hidden;
+}
+
+.tooltip-inner {
+  padding: 4px 8px;
+  border: 1px solid #062e56;
+  border-radius: 4px;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  width: 10px;
+  height: 5px;
+}
+
+.tooltip-arrow::before {
+  position: absolute;
+  content: "";
+  border-style: solid;
+  border-color: transparent;
+}
+
+.bs-tooltip-top {
+  padding-bottom: 5px;
+}
+
+.bs-tooltip-top .tooltip-arrow {
+  bottom: 0;
+}
+
+.bs-tooltip-top .tooltip-arrow::before {
+  border-width: 5px 5px 0;
+  border-top-color: #062e56;
+}
+
+.bs-tooltip-bottom {
+  padding-top: 5px;
+}
+
+.bs-tooltip-bottom .tooltip-arrow {
+  top: 0;
+}
+
+.bs-tooltip-bottom .tooltip-arrow::before {
+  border-width: 0 5px 5px;
+  border-bottom-color: #062e56;
+}
+
+.bs-tooltip-start {
+  padding-right: 5px;
+}
+
+.bs-tooltip-end {
+  padding-left: 5px;
+}
+
+.bs-tooltip-start .tooltip-arrow,
+.bs-tooltip-end .tooltip-arrow {
+  width: 5px;
+  height: 10px;
+}
+
+.bs-tooltip-start .tooltip-arrow {
+  right: 0;
+}
+
+.bs-tooltip-start .tooltip-arrow::before {
+  border-width: 5px 0 5px 5px;
+  border-left-color: #062e56;
+}
+
+.bs-tooltip-end .tooltip-arrow {
+  left: 0;
+}
+
+.bs-tooltip-end .tooltip-arrow::before {
+  border-width: 5px 5px 5px 0;
+  border-right-color: #062e56;
+}
+
 body {
   margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+  font:
+    19px / 23px Montserrat,
+    "Montserrat",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

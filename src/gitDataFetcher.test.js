@@ -1,7 +1,8 @@
-const fs = require("fs");
-const os = require("os");
-const path = require("path");
-const { spawnSync } = require("child_process");
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import { spawnSync } from "node:child_process";
+import { parse } from "graphql";
 
 const files = [
   "pull_requests.json",
@@ -14,7 +15,7 @@ const token = "test-only-secret-token";
 // Run the real CLI in a temporary directory with a deterministic GitHub API.
 const fakeFetch = `
 const fs = require("fs");
-module.exports = async (_url, options) => {
+globalThis.fetch = async (_url, options) => {
   const request = JSON.parse(options.body);
   fs.appendFileSync("requests.ndjson", JSON.stringify(request) + "\\n");
   const scenario = process.env.FETCHER_TEST_SCENARIO;
@@ -87,8 +88,8 @@ describe("GitHub data fetcher", () => {
     for (const file of files) {
       fs.writeFileSync(path.join(outputDir, file), '{"before":true}');
     }
+    fs.writeFileSync(path.join(dir, "fetch-mock.cjs"), fakeFetch);
     for (const [name, source] of [
-      ["node-fetch", fakeFetch],
       ["dotenv", "module.exports = { config: () => ({}) };"],
     ]) {
       const moduleDir = path.join(dir, "node_modules", name);
@@ -106,7 +107,7 @@ describe("GitHub data fetcher", () => {
   });
 
   function run(scenario, overrides = {}) {
-    return spawnSync(process.execPath, ["git_data_fetcher.mjs"], {
+    return spawnSync(process.execPath, ["--require", "./fetch-mock.cjs", "git_data_fetcher.mjs"], {
       cwd: dir,
       encoding: "utf8",
       timeout: 10000,
@@ -196,7 +197,6 @@ describe("GitHub data fetcher", () => {
     expect(requests.find((request) => request.query.includes("pinnedItems")).query)
       .toMatch(/isPrivate/);
 
-    const { parse } = require("graphql");
     for (const request of requests) {
       expect(request.variables.login).toBe(username);
       expect(request.query).not.toContain(username);

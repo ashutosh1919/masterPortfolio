@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./ToggleSwitch.scss";
-import { lightTheme } from "../../theme";
+import "./ToggleSwitch.css";
+import { chosenTheme } from "../../theme";
 import styled from "styled-components";
 
 export const ToggleDiv = styled.div`
@@ -22,7 +22,7 @@ export const MoonSvg = styled.svg`
 export default class ToggleSwitch extends Component {
   render() {
     const theme = this.props.theme;
-    const isOn = this.props.theme === lightTheme ? false : true;
+    const isOn = theme !== chosenTheme;
     const back = theme.text;
     const butt = theme.body;
     return (
@@ -34,9 +34,9 @@ export default class ToggleSwitch extends Component {
           viewBox="0 0 24 24"
           fill="none"
           stroke={back}
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <circle cx="12" cy="12" r="5" />
           <line x1="12" y1="1" x2="12" y2="3" />
@@ -50,6 +50,7 @@ export default class ToggleSwitch extends Component {
         </SunSvg>
         <input
           className="react-switch-checkbox"
+          aria-label="Use alternate theme"
           checked={isOn}
           onChange={this.props.onToggle}
           id={`react-switch-new`}
@@ -72,9 +73,9 @@ export default class ToggleSwitch extends Component {
           viewBox="0 0 24 24"
           fill="none"
           stroke={back}
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
         </MoonSvg>

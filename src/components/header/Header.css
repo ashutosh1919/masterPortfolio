@@ -121,6 +121,13 @@
   top: 0;
 }
 
+/* Keep the brand and navigation toggle on one line on narrow screens. */
+@media (max-width: 420px) {
+  .header .logo {
+    font-size: clamp(1.1em, 5.4vw, 1.5em);
+  }
+}
+
 /* 69em = 1104px */
 
 @media (min-width: 69em) {

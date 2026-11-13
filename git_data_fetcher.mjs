@@ -1,8 +1,8 @@
-import fetch from "node-fetch";
-import fs from "fs";
+import fs from "node:fs";
 import dotenv from "dotenv";
 
-dotenv.config();
+// Node 24 provides the standard Fetch API without a separate HTTP dependency.
+dotenv.config({ quiet: true });
 
 const openSource = {
   githubConvertedToken: process.env.GITHUB_TOKEN,

@@ -61,9 +61,9 @@
 .pr-subtitle {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 10px;
+  font-size: 12px;
   font-family: "Google Sans Regular";
-  color: #808080;
+  color: #595959;
 }
 
 .pr-title {
@@ -146,7 +146,7 @@
 .additions-files {
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #28a745;
+  color: #1b7133;
   font-size: 14px;
   font-family: "Google Sans Regular";
 }
@@ -155,7 +155,7 @@
   margin-left: 8px;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #d73a49;
+  color: #a82334;
   font-size: 14px;
   font-family: "Google Sans Regular";
 }
@@ -178,16 +178,6 @@
   width: auto;
 }
 
-#tooltip-top > .tooltip-inner {
-  background-color: #000;
-  color: #fff;
-  border: 1px solid #062e56;
-}
-
-#tooltip-top > .tooltip-arrow {
-  border-top: 5px solid #062e56;
-}
-
 @media (max-width: 1380px) {
 }
 
@@ -204,6 +194,12 @@
 
   .changes-repo {
     width: 87%;
+  }
+
+  .parent-repo,
+  .parent-repo > a {
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 
   .files-changed-header {
@@ -228,6 +224,7 @@
 
   .pr-title {
     white-space: normal;
+    overflow-wrap: anywhere;
     overflow: hidden;
     font-size: 15px;
   }

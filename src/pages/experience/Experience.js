@@ -5,7 +5,7 @@ import TopButton from "../../components/topButton/TopButton";
 import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
 import "./Experience.css";
 import { experience } from "../../portfolio.js";
-import { Fade } from "react-reveal";
+import { Fade } from "../../components/animation/Reveal";
 import ExperienceImg from "./ExperienceImg";
 
 // const experience = {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Header.css";
-import { Fade } from "react-reveal";
+import { Fade } from "../animation/Reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
@@ -41,19 +41,19 @@ class Header extends Component {
 
   render() {
     const theme = this.props.theme;
-    const link = settings.isSplash ? "/splash" : "home";
+    const link = settings.isSplash ? "/splash" : "/home";
     return (
       <Fade top duration={1000} distance="20px">
         <SeoHeader />
         <div>
           <header className="header" onKeyDown={this.handleKeyDown}>
-            <NavLink to={link} tag={Link} className="logo">
+            <Link to={link} className="logo">
               <span style={{ color: theme.text }}> &lt;</span>
               <span className="logo-name" style={{ color: theme.text }}>
                 {greeting.logo_name}
               </span>
               <span style={{ color: theme.text }}>/&gt;</span>
-            </NavLink>
+            </Link>
             <button
               ref={this.menuButton}
               className="menu-icon"
@@ -77,9 +77,10 @@ class Header extends Component {
                 <li>
                   <NavLink
                     to="/home"
-                    tag={Link}
-                    activeStyle={{ fontWeight: "bold" }}
-                    style={{ color: theme.text }}
+                    style={({ isActive }) => ({
+                      color: theme.text,
+                      fontWeight: isActive ? "bold" : undefined,
+                    })}
                     onMouseEnter={(event) =>
                       onMouseEnter(event, theme.highlight)
                     }
@@ -91,9 +92,10 @@ class Header extends Component {
                 <li>
                   <NavLink
                     to="/education"
-                    tag={Link}
-                    activeStyle={{ fontWeight: "bold" }}
-                    style={{ color: theme.text }}
+                    style={({ isActive }) => ({
+                      color: theme.text,
+                      fontWeight: isActive ? "bold" : undefined,
+                    })}
                     onMouseEnter={(event) =>
                       onMouseEnter(event, theme.highlight)
                     }
@@ -105,9 +107,10 @@ class Header extends Component {
                 <li>
                   <NavLink
                     to="/experience"
-                    tag={Link}
-                    activeStyle={{ fontWeight: "bold" }}
-                    style={{ color: theme.text }}
+                    style={({ isActive }) => ({
+                      color: theme.text,
+                      fontWeight: isActive ? "bold" : undefined,
+                    })}
                     onMouseEnter={(event) =>
                       onMouseEnter(event, theme.highlight)
                     }
@@ -119,9 +122,10 @@ class Header extends Component {
                 <li>
                   <NavLink
                     to="/projects"
-                    tag={Link}
-                    activeStyle={{ fontWeight: "bold" }}
-                    style={{ color: theme.text }}
+                    style={({ isActive }) => ({
+                      color: theme.text,
+                      fontWeight: isActive ? "bold" : undefined,
+                    })}
                     onMouseEnter={(event) =>
                       onMouseEnter(event, theme.highlight)
                     }
@@ -133,9 +137,10 @@ class Header extends Component {
                 <li>
                   <NavLink
                     to="/opensource"
-                    tag={Link}
-                    activeStyle={{ fontWeight: "bold" }}
-                    style={{ color: theme.text }}
+                    style={({ isActive }) => ({
+                      color: theme.text,
+                      fontWeight: isActive ? "bold" : undefined,
+                    })}
                     onMouseEnter={(event) =>
                       onMouseEnter(event, theme.highlight)
                     }
@@ -147,9 +152,10 @@ class Header extends Component {
                 <li>
                   <NavLink
                     to="/contact"
-                    tag={Link}
-                    activeStyle={{ fontWeight: "bold" }}
-                    style={{ color: theme.text }}
+                    style={({ isActive }) => ({
+                      color: theme.text,
+                      fontWeight: isActive ? "bold" : undefined,
+                    })}
                     onMouseEnter={(event) =>
                       onMouseEnter(event, theme.highlight)
                     }

@@ -1,10 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render, cleanup } from "@testing-library/react";
 import SeoHeader from "./SeoHeader";
 import { socialMediaLinks, experience, certifications } from "../../portfolio";
 
-jest.mock("react-helmet", () => ({ Helmet: ({ children }) => children }));
-jest.mock("../../portfolio.js", () => ({
+vi.mock("react-helmet-async", () => ({ Helmet: ({ children }) => children }));
+vi.mock("../../portfolio.js", () => ({
   greeting: { title: "Portfolio owner" },
   seo: { title: "Portfolio", description: "Description" },
   socialMediaLinks: [],
@@ -24,11 +24,11 @@ describe("SEO structured data", () => {
   });
 
   afterEach(() => {
-    ReactDOM.unmountComponentAtNode(container);
+    cleanup();
   });
 
   function renderData() {
-    ReactDOM.render(<SeoHeader />, container);
+    render(<SeoHeader />, { container });
     return JSON.parse(
       container.querySelector('script[type="application/ld+json"]').textContent
     );

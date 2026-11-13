@@ -1,7 +1,8 @@
+import { Icon } from "@iconify/react";
 import React, { Component } from "react";
 import "./PullRequestCard.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import { Fade } from "react-reveal";
+import { Fade } from "../animation/Reveal";
 
 class PullRequestCard extends Component {
   render() {
@@ -11,7 +12,7 @@ class PullRequestCard extends Component {
     if (pullRequest["state"] === "OPEN") {
       iconPR = {
         iconifyClass: "octicon:git-pull-request",
-        style: { color: "#28a745" },
+        style: { color: "#1b7133" },
       };
       bgColor = "#dcffe4";
     } else if (pullRequest["state"] === "MERGED") {
@@ -23,7 +24,7 @@ class PullRequestCard extends Component {
     } else {
       iconPR = {
         iconifyClass: "octicon:git-pull-request",
-        style: { color: "#d73a49" },
+        style: { color: "#a82334" },
       };
       bgColor = "#ffdce0";
     }
@@ -40,6 +41,7 @@ class PullRequestCard extends Component {
         <OverlayTrigger
           key={name}
           placement={"top"}
+          flip
           style={{ marginBottom: "5px" }}
           overlay={
             <Tooltip id={`tooltip-top`}>
@@ -51,6 +53,7 @@ class PullRequestCard extends Component {
             href={pullRequest["mergedBy"]["url"]}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`Merged by ${name}`}
           >
             <img
               className="merge-by-img"
@@ -65,7 +68,8 @@ class PullRequestCard extends Component {
     }
 
     return (
-      <Fade bottom duration={2000} distance="40px">
+      /* Tooltip anchors should not move during the reveal. */
+      <Fade duration={2000}>
         <div
           className="pull-request-card"
           style={{
@@ -75,12 +79,12 @@ class PullRequestCard extends Component {
         >
           <div className="pr-top">
             <div className="pr-header">
-              <span
+              <Icon
                 className="iconify pr-icons"
-                data-icon={iconPR.iconifyClass}
+                icon={iconPR.iconifyClass}
                 style={iconPR.style}
-                data-inline="false"
-              ></span>
+                aria-hidden="true"
+              />
               <div className="pr-title-header">
                 <p className="pr-title">
                   <a
@@ -131,6 +135,7 @@ class PullRequestCard extends Component {
                 href={pullRequest["baseRepository"]["owner"]["url"]}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`View ${pullRequest["baseRepository"]["owner"]["login"]} on GitHub`}
               >
                 <img
                   className="owner-img"

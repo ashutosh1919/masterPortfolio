@@ -1,30 +1,27 @@
 import React from "react";
 import "./Podcast.css";
-import { podcastSection } from "../../portfolio";
 
-export default function Podcast() {
+export default function Podcast({ section }) {
+  if (!section) return null;
+  const podcasts = Array.isArray(section.podcast) ? section.podcast : [];
   return (
     <div className="main">
       <div className="podcast-header">
-        <h1 className="podcast-header-title">{podcastSection.title}</h1>
-        <p className="subTitle podcast-header-subtitle">
-          {podcastSection.subtitle}
-        </p>
+        <h1 className="podcast-header-title">{section.title}</h1>
+        <p className="subTitle podcast-header-subtitle">{section.subtitle}</p>
       </div>
       <div className="podcast-main-div">
-        {podcastSection.podcast.map((podcastLink) => {
-          return (
-            <div>
-              <iframe
-                title="podcast"
-                className="podcast"
-                src={podcastLink}
-                frameborder="0"
-                scrolling="no"
-              ></iframe>
-            </div>
-          );
-        })}
+        {podcasts.map((url, index) => (
+          <div key={`${url}-${index}`}>
+            <iframe
+              title={`Podcast ${index + 1}`}
+              className="podcast"
+              src={url}
+              frameBorder="0"
+              loading="lazy"
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

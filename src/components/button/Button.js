@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Button.css";
 
 const onMouseEnter = (event, color, bgColor) => {
@@ -13,13 +14,15 @@ const onMouseOut = (event, color, bgColor) => {
   el.style.backgroundColor = bgColor;
 };
 
-export default function Button({ text, className, href, newTab, theme }) {
+export default function Button({ text, className, href, to, newTab, theme }) {
+  const Anchor = to ? Link : "a";
   return (
     <div className={className}>
-      <a
+      <Anchor
         className="main-button"
-        href={href}
-        target={newTab && "_blank"}
+        {...(to ? { to } : { href })}
+        target={newTab ? "_blank" : undefined}
+        rel={newTab ? "noopener noreferrer" : undefined}
         style={{
           color: theme.body,
           backgroundColor: theme.text,
@@ -29,7 +32,7 @@ export default function Button({ text, className, href, newTab, theme }) {
         onMouseOut={(event) => onMouseOut(event, theme.body, theme.text)}
       >
         {text}
-      </a>
+      </Anchor>
     </div>
   );
 }
