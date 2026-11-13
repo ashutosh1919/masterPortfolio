@@ -26,7 +26,6 @@ export default class ResumePage extends Component {
       pageWidth: null,
       numPages: null,
       currentPage: 1,
-      isLoading: true,
       error: null,
     };
   }
@@ -58,7 +57,6 @@ export default class ResumePage extends Component {
   onDocumentLoadSuccess = ({ numPages }) => {
     this.setState({
       numPages,
-      isLoading: false,
       error: null,
     });
   };
@@ -67,7 +65,6 @@ export default class ResumePage extends Component {
     console.error("Error loading PDF:", error);
     this.setState({
       error: "Failed to load resume. Please try again later.",
-      isLoading: false,
     });
   };
 
@@ -85,7 +82,7 @@ export default class ResumePage extends Component {
 
   render() {
     const theme = this.props.theme;
-    const { pageWidth, numPages, currentPage, isLoading, error } = this.state;
+    const { pageWidth, numPages, currentPage, error } = this.state;
 
     return (
       <div className="resume-main">
@@ -103,17 +100,9 @@ export default class ResumePage extends Component {
                 />
               </div>
 
-              {/* Loading State */}
-              {isLoading && !error && (
-                <div className="resume-loading">
-                  <div className="loading-spinner"></div>
-                  <p>Loading resume...</p>
-                </div>
-              )}
-
               {/* Error State */}
               {error && (
-                <div className="resume-error">
+                <div className="resume-error" role="alert">
                   <svg
                     className="error-icon"
                     fill="none"
@@ -131,6 +120,7 @@ export default class ResumePage extends Component {
                   </svg>
                   <p>{error}</p>
                   <button
+                    type="button"
                     onClick={() => window.location.reload()}
                     className="retry-btn"
                     aria-label="Reload resume"
@@ -143,14 +133,20 @@ export default class ResumePage extends Component {
               {/* PDF Document */}
               {!error && (
                 <div className="resume-page">
+                  {/* react-pdf defaults to Suspense; use its inline loading/error callbacks. */}
                   <Document
                     file={myResumePdf}
                     options={resumePdfOptions}
+                    suspense={false}
                     onLoadSuccess={this.onDocumentLoadSuccess}
                     onLoadError={this.onDocumentLoadError}
+                    onSourceError={this.onDocumentLoadError}
                     loading={
-                      <div className="resume-loading">
-                        <div className="loading-spinner"></div>
+                      <div className="resume-loading" role="status">
+                        <div
+                          className="loading-spinner"
+                          aria-hidden="true"
+                        ></div>
                         <p>Loading resume...</p>
                       </div>
                     }
@@ -159,9 +155,18 @@ export default class ResumePage extends Component {
                       <Page
                         pageNumber={currentPage}
                         width={pageWidth}
+                        onLoadError={this.onDocumentLoadError}
+                        onRenderError={this.onDocumentLoadError}
                         loading={
-                          <div className="page-loading">
-                            <div className="loading-spinner"></div>
+                          <div
+                            className="page-loading"
+                            role="status"
+                            aria-label="Loading page"
+                          >
+                            <div
+                              className="loading-spinner"
+                              aria-hidden="true"
+                            ></div>
                           </div>
                         }
                       />
@@ -197,7 +202,7 @@ export default class ResumePage extends Component {
             </div>
           </Fade>
         </div>
-        <Footer theme={theme} onToggle={this.props.onToggle}/>
+        <Footer theme={theme} onToggle={this.props.onToggle} />
         <TopButton theme={theme} />
       </div>
     );

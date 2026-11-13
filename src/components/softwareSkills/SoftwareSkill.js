@@ -21,6 +21,7 @@ class SoftwareSkill extends React.Component {
                 <OverlayTrigger
                   key={logo.skillName}
                   placement={"top"}
+                  flip
                   overlay={
                     <Tooltip id={`tooltip-top`}>
                       <strong>{logo.skillName}</strong>

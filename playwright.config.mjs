@@ -9,7 +9,9 @@ const pagesTest = pagesSubpath || pagesRoot;
 
 export default defineConfig({
   testDir: "./e2e",
-  testMatch: pagesTest ? "pages.spec.js" : "portfolio.spec.js",
+  testMatch: pagesTest
+    ? "pages.spec.js"
+    : ["portfolio.spec.js", "frontend-audit.spec.js"],
   timeout: 30_000,
   workers: 1,
   retries: 0,

@@ -14,6 +14,7 @@ class ProjectLanguages extends Component {
                 <OverlayTrigger
                   key={logo.name}
                   placement={"top"}
+                  flip
                   overlay={
                     <Tooltip id={`tooltip-top`}>
                       <strong>{logo.name}</strong>
@@ -24,7 +25,11 @@ class ProjectLanguages extends Component {
                     className="software-skill-inline-languages"
                     name={logo.skillName}
                   >
-                    <Icon className="iconify" icon={logo.iconifyClass} aria-hidden="true" />
+                    <Icon
+                      className="iconify"
+                      icon={logo.iconifyClass}
+                      aria-hidden="true"
+                    />
                   </li>
                 </OverlayTrigger>
               );

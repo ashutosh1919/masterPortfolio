@@ -16,8 +16,8 @@ class PullRequestChart extends Component {
             PullRequestData["merged"],
             PullRequestData["closed"],
           ],
-          backgroundColor: ["#28a745", "#6f42c1", "#d73a49"],
-          hoverBackgroundColor: ["#28a745dd", "#6f42c1dd", "#d73a49dd"],
+          backgroundColor: ["#1b7133", "#6f42c1", "#a82334"],
+          hoverBackgroundColor: ["#1b7133dd", "#6f42c1dd", "#a82334dd"],
         },
       ],
     };
@@ -29,6 +29,7 @@ class PullRequestChart extends Component {
         </Fade>
         <Doughnut
           data={data}
+          aria-label={`Pull request distribution: ${PullRequestData.open} open, ${PullRequestData.merged} merged, ${PullRequestData.closed} closed`}
           options={{
             padding: "0",
             margin: "0",

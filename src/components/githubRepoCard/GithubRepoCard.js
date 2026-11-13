@@ -6,7 +6,8 @@ import { Fade } from "../animation/Reveal";
 export default function GithubRepoCard({ repo, theme }) {
   return (
     <div className="repo-card-div" style={{ backgroundColor: theme.highlight }}>
-      <Fade bottom duration={2000} distance="40px">
+      {/* The link contains tooltip anchors; fade without moving them. */}
+      <Fade duration={2000}>
         <a
           className="repo-card-link"
           href={repo.url}

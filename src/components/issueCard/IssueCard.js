@@ -12,13 +12,13 @@ class IssueCard extends Component {
     if (issue["closed"] === false) {
       iconPR = {
         iconifyClass: "octicon:issue-opened",
-        style: { color: "#28a745" },
+        style: { color: "#1b7133" },
       };
       bgColor = "#dcffe4";
     } else {
       iconPR = {
         iconifyClass: "octicon:issue-closed",
-        style: { color: "#d73a49" },
+        style: { color: "#a82334" },
       };
       bgColor = "#ffdce0";
     }
@@ -27,11 +27,13 @@ class IssueCard extends Component {
       "#" + issue["number"] + " opened on " + issue["createdAt"].split("T")[0];
     var assignee;
     if (issue["assignees"]["nodes"].length > 0) {
-      const name = issue["assignees"]["nodes"][0]["name"];
+      const person = issue["assignees"]["nodes"][0];
+      const name = person.name || person.login || "GitHub user";
       assignee = (
         <OverlayTrigger
           key={name}
           placement={"top"}
+          flip
           style={{ marginBottom: "5px" }}
           overlay={
             <Tooltip id={`tooltip-top`}>
@@ -40,15 +42,12 @@ class IssueCard extends Component {
           }
         >
           <a
-            href={issue["assignees"]["nodes"][0]["url"]}
+            href={person.url}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`Assigned to ${name}`}
           >
-            <img
-              className="assigned-to-img"
-              src={issue["assignees"]["nodes"][0]["avatarUrl"]}
-              alt=""
-            />
+            <img className="assigned-to-img" src={person.avatarUrl} alt="" />
           </a>
         </OverlayTrigger>
       );
@@ -57,7 +56,8 @@ class IssueCard extends Component {
     }
 
     return (
-      <Fade bottom duration={2000} distance="40px">
+      /* Tooltip anchors should not move during the reveal. */
+      <Fade duration={2000}>
         <div
           className="issue-card"
           style={{
@@ -67,8 +67,12 @@ class IssueCard extends Component {
         >
           <div className="issue-top">
             <div className="issue-header">
-              <Icon className="iconify issue-icons" icon={iconPR.iconifyClass} style={iconPR.style}
-                aria-hidden="true" />
+              <Icon
+                className="iconify issue-icons"
+                icon={iconPR.iconifyClass}
+                style={iconPR.style}
+                aria-hidden="true"
+              />
               <div className="issue-title-header">
                 <p className="issue-title">
                   <a
@@ -119,6 +123,7 @@ class IssueCard extends Component {
                 href={issue["repository"]["owner"]["url"]}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`View ${issue["repository"]["owner"]["login"]} on GitHub`}
               >
                 <img
                   className="owner-img"

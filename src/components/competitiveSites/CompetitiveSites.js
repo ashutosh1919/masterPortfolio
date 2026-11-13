@@ -13,6 +13,7 @@ class CompetitiveSites extends React.Component {
               <OverlayTrigger
                 key={logo.siteName}
                 placement={"top"}
+                flip
                 style={{ marginBottom: "5px" }}
                 overlay={
                   <Tooltip id={`tooltip-top`}>

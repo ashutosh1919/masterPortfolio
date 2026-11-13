@@ -18,7 +18,8 @@ class Education extends Component {
       <div className="education-main">
         <Header theme={this.props.theme} />
         <div className="basic-education">
-          <Fade bottom duration={2000} distance="40px">
+          {/* Tooltip anchors must not move while the section is appearing. */}
+          <Fade duration={2000}>
             <div className="heading-div">
               <div className="heading-img-div">
                 {/* <img

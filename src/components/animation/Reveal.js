@@ -12,7 +12,8 @@ function RevealChild({ children, ...options }) {
 }
 
 // Preserve the existing direction/distance API while respecting reduced motion
-// and keyboard focus through @awesome-reveal/react.
+// and keyboard focus through @awesome-reveal/react. Omitting a direction gives
+// an opacity-only reveal, keeping interactive tooltip anchors stationary.
 export function Fade({
   children,
   top,
