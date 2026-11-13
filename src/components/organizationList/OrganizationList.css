@@ -13,6 +13,7 @@
   display: block;
   width: 100px;
   height: auto;
+  transition: transform 0.15s ease-out;
 }
 
 .organizations-inline {
@@ -23,12 +24,19 @@
   font-family: "Google Sans Regular";
 }
 
-.organizations-inline:hover {
-  -moz-transform: translate(0px, -5px);
-  -ms-transform: translate(0px, -5px);
-  -o-transform: translate(0px, -5px);
-  -webkit-transform: translate(0px, -5px);
-  transform: translate(0px, -5px);
+/* Move the image, not its hover target, so the pointer cannot fall out of it. */
+.organizations-inline:hover .organizations-img {
+  transform: translateY(-5px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .organizations-img {
+    transition: none;
+  }
+
+  .organizations-inline:hover .organizations-img {
+    transform: none;
+  }
 }
 
 @media (max-width: 1380px) {

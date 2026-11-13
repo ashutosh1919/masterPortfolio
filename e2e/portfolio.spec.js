@@ -149,7 +149,9 @@ test("skill icons, the local font, and the tooltip work", async ({ page }) => {
   await expect(skill.locator(".software-skill-label")).toHaveText("Tensorflow");
   await expect(skill.locator("svg.iconify")).toBeAttached();
   await skill.hover();
-  await expect(page.getByRole("tooltip").first()).toBeAttached();
+  const tooltip = page.getByRole("tooltip").first();
+  await expect(tooltip).toBeVisible();
+  await expect(tooltip).toHaveText("Tensorflow");
   const font = await page
     .locator(".social-media-div i")
     .first()
@@ -208,6 +210,168 @@ test("certification cards retain their desktop grid and mobile width", async ({
   expect(
     await page.evaluate(() => document.documentElement.scrollWidth),
   ).toBeLessThanOrEqual(376);
+});
+
+async function openOrganizations(
+  page,
+  { width = 1280, reducedMotion = false } = {},
+) {
+  // Use actual image dimensions without depending on GitHub's avatar service.
+  await page.route(/^https:\/\/avatars\d*\.githubusercontent\.com\//, (route) =>
+    route.fulfill({
+      status: 200,
+      contentType: "image/png",
+      path: "src/assets/images/github_logo.png",
+    }),
+  );
+  await page.emulateMedia({
+    reducedMotion: reducedMotion ? "reduce" : "no-preference",
+  });
+  await page.setViewportSize({ width, height: 800 });
+  await page.goto("/opensource");
+  const organization = page.locator(".organizations-inline").first();
+  const image = organization.locator("img");
+  await expect(image).toBeVisible();
+  await page
+    .locator(".organizations-img")
+    .evaluateAll((images) =>
+      Promise.all(images.map((element) => element.decode())),
+    );
+  await page.evaluate(() => document.fonts.ready);
+  await organization.scrollIntoViewIfNeeded();
+  return { organization, image };
+}
+
+for (const width of [375, 1280]) {
+  test(`organization tooltips do not shift the page when first rendered at ${width}px`, async ({
+    page,
+  }) => {
+    const { organization, image } = await openOrganizations(page, { width });
+    const baselineWidth = await page
+      .locator("#root")
+      .evaluate((element) => element.getBoundingClientRect().width);
+    // Observe the first render, before Popper applies its inline position.
+    await page.evaluate(() => {
+      window.hoverLayout = [];
+      const observer = new MutationObserver(() => {
+        const tooltip = document.querySelector('body > [role="tooltip"]');
+        if (tooltip) {
+          const style = getComputedStyle(tooltip);
+          window.hoverLayout.push({
+            rootWidth: document.querySelector("#root").getBoundingClientRect()
+              .width,
+            position: style.position,
+            visibility: style.visibility,
+            placed: tooltip.hasAttribute("data-popper-placement"),
+          });
+        }
+      });
+      observer.observe(document.body, { childList: true });
+    });
+    await organization.hover();
+    const tooltip = page.getByRole("tooltip");
+    await expect(tooltip).toBeVisible();
+    await expect(tooltip).toHaveText(await image.getAttribute("alt"));
+    const initialLayout = await page.evaluate(() => window.hoverLayout);
+    expect(initialLayout.length).toBeGreaterThan(0);
+    expect(initialLayout.every(({ position }) => position === "absolute")).toBe(
+      true,
+    );
+    expect(
+      initialLayout.every(
+        ({ rootWidth }) => Math.abs(rootWidth - baselineWidth) <= 1,
+      ),
+    ).toBe(true);
+    expect(
+      initialLayout
+        .filter(({ placed }) => !placed)
+        .every(({ visibility }) => visibility === "hidden"),
+    ).toBe(true);
+    expect(
+      await tooltip.evaluate(
+        (element) => getComputedStyle(element).pointerEvents,
+      ),
+    ).toBe("none");
+  });
+
+  test(`organization hover stays stable at the edge of an icon at ${width}px`, async ({
+    page,
+  }) => {
+    const { organization, image } = await openOrganizations(page, { width });
+    await organization.evaluate((element) => {
+      window.organizationHover = { enters: 0, leaves: 0 };
+      element.addEventListener(
+        "mouseenter",
+        () => window.organizationHover.enters++,
+      );
+      element.addEventListener(
+        "mouseleave",
+        () => window.organizationHover.leaves++,
+      );
+    });
+    const rect = await organization.boundingBox();
+    await page.mouse.move(rect.x + rect.width / 2, rect.y + rect.height - 1);
+    // Keep the pointer on the lower edge long enough to detect hover oscillation.
+    await page.waitForTimeout(600);
+    expect(await page.evaluate(() => window.organizationHover)).toEqual({
+      enters: 1,
+      leaves: 0,
+    });
+    await expect(page.getByRole("tooltip")).toBeVisible();
+    expect(await organization.boundingBox()).toEqual(rect);
+    await expect
+      .poll(() =>
+        image.evaluate(
+          (element) => new DOMMatrix(getComputedStyle(element).transform).m42,
+        ),
+      )
+      .toBeCloseTo(-5, 1);
+
+    // Switching icons and leaving the list should update and dismiss the tooltip.
+    const next = page.locator(".organizations-inline").nth(1);
+    const nextName = await next.locator("img").getAttribute("alt");
+    await next.hover();
+    const nextTooltip = page.getByRole("tooltip").filter({ hasText: nextName });
+    await expect(nextTooltip).toBeVisible();
+    await expect(
+      page
+        .getByRole("tooltip")
+        .filter({ hasText: await image.getAttribute("alt") }),
+    ).toBeHidden();
+    await page.mouse.move(1, 1);
+    await expect(nextTooltip).toBeHidden();
+  });
+}
+
+test("organization hover respects reduced motion", async ({ page }) => {
+  const { organization, image } = await openOrganizations(page, {
+    reducedMotion: true,
+  });
+  await organization.hover();
+  await expect(page.getByRole("tooltip")).toBeVisible();
+  expect(
+    await image.evaluate((element) => getComputedStyle(element).transform),
+  ).toBe("none");
+});
+
+test("other tooltips remain correctly positioned after scrolling", async ({
+  page,
+}) => {
+  await openOrganizations(page, { reducedMotion: true });
+  const avatar = page.locator(".merge-by-img").first();
+  await avatar.scrollIntoViewIfNeeded();
+  expect(await page.evaluate(() => window.scrollY)).toBeGreaterThan(0);
+  await avatar.hover();
+  const tooltip = page.getByRole("tooltip");
+  await expect(tooltip).toBeVisible();
+  await expect(tooltip).toContainText("Merged by ");
+  const targetRect = await avatar.boundingBox();
+  const tooltipRect = await tooltip.boundingBox();
+  const gap = Math.min(
+    Math.abs(tooltipRect.y + tooltipRect.height - targetRect.y),
+    Math.abs(targetRect.y + targetRect.height - tooltipRect.y),
+  );
+  expect(gap).toBeLessThan(25);
 });
 
 test("both upgraded doughnut charts paint on canvas", async ({ page }) => {

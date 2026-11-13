@@ -53,6 +53,21 @@ body {
   width: 100%;
   min-width: 0;
 }
+
+/* React Bootstrap portals tooltips into the flex body. Keep them out of flow
+   even before Popper has measured and positioned them. */
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1070;
+  pointer-events: none;
+}
+
+.tooltip:not([data-popper-placement]) {
+  visibility: hidden;
+}
+
 body {
   margin: 0;
   font: 19px / 23px Montserrat, "Montserrat", sans-serif;
