@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import React from "react";
 import "./SoftwareSkill.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
@@ -27,20 +28,23 @@ class SoftwareSkill extends React.Component {
                   }
                 >
                   <li className="software-skill-inline" name={logo.skillName}>
+                    <span className="software-skill-label">
+                      {logo.skillName}
+                    </span>
                     {logo.fontAwesomeClassname && (
-                      <span
+                      <Icon
                         className="iconify"
-                        data-icon={logo.fontAwesomeClassname}
+                        icon={logo.fontAwesomeClassname}
                         style={logo.style}
-                        data-inline="false"
-                      ></span>
+                        aria-hidden="true"
+                      />
                     )}
                     {!logo.fontAwesomeClassname && logo.imageSrc && (
                       <img
                         className="skill-image"
                         style={logo.style}
-                        src={`${process.env.PUBLIC_URL}/skills/${logo.imageSrc}`}
-                        alt={logo.skillName}
+                        src={`${import.meta.env.BASE_URL}skills/${logo.imageSrc}`}
+                        alt=""
                       />
                     )}
                   </li>

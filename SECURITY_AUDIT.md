@@ -6,7 +6,17 @@
 
 This is a source, dependency, configuration, and upstream issue/PR review, not a penetration test or a guarantee that the application is secure. The app is principally a static React site. The GitHub fetcher is a local build-time script; the routed site does not contain a general-purpose server, login system, or PDF upload endpoint. Findings below distinguish a vulnerable package or unsafe practice from a demonstrated remotely exploitable application vulnerability.
 
-## Executive summary
+## Modernization update — 2026-11-12
+
+The original audit below describes the earlier React 16/Create React App baseline and its initial fixes. The subsequent React 19 migration supersedes its version, dependency-count, build-command, and Docker-runtime statements:
+
+- Direct npm dependencies were updated or replaced; `npm outdated --depth=0` reported no outdated direct packages at the time of the upgrade. Transitive versions remain governed by their parent packages; for example, `react-pdf` pins its matching PDF.js version rather than using an unrelated newest worker.
+- `npm audit` reported **zero known vulnerabilities** for the upgraded lockfile on 2026-11-12. Audit data changes over time and this is not proof of security or a substitute for checking deployed scripts, tokens, and hosting.
+- React 19, React Router 7, Vite, Vitest, the chart and PDF packages, and current Font Awesome/Iconify packages replaced the old stack. The PDF worker is bundled from the exact PDF.js version used by `react-pdf`; evaluation remains disabled as defense in depth. The abandoned animation and legacy token-bearing Apollo code were replaced, and the outdated Base UI dependency tree was removed.
+- CI now targets Node 24 and 26 and includes Chromium checks for production routes, navigation, layout, animations, charts, résumé rendering, the development PDF worker, simulated root and project GitHub Pages paths, and safe removal of a matching old service worker. The workflow actions remain pinned to verified full SHAs. These checks mock external services; live hosting, Iconify, analytics, and the real GitHub token refresh still need separate verification.
+- The development Docker image now uses Node 26 and a locked install, but no Docker engine was available to run it. It remains a development server, not a hardened production image.
+
+## Historical audit: executive summary
 
 - **The dependency stack still needs significant work.** After repairing the lockfile, `npm audit` reported **191 affected package entries: 10 critical, 47 high, 130 moderate, and 4 low**. These are npm's package-level classifications, not 191 independently demonstrated application exploits. See the exposure analysis below.
 - The shipped PDF viewer uses vulnerable `react-pdf`/PDF.js versions. A documented `isEvalSupported: false` mitigation was added, but the dependencies still require a compatible upgrade.

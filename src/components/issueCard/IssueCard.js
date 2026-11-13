@@ -1,7 +1,8 @@
+import { Icon } from "@iconify/react";
 import React, { Component } from "react";
 import "./IssueCard.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import { Fade } from "react-reveal";
+import { Fade } from "../animation/Reveal";
 
 class IssueCard extends Component {
   render() {
@@ -66,12 +67,8 @@ class IssueCard extends Component {
         >
           <div className="issue-top">
             <div className="issue-header">
-              <span
-                className="iconify issue-icons"
-                data-icon={iconPR.iconifyClass}
-                style={iconPR.style}
-                data-inline="false"
-              ></span>
+              <Icon className="iconify issue-icons" icon={iconPR.iconifyClass} style={iconPR.style}
+                aria-hidden="true" />
               <div className="issue-title-header">
                 <p className="issue-title">
                   <a

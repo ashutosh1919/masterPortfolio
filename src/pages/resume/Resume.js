@@ -1,18 +1,22 @@
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import { Fade } from "react-reveal";
+import { Fade } from "../../components/animation/Reveal";
 import "./Resume.css";
 import myResumePdf from "../../assets/docs/Ashutosh_Hathidara_Resume_ML.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
+import pdfWorkerUrl from "@portfolio-pdf-worker";
+import "react-pdf/dist/Page/AnnotationLayer.css";
+import "react-pdf/dist/Page/TextLayer.css";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import TopButton from "../../components/topButton/TopButton";
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+// Bundle the worker from the exact PDF.js version used by react-pdf.
+pdfjs.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
 
-// Mitigate GHSA-wgrm-67xf-hhpq until react-pdf and PDF.js can be upgraded.
-// Keep this object stable so re-renders do not restart the PDF load.
+// Keep evaluation disabled as defense in depth, and keep this object stable so
+// re-renders do not restart the PDF load.
 const resumePdfOptions = { isEvalSupported: false };
 
 export default class ResumePage extends Component {

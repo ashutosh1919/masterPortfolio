@@ -1,23 +1,24 @@
-import React, { Component } from "react";
-import { Route, Switch, BrowserRouter } from "react-router-dom";
-import Home from "../pages/home/HomeComponent";
-import Splash from "../pages/splash/Splash";
-import Education from "../pages/education/EducationComponent";
-import Experience from "../pages/experience/Experience";
-import Opensource from "../pages/opensource/Opensource";
-import Contact from "../pages/contact/ContactComponent";
-import Projects from "../pages/projects/Projects";
+import React, { Component, lazy, Suspense } from "react";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { settings } from "../portfolio.js";
-import Error404 from "../pages/errors/error404/Error";
-import ResumePage from "../pages/resume/Resume.js";
+const Home = lazy(() => import("../pages/home/HomeComponent"));
+const Splash = lazy(() => import("../pages/splash/Splash"));
+const Education = lazy(() => import("../pages/education/EducationComponent"));
+const Experience = lazy(() => import("../pages/experience/Experience"));
+const Opensource = lazy(() => import("../pages/opensource/Opensource"));
+const Contact = lazy(() => import("../pages/contact/ContactComponent"));
+const Projects = lazy(() => import("../pages/projects/Projects"));
+const Error404 = lazy(() => import("../pages/errors/error404/Error"));
+const ResumePage = lazy(() => import("../pages/resume/Resume.js"));
 
 export default class Main extends Component {
   componentDidMount() {
     document.documentElement.style.setProperty(
       "--scrollbar-color",
-      this.props.theme.imageHighlight
+      this.props.theme.imageHighlight,
     );
   }
+
   componentDidUpdate(prevProps) {
     if (
       prevProps.theme &&
@@ -26,73 +27,43 @@ export default class Main extends Component {
     ) {
       document.documentElement.style.setProperty(
         "--scrollbar-color",
-        this.props.theme.imageHighlight
+        this.props.theme.imageHighlight,
       );
     }
   }
+
   render() {
+    const { theme } = this.props;
     return (
-      <BrowserRouter basename="/">
-        <Switch>
-          <Route
-            path="/"
-            exact
-            render={(props) =>
-              settings.isSplash ? (
-                <Splash {...props} theme={this.props.theme} />
-              ) : (
-                <Home {...props} theme={this.props.theme} />
-              )
-            }
-          />
-          <Route
-            path="/home"
-            render={(props) => <Home {...props} theme={this.props.theme} />}
-          />
-          <Route
-            path="/experience"
-            exact
-            render={(props) => (
-              <Experience {...props} theme={this.props.theme} />
-            )}
-          />
-          <Route
-            path="/education"
-            render={(props) => (
-              <Education {...props} theme={this.props.theme} />
-            )}
-          />
-          <Route
-            path="/opensource"
-            render={(props) => (
-              <Opensource {...props} theme={this.props.theme} />
-            )}
-          />
-          <Route
-            path="/contact"
-            render={(props) => <Contact {...props} theme={this.props.theme} />}
-          />
-
-          {settings.isSplash && (
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <Suspense fallback={<div role="status">Loading page...</div>}>
+          <Routes>
             <Route
-              path="/splash"
-              render={(props) => <Splash {...props} theme={this.props.theme} />}
+              path="/"
+              element={
+                settings.isSplash ? (
+                  <Splash theme={theme} />
+                ) : (
+                  <Home theme={theme} />
+                )
+              }
             />
-          )}
-
-          <Route
-            path="/projects"
-            render={(props) => <Projects {...props} theme={this.props.theme} />}
-          />
-          <Route
-            path="/resume"
-            render={(props) => <ResumePage {...props} theme={this.props.theme} />}
-          />
-          <Route
-            path="*"
-            render={(props) => <Error404 {...props} theme={this.props.theme} />}
-          />
-        </Switch>
+            <Route path="/home/*" element={<Home theme={theme} />} />
+            <Route path="/experience" element={<Experience theme={theme} />} />
+            <Route path="/education/*" element={<Education theme={theme} />} />
+            <Route
+              path="/opensource/*"
+              element={<Opensource theme={theme} />}
+            />
+            <Route path="/contact/*" element={<Contact theme={theme} />} />
+            {settings.isSplash && (
+              <Route path="/splash/*" element={<Splash theme={theme} />} />
+            )}
+            <Route path="/projects/*" element={<Projects theme={theme} />} />
+            <Route path="/resume/*" element={<ResumePage theme={theme} />} />
+            <Route path="*" element={<Error404 theme={theme} />} />
+          </Routes>
+        </Suspense>
       </BrowserRouter>
     );
   }

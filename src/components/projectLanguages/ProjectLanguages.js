@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import React, { Component } from "react";
 import "./ProjectLanguages.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
@@ -23,11 +24,7 @@ class ProjectLanguages extends Component {
                     className="software-skill-inline-languages"
                     name={logo.skillName}
                   >
-                    <span
-                      className="iconify"
-                      data-icon={logo.iconifyClass}
-                      data-inline="false"
-                    ></span>
+                    <Icon className="iconify" icon={logo.iconifyClass} aria-hidden="true" />
                   </li>
                 </OverlayTrigger>
               );

@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { act } from "react-dom/test-utils";
+import { act, render, cleanup } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import Header from "./Header";
+import { settings } from "../../portfolio";
 
-jest.mock("react-reveal", () => ({ Fade: ({ children }) => children }));
-jest.mock("../seoHeader/SeoHeader", () => () => null);
+vi.mock("../animation/Reveal", () => ({ Fade: ({ children }) => children }));
+vi.mock("../seoHeader/SeoHeader", () => ({ default: () => null }));
 
 const theme = { text: "#001C55", body: "#EDF9FE", highlight: "#A6E1FA" };
 
@@ -17,14 +17,12 @@ describe("header navigation", () => {
   beforeEach(() => {
     container = document.createElement("div");
     document.body.appendChild(container);
-    act(() => {
-      ReactDOM.render(
-        <MemoryRouter initialEntries={["/home"]}>
-          <Header theme={theme} />
-        </MemoryRouter>,
-        container
-      );
-    });
+    render(
+      <MemoryRouter initialEntries={["/home"]}>
+        <Header theme={theme} />
+      </MemoryRouter>,
+      { container }
+    );
     toggle = container.querySelector(
       'button[aria-label="Toggle navigation menu"]'
     );
@@ -32,7 +30,7 @@ describe("header navigation", () => {
   });
 
   afterEach(() => {
-    ReactDOM.unmountComponentAtNode(container);
+    cleanup();
     container.remove();
   });
 
@@ -70,5 +68,14 @@ describe("header navigation", () => {
     });
     expect(toggle.getAttribute("aria-expanded")).toBe("false");
     expect(document.activeElement).toBe(toggle);
+  });
+
+  it("marks the current route and keeps the logo link absolute", () => {
+    const active = navigation.querySelector('a[href="/home"]');
+    expect(active.getAttribute("aria-current")).toBe("page");
+    expect(active.style.fontWeight).toBe("bold");
+    expect(container.querySelector("a.logo").getAttribute("href")).toBe(
+      settings.isSplash ? "/splash" : "/home"
+    );
   });
 });

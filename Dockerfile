@@ -1,16 +1,14 @@
-FROM node:20.11-alpine
+FROM node:26-alpine
 
-# set working directory
 WORKDIR /app
 
-# install app dependencies
+# Use the same locked, lifecycle-disabled install as CI.
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm ci --ignore-scripts
 
-# add app
 COPY . ./
 
-EXPOSE 3001
+EXPOSE 3000
 
-# start app
-CMD ["npm", "start"]
+# The development server must listen on the container interface for Compose.
+CMD ["npm", "run", "start", "--", "--host", "0.0.0.0", "--port", "3000"]

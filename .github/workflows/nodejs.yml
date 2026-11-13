@@ -1,38 +1,59 @@
-
 name: Node.js CI
 
 on:
   push:
     # Run CI on feature branches before their pull request is opened.
     branches:
-    - '**'
+      - "**"
   pull_request:
     branches:
-    - master
-    - releases/*
+      - master
+      - releases/*
 
 permissions:
   contents: read
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [22.x]
+        node-version: ["^24.15.0", "26.x"]
 
     steps:
-    - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
-      with:
-        persist-credentials: false
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci --ignore-scripts
-    - run: npm run build --if-present
-    - run: npm test -- --watchAll=false --runInBand
-      env:
-        CI: true
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci --ignore-scripts
+      - run: npm run build --if-present
+      - run: npm test
+        env:
+          CI: true
+
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Use Node.js 26
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 26.x
+      - run: npm ci --ignore-scripts
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - name: Verify the development PDF worker
+        run: E2E_DEV=1 npm run test:e2e -- --grep 'résumé renders'
+      - name: Verify root GitHub Pages deep links and service worker cleanup
+        run: E2E_PAGES_ROOT=1 npm run test:e2e
+      - name: Build for a GitHub Pages project path
+        run: VITE_BASE_PATH=/test-site/ npm run build -- --outDir /tmp/masterportfolio-subpath --emptyOutDir
+      - name: Verify project-path deep links
+        run: E2E_SUBPATH=1 npm run test:e2e

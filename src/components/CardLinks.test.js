@@ -1,9 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render, cleanup } from "@testing-library/react";
 import GithubRepoCard from "./githubRepoCard/GithubRepoCard";
 import PublicationCard from "./publicationsCard/PublicationCard";
 
-jest.mock("react-reveal", () => ({ Fade: ({ children }) => children }));
+vi.mock("./animation/Reveal", () => ({ Fade: ({ children }) => children }));
 
 const theme = { highlight: "#fff", text: "#000", secondaryText: "#555" };
 
@@ -16,7 +16,7 @@ describe("external project and publication links", () => {
   });
 
   afterEach(() => {
-    ReactDOM.unmountComponentAtNode(container);
+    cleanup();
     container.remove();
   });
 
@@ -51,7 +51,7 @@ describe("external project and publication links", () => {
       "https://example.org/publication",
     ],
   ])("renders the %s card as a focusable, isolated link", (_type, card, url) => {
-    ReactDOM.render(card, container);
+    render(card, { container });
     const link = container.querySelector("a");
     expect(link.href).toBe(url);
     expect(link.target).toBe("_blank");

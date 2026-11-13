@@ -1,19 +1,19 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { act } from "react-dom/test-utils";
-import { Document } from "react-pdf";
+import { act, render, cleanup } from "@testing-library/react";
+import { Document, pdfjs } from "react-pdf";
+import workerUrl from "@portfolio-pdf-worker";
 import ResumePage from "./Resume";
 
-jest.mock("react-pdf", () => ({
-  Document: jest.fn(() => null),
-  Page: jest.fn(() => null),
+vi.mock("react-pdf", () => ({
+  Document: vi.fn(() => null),
+  Page: vi.fn(() => null),
   pdfjs: { version: "test", GlobalWorkerOptions: {} },
 }));
-jest.mock("react-reveal", () => ({ Fade: ({ children }) => children }));
-jest.mock("../../components/header/Header", () => () => null);
-jest.mock("../../components/footer/Footer", () => () => null);
-jest.mock("../../components/button/Button", () => () => null);
-jest.mock("../../components/topButton/TopButton", () => () => null);
+vi.mock("../../components/animation/Reveal", () => ({ Fade: ({ children }) => children }));
+vi.mock("../../components/header/Header", () => ({ default: () => null }));
+vi.mock("../../components/footer/Footer", () => ({ default: () => null }));
+vi.mock("../../components/button/Button", () => ({ default: () => null }));
+vi.mock("../../components/topButton/TopButton", () => ({ default: () => null }));
 
 describe("resume PDF security", () => {
   let container;
@@ -23,15 +23,10 @@ describe("resume PDF security", () => {
     Document.mockClear();
   });
 
-  afterEach(() => {
-    ReactDOM.unmountComponentAtNode(container);
-  });
+  afterEach(() => cleanup());
 
   it("disables PDF.js evaluation and keeps the options stable on resize", () => {
-    act(() => {
-      ReactDOM.render(<ResumePage theme={{}} />, container);
-    });
-
+    render(<ResumePage theme={{}} />, { container });
     const options = Document.mock.calls[0][0].options;
     expect(options).toEqual({ isEvalSupported: false });
 
@@ -41,5 +36,10 @@ describe("resume PDF security", () => {
     expect(Document.mock.calls[Document.mock.calls.length - 1][0].options).toBe(
       options
     );
+  });
+
+  it("uses the locally bundled worker for the installed PDF.js", () => {
+    expect(pdfjs.GlobalWorkerOptions.workerSrc).toBe(workerUrl);
+    expect(workerUrl).toContain("pdf.worker.min");
   });
 });

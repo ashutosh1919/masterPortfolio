@@ -2,6 +2,7 @@
 .git
 node_modules
 build
+dist
 coverage
 
 # Keep local credentials out of the build context and image layers.

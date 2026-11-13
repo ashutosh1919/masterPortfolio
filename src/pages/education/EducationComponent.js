@@ -9,7 +9,7 @@ import EducationImg from "./EducationImg";
 import { competitiveSites } from "../../portfolio";
 import { certifications } from "../../portfolio";
 import "./EducationComponent.css";
-import { Fade } from "react-reveal";
+import { Fade } from "../../components/animation/Reveal";
 
 class Education extends Component {
   render() {
