@@ -7,8 +7,8 @@
 
 <p align="center">
   <a href="http://hits.dwyl.com/ashutosh1919/masterPortfolio"><img alt="HitCounts" src="http://hits.dwyl.com/ashutosh1919/masterPortfolio.svg" /></a>
-  <a href="https://nodejs.org/en/blog/release/v20.11.1"><img alt="NodeJS" src="https://img.shields.io/badge/node-20.11.1-important?style=flat-square" /></a>
-  <a href="https://www.npmjs.com/package/npm/v/10.2.4"><img alt="NPM" src="https://img.shields.io/badge/npm-10.2.4-blueviolet?style=flat-square" /></a>
+  <a href="https://nodejs.org/en/about/previous-releases"><img alt="NodeJS" src="https://img.shields.io/badge/node-24%20%7C%2026-important?style=flat-square" /></a>
+  <a href="https://www.npmjs.com/"><img alt="npm" src="https://img.shields.io/badge/package%20manager-npm-blueviolet?style=flat-square" /></a>
   <a href="https://reactjs.org/"><img alt="Made With React" src="https://img.shields.io/badge/made%20with-react-61DAFB?style=flat-square" /></a>
   <a href="https://join.slack.com/t/masterportfolio/shared_invite/zt-g772n1fo-Ns4usanURF8jVb8wk2lRAA"><img alt="Join Slack Channel For Support" src="https://img.shields.io/badge/slack-masterPortfolio-yellow.svg?logo=slack?style=flat-square" /></a>
   <a href="https://github.com/prettier/prettier"><img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square?style=flat-square" /></a>
@@ -45,8 +45,11 @@
 
 To view a live example, **[click here](https://ashutosh1919.github.io/)**
 
+See [SECURITY_AUDIT.md](SECURITY_AUDIT.md) for the security review and outstanding improvements.
+
 # Table of Contents
  - [Clone and Use](#clone-and-use)
+ - [Continuous Integration](#continuous-integration)
  - [Customizing](#customize-it-to-make-your-own-portfolio)
  - [Choose Theme](#choose-theme)
  - [Deployment](#deployment)
@@ -59,27 +62,51 @@ To view a live example, **[click here](https://ashutosh1919.github.io/)**
 # Clone and Use 📋
 
 - The website is completely built on `react-js` library of `javascript` and that's why we need `nodejs` and `npm` installed
-- While installing `nodejs` and `npm`, try to install versions which are equal or greater than the versions mentioned in badges above
+- Use Node.js 24.15 or newer in the 24.x line, or Node.js 26 or newer. CI exercises Node 24 and 26.
 - In case you want to help developing it or simply saving it, you can fork the repository just by clicking the button on the top-right corner of this page
 - After the successful installation of `nodejs` and `npm`, clone the repository into your local system using below command:
   ```bash
-   git clone https://github.com/ashutosh1919/masterPortfolio.git
+  git clone https://github.com/ashutosh1919/masterPortfolio.git
+  cd masterPortfolio
   ```
-  This will clone the whole repository in your system.
-- To download required dependencies to your system, navigate to the directory where the cloned repository resides and execute following command:
-  ```node
-  npm install
+  This clones the repository and changes into its directory.
+- To install the locked dependencies, navigate to the cloned repository and run:
+  ```bash
+  npm ci
   ```
 - Now the project is ready to use
-- You can check it using `npm start`, it will open the website locally on your browser.
+- Run `npm start` and open the local URL printed by Vite in your browser.
+
+# Continuous Integration
+
+The Node.js workflow runs on pushes to any branch and on pull requests targeting `master` or `releases/*`. It builds and runs the unit tests on Node 24 and 26, then exercises the production app, development PDF worker, root and project-page deep links, and old service-worker cleanup in Chromium. To reproduce the main checks locally:
+
+```bash
+npm ci --ignore-scripts
+npm run build
+npm test
+npx playwright install chromium
+npm run test:e2e
+```
+
+`npm run test:e2e` uses the built `dist` directory and mocks external icon and analytics requests. The remaining CI browser checks can be run on Linux with:
+
+```bash
+E2E_DEV=1 npm run test:e2e -- --grep 'résumé renders'
+E2E_PAGES_ROOT=1 npm run test:e2e
+VITE_BASE_PATH=/test-site/ npm run build -- --outDir /tmp/masterportfolio-subpath --emptyOutDir
+E2E_SUBPATH=1 npm run test:e2e
+```
+
+The Vite development server runs with `npm start`; `npm run test:watch` runs unit tests interactively.
 
 # Customize it to make your own portfolio ✏️
 
-In this project, there are basically 4 things that you need to change to customize this to anyone else's portfolio: **package.json**, **Personal Information**, **Github Information** and **Splash Logo**.
+Customize **Personal Information**, **Github Information**, **Splash Logo**, and deployment settings for your own portfolio.
 
 ### package.json
 
-Open this file, which is in the main cloned directory, choose any "name" and change "homepage " to `https://<your-github-username>.github.io`. Do not forget the `https://`, otherwise fonts will not load.
+You may change the package name. Vite uses an absolute base path rather than the old `homepage` field; see [Deployment](#deployment) for root and project-page builds.
 
 ### Personal Information
 
@@ -100,6 +127,8 @@ const socialMediaLinks = {
 ```
 
 You can change the personal information, experience, education, social media, certifications, blog information, contact information etc. in `src/portfolio.js` to directly reflect them in portfolio website.
+
+The legacy achievement, blog, podcast, talk, and startup-project sections are not routed by default. If you add one to a page, supply its data as a `section` prop: respectively use `achivementsCards`, `blogs`, `podcast`, `talks`, or `projects` arrays alongside a `title` and `subtitle`. Without a section they render nothing. The optional footer theme toggle is also not wired to a theme-changing handler by default.
 
 ### How to change the icons on homepage under what i do section?
 
@@ -128,32 +157,33 @@ You can change the personal information, experience, education, social media, ce
 
 1. Place the custom image file in the `public/skills` folder.
 2. Update the `imageSrc` attribute of the corresponding competitive site with the name of your custom image (e.g., `imageSrc: "customImage.png"`).
-3. Remove the `iconifyClassname` property or leave it empty, as the `imageSrc` property takes precedence over `iconifyClassname`.
+3. Remove the `iconifyClassname` property or leave it empty; otherwise the Iconify icon takes precedence over `imageSrc`.
 4. Optionally, add custom styling to the `<img>` tag using the `style` property to adjust size, positioning, etc.
 
 ### Github Information
 
 You will find `git_data_fetcher.mjs` file in the main directory of the repository. This file is used to fetch the data (Pull requests, Issues, Organizations, Pinned projects etc.) from your github.
 
-In the project you will see a `env.example` file, create a new file named `.env` and copy contents of `env.example` into it. In that file, you will see the following environment variables
+Copy `env.example` to a new file named `.env`, then set these values (without quotes or trailing semicolons):
 
-```javascript
-GITHUB_TOKEN = your_token;
-GITHUB_USERNAME = your_username;
+```dotenv
+GITHUB_TOKEN=your_token
+GITHUB_USERNAME=your_username
 ```
 
-You can get a github token as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Give all permissions while generating token. Add your github username and the token generated in `GITHUB_USERNAME` and `GITHUB_TOKEN` variables in the .env file.
+Create a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with an expiration and the **minimum permissions** needed. For public data, start with a fine-grained token limited to public repositories and no additional permissions; add read-only access only if a specific query requires it. Do not grant all permissions. If you previously created an unnecessarily broad token, revoke it and create a restricted replacement.
 
-Now, you need to run following command. (Make sure you executed `npm install` before this)
+Treat tokens like passwords. Never commit `.env`, place a token in `src/portfolio.js`, or put it in a `VITE_` variable: Vite exposes `VITE_` variables to the public browser bundle. The `.gitignore` and `.dockerignore` rules help protect local environment files, but do not remove secrets from files, Git history, existing images, or bind mounts. Revoke any exposed token.
 
-**Warning:** Treat your tokens like passwords and keep them secret. When working with the API, use tokens as environment variables instead of hardcoding them into your programs.
+The fetcher restricts newly fetched records to public repositories, even if the token can access private or internal ones. Still review all JSON in `src/shared/opensource/` before committing or publishing: older files, prior commits, or files left unchanged after a partial failure may contain information that should not be public.
+
+Now, run the following command after installing dependencies:
 
 ```node
 node git_data_fetcher.mjs
 ```
 
-This will fetch all the data from your github and it will automatically replace my data with yours.
-Whenever you want to update the github related information on the website you need to run this command.
+The fetcher replaces the bundled example data with up to the 100 newest pull requests and issues, organizations from up to 100 contributed repositories, and up to six pinned repositories. The limits are applied before private or internal records are filtered out, so fewer public items may appear. The displayed counts describe the fetched subset, not necessarily all activity. Run it again when you want to refresh the data. A failed request or write makes the command exit unsuccessfully, but other files may already have changed, and a failed write may leave an incomplete file; review all output before committing.
 
 ### Splash Logo
 
@@ -176,7 +206,7 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
 
 ## Other
 
-- You need to change the website title and other descriptions in `public/index.html`
+- You need to change the website title and other descriptions in `index.html`
 - You can define your own favicon in `public/icons` directory. If you don't have a favicon, you can generate favicons from [Favicon Generator](https://www.favicon-generator.org/) and [Favicon IO](https://favicon.io/)
 - You can also edit your website preview (known as description image). Run your site locally, take a screenshot and replace with `public/icons/desc.png`. Note that your screenshot should be 1280x640 for better preview.
 
@@ -205,38 +235,25 @@ import myResumePdf from "../../assets/docs/Ashutosh_Hathidara_Resume_ML.pdf"
 
 # Deployment 📦
 
-- Once you are done with your setup and have successfully completed all steps above, you need to put your website online!
-- I highly recommend using [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) to achieve this the EASIEST WAY.
-- To deploy your website, you have two options. First you need to create a github repository with the name `<your-github-username>.github.io`. Please don't give it any other name.
-- Now, you need to generate a production build and deploy the website.
+Vite writes the production site to `dist`. The default base path is `/`, which is suitable for a user/organization Pages site or a custom domain at the domain root. Check the profile data, metadata, analytics IDs, and any existing domain configuration before publishing.
 
-**Option 1:**
+For a [GitHub Pages project site](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages) at `https://<username>.github.io/<repository>/`, set the base path to the repository path, including both slashes:
 
-- Run `npm run build` to generate the production build folder.
-- Enter the build folder, `git init` and push the generated code to the `master` branch of your new repository on github. That's it. It's Done.
-- You may need to `git init` and force push at every new build.
+```bash
+VITE_BASE_PATH=/repository/ npm run build
+```
 
-**Option 2 (will not work with [user pages](https://docs.github.com/en/github/working-with-github-pages/about-github-pages)):**
+For a root site, use `npm run build` without `VITE_BASE_PATH`. The build adjusts the router, static assets, and `404.html` redirect to the selected base path. To publish `dist` to this repository's `gh-pages` branch, use `npm run deploy` (or `VITE_BASE_PATH=/repository/ npm run deploy` for a project site), then configure GitHub Pages to deploy from that branch. The deploy command pushes to `gh-pages`; it is not run by CI or by merging to `master`.
 
-- Run `npm run deploy` to build and create a branch called `gh-pages`. It will push the `build` files to that branch.
-- The last step in deploying is to enable `Github Pages` in settings of the repository and select `gh-pages` branch.
-
-Now, your website is successfully deployed and you can visit it at `<your-github-username>.github.io`.  
-If you are stuck somewhere and want to observe the deployment process in depth, then please watch below video.
-
-<p align="center"> 
-    <a href="http://www.youtube.com/watch?v=IwBS39TOmpA" target="_blank">
-    <img src="http://img.youtube.com/vi/IwBS39TOmpA/0.jpg"></img>
-  </a>
-</p>
+If you use a custom domain, set it in GitHub Pages and add your own `public/CNAME` if your deployment requires the file. The historical root-level `CNAME` is not copied into the Vite build. The Vite app does not provide offline caching; it unregisters a matching old Create React App service worker when the new app loads. A previously cached old page can remain in control until its tabs are closed or reloaded, and old caches are not deleted. After publishing, verify direct page refreshes, navigation, images, and the résumé on the actual host.
 
 # Technologies used 🛠️
 
 - [React](https://reactjs.org/)
 - [graphql](https://graphql.org/)
-- [apollo-boost](https://www.apollographql.com/docs/react/get-started/)
-- [baseui](https://github.com/uber/baseweb)
-- [react-reveal](https://www.react-reveal.com/)
+- [Vite](https://vite.dev/) and [Vitest](https://vitest.dev/)
+- [React Router](https://reactrouter.com/)
+- [Awesome Reveal](https://github.com/awesome-reveal/awesome-reveal)
 - [styled-components](https://styled-components.com/)
 
 # illustrations 🍥

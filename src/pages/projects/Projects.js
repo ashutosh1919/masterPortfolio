@@ -5,7 +5,7 @@ import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
 import PublicationCard from "../../components/publicationsCard/PublicationCard";
 import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
-import { Fade } from "react-reveal";
+import { Fade } from "../../components/animation/Reveal";
 import {
   greeting,
   projectsHeader,
@@ -51,7 +51,7 @@ class Projects extends Component {
         </div>
         <div className="repo-cards-div-main">
           {ProjectsData.data.map((repo) => {
-            return <GithubRepoCard repo={repo} theme={theme} />;
+            return <GithubRepoCard key={repo.id} repo={repo} theme={theme} />;
           })}
         </div>
         <Button
@@ -88,7 +88,7 @@ class Projects extends Component {
 
         <div className="repo-cards-div-main">
           {publications.data.map((pub) => {
-            return <PublicationCard pub={pub} theme={theme} />;
+            return <PublicationCard key={pub.id} pub={pub} theme={theme} />;
           })}
         </div>
 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./PullRequests.css";
-import { Fade } from "react-reveal";
+import { Fade } from "../../components/animation/Reveal";
 import PullRequestCard from "../../components/pullRequestCard/PullRequestCard";
 import pullRequestsData from "../../shared/opensource/pull_requests.json";
 
@@ -18,7 +18,7 @@ class PullRequests extends Component {
         </div>
         <div className="pull-request-body-div">
           {pullRequestsData["data"].map((pullRequest) => {
-            return <PullRequestCard pullRequest={pullRequest} />;
+            return <PullRequestCard key={pullRequest.id} pullRequest={pullRequest} />;
           })}
         </div>
       </div>

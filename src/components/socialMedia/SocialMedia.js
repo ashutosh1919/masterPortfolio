@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const IconWrapper = styled.span`
   i {
-    background-color: ${(props) => props.backgroundColor};
+    background-color: ${(props) => props.$backgroundColor};
   }
   &:hover i {
     background-color: ${({ theme }) => theme.text};
@@ -22,11 +22,15 @@ export default function socialMedia(props) {
             key={i}
             href={media.link}
             className={`icon-button`}
+            aria-label={media.name || media.link}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IconWrapper {...media} {...props}>
-              <i className={`fab ${media.fontAwesomeIcon}`}></i>
+            <IconWrapper $backgroundColor={media.backgroundColor} theme={props.theme}>
+              <i
+                aria-hidden="true"
+                className={`fab ${media.fontAwesomeIcon}`}
+              ></i>
             </IconWrapper>
             {/* <span></span> */}
           </a>

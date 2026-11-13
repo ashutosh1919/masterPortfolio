@@ -4,6 +4,48 @@
 
 .accord-panel {
   font-family: "Google Sans Regular";
+  margin-bottom: 3px;
+}
+
+.accord-panel > summary {
+  align-items: center;
+  background-color: var(--accordion-background);
+  border: 1px solid var(--accordion-border);
+  border-radius: 5px;
+  color: var(--accordion-text);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 16px;
+}
+
+.accord-panel > summary::-webkit-details-marker {
+  display: none;
+}
+
+.accord-panel > summary::after {
+  content: "+";
+  font-size: 24px;
+  line-height: 1;
+}
+
+.accord-panel[open] > summary::after {
+  content: "−";
+}
+
+.accord-panel > summary:hover {
+  color: var(--accordion-hover);
+}
+
+.accord-panel > summary:focus-visible {
+  outline: 3px solid var(--accordion-text);
+  outline-offset: 2px;
+}
+
+.accord-content {
+  background-color: var(--accordion-background);
+  padding-top: 24px;
 }
 
 @media (max-width: 768px) {

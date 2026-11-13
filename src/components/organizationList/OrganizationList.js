@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./OrganizationList.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import { Fade } from "react-reveal";
+import { Fade } from "../animation/Reveal";
 
 class OrganizationList extends Component {
   render() {
@@ -13,6 +13,7 @@ class OrganizationList extends Component {
               <OverlayTrigger
                 key={logo["login"]}
                 placement={"top"}
+                flip
                 style={{ marginBottom: "5px" }}
                 overlay={
                   <Tooltip id={`tooltip-top`}>
@@ -21,7 +22,8 @@ class OrganizationList extends Component {
                 }
               >
                 <li className="organizations-inline" name={logo["login"]}>
-                  <Fade bottom duration={2000} distance="40px">
+                  {/* Keep the avatar aligned with its stationary tooltip anchor. */}
+                  <Fade duration={2000}>
                     <img
                       className="organizations-img"
                       src={logo["avatarUrl"]}

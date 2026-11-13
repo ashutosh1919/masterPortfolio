@@ -55,13 +55,13 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.certificate-card-footer > p {
+.certificate-card-footer > a {
   color: #333333;
   cursor: pointer;
   margin-right: 10px;
   text-align: center;
 }
-.certificate-card-footer > p:hover {
+.certificate-card-footer > a:hover {
   color: #868e96;
 }
 /* Media Query */

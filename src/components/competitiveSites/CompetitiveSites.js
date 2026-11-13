@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import React from "react";
 import "./CompetitiveSites.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
@@ -12,6 +13,7 @@ class CompetitiveSites extends React.Component {
               <OverlayTrigger
                 key={logo.siteName}
                 placement={"top"}
+                flip
                 style={{ marginBottom: "5px" }}
                 overlay={
                   <Tooltip id={`tooltip-top`}>
@@ -22,22 +24,23 @@ class CompetitiveSites extends React.Component {
                 <li className="competitive-sites-inline" name={logo.siteName}>
                   <a
                     href={logo.profileLink}
+                    aria-label={logo.siteName}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     {logo.iconifyClassname && (
-                      <span
+                      <Icon
                         className="iconify"
-                        data-icon={logo.iconifyClassname}
+                        icon={logo.iconifyClassname}
                         style={logo.style}
-                        data-inline="false"
-                      ></span>
+                        aria-hidden="true"
+                      />
                     )}
                     {!logo.iconifyClassname && logo.imageSrc && (
                       <img
                         className="skill-image"
                         style={logo.style}
-                        src={`${process.env.PUBLIC_URL}/skills/${logo.imageSrc}`}
+                        src={`${import.meta.env.BASE_URL}skills/${logo.imageSrc}`}
                         alt={logo.siteName}
                       />
                     )}

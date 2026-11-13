@@ -1,3 +1,4 @@
+import { imageUrl } from "../../utils/images";
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
@@ -6,7 +7,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import BlogsImg from "./BlogsImg";
 import AddressImg from "./AddressImg";
-import { Fade } from "react-reveal";
+import { Fade } from "../../components/animation/Reveal";
 import "./ContactComponent.css";
 import { contactPageData } from "../../portfolio.js";
 
@@ -26,7 +27,7 @@ class Contact extends Component {
             <div className="contact-heading-div">
               <div className="contact-heading-img-div">
                 <img
-                  src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
+                  src={imageUrl(ContactData["profile_image_path"])}
                   alt=""
                 />
               </div>
@@ -47,7 +48,7 @@ class Contact extends Component {
                 <div className="resume-btn-div">
                   <Button
                     text="See My Resume"
-                    href="/resume"
+                    to="/resume"
                     theme={theme}
                   />
                 </div>

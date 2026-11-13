@@ -84,7 +84,7 @@ export default class ProjectsImg extends Component {
           points="491.81 203.17 561.89 294.68 634.08 202.74"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <rect
           x="508.37"
@@ -109,13 +109,13 @@ export default class ProjectsImg extends Component {
           y2="138.35"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <polyline
           points="675.22 139.93 634.08 170.7 590.81 139.93"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <rect
           x="456.61"
@@ -151,20 +151,20 @@ export default class ProjectsImg extends Component {
           y2="430.01"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M609.53,558.59v0Z"
           transform="translate(-48.1 -96.1)"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <polyline
           points="462.42 493.11 561.42 462.48 660.82 492.89"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <rect
           x="526.62"
@@ -231,7 +231,7 @@ export default class ProjectsImg extends Component {
           y2="374.94"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <line
           x1="735.11"
@@ -240,7 +240,7 @@ export default class ProjectsImg extends Component {
           y2="319.78"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <line
           x1="613.23"
@@ -249,7 +249,7 @@ export default class ProjectsImg extends Component {
           y2="319.78"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <line
           x1="832.16"
@@ -258,7 +258,7 @@ export default class ProjectsImg extends Component {
           y2="320.21"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <rect
           x="732.22"
@@ -307,7 +307,7 @@ export default class ProjectsImg extends Component {
           y2="374.94"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <line
           x1="388.66"
@@ -316,7 +316,7 @@ export default class ProjectsImg extends Component {
           y2="319.78"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <line
           x1="510.55"
@@ -325,7 +325,7 @@ export default class ProjectsImg extends Component {
           y2="319.78"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <line
           x1="291.61"
@@ -334,7 +334,7 @@ export default class ProjectsImg extends Component {
           y2="320.21"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <rect
           x="417.76"

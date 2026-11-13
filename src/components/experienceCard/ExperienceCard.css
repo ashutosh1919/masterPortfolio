@@ -282,7 +282,9 @@ transition: all 0.3s ease-in-out 0s;
 
 @media (max-width: 768px) {
   .experience-card{
-      /* margin-bottom:10px; */
+      /* Allow the accordion and page to shrink on narrow viewports. */
+      min-width: 0;
+      overflow-wrap: anywhere;
       flex-direction:column;
       text-align: center;
   }

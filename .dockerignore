@@ -1,0 +1,17 @@
+# Never bake repository metadata, local dependencies, or build output into images.
+.git
+node_modules
+build
+dist
+coverage
+
+# Keep local credentials out of the build context and image layers.
+.env
+.env.*
+**/.env
+**/.env.*
+.npmrc
+**/.npmrc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

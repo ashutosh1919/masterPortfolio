@@ -1,7 +1,8 @@
 /* header */
 
 .header {
-  display: block;
+  /* Contain the floated mobile logo and toggle when the menu is closed. */
+  display: flow-root;
   max-width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
@@ -23,11 +24,6 @@
   padding: 20px 20px;
   /* color: black; */
   text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-  /* background-color: #A6E1FA; */
 }
 
 .header .logo {
@@ -53,13 +49,18 @@
 
 .header .menu {
   clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
+  display: none;
+}
+
+.header .menu-icon[aria-expanded="true"] ~ .menu {
+  display: block;
 }
 
 /* menu icon */
 
 .header .menu-icon {
+  background: transparent;
+  border: 0;
   cursor: pointer;
   display: inline-block;
   float: right;
@@ -68,8 +69,13 @@
   user-select: none;
 }
 
+.header .menu-icon:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
 .header .menu-icon .navicon {
-  background: #333;
+  background: currentColor;
   display: block;
   height: 2px;
   position: relative;
@@ -79,7 +85,7 @@
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: currentColor;
   content: "";
   display: block;
   height: 100%;
@@ -96,31 +102,30 @@
   top: -5px;
 }
 
-/* menu btn */
+/* menu button */
 
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked ~ .menu {
-  max-height: 370px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.header .menu-icon[aria-expanded="true"] .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.header .menu-icon[aria-expanded="true"] .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.header .menu-icon[aria-expanded="true"] .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header .menu-icon[aria-expanded="true"] .navicon:before,
+.header .menu-icon[aria-expanded="true"] .navicon:after {
   top: 0;
+}
+
+/* Keep the brand and navigation toggle on one line on narrow screens. */
+@media (max-width: 420px) {
+  .header .logo {
+    font-size: clamp(1.1em, 5.4vw, 1.5em);
+  }
 }
 
 /* 69em = 1104px */
@@ -135,7 +140,7 @@
     justify-content: space-between;
   }
   .header .menu {
-    max-height: none;
+    display: block;
   }
   .header .menu-icon {
     display: none;

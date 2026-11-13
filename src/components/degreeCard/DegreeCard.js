@@ -1,6 +1,7 @@
+import { imageUrl } from "../../utils/images";
 import React, { Component } from "react";
 import "./DegreeCard.css";
-import { Fade, Flip } from "react-reveal";
+import { Fade, Flip } from "../animation/Reveal";
 
 class DegreeCard extends Component {
   render() {
@@ -17,7 +18,7 @@ class DegreeCard extends Component {
                   maxHeight: "100%",
                   transform: "scale(0.9)",
                 }}
-                src={require(`../../assets/images/${degree.logo_path}`)}
+                src={imageUrl(degree.logo_path)}
                 alt={degree.alt_name}
               />
             </div>
@@ -47,9 +48,9 @@ class DegreeCard extends Component {
               </div>
             </div>
             <div className="body-content">
-              {degree.descriptions.map((sentence) => {
+              {degree.descriptions.map((sentence, index) => {
                 return (
-                  <p className="content-list" style={{ color: theme.text }}>
+                  <p key={`${sentence}-${index}`} className="content-list" style={{ color: theme.text }}>
                     {sentence}
                   </p>
                 );
